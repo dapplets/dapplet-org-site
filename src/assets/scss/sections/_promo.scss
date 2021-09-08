@@ -78,8 +78,6 @@
 
 	background-image: url('../images/promo/deer-render.jpg');
 
-	@include backgroundStyle;
-
 	&::after,
 	&::before {
 		position: absolute;
@@ -113,6 +111,8 @@
 
 		background-image: url('../images/icons/line-gray.svg');
 	}
+
+	@include backgroundStyle;
 }
 
 .promo__header-thumb {

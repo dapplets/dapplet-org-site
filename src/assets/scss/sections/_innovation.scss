@@ -1,0 +1,78 @@
+@import '../base/mixins';
+
+.innovation {
+	position: relative;
+
+	padding-top: 114px;
+	padding-bottom: 100px;
+
+	.big-circle-icon {
+		top: 108px;
+		left: -238px;
+	}
+
+	.many-straight-lines-icon {
+		z-index: -1;
+		top: -298px;
+		left: -118px;
+
+		transform: rotate(90deg);
+	}
+
+	.waves-icon {
+		top: -117px;
+		right: -95px;
+
+		transform: rotate(133deg);
+	}
+
+	.two-triangles-1 {
+		top: 44px;
+		right: -147px;
+	}
+}
+
+.innovation__wrapper {
+	display: flex;
+	justify-content: space-between;
+}
+
+.innovation__right {
+	position: relative;
+
+	margin-top: -15px;
+}
+
+.innovation__left {
+	position: relative;
+}
+
+.innovation__description {
+	padding-top: 30px;
+	padding-left: 9px;
+}
+
+.innovation__right-img {
+	position: relative;
+
+	width: 610px;
+	height: 750px;
+
+	background-image: url('../images/bg/innovation-bg.jpg');
+
+	&::before {
+		position: absolute;
+		z-index: -1;
+		top: -19px;
+		left: 28px;
+
+		width: 99%;
+		height: 99%;
+
+		content: '';
+
+		border: 1px solid #E3E3E3;
+	}
+
+	@include backgroundStyle;
+}

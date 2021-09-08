@@ -1,0 +1,126 @@
+@media screen and (max-width: 1500px) {
+	.what-is .waves-icon {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 1270px) {
+	.what-is__right {
+		margin-top: 50px;
+		margin-left: -200px;
+	}
+}
+
+@media screen and (max-width: 1184px) {
+	.what-is__left-img {
+		width: 519px;
+		height: 648px;
+	}
+
+	.what-is .many-small-lines {
+		left: 344px;
+	}
+}
+
+@media screen and (max-width: 1090px) {
+	.what-is__wrapper {
+		flex-direction: column;
+	}
+
+	.what-is__right {
+		max-width: 690px;
+		margin-left: 0;
+	}
+
+	.what-is .many-straight-lines-icon {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.what-is {
+		overflow-x: hidden;
+
+		padding-top: 88px;
+	}
+
+	.what-is__left-img {
+		width: 588px;
+		height: 441px;
+
+		background-image: url('../images/what-is/banan-table.jpg');
+	}
+
+	.what-is .many-small-lines {
+		right: -138px;
+		bottom: -150px;
+		left: auto;
+	}
+
+	.what-is__title {
+		font-size: 41px;
+		line-height: 149%;
+	}
+
+	.what-is__right {
+		max-width: 100%;
+		margin-top: 66px;
+	}
+
+	.what-is__description {
+		margin-top: 42px;
+		margin-left: 78px;
+
+		p {
+			max-width: 100%;
+		}
+	}
+
+	.what-is__button {
+		display: none;
+	}
+
+	.what-is .two-triangles-2 {
+		bottom: -522px;
+		left: -99px;
+	}
+
+	.what-is .two-crosses {
+		top: -8px;
+		left: -39px;
+	}
+}
+
+@media (max-width: 700px) {
+	.what-is__left-img {
+		width: 453px;
+		height: 325px;
+
+		background-size: contain;
+	}
+
+	.what-is__description {
+		margin-left: 0;
+	}
+}
+
+@media screen and (max-width: 570px) {
+	.what-is__left-img,
+	.what-is .two-triangles-1,
+	.what-is .big-circle-icon,
+	.what-is .two-crosses,
+	.what-is .two-triangles-2,
+	.what-is .many-small-lines {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.what-is {
+		padding-top: 3px;
+	}
+
+	.what-is__description {
+		margin-top: 22px;
+	}
+}

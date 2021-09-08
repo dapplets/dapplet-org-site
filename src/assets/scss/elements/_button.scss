@@ -1,0 +1,87 @@
+@import '../base/constans';
+@import '../base/animate';
+
+.button {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	border: none;
+	background-color: transparent;
+
+	&.icon {
+		padding: 5px;
+	}
+
+	&.expansion {
+		min-width: 176px;
+		padding: 8px 20px;
+
+		color: #FFF;
+
+		background-color: $ifm-background-color-button;
+
+		font-size: 16px;
+		line-height: 149%;
+	}
+
+	&.border {
+		color: $ifm-color-button;
+		border: 1px solid $ifm-color-button;
+		background-color: transparent;
+	}
+
+	&.center {
+		margin: 0 auto;
+		margin-top: 10px;
+	}
+
+	&.animate {
+		animation: topToBottom 1.5s infinite;
+	}
+
+	&.wight-900 {
+		font-weight: 900;
+	}
+
+	&.augment {
+		padding: 12px 24px;
+	}
+}
+
+.button-check {
+	position: relative;
+
+	display: block;
+
+	width: 32px;
+	height: 20px;
+
+	transform: rotate(90deg);
+
+	border-radius: 50px;
+	background-color: $ifm-button-check-bg;
+
+	&::after {
+		position: absolute;
+		top: 2px;
+		right: 2px;
+
+		width: 16px;
+		height: 16px;
+
+		content: '';
+
+		border-radius: 100%;
+
+		background-color: #FFF;
+	}
+
+	&.active {
+		background-color: $ifm-button-check-bg-active;
+
+		&::after {
+			transform: translateX(-70%);
+		}
+	}
+}

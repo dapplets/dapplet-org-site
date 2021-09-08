@@ -1,0 +1,73 @@
+@import '../base/mixins';
+
+.big-circle-icon,
+.two-circle-icon,
+.waves-icon,
+.many-straight-lines-icon,
+.two-triangles-1,
+.two-triangles-2,
+.two-crosses,
+.many-small-lines {
+	position: absolute;
+	z-index: 2;
+
+	display: block;
+
+	@include backgroundStyle;
+}
+
+.big-circle-icon {
+	width: 212px;
+	height: 212px;
+
+	background-image: url('../images/bg-icon/big-circle-icon.svg');
+}
+
+.two-circle-icon {
+	width: 58px;
+	height: 54px;
+
+	background-image: url('../images/bg-icon/two-circle-icon.svg');
+}
+
+.waves-icon {
+	width: 393px;
+	height: 106px;
+
+	background-image: url('../images/bg-icon/waves-icon.svg');
+}
+
+.many-straight-lines-icon {
+	width: 472px;
+	height: 472px;
+
+	background-image: url('../images/bg-icon/many-straight-lines-icon.svg');
+}
+
+.two-triangles-1 {
+	width: 178px;
+	height: 131px;
+
+	background-image: url('../images/bg-icon/two-triangles-1.svg');
+}
+
+.two-triangles-2 {
+	width: 178px;
+	height: 131px;
+
+	background-image: url('../images/bg-icon/two-triangles-2.svg');
+}
+
+.two-crosses {
+	width: 102px;
+	height: 121px;
+
+	background-image: url('../images/bg-icon/two-crosses.svg');
+}
+
+.many-small-lines {
+	width: 314px;
+	height: 45px;
+
+	background-image: url('../images/bg-icon/many-small-lines.svg');
+}

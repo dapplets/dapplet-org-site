@@ -1,0 +1,26 @@
+@import '../base/constans';
+
+.title {
+	font-size: 67px;
+	font-weight: 900;
+	line-height: 149%;
+
+	&--primary {
+		color: $ifm-primary-color;
+	}
+
+	&--secondary {
+		color: $ifm-secondary-color;
+	}
+
+	.block {
+		display: block;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.title {
+		font-size: 26px !important;
+		line-height: 149% !important;
+	}
+}

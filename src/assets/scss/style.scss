@@ -1,0 +1,32 @@
+// BASE
+@import './base/_bootstrap-reboot.min.scss';
+@import './base/container';
+@import './base/classes';
+@import './base/transition';
+
+// FONTS
+@import './fonts/_montserrat.scss';
+@import './fonts/_roboto.scss';
+
+// SECTIONS
+@import './sections/header';
+@import './sections/promo';
+@import './sections/what-is';
+
+// ELEMENTS
+@import './elements/button';
+@import './elements/languages';
+@import './elements/notification';
+@import './elements/hamburger';
+@import './elements/bg-icons';
+@import './elements/title';
+@import './elements/text';
+
+// MEDIA
+@import './adaptive/header';
+@import './adaptive/promo';
+@import './adaptive/what-is';
+
+body {
+	font-family: "Montserrat", sans-serif;
+}

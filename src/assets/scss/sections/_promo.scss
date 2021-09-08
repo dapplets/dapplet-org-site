@@ -1,0 +1,160 @@
+@import '../base/constans';
+@import '../base/mixins';
+
+.promo {
+	position: relative;
+
+	padding-top: 84px;
+
+	.big-circle-icon {
+		top: -179px;
+		left: -37px;
+	}
+
+	.two-circle-icon {
+		top: 38px;
+		left: 216px;
+	}
+
+	.waves-icon {
+		top: 69px;
+		left: 393px;
+	}
+}
+
+.promo__header-wrapper {
+	display: flex;
+}
+
+.promo__header-left {
+	position: relative;
+	z-index: 2;
+}
+
+.promo__title {
+	color: $ifm-primary-color;
+
+	font-size: 177px;
+	font-weight: 900;
+	line-height: 216px;
+}
+
+.promo__subtitle {
+	display: block;
+
+	margin-top: 59px;
+
+	color: #747376;
+
+	font-size: 41px;
+	line-height: 61px;
+}
+
+.promo__expansion {
+	display: flex;
+	align-items: center;
+
+	margin-top: 58px;
+
+	span {
+		display: block;
+
+		margin: 0 23px;
+	}
+}
+
+.promo__header-right {
+	position: relative;
+}
+
+.promo__header-background {
+	position: absolute;
+	z-index: 1;
+	top: -55px;
+	left: -617px;
+
+	width: 610px;
+	height: 716px;
+
+	background-image: url('../images/promo/deer-render.jpg');
+
+	@include backgroundStyle;
+
+	&::after,
+	&::before {
+		position: absolute;
+
+		width: 100%;
+		height: 100%;
+
+		content: '';
+		pointer-events: none;
+
+		@include backgroundStyle;
+	}
+
+	&::before {
+		z-index: 0;
+		top: -111px;
+		left: -51px;
+
+		max-width: 350px;
+		max-height: 365px;
+
+		background-image: url('../images/icons/big-line-white.svg');
+	}
+
+	&::after {
+		top: 41px;
+		right: -209px;
+
+		max-width: 314px;
+		max-height: 45px;
+
+		background-image: url('../images/icons/line-gray.svg');
+	}
+}
+
+.promo__header-thumb {
+	position: absolute;
+	top: 4px;
+	right: -40px;
+
+	width: 610px;
+	height: 700px;
+
+	content: '';
+
+	background-color: #F5F5F5;
+
+	&::before,
+	&::after {
+		position: absolute;
+		z-index: 1;
+
+		content: '';
+		pointer-events: none;
+
+		@include backgroundStyle;
+	}
+
+	&::after {
+		top: 81px;
+		left: -82px;
+
+		width: 708px;
+		height: 408px;
+
+		background-image: url('../images/icons/plus-group.svg');
+	}
+
+	&::before {
+		bottom: 111px;
+		left: -172px;
+
+		width: 285px;
+		height: 45px;
+
+		background-image: url('../images/icons/line-white.svg');
+	}
+}

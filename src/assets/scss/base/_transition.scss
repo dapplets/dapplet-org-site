@@ -1,0 +1,7 @@
+.header__top-social-link svg path,
+.header__nav-link::after,
+.languages__list {
+	transition-timing-function: cubic-bezier(0.24, 0.22, 0.015, 1.56);
+	transition-duration: 0.2s;
+	transition-property: opacity, transform, visibility, width, height, fill, color;
+}

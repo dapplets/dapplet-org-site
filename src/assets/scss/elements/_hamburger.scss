@@ -1,0 +1,43 @@
+@import '../base/constans';
+
+.hamburger {
+	display: none;
+
+	width: 40px;
+	height: 40px;
+	padding: 12px 10px;
+
+	border: 1px solid $ifm-border-color-hamburger;
+}
+
+.hamburger__item {
+	position: relative;
+
+	display: block;
+
+	width: 100%;
+	height: 2px;
+
+	background-color: $ifm-border-color-hamburger;
+
+	&::after,
+	&::before {
+		position: absolute;
+		left: 0;
+
+		width: 100%;
+		height: 100%;
+
+		content: '';
+
+		background-color: $ifm-border-color-hamburger;
+	}
+
+	&::after {
+		top: 5px;
+	}
+
+	&::before {
+		top: 10px;
+	}
+}

@@ -1,0 +1,269 @@
+@import '../base/constans';
+
+@media screen and (max-width: 1750px) {
+	.promo__header-background::after {
+		right: -90px;
+	}
+}
+
+@media screen and (max-width: 1500px) {
+	.promo__header-background::after {
+		right: 10px;
+
+		max-width: 133px;
+		max-height: 28px;
+	}
+
+	.promo__header-thumb {
+		top: 4px;
+		right: 8px;
+
+		width: 565px;
+		height: 686px;
+	}
+
+	.promo__header-thumb::after {
+		left: -27px;
+
+		width: 582px;
+		height: 335px;
+	}
+}
+
+@media screen and (max-width: 1190px) {
+	.promo__notification {
+		width: 390px;
+	}
+
+	.promo .waves-icon {
+		top: 255px;
+		left: -207px;
+	}
+
+	.promo__title {
+		font-size: 140px;
+		line-height: 172px;
+	}
+
+	.promo__subtitle {
+		font-size: 31px;
+		line-height: 42px;
+	}
+
+	.promo .big-circle-icon {
+		display: none;
+	}
+
+	.promo__header-background {
+		top: -55px;
+		left: -533px;
+
+		width: 514px;
+		height: 605px;
+	}
+
+	.promo__header-thumb {
+		width: 461px;
+		height: 572px;
+	}
+
+	.promo__header-thumb::after {
+		width: 433px;
+		height: 249px;
+	}
+}
+
+@media screen and (max-width: 1000px) {
+	.promo__notification {
+		width: 210px;
+		padding-right: 0;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.promo {
+		padding-top: 0;
+
+		.two-circle-icon {
+			display: none;
+		}
+
+		.container {
+			// overflow: hidden;
+		}
+	}
+
+	.promo__header-background img {
+		height: 100%;
+	}
+
+	.promo__header-wrapper {
+		flex-wrap: wrap-reverse;
+	}
+
+	.promo__header-background {
+		position: relative;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+
+		width: 565px;
+		height: 555px;
+
+		background-image: url('../images/promo/deer-render-table.jpg');
+	}
+
+	.promo__header-right {
+		margin-left: auto;
+	}
+
+	.promo__header-thumb {
+		top: 27px;
+		right: -19px;
+
+		width: 507px;
+		height: 549px;
+	}
+
+	.promo .waves-icon {
+		top: auto;
+		bottom: 168px;
+		left: -171px;
+	}
+
+	.promo__notification {
+		top: 494px;
+
+		width: 210px;
+		width: 217px;
+		height: 88px;
+
+		img {
+			width: 108px;
+		}
+	}
+
+	.promo__header-left {
+		margin: 0 auto;
+		margin-top: 52px;
+	}
+
+	.promo__title {
+		text-align: center;
+
+		font-size: 67px;
+		line-height: 149%;
+	}
+
+	.promo__subtitle {
+		margin-top: 20px;
+
+		text-align: center;
+
+		font-size: 41px;
+		line-height: 149%;
+	}
+
+	.promo__expansion {
+		justify-content: center;
+
+		margin-top: 20px;
+	}
+}
+
+@media screen and (max-width: 620px) {
+	.header__languages {
+		display: none;
+	}
+
+	.header__search {
+		margin-right: 20px;
+		margin-left: 20px;
+	}
+
+	.promo__header-background::before {
+		top: -234px;
+		left: -107px;
+	}
+
+	.promo__header-background {
+		width: 440px;
+		height: 495px;
+	}
+
+	.promo__header-thumb {
+		width: 437px;
+		height: 487px;
+	}
+
+	.promo__notification {
+		top: 420px;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.promo {
+		height: 488px;
+
+		background-image: url('../images/promo/deer-render-table.jpg');
+
+		@include backgroundStyle;
+	}
+
+	.promo .waves-icon,
+	.promo__notification,
+	.promo .button.icon.animate {
+		display: none;
+	}
+
+	.promo__header-background {
+		width: auto;
+		height: auto;
+
+		background-image: none;
+	}
+
+	.promo__header-thumb {
+		display: none;
+	}
+
+	.promo__expansion { width: 100%; }
+	.promo__expansion span { display: none; }
+	.promo__button-install { display: none; }
+
+	.button.promo__button-browse {
+		width: 100%;
+		margin-top: 89px;
+
+		color: #FFF;
+		background-color: $ifm-background-color-button;
+	}
+
+	.promo__title {
+		max-width: 200px;
+
+		text-align: left;
+
+		font-size: 41px;
+		line-height: 149%;
+	}
+
+	.promo__header-left {
+		width: 100%;
+		margin: 0;
+		margin-top: 149px;
+	}
+
+	.promo__subtitle {
+		max-width: 150px;
+		margin-top: -7px;
+
+		text-align: left;
+
+		font-size: 16px;
+
+		font-weight: 900;
+		line-height: 149%;
+	}
+}

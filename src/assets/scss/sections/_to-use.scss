@@ -1,0 +1,93 @@
+@import '../base/constans';
+@import '../base/mixins';
+
+.to-use {
+	position: relative;
+
+	padding-top: 159px;
+	padding-bottom: 100px;
+}
+
+.to-use__list {
+	display: flex;
+	justify-content: space-between;
+
+	margin-top: 119px;
+}
+
+.to-use__item {
+	max-width: 265px;
+}
+
+.to-use__item-title {
+	padding-top: 30px;
+
+	color: $ifm-primary-color;
+
+	font-size: 16px;
+	font-weight: 900;
+	line-height: 24px;
+}
+
+.to-use__item-link {
+	text-decoration: none;
+
+	&:hover {
+		text-decoration: none;
+
+		.to-use__item-title {
+			color: $ifm-link-hover;
+		}
+	}
+}
+
+.to-use__item-img {
+	width: 265px;
+	height: 148px;
+
+	background: #EAF0F0;
+
+	@include backgroundStyle;
+}
+
+.to-use__join {
+	position: relative;
+
+	display: flex;
+	justify-content: center;
+
+	margin-top: 102px;
+
+	p {
+		max-width: 546px;
+		margin-right: 40px;
+		margin-bottom: 0;
+
+		color: $ifm-primary-color;
+
+		font-size: 16px;
+		line-height: 24px;
+	}
+
+	&::after,
+	&::before {
+		position: absolute;
+		top: 50%;
+
+		width: 220px;
+		height: 1px;
+
+		content: '';
+		transform: translateX(-50%);
+
+		background-color: $ifm-secondary-color;
+	}
+
+	&::before {
+		left: 117px;
+	}
+
+	&::after {
+		right: -102px;
+	}
+}

@@ -1,0 +1,61 @@
+@import '../base/mixins';
+@import '../base/constans';
+
+.why-we {
+	margin-top: 53px;
+	padding-top: 134px;
+	padding-bottom: 118px;
+
+	background-image: url('../images/bg/why-we-bg.jpg');
+
+	@include backgroundStyle;
+}
+
+.why-we__wrapper {
+	display: flex;
+	justify-content: space-between;
+}
+
+.why-we__list {
+	max-width: 560px;
+	margin-right: 59px;
+	padding-top: 190px;
+}
+
+.why-we__item {
+	position: relative;
+
+	color: $ifm-primary-color;
+
+	font-size: 25px;
+	line-height: 37px;
+
+	&:not(:last-child) {
+		margin-bottom: 80px;
+	}
+
+	&::before {
+		position: absolute;
+		top: 50%;
+		left: -38px;
+
+		width: 4px;
+		height: 74px;
+
+		content: '';
+		transform: translateY(-50%) rotate(20deg);
+
+		background-color: #588CA3;
+	}
+}
+
+.why-we__mustache {
+	display: inline-block;
+
+	width: 55px;
+	height: 19px;
+
+	background-image: url('../images/icons/mustache-icon.svg');
+
+	@include backgroundStyle;
+}

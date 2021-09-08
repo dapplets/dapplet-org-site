@@ -10,13 +10,17 @@
 
 .to-use__list {
 	display: flex;
-	justify-content: space-between;
+	flex-wrap: wrap;
 
 	margin-top: 119px;
 }
 
 .to-use__item {
 	max-width: 265px;
+
+	&:not(:last-child) {
+		margin-right: 80px;
+	}
 }
 
 .to-use__item-title {
@@ -42,7 +46,7 @@
 }
 
 .to-use__item-img {
-	width: 265px;
+	width: 100%;
 	height: 148px;
 
 	background: #EAF0F0;

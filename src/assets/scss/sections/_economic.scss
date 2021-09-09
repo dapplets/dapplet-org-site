@@ -1,0 +1,117 @@
+@import '../base/constans';
+
+.economic {
+	padding-top: 61px;
+	padding-bottom: 48px;
+
+	.two-triangles-1 {
+		z-index: -1;
+		right: -110px;
+		bottom: 111px;
+	}
+
+	.big-circle-icon {
+		top: -221px;
+		left: -381px;
+	}
+
+	.mini-circle-icon {
+		top: -4px;
+		left: -81px;
+	}
+
+	.waves-icon {
+		z-index: -1;
+		right: -12px;
+		bottom: 1px;
+
+		transform: rotate(45deg);
+	}
+
+	.many-straight-lines-icon {
+		z-index: -1;
+		bottom: -237px;
+		left: -152px;
+	}
+
+	.extra-large-circle-icon {
+		z-index: -1;
+		top: -290px;
+		left: -440px;
+	}
+
+	.big-circle-icon--2 {
+		top: 442px;
+		left: -273px;
+	}
+}
+
+.economic__top {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+	padding: 0 48px;
+}
+
+.economic__bottom {
+	position: relative;
+}
+
+.economic__list {
+	display: flex;
+
+	flex-wrap: wrap;
+	justify-content: space-between;
+
+	margin-top: 47px;
+}
+
+.economic__item {
+	position: relative;
+
+	display: flex;
+	align-items: baseline;
+	flex-direction: column;
+	justify-content: space-between;
+
+	max-width: 610px;
+	min-height: 100%;
+	margin-right: 10px;
+	margin-bottom: 35px;
+	margin-left: 10px;
+	padding: 21px 28px;
+
+	background-color: $ifm-background-economic;
+
+	&::after {
+		position: absolute;
+		top: 0;
+		right: 0;
+
+		content: '';
+
+		border-top: 100px solid #FFF;
+		border-left: 100px solid transparent;
+	}
+}
+
+.economic__item-title {
+	margin-bottom: 0;
+
+	color: $ifm-secondary-color;
+
+	font-size: 41px;
+	font-weight: 900;
+	line-height: 149%;
+}
+
+.economic__item-line {
+	display: block;
+
+	max-width: 400px;
+	height: 1px;
+	margin: 20px 0;
+
+	background: $ifm-primary-color;
+}

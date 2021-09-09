@@ -9,7 +9,8 @@
 .two-crosses,
 .many-small-lines,
 .mini-circle-icon,
-.many-small-lines-white {
+.many-small-lines-white,
+.extra-large-circle-icon {
 	position: absolute;
 	z-index: 2;
 
@@ -86,4 +87,11 @@
 	height: 45px;
 
 	background-image: url('../images/bg-icon/many-small-lines-white.svg');
+}
+
+.extra-large-circle-icon {
+	width: 523px;
+	height: 612px;
+
+	background-image: url('../images/bg-icon/extra-large-circle-icon.svg');
 }

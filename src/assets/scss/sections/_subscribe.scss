@@ -1,0 +1,54 @@
+@import '../base/mixins';
+@import '../base/constans';
+
+.subscribe {
+	padding: 69px 0;
+
+	background-image: url('../images/bg/subscribe-bg.jpg');
+
+	@include backgroundStyle;
+}
+
+.subscribe__wrapper {
+	display: flex;
+	align-items: center;
+}
+
+.subscribe__title {
+	width: 100%;
+	max-width: 366px;
+	margin-right: 50px;
+
+	color: $ifm-primary-color;
+
+	font-size: 41px;
+	font-weight: 900;
+	line-height: 61px;
+}
+
+.subscribe__socials {
+	display: flex;
+
+	margin-left: 50px;
+}
+
+.subscribe__social {
+	&:not(:last-child) {
+		margin-right: 20px;
+	}
+
+	&:hover svg path {
+		fill: $ifm-link-hover;
+	}
+}
+
+.subscribe__form {
+	display: flex;
+	align-items: center;
+
+	width: 100%;
+}
+
+.subscribe__button {
+	margin-left: 20px;
+}

@@ -1,0 +1,104 @@
+@import '../base/mixins';
+
+.crypto {
+	padding-top: 268px;
+	padding-bottom: 100px;
+
+	.many-straight-lines-icon {
+		z-index: -1;
+		top: -297px;
+		right: -167px;
+
+		transform: rotate(90deg);
+	}
+
+	.waves-icon {
+		z-index: -1;
+		top: -65px;
+		right: 455px;
+
+		transform: rotate(225deg);
+	}
+
+	.many-small-lines {
+		right: -122px;
+		bottom: 115px;
+	}
+
+	.many-small-lines-white {
+		right: 465px;
+		bottom: 73px;
+	}
+}
+
+.crypto__wrapper {
+	position: relative;
+
+	display: flex;
+	justify-content: space-between;
+}
+
+.crypto__description {
+	margin-top: 42px;
+	margin-left: 9px;
+}
+
+.crypto__right {
+	position: relative;
+
+	margin-top: -104px;
+}
+
+.crypto__list {
+	max-width: 611px;
+	padding-top: 15px;
+	padding-left: 39px;
+}
+
+.crypto__item.text {
+	position: relative;
+
+	&:not(:last-child) {
+		margin-bottom: 41px;
+	}
+
+	&::before {
+		position: absolute;
+		top: 50%;
+		left: -20px;
+
+		width: 10px;
+		height: 10px;
+
+		content: '';
+		transform: translateY(-50%);
+
+		border-radius: 50%;
+		background-color: #747376;
+	}
+}
+
+.crypto__right-img {
+	position: relative;
+
+	width: 610px;
+	height: 760px;
+
+	background-image: url('../images/crypto/mustache.jpg');
+
+	&::before {
+		position: absolute;
+		z-index: -1;
+		top: -19px;
+		left: 28px;
+
+		width: 99%;
+		height: 99%;
+
+		content: '';
+
+		border: 1px solid #E3E3E3;
+	}
+
+	@include backgroundStyle;
+}

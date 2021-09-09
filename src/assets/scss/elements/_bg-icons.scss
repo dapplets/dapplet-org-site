@@ -8,7 +8,8 @@
 .two-triangles-2,
 .two-crosses,
 .many-small-lines,
-.mini-circle-icon {
+.mini-circle-icon,
+.many-small-lines-white {
 	position: absolute;
 	z-index: 2;
 
@@ -78,4 +79,11 @@
 	height: 18px;
 
 	background-image: url('../images/bg-icon/mini-circle-icon.svg');
+}
+
+.many-small-lines-white {
+	width: 284px;
+	height: 45px;
+
+	background-image: url('../images/bg-icon/many-small-lines-white.svg');
 }

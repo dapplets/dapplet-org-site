@@ -1,3 +1,10 @@
+@media (max-width: 1547px) {
+	.to-use .two-triangles-1 {
+		top: 43px;
+		right: 102px;
+	}
+}
+
 @media (max-width: 1290px) {
 	.to-use__join::after,
 	.to-use__join::before {
@@ -23,7 +30,24 @@
 
 @media (max-width: 768px) {
 	.to-use {
+		overflow: hidden;
+
 		padding-top: 122px;
+	}
+
+	.to-use .big-circle-icon,
+	.to-use .mini-circle-icon {
+		display: none;
+	}
+
+	.to-use .waves-icon {
+		top: -116px;
+		left: 404px;
+	}
+
+	.to-use .two-triangles-1 {
+		top: 120px;
+		right: -130px;
 	}
 
 	.to-use__list {
@@ -96,7 +120,14 @@
 
 @media (max-width: 480px) {
 	.to-use {
+		overflow: visible;
+
 		padding-top: 0;
+	}
+
+	.to-use .waves-icon,
+	.to-use .two-triangles-1 {
+		display: none;
 	}
 
 	.to-use__title {

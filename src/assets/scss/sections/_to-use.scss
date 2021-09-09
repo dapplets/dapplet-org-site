@@ -6,6 +6,34 @@
 
 	padding-top: 159px;
 	padding-bottom: 100px;
+
+	.waves-icon {
+		z-index: -1;
+		top: -53px;
+		left: 94px;
+
+		transform: rotateX(180deg);
+	}
+
+	.two-triangles-1 {
+		z-index: -1;
+		top: 43px;
+		right: -98px;
+	}
+
+	.big-circle-icon {
+		top: 95px;
+		left: -342px;
+	}
+
+	.mini-circle-icon {
+		top: 75px;
+		left: -43px;
+	}
+}
+
+.to-use__wrapper {
+	position: relative;
 }
 
 .to-use__list {

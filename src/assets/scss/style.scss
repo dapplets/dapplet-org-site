@@ -18,6 +18,7 @@
 @import './sections/crypto';
 @import './sections/subscribe';
 @import './sections/economic';
+@import './sections/footer';
 
 // ELEMENTS
 @import './elements/button';
@@ -39,6 +40,7 @@
 @import './adaptive/crypto';
 @import './adaptive/subscribe';
 @import './adaptive/economic';
+@import './adaptive/footer';
 
 body {
 	font-family: "Montserrat", sans-serif;

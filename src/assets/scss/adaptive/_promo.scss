@@ -244,6 +244,15 @@
 
 		color: #FFF;
 		background-color: $ifm-background-color-button;
+
+		&:hover {
+			color: #FFF;
+			background-color: $ifm-button-hover;
+		}
+
+		&:active {
+			background-color: $ifm-button-active;
+		}
 	}
 
 	.promo__title {

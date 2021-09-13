@@ -22,6 +22,8 @@
 
 	display: block;
 
+	opacity: 0.2;
+
 	@include backgroundStyle;
 }
 
@@ -107,6 +109,7 @@
 	width: 208px;
 	height: 208px;
 
+	opacity: 1;
 	background-image: url('../images/bg-icon/big-cross.svg');
 }
 

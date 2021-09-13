@@ -23,12 +23,36 @@
 
 		font-size: 16px;
 		line-height: 149%;
+
+		&:hover,
+		&:focus {
+			background-color: $ifm-button-hover;
+		}
+
+		&:active {
+			background-color: $ifm-button-active;
+		}
 	}
 
 	&.border {
 		color: $ifm-color-button;
 		border: 1px solid $ifm-color-button;
 		background-color: transparent;
+
+		&:hover,
+		&:focus {
+			color: $ifm-button-hover;
+			border-color: $ifm-button-hover;
+			background-color: transparent;
+		}
+
+		&:active,
+		&:focus {
+			color: $ifm-button-active;
+
+			border-color: $ifm-button-active;
+			background-color: transparent;
+		}
 	}
 
 	&.center {
@@ -48,12 +72,8 @@
 		padding: 12px 24px;
 	}
 
-	&:hover {
-		box-shadow: 0 3px 4px rgba(0, 0, 0, 0.09), 0 10px 8px rgba(38, 117, 209, 0.04);
-	}
-
-	&:active {
-		transform: translateY(2px);
+	&:focus {
+		outline: none;
 	}
 }
 

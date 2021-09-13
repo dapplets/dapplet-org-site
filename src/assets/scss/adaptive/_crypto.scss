@@ -117,6 +117,11 @@
 		max-width: 100%;
 		padding-left: 41px;
 	}
+
+	.crypto .two-circle-icon {
+		right: 21px;
+		bottom: -160px;
+	}
 }
 
 @media (max-width: 480px) {
@@ -167,5 +172,15 @@
 
 	.crypto__description {
 		margin-top: 19px;
+	}
+
+	.crypto .many-small-lines {
+		right: -232px;
+		bottom: 115px;
+	}
+
+	.crypto .two-circle-icon,
+	.crypto .middle-circle-1 {
+		display: none;
 	}
 }

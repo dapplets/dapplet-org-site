@@ -28,6 +28,10 @@
 		height: 598px;
 	}
 
+	.innovation .big-cross {
+		display: none;
+	}
+
 	.innovation__right {
 		margin-top: 175px;
 	}
@@ -35,6 +39,15 @@
 	.innovation .waves-icon {
 		top: -349px;
 		right: 4px;
+	}
+
+	.innovation .waves-icon-2 {
+		right: -93px;
+		bottom: -96px;
+
+		display: block;
+
+		transform: rotateX(180deg);
 	}
 }
 
@@ -46,7 +59,19 @@
 
 @media screen and (max-width: 768px) {
 	.innovation {
+		overflow: hidden;
+
 		padding-top: 157px;
+	}
+
+	.innovation .waves-icon,
+	.innovation .two-triangles-2 {
+		display: block;
+	}
+
+	.innovation .two-triangles-2 {
+		top: -147px;
+		left: -99px;
 	}
 
 	.innovation__wrapper {
@@ -75,10 +100,6 @@
 
 	.innovation__left {
 		margin-right: 0;
-	}
-
-	.innovation .two-triangles-2 {
-		left: 457px;
 	}
 }
 

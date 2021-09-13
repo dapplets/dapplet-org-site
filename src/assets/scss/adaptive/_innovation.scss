@@ -3,6 +3,10 @@
 		right: -48px;
 	}
 
+	.innovation .two-triangles-2 {
+		display: none;
+	}
+
 	.innovation .waves-icon {
 		right: 104px;
 	}
@@ -59,7 +63,8 @@
 		right: -26px;
 	}
 
-	.many-straight-lines-icon {
+	.innovation .many-straight-lines-icon,
+	.innovation .middle-circle {
 		display: none;
 	}
 
@@ -70,6 +75,10 @@
 
 	.innovation__left {
 		margin-right: 0;
+	}
+
+	.innovation .two-triangles-2 {
+		left: 457px;
 	}
 }
 

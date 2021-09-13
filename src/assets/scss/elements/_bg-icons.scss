@@ -10,7 +10,12 @@
 .many-small-lines,
 .mini-circle-icon,
 .many-small-lines-white,
-.extra-large-circle-icon {
+.extra-large-circle-icon,
+.big-cross,
+.middle-circle,
+.middle-circle-1,
+.middle-circle-2,
+.triangle {
 	position: absolute;
 	z-index: 2;
 
@@ -94,4 +99,27 @@
 	height: 612px;
 
 	background-image: url('../images/bg-icon/extra-large-circle-icon.svg');
+}
+
+.big-cross {
+	width: 208px;
+	height: 208px;
+
+	background-image: url('../images/bg-icon/big-cross.svg');
+}
+
+.middle-circle,
+.middle-circle-1,
+.middle-circle-2 {
+	width: 63px;
+	height: 63px;
+
+	background-image: url('../images/bg-icon/middle-circle.svg');
+}
+
+.triangle {
+	width: 131px;
+	height: 131px;
+
+	background-image: url('../images/bg-icon/triangle.svg');
 }

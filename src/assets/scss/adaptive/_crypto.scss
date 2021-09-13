@@ -14,6 +14,10 @@
 	.crypto__left {
 		margin-right: 20px;
 	}
+
+	.crypto .two-circle-icon {
+		right: 0;
+	}
 }
 
 @media (max-width: 1420px) {
@@ -50,7 +54,8 @@
 
 @media (max-width: 985px) {
 	.many-straight-lines-icon,
-	.waves-icon {
+	.waves-icon,
+	.triangle {
 		display: none;
 	}
 

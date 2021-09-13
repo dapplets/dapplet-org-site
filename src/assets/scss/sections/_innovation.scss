@@ -27,9 +27,23 @@
 		transform: rotate(133deg);
 	}
 
-	.two-triangles-1 {
-		top: 44px;
-		right: -147px;
+	.two-triangles-2 {
+		z-index: -1;
+		top: 34px;
+		left: 580px;
+
+		transform: rotate(180deg);
+	}
+
+	.big-cross {
+		right: 5px;
+		bottom: -220px;
+	}
+
+	.middle-circle {
+		z-index: -1;
+		top: 282px;
+		left: 1px;
 	}
 }
 

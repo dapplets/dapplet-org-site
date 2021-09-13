@@ -1,13 +1,17 @@
 @import '../base/mixins';
 
 .crypto {
+	position: relative;
+
+	overflow: hidden;
+
 	padding-top: 268px;
 	padding-bottom: 87px;
 
 	.many-straight-lines-icon {
 		z-index: -1;
-		top: -297px;
-		right: -167px;
+		top: -173px;
+		right: -185px;
 
 		transform: rotate(90deg);
 	}
@@ -28,6 +32,42 @@
 	.many-small-lines-white {
 		right: 465px;
 		bottom: 73px;
+	}
+
+	.two-circle-icon {
+		right: -158px;
+		bottom: -59px;
+
+		transform: rotate(180deg);
+	}
+
+	.triangle {
+		top: -6px;
+		left: -133px;
+	}
+
+	.big-cross {
+		bottom: 189px;
+		left: -81px;
+	}
+
+	.middle-circle-1 {
+		bottom: 14px;
+		left: -39px;
+
+		width: 107px;
+		height: 107px;
+	}
+
+	.big-circle-icon {
+		top: 218px;
+		right: -315px;
+	}
+
+	.middle-circle-2 {
+		z-index: -1;
+		right: -73px;
+		bottom: 306px;
 	}
 }
 

@@ -26,9 +26,16 @@
 		left: -342px;
 	}
 
-	.mini-circle-icon {
-		top: 75px;
-		left: -43px;
+	.two-circle-icon {
+		top: 40px;
+		left: -84px;
+
+		transform: rotateX(180deg);
+	}
+
+	.two-crosses {
+		top: -60px;
+		left: -27px;
 	}
 }
 

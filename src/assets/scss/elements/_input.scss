@@ -31,4 +31,17 @@
 	&:focus + .header__search-icon svg path {
 		fill: $ifm-input-color-focus;
 	}
+
+	&.error {
+		color: $ifm-input-error;
+		border-color: $ifm-input-error;
+
+		&::placeholder {
+			color: $ifm-input-error;
+		}
+	}
+}
+
+div.mce_inline_error {
+	display: none !important;
 }

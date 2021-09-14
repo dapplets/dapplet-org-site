@@ -469,10 +469,12 @@
         </h3>
 
         <!-- SUBSCRIBE__FORM -->
-        <form class="subscribe__form">
+        <form class="subscribe__form" data-mailchimp>
+
           <label class="label">
-            <input type="text" class="input subscribe__input" placeholder="Your e-mail address">
+            <input type="email" class="input subscribe__input" placeholder="Your e-mail address">
           </label>
+
           <button class="button expansion subscribe__button">Subscribe</button>
         </form>
 
@@ -665,10 +667,12 @@
           </div>
 
           <!-- FOOTER__FORM -->
-          <form class="footer__form">
-            <label class="label">
-              <input type="text" class="input footer__input" placeholder="Subscribe to our news">
+          <form class="footer__form" data-mailchimp>
+            <label class="mc-field-group label">
+              <input type="email" value="" name="EMAIL" class="required email input footer__input"
+                placeholder="Your e-mail address">
             </label>
+
             <button class="button expansion footer__button">Subscribe</button>
           </form>
 
@@ -865,8 +869,7 @@
     </div>
   </footer>
 
-  <script
-    id="mcjs">!function (c, h, i, m, p) { m = c.createElement(h), p = c.getElementsByTagName(h)[0], m.async = 1, m.src = i, p.parentNode.insertBefore(m, p) }(document, "script", "https://chimpstatic.com/mcjs-connected/js/users/cd322894ccdf61c34acfd187b/539d1eedf9b15186acf2a521c.js");</script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
   <script src="./assets/js/script.js"></script>
 </body>
 

@@ -9,15 +9,15 @@ function isCheckError({ target }) {
     : null;
 }
 
-function getInputs() {
+function success() {
   const inputs = document.querySelectorAll('.input');
-  inputs.forEach(clearInput);
-}
 
-function clearInput(input) {
-  return input.classList.contains('valid')
-    ? input.value = ''
-    : null;
+  inputs.forEach(input => {
+    if (input.classList.contains('valid')) {
+      const getForm = input.parentNode.parentNode;
+      getForm.classList.add('success');
+    }
+  });
 }
 
 $('form[data-mailchimp]').ajaxChimp({
@@ -26,14 +26,14 @@ $('form[data-mailchimp]').ajaxChimp({
 });
 
 function callbackFunction(response) {
+
   switch (response.result) {
     case "error": {
       // msg: '0 - Please enter a value'
     }
 
     case "success": {
-      // msg: 'Thank you for subscribing!'
-      getInputs();
+      success();
     }
   }
 }

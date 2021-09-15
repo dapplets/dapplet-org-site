@@ -2,7 +2,8 @@
 @import '../base/constans';
 
 .subscribe {
-	padding: 69px 0;
+	min-height: 587px;
+	padding: 94px 0;
 
 	background-image: url('../images/bg/subscribe-bg.jpg');
 
@@ -10,6 +11,8 @@
 }
 
 .subscribe__wrapper {
+	position: relative;
+
 	display: flex;
 	align-items: center;
 }
@@ -51,4 +54,41 @@
 
 .subscribe__button {
 	margin-left: 20px;
+}
+
+.subscribe__description {
+	display: block;
+
+	margin: 200px auto 0 auto;
+
+	text-align: center;
+
+	color: $ifm-primary-color;
+
+	font-size: 41px;
+	font-weight: 900;
+	line-height: 149%;
+}
+
+.subscribe__description--1 {
+	display: none;
+}
+
+.subscribe__link {
+	position: absolute;
+	top: 122px;
+	left: 60px;
+
+	width: 460px;
+	height: 231px;
+
+	opacity: 0;
+
+	background-image: url('../images/mustache-hover.png');
+
+	&:hover {
+		opacity: 1;
+	}
+
+	@include backgroundStyle;
 }

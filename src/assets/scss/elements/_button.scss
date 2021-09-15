@@ -2,9 +2,13 @@
 @import '../base/animate';
 
 .button {
+	position: relative;
+
 	display: flex;
 	align-items: center;
 	justify-content: center;
+
+	cursor: pointer;
 
 	border: none;
 	background-color: transparent;
@@ -86,6 +90,7 @@
 	height: 20px;
 
 	transform: rotate(90deg);
+	pointer-events: none;
 
 	border-radius: 50px;
 	background-color: $ifm-button-check-bg;
@@ -99,17 +104,40 @@
 		height: 16px;
 
 		content: '';
+		transform: rotate(-90deg);
 
 		border-radius: 100%;
 
 		background-color: #FFF;
 	}
+}
 
-	&.active {
+.button-checkbox {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+
+	width: 100%;
+	height: 100%;
+
+	cursor: pointer;
+
+	opacity: 0;
+
+	&:checked + .button-check {
 		background-color: $ifm-button-check-bg-active;
 
 		&::after {
 			transform: translateX(-70%);
 		}
 	}
+}
+
+.button-link {
+	display: block;
+
+	width: 100%;
+	height: 100%;
 }

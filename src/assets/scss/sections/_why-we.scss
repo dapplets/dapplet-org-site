@@ -8,6 +8,10 @@
 
 	background-image: url('../images/bg/why-we-bg.jpg');
 
+	&.augment-image {
+		background-image: url('../images/bg/why-we-bg-aug.jpg');
+	}
+
 	@include backgroundStyle;
 }
 

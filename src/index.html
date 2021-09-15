@@ -21,7 +21,7 @@
 
 <body>
   <!-- HEADER -->
-  <header class="header">
+  <header class="header" id="header">
 
     <!-- HEADER__TOP -->
     <div class="header__top">
@@ -140,7 +140,7 @@
   </header>
 
   <!-- PROMO -->
-  <section class="promo">
+  <section class="promo" id="promo">
     <span class="big-circle-icon"></span>
     <span class="two-circle-icon"></span>
     <span class="waves-icon"></span>
@@ -175,7 +175,7 @@
           <!-- PROMO__HEADER-RIGHT -->
           <div class="promo__header-right">
             <div class="promo__header-image">
-              <div class="promo__header-background"></div>
+              <div class="promo__header-background" data-augment-image></div>
               <div class="promo__header-thumb"></div>
             </div>
           </div>
@@ -184,14 +184,16 @@
       </div>
 
       <button class="button icon center animate">
-        <img src="./assets/images/icons/chevron-down.svg" alt="Arrow Bottom">
+        <a href="#what-is" class="button-link">
+          <img src="./assets/images/icons/chevron-down.svg" alt="Arrow Bottom">
+        </a>
       </button>
     </header>
 
   </section>
 
   <!-- WHAT-IS -->
-  <section class="what-is">
+  <section class="what-is" id="what-is">
     <span class="big-circle-icon"></span>
     <span class="many-straight-lines-icon"></span>
     <span class="two-triangles-1"></span>
@@ -203,7 +205,7 @@
 
         <!-- WHAT-IS__LEFT -->
         <div class="what-is__left">
-          <div class="what-is__left-img"></div>
+          <div class="what-is__left-img" data-augment-image></div>
           <span class="many-small-lines"></span>
           <span class="two-crosses"></span>
           <span class="two-triangles-2"></span>
@@ -236,7 +238,8 @@
             </p>
           </div>
 
-          <button class="button expansion border augment wight-900 what-is__button">
+          <button class="button expansion border augment wight-900 what-is__button" data-augment>
+            <input type="checkbox" class="button-checkbox">
             Augment Us!
             <span class="button-check"></span>
           </button>
@@ -247,7 +250,7 @@
   </section>
 
   <!-- WHY-WE -->
-  <section class="why-we">
+  <section class="why-we" data-augment-image id="why-we">
     <div class="container">
 
       <!-- WHY-WE__WRAPPER -->
@@ -281,7 +284,7 @@
   </section>
 
   <!-- INNOVATION -->
-  <section class="innovation">
+  <section class="innovation" id="innovation">
     <div class="container">
 
       <!-- INNOVATION__WRAPPER -->
@@ -342,7 +345,7 @@
   </section>
 
   <!-- TO-USE -->
-  <section class="to-use">
+  <section class="to-use" id="to-use">
     <div class="container">
 
       <!-- USE__WRAPPER -->
@@ -396,7 +399,7 @@
   </section>
 
   <!-- Crypto -->
-  <section class="crypto">
+  <section class="crypto" id="crypto">
     <span class="big-cross"></span>
     <span class="middle-circle-1"></span>
 
@@ -459,7 +462,7 @@
   </section>
 
   <!-- SUBSCRIBE  -->
-  <div class="subscribe">
+  <div class="subscribe" id="subscribe">
     <div class="container">
 
       <!-- SUBSCRIBE__WRAPPER -->
@@ -515,7 +518,7 @@
   </div>
 
   <!-- ECONOMIC -->
-  <section class="economic">
+  <section class="economic" id="economic">
     <div class="container">
 
       <!-- ECONOMIC__TOP -->
@@ -652,7 +655,7 @@
   </section>
 
   <!-- FOOTER -->
-  <footer class="footer">
+  <footer class="footer" id="footer">
 
     <!-- FOOTER__TOP -->
     <div class="footer__top">

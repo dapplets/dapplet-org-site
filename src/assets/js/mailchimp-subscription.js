@@ -9,6 +9,17 @@ function isCheckError({ target }) {
     : null;
 }
 
+function getInputs() {
+  const inputs = document.querySelectorAll('.input');
+  inputs.forEach(clearInput);
+}
+
+function clearInput(input) {
+  return input.classList.contains('valid')
+    ? input.value = ''
+    : null;
+}
+
 $('form[data-mailchimp]').ajaxChimp({
   url: 'https://dapplets.us5.list-manage.com/subscribe/post?u=cd322894ccdf61c34acfd187b&id=0c9d1e453b',
   callback: callbackFunction
@@ -22,7 +33,7 @@ function callbackFunction(response) {
 
     case "success": {
       // msg: 'Thank you for subscribing!'
+      getInputs();
     }
-
   }
 }

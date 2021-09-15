@@ -13,6 +13,12 @@
 	background-color: $ifm-header-top-background;
 }
 
+.header__main-page:hover {
+	.header__top-logo {
+		transform: translateY(-5px);
+	}
+}
+
 .header__top-logo-mobile {
 	display: none;
 }

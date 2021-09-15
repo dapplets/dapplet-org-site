@@ -1,5 +1,8 @@
 import { currentCopywritingTime } from './copywriting-time';
 import './mailchimp-subscription';
 
-document.addEventListener('DOMContentLoaded', currentCopywritingTime);
+document.addEventListener('DOMContentLoaded', onData);
 
+function onData() {
+  currentCopywritingTime();
+}

@@ -1,0 +1,18 @@
+@import './base';
+
+// SECTION
+@import './sections/header';
+@import './sections/footer';
+@import './document';
+
+// ELEMENTS
+@import './elements/button';
+@import './elements/languages';
+@import './elements/notification';
+@import './elements/hamburger';
+@import './elements/text';
+@import './elements/input';
+
+// ADATPIVE
+@import './adaptive/header';
+@import './adaptive/footer';

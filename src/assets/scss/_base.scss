@@ -1,0 +1,13 @@
+// BASE
+@import './base/_bootstrap-reboot.min.scss';
+@import './base/container';
+@import './base/classes';
+@import './base/transition';
+
+// FONTS
+@import './fonts/_montserrat.scss';
+@import './fonts/_roboto.scss';
+
+body {
+	font-family: "Montserrat", sans-serif;
+}

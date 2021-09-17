@@ -1,4 +1,4 @@
-const augment = document.querySelector('button[data-augment]');
+const augment = document.querySelector('*[data-augment]');
 
 augment.addEventListener('click', (event) => {
   const isChecked = event.target.checked;

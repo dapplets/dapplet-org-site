@@ -1,0 +1,57 @@
+.document {
+	margin-top: 100px;
+
+	h1 {
+		color: #2A2A2A;
+
+		font-size: 50px;
+		font-weight: 900;
+		line-height: 149%;
+	}
+
+	span {
+		color: #747376;
+
+		font-size: 25px;
+		line-height: 149%;
+	}
+
+	p,
+	li {
+		color: #2A2A2A;
+
+		font-size: 16px;
+		line-height: 149%;
+	}
+
+	ul {
+		margin-top: 20px;
+	}
+
+	p {
+		margin-top: 16px;
+		margin-bottom: 0;
+	}
+
+	li {
+		span {
+			font-size: 16px;
+		}
+
+		p {
+			margin-top: 5px;
+
+			&:last-child {
+				margin-bottom: 10px;
+			}
+		}
+	}
+
+	h2 {
+		margin-top: 20px;
+
+		font-size: 40px;
+		font-weight: 900;
+		line-height: 149%;
+	}
+}

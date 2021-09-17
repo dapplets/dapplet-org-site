@@ -86,9 +86,27 @@
 	.to-use__list {
 		flex-direction: column;
 
-		max-width: 354px;
+		max-width: 300px;
 		margin-right: auto;
 		margin-left: auto;
+	}
+
+	.to-use__item-img {
+		&--1 {
+			background-image: url('../images/to-use/1-mobile.jpg');
+		}
+
+		&--2 {
+			background-image: url('../images/to-use/2-mobile.jpg');
+		}
+
+		&--3 {
+			background-image: url('../images/to-use/3-mobile.jpg');
+		}
+
+		&--4 {
+			background-image: url('../images/to-use/4-mobile.jpg');
+		}
 	}
 
 	.to-use .two-crosses {
@@ -96,7 +114,7 @@
 	}
 
 	.to-use__item {
-		max-width: 355px;
+		max-width: 100%;
 	}
 
 	.to-use__item-title {

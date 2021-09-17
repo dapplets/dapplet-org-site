@@ -13,6 +13,10 @@
 	border: none;
 	background-color: transparent;
 
+	&:hover {
+		text-decoration: none;
+	}
+
 	&.icon {
 		padding: 5px;
 	}
@@ -73,7 +77,10 @@
 	}
 
 	&.augment {
-		padding: 12px 24px;
+		max-width: 188px;
+		margin-top: 55px;
+		margin-left: 118px;
+		padding: 12px 17px;
 	}
 
 	&:focus {
@@ -139,5 +146,6 @@
 	display: block;
 
 	width: 100%;
+	max-width: 24px;
 	height: 100%;
 }

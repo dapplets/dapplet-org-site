@@ -1,0 +1,36 @@
+// BASE
+@import './base';
+
+// SECTIONS
+@import './sections/header';
+@import './pages/index/sections/promo';
+@import './pages/index/sections/what-is';
+@import './pages/index/sections/why-we';
+@import './pages/index/sections/innovation';
+@import './pages/index/sections/to-use';
+@import './pages/index/sections/crypto';
+@import './pages/index/sections/subscribe';
+@import './pages/index/sections/economic';
+@import './sections/footer';
+
+// ELEMENTS
+@import './elements/button';
+@import './elements/languages';
+@import './elements/notification';
+@import './elements/hamburger';
+@import './elements/bg-icons';
+@import './elements/title';
+@import './elements/text';
+@import './elements/input';
+
+// MEDIA
+@import './adaptive/header';
+@import './pages/index/adaptive/promo';
+@import './pages/index/adaptive/what-is';
+@import './pages/index/adaptive/why-we';
+@import './pages/index/adaptive/innovation';
+@import './pages/index/adaptive/to-use';
+@import './pages/index/adaptive/crypto';
+@import './pages/index/adaptive/subscribe';
+@import './pages/index/adaptive/economic';
+@import './adaptive/footer';

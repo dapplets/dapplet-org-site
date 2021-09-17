@@ -1,5 +1,24 @@
+@import './base';
+
+// SECTION
+@import './sections/header';
+@import './sections/footer';
+
+// ELEMENTS
+@import './elements/button';
+@import './elements/languages';
+@import './elements/notification';
+@import './elements/hamburger';
+@import './elements/text';
+@import './elements/input';
+
+// ADATPIVE
+@import './adaptive/header';
+@import './adaptive/footer';
+
 .document {
 	margin-top: 100px;
+	margin-bottom: 100px;
 
 	h1 {
 		color: #2A2A2A;

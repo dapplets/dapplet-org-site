@@ -8,8 +8,7 @@
 	bottom: 0;
 
 	max-width: 416px;
-	min-height: 394px;
-	padding: 25px 50px;
+	padding: 25px;
 
 	background: #FFF;
 
@@ -44,8 +43,8 @@
 	margin-top: 10px;
 }
 
-.cookies-read {
-	border: none !important;
+.cookies__text-mobile {
+	display: none;
 }
 
 .cookies__description {
@@ -68,5 +67,15 @@
 
 	&:hover {
 		color: $ifm-link-hover;
+	}
+}
+
+@media (max-width: 480px) {
+	.cookies__description p {
+		display: none;
+	}
+
+	.cookies__text-mobile {
+		display: block !important;
 	}
 }

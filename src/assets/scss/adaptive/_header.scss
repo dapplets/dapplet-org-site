@@ -52,12 +52,6 @@
 	.header__navbar {
 		display: none;
 	}
-}
-
-@media screen and (max-width: 480px) {
-	.header__top {
-		height: 80px;
-	}
 
 	.header__top-logo {
 		display: none;
@@ -66,8 +60,19 @@
 	.header__top-logo-mobile {
 		display: block;
 
-		width: 44px;
-		height: 39px;
+		height: 62px;
+		margin-top: 11px;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.header__top {
+		height: 80px;
+	}
+
+	.header__top-logo-mobile {
+		height: 44px;
+		margin-top: 0;
 	}
 
 	.header__top-inner {

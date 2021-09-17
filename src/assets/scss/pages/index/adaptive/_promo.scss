@@ -234,9 +234,15 @@
 		display: none;
 	}
 
-	.promo__expansion { width: 100%; }
+	.promo__expansion {
+		width: 100%;
+		margin-top: 110px;
+	}
 	.promo__expansion span { display: none; }
-	.promo__button-install { display: none; }
+
+	.promo__button-install {
+		width: 100%;
+	}
 
 	.button.promo__button-browse {
 		width: 100%;

@@ -1,16 +1,4 @@
 @media screen and (max-width: 1200px) {
-	.why-we__wrapper {
-		flex-direction: column;
-	}
-
-	.why-we__list {
-		max-width: 100%;
-		padding-top: 50px;
-		padding-left: 50px;
-	}
-}
-
-@media screen and (max-width: 900px) {
 	.why-we {
 		margin-top: 36px;
 		padding-top: 180px;
@@ -21,6 +9,7 @@
 
 	.why-we__wrapper {
 		align-items: center;
+		flex-direction: column;
 	}
 
 	.why-we__title {
@@ -28,7 +17,9 @@
 	}
 
 	.why-we__list {
-		padding-top: 116px;
+		max-width: 100%;
+		padding-top: 50px;
+		padding-left: 50px;
 	}
 }
 

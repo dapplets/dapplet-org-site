@@ -31,28 +31,34 @@
 }
 
 @media (max-width: 1200px) {
-	.crypto__right-img {
-		width: 485px;
-		height: 603px;
+	.crypto {
+		padding-top: 60px;
+		padding-bottom: 53px;
 	}
 
 	.crypto__right {
-		margin-top: 8px;
-	}
-}
-
-@media (max-width: 1075px) {
-	.crypto__right {
-		margin-top: 55px;
+		margin-top: 0;
+		margin-right: 20px;
 	}
 
-	.crypto__right-img {
-		width: 395px;
-		height: 530px;
-	}
-}
+	.crypto__description {
+		margin-left: 0;
 
-@media (max-width: 985px) {
+		.text {
+			max-width: 100%;
+		}
+	}
+
+	.crypto__list {
+		max-width: 100%;
+		padding-left: 41px;
+	}
+
+	.crypto .two-circle-icon {
+		right: 21px;
+		bottom: -160px;
+	}
+
 	.many-straight-lines-icon,
 	.waves-icon,
 	.triangle {
@@ -76,14 +82,6 @@
 		background-image: url('../images/crypto/mustache-table.jpg');
 	}
 
-	.crypto {
-		padding-top: 60px;
-
-		.container {
-			overflow: hidden;
-		}
-	}
-
 	.crypto .many-small-lines {
 		right: -168px;
 		bottom: 295px;
@@ -92,35 +90,6 @@
 	.crypto .many-small-lines-white {
 		right: 548px;
 		bottom: 54px;
-	}
-}
-
-@media (max-width: 900px) {
-	.crypto {
-		padding-top: 0;
-		padding-bottom: 53px;
-	}
-
-	.crypto__right {
-		margin-right: 0;
-	}
-
-	.crypto__description {
-		margin-left: 0;
-
-		.text {
-			max-width: 100%;
-		}
-	}
-
-	.crypto__list {
-		max-width: 100%;
-		padding-left: 41px;
-	}
-
-	.crypto .two-circle-icon {
-		right: 21px;
-		bottom: -160px;
 	}
 }
 
@@ -146,7 +115,7 @@
 	}
 
 	.crypto__right {
-		margin-top: -7px;
+		margin-right: 0;
 	}
 
 	.crypto__left {

@@ -21,9 +21,17 @@
 	}
 }
 
-@media (max-width: 1160px) {
+@media (max-width: 1200px) {
 	.economic {
-		padding-top: 84px;
+		padding-bottom: 33px;
+
+		.big-circle-icon,
+		.mini-circle-icon,
+		.waves-icon,
+		.many-straight-lines-icon,
+		.extra-large-circle-icon {
+			display: none;
+		}
 	}
 
 	.economic__title {
@@ -38,12 +46,6 @@
 		text-align: center;
 	}
 
-	.economic__item {
-		max-width: 496px;
-	}
-}
-
-@media (max-width: 1072px) {
 	.economic__list {
 		flex-direction: column;
 
@@ -52,27 +54,13 @@
 
 	.economic__item {
 		max-width: 100%;
-		min-height: 322px;
+		min-height: 100%;
 		margin-right: 0;
 		margin-left: 0;
 		padding: 20px 22px;
 
 		.text {
 			max-width: 100%;
-		}
-	}
-}
-
-@media (max-width: 900px) {
-	.economic {
-		padding-bottom: 33px;
-
-		.big-circle-icon,
-		.mini-circle-icon,
-		.waves-icon,
-		.many-straight-lines-icon,
-		.extra-large-circle-icon {
-			display: none;
 		}
 	}
 }

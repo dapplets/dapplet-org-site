@@ -1,15 +1,5 @@
 @import '../base/constans';
 
-.hamburger {
-	display: none;
-
-	width: 40px;
-	height: 40px;
-	padding: 12px 10px;
-
-	border: 1px solid $ifm-border-color-hamburger;
-}
-
 .hamburger__item {
 	position: relative;
 
@@ -39,5 +29,31 @@
 
 	&::before {
 		top: 10px;
+	}
+}
+
+.hamburger {
+	display: none;
+
+	width: 40px;
+	height: 40px;
+	padding: 12px 10px;
+
+	border: 1px solid $ifm-border-color-hamburger;
+
+	&.hamburger {
+		.hamburger__item {
+			background-color: transparent;
+
+			&::after {
+				transform: rotate(45deg);
+			}
+
+			&::before {
+				top: 5px;
+
+				transform: rotate(-45deg);
+			}
+		}
 	}
 }

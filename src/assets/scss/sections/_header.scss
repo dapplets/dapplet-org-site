@@ -8,7 +8,7 @@
 .header__top {
 	position: relative;
 
-	height: 50px;
+	height: $ifm-header-top-height;
 
 	background-color: $ifm-header-top-background;
 }

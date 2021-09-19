@@ -1,9 +1,12 @@
+@import '../base/constans';
+
 @media screen and (max-width: 1200px) {
+	$ifm-header-top-height: 80px;
+
 	.header__top {
-		height: 83px;
+		height: $ifm-header-top-height;
 
 		background-color: #FFF;
-
 		box-shadow: 0 3px 4px rgba(0, 0, 0, 0.09), 0 10px 8px rgba(38, 117, 209, 0.04);
 	}
 
@@ -49,9 +52,9 @@
 		padding-left: 0;
 	}
 
-	.header__navbar {
-		display: none;
-	}
+	// .header__navbar {
+	// 	display: none;
+	// }
 
 	.header__top-logo {
 		display: none;
@@ -62,6 +65,136 @@
 
 		height: 62px;
 		margin-top: 11px;
+	}
+
+	// NAVIGATION
+	.header__navbar {
+		position: absolute;
+		z-index: 30;
+		top: $ifm-header-top-height;
+		right: 0;
+
+		display: none;
+
+		width: 100%;
+		max-width: 430px;
+		padding: 40px 0;
+
+		background-color: #F5F5F5;
+		box-shadow: 0 3px 4px rgba(0, 0, 0, 0.09), 0 10px 8px rgba(38, 117, 209, 0.04);
+
+		.container {
+			padding: 0;
+		}
+	}
+
+	.header__nav-list {
+		flex-direction: column;
+
+		margin-left: auto;
+		padding-top: 0;
+
+		text-align: right;
+	}
+
+	.header__nav-item {
+		&:not(:last-child) {
+			margin-right: 0;
+			margin-bottom: 40px;
+		}
+	}
+
+	.header__nav-link {
+		display: block;
+
+		width: 100%;
+		height: 100%;
+		padding: 29px 40px;
+
+		&::after {
+			top: 0;
+			left: 0;
+
+			width: 4px;
+			height: 0;
+		}
+
+		&:hover {
+			background-color: #EBEBEB;
+
+			&::after {
+				width: 4px;
+				height: 100%;
+			}
+		}
+	}
+
+	.header__nav-bottom {
+		display: flex;
+		justify-content: space-between;
+
+		margin-top: 20px;
+		padding: 40px 20px 0;
+
+		border-top: 1px solid #E3E3E3;
+	}
+
+	.header__bottom-list {
+		display: flex;
+
+		max-width: 222px;
+
+		.header__top-item {
+			max-width: 80px;
+		}
+	}
+
+	.header__bottom-socials {
+		display: flex;
+	}
+}
+
+@media (max-width: 750px) {
+	// NAVIGATION
+	.header__navbar {
+		max-width: 320px;
+		padding-top: 0;
+		padding-bottom: 20px;
+	}
+
+	.header__nav-link {
+		padding: 8px 10px;
+	}
+
+	.header__nav-bottom {
+		flex-direction: column;
+
+		padding-right: 60px;
+		padding-left: 60px;
+	}
+
+	.header__bottom-socials {
+		justify-content: space-between;
+
+		margin-top: 20px;
+		margin-right: 0;
+		margin-left: 0;
+	}
+
+	.header__nav-item:not(:last-child) {
+		margin-bottom: 20px;
+	}
+
+	.header__bottom-list {
+		margin: 0 auto;
+
+		.header__top-item:last-child {
+			padding-right: 0;
+
+			&::after {
+				display: none;
+			}
+		}
 	}
 }
 

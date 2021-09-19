@@ -27,7 +27,7 @@
 
 @media screen and (max-width: 1180px) {
 	.what-is {
-		overflow-x: hidden;
+		overflow: hidden;
 
 		padding-top: 88px;
 	}
@@ -91,9 +91,16 @@
 @media (max-width: 700px) {
 	.what-is__left-img {
 		width: 453px;
-		height: 325px;
+		height: 340px;
 
 		background-size: contain;
+	}
+
+	.what-is__left-img::after {
+		top: -41px;
+		right: -67px;
+
+		width: 120px;
 	}
 
 	.what-is__description {
@@ -102,12 +109,17 @@
 }
 
 @media screen and (max-width: 570px) {
-	.what-is__left-img,
 	.what-is .two-triangles-1,
 	.what-is .big-circle-icon,
 	.what-is .two-crosses,
 	.what-is .two-triangles-2,
 	.what-is .many-small-lines {
+		display: none;
+	}
+}
+
+@media (max-width: 515px) {
+	.what-is__left-img {
 		display: none;
 	}
 }

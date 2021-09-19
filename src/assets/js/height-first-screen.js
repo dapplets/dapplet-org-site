@@ -6,8 +6,10 @@
 
     if (vieportWeight <= 480) {
       const height = document.documentElement.clientHeight;
-      $('#promo').css({ height: (height - 80) });
+      return $('#promo').css({ height: (height - 80) });
     }
+
+    $('#promo').css({ height: '100%' });
   }
 
   resize();

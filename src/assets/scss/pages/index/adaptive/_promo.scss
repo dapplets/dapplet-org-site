@@ -159,6 +159,16 @@
 
 		margin-top: 20px;
 	}
+
+	.promo__button-install {
+		display: none;
+	}
+
+	.promo__button-table {
+		display: block !important;
+
+		text-align: center;
+	}
 }
 
 @media screen and (max-width: 620px) {

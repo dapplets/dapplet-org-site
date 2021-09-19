@@ -35,3 +35,14 @@
 @import './pages/index/adaptive/subscribe';
 @import './pages/index/adaptive/economic';
 @import './adaptive/footer';
+
+body {
+	min-height: 100vh;
+
+	/* mobile viewport bug fix */
+	min-height: -webkit-fill-available;
+}
+
+html {
+	height: -webkit-fill-available;
+}

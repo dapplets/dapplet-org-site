@@ -52,10 +52,6 @@
 		padding-left: 0;
 	}
 
-	// .header__navbar {
-	// 	display: none;
-	// }
-
 	.header__top-logo {
 		display: none;
 	}
@@ -67,14 +63,16 @@
 		margin-top: 11px;
 	}
 
+	.header__navbar {
+		display: none;
+	}
+
 	// NAVIGATION
 	.header__navbar {
 		position: absolute;
 		z-index: 30;
 		top: $ifm-header-top-height;
 		right: 0;
-
-		display: none;
 
 		width: 100%;
 		max-width: 430px;

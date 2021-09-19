@@ -23,7 +23,7 @@
 	}
 
 	.promo__header-thumb::after {
-		left: -27px;
+		left: -100px;
 
 		width: 582px;
 		height: 335px;
@@ -73,7 +73,7 @@
 	}
 }
 
-@media screen and (max-width: 1180px) {
+@media screen and (max-width: 1200px) {
 	.promo {
 		padding-top: 0;
 

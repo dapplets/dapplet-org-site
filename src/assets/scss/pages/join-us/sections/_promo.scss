@@ -6,34 +6,19 @@
 
 	padding-top: 29px;
 
-	&::after {
-		position: absolute;
-		z-index: -1;
-		bottom: 118px;
-		left: 50%;
-
-		width: 100%;
-
-		max-width: 1350px;
-		height: 245px;
-
-		content: '';
-		transform: translate(-50%);
-
-		border: 1px solid #E3E3E3;
-	}
-
 	.big-cross {
+		z-index: -1;
 		bottom: 181px;
 		left: -64px;
 	}
 
 	.big-circle-icon {
+		z-index: -1;
 		top: 136px;
 		right: 57px;
 	}
 
-	.many-small-lines {
+	.many-small-lines-white {
 		top: 47px;
 		right: -89px;
 	}
@@ -63,12 +48,32 @@
 	}
 }
 
+.promo__wrapper {
+	position: relative;
+
+	&::after {
+		position: absolute;
+		z-index: -1;
+		bottom: 118px;
+		left: 50%;
+
+		width: 110%;
+
+		max-width: 1350px;
+		height: 245px;
+
+		content: '';
+		transform: translate(-50%);
+
+		border: 1px solid #E3E3E3;
+	}
+}
+
 .promo__inner {
 	position: relative;
 
 	display: flex;
 
-	max-width: 1300px;
 	height: 526px;
 
 	background-image: url('../images/promo/augmented-web.jpg');
@@ -85,14 +90,14 @@
 
 	color: $ifm-primary-color;
 
-	&--primary {
+	&--secondary {
 		letter-spacing: 1.3em;
 
 		font-size: 41px;
 		line-height: 100%;
 	}
 
-	&--secondary {
+	&--primary {
 		letter-spacing: 0.1em;
 
 		font-size: 109px;

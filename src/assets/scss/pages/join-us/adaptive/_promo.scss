@@ -1,0 +1,173 @@
+@media (max-width: 1510px) {
+	.promo .many-small-lines-white {
+		right: -6px;
+	}
+
+	.promo .two-circle-icon {
+		right: 0;
+	}
+}
+
+@media (max-width: 1390px) {
+	.promo__wrapper {
+		padding: 0 20px;
+
+		&::after {
+			width: 100%;
+		}
+	}
+}
+
+@media (max-width: 1300px) {
+	.promo__title--secondary {
+		font-size: 36px;
+	}
+
+	.promo__title--primary {
+		font-size: 100px;
+	}
+}
+
+@media (max-width: 1200px) {
+	.promo {
+		padding-top: 0;
+	}
+
+	.promo .many-straight-lines-mini-icon,
+	.promo .big-circle-icon,
+	.promo .many-small-lines-white,
+	.promo .triangle {
+		display: none;
+	}
+
+	.promo .two-circle-icon {
+		right: -43px;
+		bottom: -86px;
+	}
+
+	.promo__wrapper {
+		max-width: 660px;
+		margin: 0 auto;
+		padding: 0;
+	}
+
+	.promo__wrapper::after {
+		bottom: 69px;
+
+		width: 110%;
+	}
+
+	.promo__button {
+		width: 100%;
+		max-width: 240px;
+		margin-bottom: 16px;
+	}
+
+	.promo__title {
+		margin-bottom: -67px;
+	}
+
+	.promo__inner {
+		min-height: 743px;
+
+		background-image: url('../images/promo/augmented-web-table.png');
+	}
+
+	.promo__title--secondary {
+		letter-spacing: 0.5em;
+	}
+
+	.promo__title--primary {
+		letter-spacing: inherit;
+		text-transform: capitalize;
+
+		font-size: 67px;
+		line-height: 250%;
+	}
+}
+
+@media (max-width: 760px) {
+	.promo .two-circle-icon {
+		right: -23px;
+	}
+
+	.promo__wrapper {
+		&::after {
+			width: 102%;
+		}
+	}
+}
+
+@media (max-width: 707px) {
+	.two-circle-icon,
+	.promo__wrapper::after {
+		display: none;
+	}
+
+	.promo__inner {
+		height: auto;
+		min-height: 457px;
+	}
+
+	.promo__title--primary {
+		font-size: 55px;
+		line-height: 149%;
+	}
+
+	.promo__title--secondary {
+		font-size: 28px;
+	}
+}
+
+@media (max-width: 480px) {
+	.promo .middle-circle {
+		display: none;
+	}
+
+	.promo {
+		.container {
+			padding: 0;
+		}
+	}
+
+	.promo__inner {
+		min-height: 488px;
+
+		background-image: url('../images/promo/augmented-web-mobile.jpg');
+	}
+
+	.promo__title--primary {
+		font-size: 41px;
+	}
+
+	.promo__title--secondary {
+		letter-spacing: 0.15em;
+
+		font-size: 26px;
+		line-height: 149%;
+	}
+
+	.promo__title {
+		margin-bottom: 81px;
+	}
+
+	.promo__buttons {
+		position: absolute;
+		bottom: 4px;
+
+		width: 100%;
+		margin: 0;
+		padding: 0 10px;
+
+		background-color: transparent;
+
+		.button.animate {
+			display: none;
+		}
+	}
+
+	.promo__button {
+		width: 100%;
+		max-width: 100%;
+	}
+}

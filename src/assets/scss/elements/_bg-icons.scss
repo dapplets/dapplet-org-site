@@ -16,13 +16,14 @@
 .middle-circle,
 .middle-circle-1,
 .middle-circle-2,
-.triangle {
+.triangle,
+.many-straight-lines-mini-icon {
 	position: absolute;
 	z-index: 2;
 
 	display: block;
 
-	opacity: 0.2;
+	// opacity: 0.2;
 
 	@include backgroundStyle;
 }
@@ -127,4 +128,11 @@
 	height: 131px;
 
 	background-image: url('../images/bg-icon/triangle.svg');
+}
+
+.many-straight-lines-mini-icon {
+	width: 307px;
+	height: 307px;
+
+	background-image: url('../images/bg-icon/many-straight-lines-mini-icon.svg');
 }

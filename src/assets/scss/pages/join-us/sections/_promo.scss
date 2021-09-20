@@ -22,9 +22,50 @@
 
 		border: 1px solid #E3E3E3;
 	}
+
+	.big-cross {
+		bottom: 181px;
+		left: -64px;
+	}
+
+	.big-circle-icon {
+		top: 136px;
+		right: 57px;
+	}
+
+	.many-small-lines {
+		top: 47px;
+		right: -89px;
+	}
+
+	.many-straight-lines-mini-icon {
+		z-index: -1;
+		top: 10px;
+		left: -174px;
+	}
+
+	.triangle {
+		z-index: 0;
+		top: -60px;
+		right: 3px;
+	}
+
+	.two-circle-icon {
+		right: -92px;
+		bottom: -182px;
+
+		transform: rotate(180deg);
+	}
+
+	.middle-circle {
+		top: 282px;
+		right: -12px;
+	}
 }
 
 .promo__inner {
+	position: relative;
+
 	display: flex;
 
 	max-width: 1300px;
@@ -62,6 +103,8 @@
 }
 
 .promo__buttons {
+	position: relative;
+
 	width: 280px;
 	margin-top: 101px;
 	margin-right: auto;

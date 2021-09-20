@@ -1,0 +1,77 @@
+@import '../../../base/mixins';
+@import '../../../base/constans';
+
+.promo {
+	position: relative;
+
+	padding-top: 29px;
+
+	&::after {
+		position: absolute;
+		z-index: -1;
+		bottom: 118px;
+		left: 50%;
+
+		width: 100%;
+
+		max-width: 1350px;
+		height: 245px;
+
+		content: '';
+		transform: translate(-50%);
+
+		border: 1px solid #E3E3E3;
+	}
+}
+
+.promo__inner {
+	display: flex;
+
+	max-width: 1300px;
+	height: 526px;
+
+	background-image: url('../images/promo/augmented-web.jpg');
+
+	@include backgroundStyle;
+}
+
+.promo__title {
+	margin-top: auto;
+	margin-bottom: -76px;
+
+	text-align: center;
+	text-transform: uppercase;
+
+	color: $ifm-primary-color;
+
+	&--primary {
+		letter-spacing: 1.3em;
+
+		font-size: 41px;
+		line-height: 100%;
+	}
+
+	&--secondary {
+		letter-spacing: 0.1em;
+
+		font-size: 109px;
+
+		font-weight: 900;
+		line-height: 159%;
+	}
+}
+
+.promo__buttons {
+	width: 280px;
+	margin-top: 101px;
+	margin-right: auto;
+	margin-left: auto;
+
+	background-color: #FFF;
+}
+
+.promo__button {
+	margin-right: auto;
+	margin-bottom: 65px;
+	margin-left: auto;
+}

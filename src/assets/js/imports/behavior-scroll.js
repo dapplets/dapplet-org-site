@@ -1,4 +1,4 @@
-const buttonLink = document.querySelector('.button-link');
+const buttonLink = document.querySelector('*[data-click=scroll]');
 
 buttonLink.addEventListener('click', function (event) {
   event.preventDefault();

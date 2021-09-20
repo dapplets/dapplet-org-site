@@ -4,6 +4,7 @@
 // SECTIONS
 @import './sections/header';
 @import './pages/join-us/sections/promo';
+@import './pages/join-us/sections/model';
 @import './sections/footer';
 
 // ELEMENTS
@@ -11,9 +12,12 @@
 @import './elements/languages';
 @import './elements/hamburger';
 @import './elements/input';
+@import './elements/text';
 @import './elements/bg-icons';
+@import './elements/title-pages';
 
 // MEDIA
 @import './adaptive/header';
 @import './pages/join-us/adaptive/promo';
+@import './pages/join-us/adaptive/model';
 @import './adaptive/footer';

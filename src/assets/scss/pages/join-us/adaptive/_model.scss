@@ -1,0 +1,167 @@
+@media (max-width: 1900px) {
+	.model__item::after,
+	.model__item::before {
+		display: none;
+	}
+}
+
+@media (max-width: 1785px) {
+	.model__item {
+		max-width: 825px;
+		min-height: 100%;
+		margin-bottom: 40px;
+
+		background-size: contain;
+	}
+}
+
+@media (max-width: 1670px) {
+	.model__item {
+		max-width: 760px;
+		margin-bottom: 20px;
+	}
+}
+
+@media (max-width: 1536px) {
+	.model__item {
+		max-width: 710px;
+		margin-bottom: 0;
+	}
+}
+
+@media (max-width: 1435px) {
+	.model__item {
+		max-width: 667px;
+	}
+}
+
+@media (max-width: 1350px) {
+	.model .many-small-lines {
+		display: none;
+	}
+
+	.model__list {
+		flex-direction: column;
+	}
+
+	.model__item {
+		max-width: 748px;
+		min-height: 200px;
+		margin-bottom: 40px;
+
+		background-size: cover;
+
+		&--1 {
+			background-image: url('../images/model/1-table.svg');
+		}
+
+		&--2 {
+			background-image: url('../images/model/2-table.svg');
+		}
+
+		&--3 {
+			background-image: url('../images/model/3-table.svg');
+		}
+
+		&--4 {
+			background-image: url('../images/model/4-table.svg');
+		}
+	}
+
+	.model__item-inner.right {
+		margin-left: 0;
+	}
+}
+
+@media (max-width: 1200px) {
+	.model .two-triangles-2,
+	.two-crosses {
+		display: none;
+	}
+
+	.model .waves-icon {
+		top: 25px;
+		right: 0;
+		left: auto;
+	}
+
+	.model {
+		padding-top: 51px;
+	}
+
+	.model__list {
+		margin-top: 40px;
+	}
+
+	.model__item-inner {
+		max-width: 661px;
+		padding: 20px 20px;
+
+		p {
+			max-width: 100%;
+			margin-bottom: 0;
+		}
+	}
+}
+
+@media (max-width: 480px) {
+	.model {
+		overflow-x: hidden;
+
+		padding-top: 42px;
+	}
+
+	.model__wrapper {
+		.container {
+			padding-right: 0;
+		}
+	}
+
+	.model .waves-icon {
+		top: -12px;
+		right: -250px;
+	}
+
+	.model .many-straight-lines-icon {
+		display: none;
+	}
+
+	.model__list {
+		margin-top: 61px;
+	}
+
+	.model__item {
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		justify-content: center;
+
+		background-color: #EAF0F0;
+		background-image: none;
+
+		&::after {
+			top: 0;
+			right: 0;
+			left: auto;
+
+			display: block;
+
+			width: 0;
+			height: 0;
+
+			transform: rotate(0);
+
+			border-top: 50px solid #FFF;
+			border-left: 50px solid transparent;
+			background-image: none;
+		}
+	}
+
+	.model__item-title {
+		font-size: 26px;
+	}
+
+	.model__item-inner {
+		padding: 0 27px 0 10px;
+	}
+}

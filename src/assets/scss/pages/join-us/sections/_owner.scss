@@ -50,6 +50,10 @@
 	position: relative;
 }
 
+.owner__title-pages {
+	max-width: 610px;
+}
+
 .owner__left {
 	max-width: 610px;
 }
@@ -71,12 +75,13 @@
 .owner__item {
 	position: relative;
 
+	width: 140px;
+	height: 140px;
 	margin-bottom: 42px;
 
 	&:not(:last-child)::after {
 		position: absolute;
 		z-index: 1;
-		top: 102px;
 
 		width: 120px;
 		height: 120px;
@@ -87,6 +92,12 @@
 
 		@include backgroundStyle;
 	}
+}
+
+.owner__item--1::after,
+.owner__item--2::after,
+.owner__item--3::after {
+	top: 102px;
 }
 
 .owner__icon {
@@ -142,7 +153,7 @@
 	margin-left: 183px;
 
 	&::after {
-		left: -83px !important;
+		left: -83px;
 
 		transform: rotate(90deg);
 	}

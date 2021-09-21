@@ -1,7 +1,6 @@
-import './copywriting-time';
-import './mailchimp-subscription';
-import './augment-image';
-import './behavior-scroll';
-import './cookies';
-import './height-first-screen';
+import './imports/copywriting-time';
+import './imports/augment-image';
+import './imports/behavior-scroll';
+import './imports/cookies';
+import './imports/height-first-screen';
 

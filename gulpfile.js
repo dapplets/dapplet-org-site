@@ -14,6 +14,7 @@ const browserSync = require('browser-sync').create();
 const dependents = require('gulp-dependents');
 const htmlmin = require('gulp-htmlmin');
 const gulpRename = require('gulp-rename');
+const named = require('vinyl-named');
 
 const src_folder = './src/';
 const src_assets_folder = src_folder + 'assets/';
@@ -55,8 +56,9 @@ gulp.task('scss', () => {
 });
 
 gulp.task('js', () => {
-  return gulp.src([src_assets_folder + 'js/**/*.js'], { since: gulp.lastRun('js') })
+  return gulp.src([src_assets_folder + 'js/*.js'], { since: gulp.lastRun('js') })
     .pipe(plumber())
+    .pipe(named())
     .pipe(webpack({
       mode: 'production'
     }))
@@ -64,7 +66,6 @@ gulp.task('js', () => {
     .pipe(babel({
       presets: ['@babel/env']
     }))
-    .pipe(concat('script.js'))
     .pipe(uglify())
     .pipe(sourcemaps.write('.'))
     .pipe(gulp.dest(dist_assets_folder + 'js'))

@@ -74,6 +74,10 @@
 }
 
 @media screen and (max-width: 1150px) {
+	.button-augment {
+		display: none;
+	}
+
 	.promo {
 		padding-top: 0;
 
@@ -249,10 +253,13 @@
 		width: 100%;
 	}
 
-	.promo__expansion span { display: none; }
-
 	.promo__button-install {
 		width: 100%;
+	}
+
+	.promo__expansion > span,
+	.promo__button-table {
+		display: none !important;
 	}
 
 	.button.promo__button-browse {
@@ -262,9 +269,17 @@
 		color: #FFF;
 		background-color: $ifm-background-color-button;
 
+		svg {
+			display: none;
+		}
+
+		span {
+			border-bottom: none;
+		}
+
 		&:hover {
 			color: #FFF;
-			background-color: $ifm-button-hover;
+			border-bottom: none;
 		}
 
 		&:active {

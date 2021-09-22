@@ -1,0 +1,85 @@
+@import '../../../base/mixins';
+
+.lister {
+	overflow-x: hidden;
+
+	padding-top: 35px;
+	padding-bottom: 50px;
+}
+
+.lister__item {
+	position: relative;
+
+	width: 100%;
+	max-width: 610px;
+	min-height: 200px;
+
+	&:not(:last-child) {
+		margin-bottom: 80px;
+	}
+
+	&::before {
+		position: absolute;
+
+		z-index: -1;
+		top: 10px;
+		left: -20px;
+
+		width: 100%;
+		height: 100%;
+
+		content: '';
+
+		background-image: url('../images/lister/border.svg');
+
+		@include backgroundStyle;
+	}
+
+	&--1 {
+		background-image: url('../images/lister/1.png');
+	}
+
+	&--2 {
+		background-image: url('../images/lister/2.png');
+	}
+
+	&--3 {
+		background-image: url('../images/lister/3.png');
+	}
+
+	@include backgroundStyle;
+}
+
+.lister__wrapper {
+	display: flex;
+	justify-content: space-between;
+}
+
+.lister__left {
+	width: 100%;
+	max-width: 610px;
+	margin-right: 40px;
+}
+
+.lister__right {
+	padding-top: 91px;
+}
+
+.lister__description {
+	margin-top: 51px;
+}
+
+.lister__button {
+	margin-top: 50px;
+}
+
+.lister__title-pages {
+	.title-pages--secondary {
+		right: auto;
+		left: 3px;
+
+		width: 168%;
+
+		text-align: center;
+	}
+}

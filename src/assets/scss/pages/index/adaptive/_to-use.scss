@@ -60,10 +60,22 @@
 	}
 
 	.to-use__join {
+		align-items: flex-start;
+
 		margin-top: 0;
 	}
 
 	.to-use__join p { max-width: 457px; }
+
+	.to-use__button-install {
+		display: none;
+	}
+
+	.to-use__button-table {
+		display: flex !important;
+
+		min-width: 186px !important;
+	}
 }
 
 @media (max-width: 674px) {

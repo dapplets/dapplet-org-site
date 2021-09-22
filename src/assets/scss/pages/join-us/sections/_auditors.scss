@@ -1,0 +1,114 @@
+@import '../../../base/mixins';
+
+.auditors {
+	position: relative;
+
+	padding-top: 123px;
+	padding-bottom: 90px;
+
+	.big-circle-icon {
+		z-index: -1;
+		top: 422px;
+		right: 5px;
+	}
+
+	.big-cross {
+		bottom: 76px;
+		left: -96px;
+	}
+
+	.two-triangles-1 {
+		z-index: -1;
+		top: 185px;
+		left: -153px;
+
+		transform: rotate(180deg);
+	}
+
+	.many-straight-lines-icon {
+		z-index: -1;
+		top: -70px;
+		right: -152px;
+
+		transform: rotate(90deg);
+	}
+
+	.waves-icon {
+		z-index: -1;
+		top: -169px;
+		left: 352px;
+
+		transform: rotate(133deg);
+	}
+
+	.middle-circle {
+		z-index: -1;
+		right: -54px;
+		bottom: 175px;
+	}
+
+	.two-triangles-2 {
+		top: 38px;
+		right: -267px;
+
+		transform: rotate(180deg);
+	}
+}
+
+.auditors__wrapper {
+	display: flex;
+	justify-content: space-between;
+}
+
+.auditors__left {
+	position: relative;
+
+	max-width: 610px;
+	margin-right: 30px;
+}
+
+.auditors__right {
+	position: relative;
+
+	width: 100%;
+	max-width: 610px;
+	margin-top: -35px;
+}
+
+.auditors__description {
+	margin-top: 52px;
+}
+
+.auditors__title-pages .title-pages--secondary {
+	right: 37px;
+}
+
+.auditors__button {
+	margin-top: 47px;
+}
+
+.auditors__image {
+	position: relative;
+
+	width: 100%;
+	min-height: 750px;
+
+	background-image: url('../images/auditors/auditors.png');
+
+	&::after {
+		position: absolute;
+		top: -19px;
+		left: 14px;
+
+		width: 100%;
+		height: 100%;
+
+		content: '';
+
+		background-image: url('../images/auditors/auditors-border.svg');
+
+		@include backgroundStyle;
+	}
+
+	@include backgroundStyle;
+}

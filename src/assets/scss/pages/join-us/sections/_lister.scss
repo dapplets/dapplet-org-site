@@ -1,10 +1,55 @@
 @import '../../../base/mixins';
 
 .lister {
+	position: relative;
+	z-index: 1;
+
 	overflow-x: hidden;
 
 	padding-top: 35px;
-	padding-bottom: 50px;
+	padding-bottom: 100px;
+
+	.waves-icon {
+		transform: rotate(180deg);
+	}
+
+	.waves-icon--1 {
+		z-index: -1;
+		top: 139px;
+		left: 76px;
+	}
+
+	.waves-icon--2 {
+		z-index: -1;
+		bottom: -78px;
+		left: -64px;
+	}
+
+	.big-cross {
+		z-index: -1;
+		top: -41px;
+		left: 377px;
+	}
+
+	.big-circle-icon {
+		top: 328px;
+		left: -57px;
+	}
+
+	.two-circle-icon {
+		top: 268px;
+		left: 199px;
+
+		transform: rotate(80deg);
+	}
+
+	.two-triangles-2 {
+		z-index: -1;
+		top: 55px;
+		left: 65%;
+
+		display: none;
+	}
 }
 
 .lister__item {
@@ -18,11 +63,31 @@
 		margin-bottom: 80px;
 	}
 
+	&::after {
+		position: absolute;
+		z-index: -1;
+		z-index: 1;
+		bottom: -85px;
+		left: 50%;
+
+		width: 17px;
+		height: 85px;
+
+		content: '';
+		transform: translateX(-50%);
+
+		background-image: url('../images/icons/line-with-polygon-4-lister.svg');
+		background-size: auto !important;
+
+		@include backgroundStyle;
+	}
+
 	&::before {
 		position: absolute;
 
 		z-index: -1;
 		top: 10px;
+
 		left: -20px;
 
 		width: 100%;
@@ -45,6 +110,10 @@
 
 	&--3 {
 		background-image: url('../images/lister/3.png');
+
+		&::after {
+			display: none;
+		}
 	}
 
 	@include backgroundStyle;
@@ -56,12 +125,16 @@
 }
 
 .lister__left {
+	position: relative;
+
 	width: 100%;
 	max-width: 610px;
 	margin-right: 40px;
 }
 
 .lister__right {
+	position: relative;
+
 	padding-top: 91px;
 }
 

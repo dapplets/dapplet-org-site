@@ -1,0 +1,117 @@
+@media (max-width: 1150px) {
+	.lister {
+		overflow: visible;
+
+		padding-top: 30px;
+	}
+
+	.lister__wrapper {
+		flex-direction: column;
+	}
+
+	.lister__left {
+		margin-right: 0;
+	}
+
+	.lister__item:not(:last-child) {
+		margin-bottom: 40px;
+	}
+
+	.lister__item::after {
+		bottom: -50px;
+
+		height: 54px;
+
+		background-image: url('../images/icons/line-with-polygon-4-table.svg');
+	}
+
+	.lister__right {
+		padding-top: 41px;
+	}
+
+	.lister__description {
+		.text {
+			max-width: 100%;
+		}
+	}
+
+	.lister__title-pages {
+		max-width: 310px;
+
+		.title-pages--secondary {
+			bottom: 11px;
+			left: 128px;
+
+			width: auto;
+		}
+	}
+
+	.lister__left,
+	.lister__button {
+		margin-right: auto;
+		margin-left: auto;
+	}
+
+	.lister .waves-icon,
+	.lister .big-cross,
+	.lister .big-circle-icon,
+	.lister .two-circle-icon {
+		display: none;
+	}
+
+	.lister .two-triangles-2 {
+		display: block;
+	}
+}
+
+@media (max-width: 680px) {
+	.lister__item::before {
+		display: none;
+	}
+}
+
+@media (max-width: 510px) {
+	.lister .two-triangles-2 {
+		display: none;
+	}
+}
+
+@media (max-width: 480px) {
+	.lister {
+		padding-top: 10px;
+	}
+
+	.lister__item,
+	.lister__left {
+		max-width: 300px;
+	}
+
+	.lister__item:not(:last-child) {
+		margin-bottom: 20px;
+	}
+
+	.lister__item::after {
+		bottom: -25px;
+
+		height: 25px;
+
+		background-image: url('../images/icons/line-with-polygon-4-mobile.svg');
+	}
+
+	.lister__title-pages .title-pages--secondary {
+		bottom: 4px;
+		left: 89px;
+	}
+
+	.lister__item--1 {
+		background-image: url('../images/lister/1-mobile.png');
+	}
+
+	.lister__item--2 {
+		background-image: url('../images/lister/2-mobile.png');
+	}
+
+	.lister__item--3 {
+		background-image: url('../images/lister/3-mobile.png');
+	}
+}

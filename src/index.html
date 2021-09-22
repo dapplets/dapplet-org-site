@@ -23,6 +23,16 @@
 
 
 <body>
+  <div class="button button-augment" data-augment>
+    <input type="checkbox">
+    <svg width="39" height="12" viewBox="0 0 39 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path
+        d="M38.4984 0C30.136 11.4383 27.033 0.792803 21.9931 0.792803C20.0196 0.792803 19.5 2.35214 19.5 3.03749C19.5 2.35214 18.9828 0.792803 17.0093 0.792803C11.967 0.792803 8.86645 11.4383 0.50158 0C0.340576 12.544 12.5256 15.5218 19.4976 7.66297C26.4744 15.5098 38.6594 12.544 38.4984 0Z"
+        fill="white" />
+    </svg>
+    <span>Augment Us!</span>
+  </div>
+
   <!-- HEADER -->
   <header class="header" id="header">
 
@@ -213,12 +223,28 @@
 
             <div class="promo__expansion">
               <a href="https://github.com/dapplets/dapplet-extension/releases"
-                class="button expansion promo__button-install" target="_blank">Install</a>
+                class="button expansion promo__button-install" target="_blank">
+                Download
+              </a>
+
               <a href="https://github.com/dapplets/dapplet-extension/releases"
-                class="button expansion promo__button-install promo__button-table" target="_blank">Install for
-                Desktop</a>
-              <!-- <span>or</span> -->
-              <!-- <button class="button expansion border promo__button-browse">Browse Dapplets</button> -->
+                class="button expansion promo__button-install promo__button-table" target="_blank">
+                Our Github
+              </a>
+
+              <span>and</span>
+              <a href="https://docs.dapplets.org/docs/installation" class="button promo__button-browse" target="_blank">
+                <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M18.5 13V19C18.5 19.5304 18.2893 20.0391 17.9142 20.4142C17.5391 20.7893 17.0304 21 16.5 21H5.5C4.96957 21 4.46086 20.7893 4.08579 20.4142C3.71071 20.0391 3.5 19.5304 3.5 19V8C3.5 7.46957 3.71071 6.96086 4.08579 6.58579C4.46086 6.21071 4.96957 6 5.5 6H11.5"
+                    stroke="#D9304F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M15.5 3H21.5V9" stroke="#D9304F" stroke-width="1.5" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                  <path d="M10.5 14L21.5 3" stroke="#D9304F" stroke-width="1.5" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+                <span>How to install?</span>
+              </a>
             </div>
           </div>
 
@@ -253,9 +279,7 @@
 
         <!-- WHAT-IS__LEFT -->
         <div class="what-is__left">
-          <div class="what-us__left__inner" data-augment-image>
-            <div class="what-is__left-img"></div>
-          </div>
+          <div class="what-is__left-img"></div>
           <span class="many-small-lines"></span>
           <span class="two-crosses"></span>
           <span class="two-triangles-2"></span>
@@ -286,12 +310,6 @@
               anyone and enables a lot of new augmenting applications, both public goods and commercial. Anyone who
               shares our values can join the project and share our common success.
             </p>
-          </div>
-
-          <div class="button expansion border augment wight-900 what-is__button" data-augment>
-            <input type="checkbox" class="button-checkbox">
-            Augment Us!
-            <span class="button-check"></span>
           </div>
         </div>
 
@@ -444,8 +462,8 @@
           </p>
           <a href="https://github.com/dapplets/dapplet-extension/releases"
             class="button expansion to-use__button-install" target="_blank">Install</a>
-          <a href="https://github.com/dapplets/dapplet-extension/releases"
-            class="button expansion to-use__button-install to-use__button-table" target="_blank">Install for Desktop</a>
+          <a href="https://docs.dapplets.org/docs/installation"
+            class="button expansion to-use__button-install to-use__button-table" target="_blank">How to install?</a>
         </div>
       </div>
     </div>

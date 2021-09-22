@@ -5,11 +5,18 @@ augment.addEventListener('click', (event) => {
   const images = document.querySelectorAll('*[data-augment-image]');
 
   if (isChecked) {
+    replaceText('Stop Augmenting!');
     return images.forEach((item) => replacePicture(item, true));
   }
 
+  replaceText('Augment Us!');
   images.forEach((item) => replacePicture(item, false));
 });
+
+function replaceText(text) {
+  const augmentSpan = augment.querySelector('span');
+  augmentSpan.textContent = text;
+}
 
 function replacePicture(image, state) {
   return state === true

@@ -76,19 +76,19 @@
 	background: #EAF0F0;
 
 	&--1 {
-		background-image: url('../images/to-use/1.jpg');
+		background-image: url('../images/to-use/1.png');
 	}
 
 	&--2 {
-		background-image: url('../images/to-use/2.jpg');
+		background-image: url('../images/to-use/2.png');
 	}
 
 	&--3 {
-		background-image: url('../images/to-use/3.jpg');
+		background-image: url('../images/to-use/3.png');
 	}
 
 	&--4 {
-		background-image: url('../images/to-use/4.jpg');
+		background-image: url('../images/to-use/4.png');
 	}
 
 	@include backgroundStyle;

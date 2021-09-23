@@ -8,6 +8,8 @@
 	width: 100%;
 	height: 2px;
 
+	pointer-events: none;
+
 	background-color: $ifm-border-color-hamburger;
 
 	&::after,
@@ -41,7 +43,7 @@
 
 	border: 1px solid $ifm-border-color-hamburger;
 
-	&.hamburger {
+	&.open {
 		.hamburger__item {
 			background-color: transparent;
 

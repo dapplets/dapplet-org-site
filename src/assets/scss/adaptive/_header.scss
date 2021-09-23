@@ -52,21 +52,6 @@
 		padding-left: 0;
 	}
 
-	.header__top-logo {
-		display: none;
-	}
-
-	.header__top-logo-mobile {
-		display: block;
-
-		height: 62px;
-		margin-top: 11px;
-	}
-
-	// .header__navbar {
-	// 	display: none;
-	// }
-
 	// NAVIGATION
 	.header__navbar {
 		position: absolute;
@@ -160,6 +145,14 @@
 }
 
 @media screen and (max-width: 480px) {
+	.header__top-logo {
+		display: none;
+	}
+
+	.header__top-logo-mobile {
+		display: block;
+	}
+
 	// NAVIGATION
 	.header__navbar {
 		max-width: 320px;

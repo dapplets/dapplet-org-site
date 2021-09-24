@@ -34,16 +34,18 @@
 		}
 	}
 
+	.economic__top {
+		align-items: baseline;
+		flex-direction: column;
+	}
+
 	.economic__title {
 		margin-bottom: 35px;
 	}
 
-	.economic__top {
-		flex-direction: column;
-	}
-
-	.economic__text.text {
-		text-align: center;
+	.economic__text.text,
+	.economic__title {
+		padding-left: 10px;
 	}
 
 	.economic__list {
@@ -99,6 +101,8 @@
 
 	.economic__title {
 		margin-bottom: 20px;
+
+		text-align: left;
 	}
 
 	.ececonomic__item-desctiption {

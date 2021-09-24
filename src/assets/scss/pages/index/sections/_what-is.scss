@@ -78,7 +78,7 @@
 	width: 610px;
 	height: 750px;
 
-	background-image: url('../images/what-is/dogs.png');
+	background-image: url('../images/what-is/dogs.jpg');
 
 	&::before {
 		position: absolute;
@@ -111,4 +111,8 @@
 	}
 
 	@include backgroundStyle;
+}
+
+.what-is__title-mobile {
+	display: none;
 }

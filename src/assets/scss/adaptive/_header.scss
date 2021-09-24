@@ -4,6 +4,8 @@
 	$ifm-header-top-height: 80px;
 
 	.header__top {
+		z-index: 31;
+
 		height: $ifm-header-top-height;
 
 		background-color: #FFF;

@@ -2,9 +2,7 @@
 
   window.addEventListener('resize', resize);
 
-  function resize(event) {
-    console.log('131231');
-
+  function resize() {
     const vieportWeight = document.documentElement.clientWidth;
 
     if (vieportWeight <= 480) {

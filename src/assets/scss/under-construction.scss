@@ -1,0 +1,37 @@
+@import './base';
+@import './base/mixins';
+
+// SECTION
+@import './sections/header';
+@import './sections/footer';
+
+// ELEMENTS
+@import './elements/button';
+@import './elements/languages';
+@import './elements/notification';
+@import './elements/hamburger';
+@import './elements/text';
+@import './elements/input';
+
+// ADATPIVE
+@import './adaptive/header';
+@import './adaptive/footer';
+
+.under-construction {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	width: 100%;
+	min-height: 90vh;
+	margin-top: -54px;
+
+	background-image: url('../../assets/images/bg/under-construction-bg.jpg');
+
+	@include backgroundStyle;
+}
+
+.under-construction__button {
+	max-width: 176px;
+	margin-top: 100px;
+}

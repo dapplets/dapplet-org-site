@@ -2,21 +2,22 @@
   const cookiesAccept = document.querySelector('.cookies-accept');
   document.addEventListener('DOMContentLoaded', hideCookie);
   cookiesAccept.addEventListener('click', accept);
+  const cookieSave = "cookies-accept=true; path=/; expires=Tue, 19 Jan 2038 03:14:07 GMT";
 
   function accept() {
-    document.cookie = 'accept-agreement=true';
+    document.cookie = cookieSave;
     hideCookie();
   }
 
   function hideCookie() {
-    const getCookies = getCookie('accept-agreement');
+    const getCookies = getCookie('cookies-accept');
+    console.log(getCookies);
 
     if (getCookies) {
       const cookies = document.querySelector('#cookies');
       cookies.classList.add('cookies-hide');
     }
   }
-
 
   function getCookie(name) {
     let matches = document.cookie.match(new RegExp(

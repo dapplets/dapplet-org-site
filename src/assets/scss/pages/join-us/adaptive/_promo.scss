@@ -124,16 +124,22 @@
 		display: none;
 	}
 
-	.promo {
-		.container {
-			padding: 0;
-		}
-	}
-
 	.promo__inner {
 		min-height: 488px;
 
 		background-image: url('../images/promo/augmented-web-mobile.jpg');
+	}
+
+	.promo {
+		.container {
+			padding: 0;
+		}
+
+		.container,
+		.promo__wrapper,
+		.promo__inner {
+			height: 100%;
+		}
 	}
 
 	.promo__title--primary {

@@ -30,13 +30,14 @@
 		overflow: hidden;
 
 		padding-top: 88px;
+		padding-bottom: 88px;
 	}
 
 	.what-is__left-img {
 		width: 588px;
 		height: 441px;
 
-		background-image: url('../images/what-is/dogs-table.png');
+		background-image: url('../images/what-is/dogs-table.jpg');
 	}
 
 	.what-is .many-small-lines {
@@ -51,7 +52,7 @@
 	}
 
 	.what-is__right {
-		max-width: 690px;
+		max-width: 100%;
 		margin-top: 66px;
 		margin-left: 0;
 	}
@@ -119,14 +120,37 @@
 }
 
 @media (max-width: 515px) {
-	.what-is__left-img {
+	.what-is {
+		padding-top: 55px;
+		padding-bottom: 11px;
+	}
+
+	.what-is__title {
 		display: none;
 	}
-}
 
-@media screen and (max-width: 480px) {
-	.what-is {
-		padding-top: 3px;
+	.what-is__right {
+		margin-top: 0;
+	}
+
+	.what-is__title-mobile {
+		display: block;
+
+		margin-bottom: 19px;
+	}
+
+	.what-is__left-img {
+		width: 100%;
+		height: 300px;
+		margin-right: 0;
+
+		background-image: url('../images/what-is/dogs-mobile.jpg');
+		background-size: cover;
+
+		&::after,
+		&::before {
+			display: none;
+		}
 	}
 
 	.what-is__description {

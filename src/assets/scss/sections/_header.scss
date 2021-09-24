@@ -14,6 +14,11 @@
 	background-color: $ifm-header-top-background;
 }
 
+.header__top-logo {
+	width: 105px;
+	height: 146px;
+}
+
 .header__main-page:hover {
 	.header__top-logo {
 		transform: translateY(-5px);

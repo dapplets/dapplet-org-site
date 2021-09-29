@@ -153,8 +153,10 @@
 	}
 
 	&::after {
-		opacity: 0;
+		top: 0;
+		left: 0;
 
+		opacity: 0;
 		background-image: url('../images/promo/deer-render-aug.jpg');
 	}
 

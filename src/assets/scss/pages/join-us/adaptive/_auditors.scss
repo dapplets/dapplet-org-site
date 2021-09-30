@@ -42,7 +42,7 @@
 
 	.auditors__right {
 		max-width: 728px;
-		margin-top: 0;
+		margin-top: 28px;
 		margin-right: auto;
 		margin-left: auto;
 	}
@@ -67,6 +67,10 @@
 		margin-right: 0;
 	}
 
+	.auditors__description {
+		margin-top: 12px;
+	}
+
 	.auditors__description .text,
 	.auditors__left {
 		max-width: 100%;
@@ -81,6 +85,8 @@
 	}
 
 	.auditors__title-pages {
+		display: none;
+
 		max-width: 400px;
 	}
 
@@ -92,6 +98,10 @@
 	.auditors .big-cross,
 	.auditors .two-triangles-1 {
 		display: none;
+	}
+
+	.auditors__title-pages-mobile {
+		display: block;
 	}
 }
 

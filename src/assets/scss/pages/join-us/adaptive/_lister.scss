@@ -11,6 +11,7 @@
 	}
 
 	.lister__left {
+		margin-top: 41px;
 		margin-right: 0;
 	}
 
@@ -31,12 +32,16 @@
 	}
 
 	.lister__description {
+		margin-top: 21px;
+
 		.text {
 			max-width: 100%;
 		}
 	}
 
 	.lister__title-pages {
+		display: none;
+
 		max-width: 310px;
 
 		.title-pages--secondary {
@@ -45,6 +50,10 @@
 
 			width: auto;
 		}
+	}
+
+	.lister__title-pages-mobile {
+		display: block;
 	}
 
 	.lister__left,
@@ -62,6 +71,17 @@
 
 	.lister .two-triangles-2 {
 		display: block;
+	}
+
+	.lister__button {
+		max-width: 219px;
+		margin-top: 23px;
+	}
+}
+
+@media (max-width: 768px) {
+	.lister__left {
+		max-width: 689px;
 	}
 }
 

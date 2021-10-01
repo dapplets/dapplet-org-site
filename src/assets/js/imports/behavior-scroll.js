@@ -15,4 +15,3 @@ function behaviorScroll(event) {
     block: 'start'
   });
 }
-

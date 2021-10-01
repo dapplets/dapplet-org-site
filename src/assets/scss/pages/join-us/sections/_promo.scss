@@ -1,0 +1,127 @@
+@import '../../../base/mixins';
+@import '../../../base/constans';
+
+.promo {
+	position: relative;
+
+	padding-top: 29px;
+
+	.big-cross {
+		z-index: -1;
+		bottom: 181px;
+		left: -64px;
+	}
+
+	.big-circle-icon {
+		z-index: -1;
+		top: 136px;
+		right: 57px;
+	}
+
+	.many-small-lines-white {
+		top: 47px;
+		right: -89px;
+	}
+
+	.many-straight-lines-mini-icon {
+		z-index: -1;
+		top: 10px;
+		left: -174px;
+	}
+
+	.triangle {
+		z-index: 0;
+		top: -60px;
+		right: 3px;
+	}
+
+	.two-circle-icon {
+		right: -92px;
+		bottom: -182px;
+
+		transform: rotate(180deg);
+	}
+
+	.middle-circle {
+		top: 282px;
+		right: -12px;
+	}
+}
+
+.promo__wrapper {
+	position: relative;
+
+	&::after {
+		position: absolute;
+		z-index: -1;
+		bottom: 118px;
+		left: 50%;
+
+		width: 110%;
+
+		max-width: 1350px;
+		height: 245px;
+
+		content: '';
+		transform: translate(-50%);
+
+		border: 1px solid #E3E3E3;
+	}
+}
+
+.promo__inner {
+	position: relative;
+
+	display: flex;
+
+	height: 526px;
+
+	background-image: url('../images/promo/augmented-web.jpg');
+
+	@include backgroundStyle;
+}
+
+.promo__title {
+	margin-top: auto;
+	margin-bottom: -76px;
+
+	text-align: center;
+	text-transform: uppercase;
+
+	color: $ifm-primary-color;
+
+	&--secondary {
+		letter-spacing: 1.3em;
+
+		font-size: 41px;
+		font-weight: 400;
+		line-height: 100%;
+	}
+
+	&--primary {
+		letter-spacing: 0.1em;
+
+		font-size: 109px;
+
+		font-weight: 900;
+		line-height: 159%;
+	}
+}
+
+.promo__buttons {
+	position: relative;
+
+	width: 280px;
+	margin-top: 101px;
+	margin-right: auto;
+	margin-left: auto;
+
+	background-color: #FFF;
+}
+
+.promo__button {
+	max-width: 176px;
+	margin-right: auto;
+	margin-bottom: 65px;
+	margin-left: auto;
+}

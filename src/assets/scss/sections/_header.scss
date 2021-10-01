@@ -1,4 +1,5 @@
 @import '../base/constans';
+@import '../base/mixins';
 
 .header {
 	position: relative;
@@ -11,6 +12,11 @@
 	height: $ifm-header-top-height;
 
 	background-color: $ifm-header-top-background;
+}
+
+.header__top-logo {
+	width: 105px;
+	height: 146px;
 }
 
 .header__main-page:hover {
@@ -131,6 +137,16 @@
 	font-size: 16px;
 	line-height: 24px;
 
+	&.active {
+		text-decoration: none;
+
+		color: $ifm-link-hover;
+
+		&::after {
+			width: 100%;
+		}
+	}
+
 	&::after {
 		position: absolute;
 		top: -12px;
@@ -145,7 +161,7 @@
 		background-color: $ifm-link-hover;
 	}
 
-	&:hover {
+	&:not(.active):hover {
 		text-decoration: none;
 
 		color: $ifm-link-hover;

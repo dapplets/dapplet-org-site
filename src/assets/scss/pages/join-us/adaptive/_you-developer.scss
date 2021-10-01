@@ -1,0 +1,27 @@
+@media (max-width: 1150px) {
+	.you-developer {
+		background-image: url('../images/bg/you-developer-table.jpg');
+	}
+}
+
+@media (max-width: 480px) {
+	.you-developer {
+		padding: 71px 0;
+
+		background-image: url('../images/bg/you-developer-mobile.jpg');
+
+		.container {
+			padding: 0;
+		}
+	}
+
+	.you-developer__title {
+		font-size: 26px;
+		font-weight: 900;
+	}
+
+	.you-developer__subtitle {
+		font-size: 14px;
+		font-weight: 400;
+	}
+}

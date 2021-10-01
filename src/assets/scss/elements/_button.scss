@@ -9,6 +9,7 @@
 	justify-content: center;
 
 	cursor: pointer;
+	white-space: nowrap;
 
 	border: none;
 	background-color: transparent;
@@ -91,7 +92,7 @@
 .button-augment {
 	position: fixed;
 	z-index: 20;
-	right: 50px;
+	right: 40px;
 	bottom: 30px;
 
 	padding: 13px 14px;
@@ -128,10 +129,6 @@
 
 	&:active {
 		background-color: $ifm-button-active;
-	}
-
-	&.hide {
-		display: none !important;
 	}
 }
 

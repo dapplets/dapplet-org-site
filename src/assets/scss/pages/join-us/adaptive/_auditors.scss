@@ -1,0 +1,153 @@
+@media (max-width: 1850px) {
+	.auditors .two-triangles-2 {
+		right: -167px;
+	}
+}
+
+@media (max-width: 1655px) {
+	.auditors .two-triangles-2,
+	.many-straight-lines-icon,
+	.waves-icon {
+		display: none;
+	}
+}
+
+@media (max-width: 1430px) {
+	.middle-circle {
+		display: none;
+	}
+}
+
+@media (max-width: 1250px) {
+	.auditors__right {
+		max-width: 512px;
+	}
+
+	.auditors__image {
+		min-height: 632px;
+	}
+}
+
+@media (max-width: 1150px) {
+	.auditors {
+		overflow-x: hidden;
+
+		padding-top: 20px;
+		padding-bottom: 41px;
+	}
+
+	.auditors__wrapper {
+		flex-direction: column-reverse;
+	}
+
+	.auditors__right {
+		max-width: 728px;
+		margin-top: 28px;
+		margin-right: auto;
+		margin-left: auto;
+	}
+
+	.auditors__image {
+		min-height: 380px;
+
+		background-image: url('../images/auditors/auditors-table.png');
+	}
+
+	.auditors__image::after {
+		left: 21px;
+
+		width: 780px;
+		height: 380px;
+
+		background-image: url('../images/auditors/auditors-table-border.svg');
+	}
+
+	.auditors__left {
+		margin-top: 25px;
+		margin-right: 0;
+	}
+
+	.auditors__description {
+		margin-top: 12px;
+	}
+
+	.auditors__description .text,
+	.auditors__left {
+		max-width: 100%;
+	}
+
+	.auditors__button {
+		min-width: 239px !important;
+		margin-top: 38px;
+
+		margin-right: auto;
+		margin-left: auto;
+	}
+
+	.auditors__title-pages {
+		display: none;
+
+		max-width: 400px;
+	}
+
+	.auditors__title-pages .title-pages--secondary {
+		bottom: 11px;
+	}
+
+	.auditors .big-circle-icon,
+	.auditors .big-cross,
+	.auditors .two-triangles-1 {
+		display: none;
+	}
+
+	.auditors__title-pages-mobile {
+		display: block;
+	}
+}
+
+@media (max-width: 760px) {
+	.auditors__image::after {
+		display: none;
+	}
+}
+
+@media (max-width: 480px) {
+	.auditors {
+		padding-top: 16px;
+	}
+
+	.auditors__image {
+		min-height: 280px;
+
+		background-image: url('../images/auditors/auditors-mobile.png');
+	}
+
+	.auditors__right {
+		max-width: 300px;
+	}
+
+	.auditors__image::after {
+		display: block;
+
+		width: 100%;
+		height: 100%;
+
+		background-image: url('../images/auditors/auditors-mobile-border.svg');
+		background-size: auto;
+	}
+
+	.auditors__left {
+		margin-top: 18px;
+	}
+
+	.auditors__title-pages .title-pages--secondary {
+		position: static;
+
+		display: block;
+	}
+
+	.auditors__button {
+		width: 100%;
+		margin-top: 24px;
+	}
+}

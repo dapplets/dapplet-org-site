@@ -130,6 +130,14 @@
 	&:active {
 		background-color: $ifm-button-active;
 	}
+
+	&.hide {
+		visibility: hidden;
+
+		pointer-events: none;
+
+		opacity: 0;
+	}
 }
 
 .button-link {

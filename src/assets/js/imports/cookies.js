@@ -11,7 +11,6 @@
 
   function hideCookie() {
     const getCookies = getCookie('cookies-accept');
-    console.log(getCookies);
 
     if (getCookies) {
       const cookies = document.querySelector('#cookies');

@@ -1,0 +1,66 @@
+@import '../../../base/mixins';
+
+.motivation {
+	padding-top: 123px;
+	padding-bottom: 97px;
+
+	background-color: #EAEDED;
+
+	background-image: url('../IMAGES/bg/motivation-desktop-bg.jpg');
+
+	@include backgroundStyle;
+}
+
+.motivation__title-pages {
+	max-width: 400px;
+
+	.title-pages--secondary {
+		position: relative;
+
+		display: inline-block;
+
+		width: auto;
+
+		text-align: left;
+
+		&::after {
+			z-index: 0;
+			right: 0;
+			left: auto;
+
+			width: 1000%;
+		}
+	}
+}
+
+.motivation__list {
+	max-width: 840px;
+	margin-top: 35px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.motivation__item-number {
+	margin-right: 20px;
+
+	opacity: 0.16;
+	color: #588CA3;
+
+	font-size: 94px;
+	font-weight: 900;
+}
+
+.motivation__item {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+	.text {
+		max-width: 633px;
+		margin-bottom: 0;
+	}
+
+	&:not(:last-child) {
+		margin-bottom: 43px;
+	}
+}

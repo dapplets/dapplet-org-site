@@ -9,7 +9,6 @@ const babel = require('gulp-babel');
 const webpack = require('webpack-stream');
 const uglify = require('gulp-uglify');
 const concat = require('gulp-concat');
-const imagemin = require('gulp-imagemin');
 const browserSync = require('browser-sync').create();
 const dependents = require('gulp-dependents');
 const htmlmin = require('gulp-htmlmin');
@@ -75,7 +74,6 @@ gulp.task('js', () => {
 gulp.task('images', () => {
   return gulp.src([src_assets_folder + 'images/**/*.+(png|jpg|jpeg|gif|svg|ico)'], { since: gulp.lastRun('images') })
     .pipe(plumber())
-    .pipe(imagemin())
     .pipe(gulp.dest(dist_assets_folder + 'images'))
     .pipe(browserSync.stream());
 });

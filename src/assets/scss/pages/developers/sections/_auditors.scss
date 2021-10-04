@@ -1,0 +1,55 @@
+@import '../../../base/mixins';
+
+.auditors {
+	padding-top: 165px;
+	padding-bottom: 139px;
+
+	background-image: url('../images/bg/auditors-bg-desktop.jpg');
+
+	@include backgroundStyle;
+}
+
+.auditors__wrapper {
+	max-width: 610px;
+	margin-left: auto;
+}
+
+.auditors__description {
+	margin-top: 51px;
+
+	.text {
+		max-width: 100%;
+	}
+}
+
+.auditors__title-pages {
+	.title-pages--secondary {
+		position: static;
+
+		display: block;
+
+		width: auto;
+		margin-top: -12px;
+
+		text-align: left;
+
+		&::after {
+			display: none;
+		}
+	}
+}
+
+.auditors__mobile-bg {
+	display: none;
+
+	max-width: 316px;
+	min-height: 260px;
+	margin-top: 40px;
+	margin-right: auto;
+
+	margin-left: auto;
+
+	background-image: url('../images/bg/auditors-bg-mobile.png');
+
+	@include backgroundStyle;
+}

@@ -1,0 +1,52 @@
+@import '../../../base/mixins';
+@import '../../../base/constans';
+
+.promo {
+	position: relative;
+
+	margin-top: 29px;
+	padding-top: 268px;
+	padding-bottom: 54px;
+
+	background-image: url('../images/bg/developers-bg.jpg');
+
+	@include backgroundStyle;
+}
+
+.promo-title {
+	text-align: center;
+	text-transform: uppercase;
+
+	color: $ifm-primary-color;
+
+	font-size: 109px;
+	font-weight: 900;
+
+	span {
+		display: block;
+	}
+
+	&__primary {
+		letter-spacing: 0.1em;
+
+		font-size: 109px;
+	}
+
+	&__secondary {
+		letter-spacing: 1.3em;
+
+		font-size: 41px;
+		font-weight: 400;
+	}
+}
+
+.promo__buttons {
+	margin-top: 136px;
+}
+
+.button.promo__button {
+	max-width: 191px;
+	margin-right: auto;
+	margin-bottom: 54px;
+	margin-left: auto;
+}

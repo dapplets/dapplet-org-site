@@ -38,3 +38,18 @@
 		}
 	}
 }
+
+.auditors__mobile-bg {
+	display: none;
+
+	max-width: 316px;
+	min-height: 260px;
+	margin-top: 40px;
+	margin-right: auto;
+
+	margin-left: auto;
+
+	background-image: url('../images/bg/auditors-bg-mobile.png');
+
+	@include backgroundStyle;
+}

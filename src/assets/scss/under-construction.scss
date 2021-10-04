@@ -18,6 +18,8 @@
 @import './adaptive/footer';
 
 .under-construction {
+	position: relative;
+
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -34,4 +36,35 @@
 .under-construction__button {
 	max-width: 176px;
 	margin-top: 100px;
+}
+
+@media (max-width: 800px) {
+	.under-construction {
+		min-height: 613px;
+
+		background-image: url('../../assets/images/bg/under-construction-table-bg.png');
+	}
+
+	.under-construction__button {
+		position: absolute;
+		bottom: 30px;
+
+		width: 100%;
+
+		max-width: 300px;
+		margin: 0;
+	}
+}
+
+@media (max-width: 480px) {
+	.under-construction {
+		min-height: 37vh;
+		margin-top: -10px;
+
+		background-image: url('../../assets/images/bg/under-construction-mobile-bg.png');
+	}
+
+	.under-construction__button {
+		bottom: 5px;
+	}
 }

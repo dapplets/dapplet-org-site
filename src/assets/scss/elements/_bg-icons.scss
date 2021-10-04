@@ -17,7 +17,8 @@
 .middle-circle-1,
 .middle-circle-2,
 .triangle,
-.many-straight-lines-mini-icon {
+.many-straight-lines-mini-icon,
+.many-straight-lines-white {
 	position: absolute;
 	z-index: 2;
 
@@ -135,4 +136,13 @@
 	height: 307px;
 
 	background-image: url('../images/bg-icon/many-straight-lines-mini-icon.svg');
+}
+
+.many-straight-lines-white {
+	width: 365px;
+	height: 365px;
+
+	opacity: 1;
+
+	background-image: url('../images/bg-icon/many-straight-lines-white.svg');
 }

@@ -1,0 +1,65 @@
+@media (max-width: 1150px) {
+	.whitepapers {
+		padding-bottom: 40px;
+
+		background-image: none;
+	}
+
+	.whitepapers__list {
+		flex-wrap: wrap;
+
+		max-width: 568px;
+	}
+
+	.whitepapers__item {
+		margin-bottom: 40px;
+	}
+
+	.whitepapers__discord {
+		margin-top: 0;
+	}
+}
+
+@media (max-width: 510px) {
+	.whitepapers {
+		padding-top: 31px;
+		padding-bottom: 33px;
+
+		.container {
+			padding: 0;
+		}
+	}
+
+	.whitepapers__img {
+		display: none;
+	}
+
+	.whitepapers__item {
+		margin-bottom: 18px;
+	}
+
+	.whitepapers__list {
+		align-items: center;
+		flex-direction: column;
+
+		margin-top: 21px;
+	}
+
+	.whitepapers__discord {
+		margin-top: 14px;
+	}
+
+	.whitepapers__button {
+		margin-top: 0;
+	}
+
+	.whitepapers__title-primary {
+		font-size: 26px;
+	}
+
+	.whitepapers__title-secandary {
+		margin-top: 16px;
+
+		font-size: 16px;
+	}
+}

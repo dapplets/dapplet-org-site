@@ -1,0 +1,24 @@
+@import '../../../base/constans';
+
+.vote {
+	padding-top: 38px;
+	padding-bottom: 40px;
+
+	background-color: #747376;
+}
+
+.vote__text {
+	text-align: center;
+
+	color: $ifm-primary-color;
+
+	font-size: 41px;
+	font-weight: 400;
+	line-height: 149%;
+}
+
+.vote__button {
+	margin-top: 19px;
+	margin-right: auto;
+	margin-left: auto;
+}

@@ -1,0 +1,62 @@
+@import '../../../base/mixins';
+
+.fractal {
+	padding: 211px 0;
+
+	background-image: url('../images/bg/fractal-bg-desktop.jpg');
+
+	@include backgroundStyle;
+}
+
+.fractal__bg-table {
+	display: none;
+
+	width: 100%;
+	max-width: 768px;
+	min-height: 408px;
+	margin-right: auto;
+	margin-left: auto;
+
+	background-image: url('../images/bg/fractal-bg-table.jpg');
+
+	@include backgroundStyle;
+}
+
+.fractal__wrapper {
+	max-width: 885px;
+	margin-right: auto;
+	margin-left: auto;
+	padding: 0 20px;
+}
+
+.fractal__title-pages {
+	text-align: center;
+
+	.title-pages--secondary {
+		position: static;
+
+		display: block;
+
+		width: auto;
+		margin-top: -8px;
+
+		text-align: center;
+
+		&::after {
+			display: none;
+		}
+	}
+}
+
+.fractal__description {
+	display: block;
+
+	max-width: 597px;
+	margin-top: 49px;
+	margin-right: auto;
+	margin-left: auto;
+
+	.text {
+		max-width: 100%;
+	}
+}

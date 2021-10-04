@@ -1,4 +1,5 @@
 @import '../../../base/mixins';
+@import '../../../base/constans';
 
 .promo {
 	position: relative;
@@ -97,6 +98,7 @@
 }
 
 .promo__button {
+	max-width: 176px;
 	margin-top: 38px;
 }
 
@@ -110,4 +112,10 @@
 	position: relative;
 
 	height: 100%;
+}
+
+.career__link {
+	&:hover {
+		color: $ifm-link-hover;
+	}
 }

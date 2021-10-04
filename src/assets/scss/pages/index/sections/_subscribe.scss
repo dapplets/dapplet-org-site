@@ -5,7 +5,7 @@
 	min-height: 587px;
 	padding: 94px 0;
 
-	background-image: url('../images/bg/subscribe-bg.jpg');
+	background-image: url('../images/bg/subscribe-bg.png');
 
 	@include backgroundStyle;
 }
@@ -72,23 +72,4 @@
 
 .subscribe__description--1 {
 	display: none;
-}
-
-.subscribe__link {
-	position: absolute;
-	top: 122px;
-	left: 60px;
-
-	width: 460px;
-	height: 231px;
-
-	opacity: 0;
-
-	background-image: url('../images/mustache-hover.png');
-
-	&:hover {
-		opacity: 1;
-	}
-
-	@include backgroundStyle;
 }

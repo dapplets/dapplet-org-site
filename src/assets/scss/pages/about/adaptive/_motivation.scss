@@ -38,3 +38,33 @@
 		line-height: 32px;
 	}
 }
+
+@media (max-width: 480px) {
+	.motivation {
+		padding-bottom: 0;
+
+		.container {
+			padding: 0;
+		}
+	}
+
+	.motivation__image {
+		max-width: 320px;
+		min-height: 134px;
+	}
+
+	.motivation__list,
+	.motivation__title-pages {
+		padding: 0 10px;
+	}
+
+	.motivation__image-top {
+		background-image: url('../images/bg/motivation-mobile-top-bg.png');
+	}
+
+	.motivation__image-bottom {
+		margin-top: 16px;
+
+		background-image: url('../images/bg/motivation-mobile-bottom-bg.png');
+	}
+}

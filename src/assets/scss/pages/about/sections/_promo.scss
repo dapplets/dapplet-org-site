@@ -1,0 +1,121 @@
+@import '../../../base/mixins';
+@import '../../../base/constans';
+
+.promo {
+	position: relative;
+
+	overflow: hidden;
+
+	padding-top: 29px;
+	padding-bottom: 70px;
+
+	.big-circle-icon {
+		top: 5px;
+		right: -111px;
+	}
+
+	.middle-circle {
+		bottom: 318px;
+		left: -31px;
+
+		width: 100px;
+		height: 100px;
+	}
+
+	.two-circle-icon {
+		top: 79px;
+		right: 141px;
+
+		transform: rotate(-99deg);
+	}
+
+	.two-crosses--1 {
+		top: 95px;
+		right: -54px;
+
+		transform: rotateX(180deg);
+	}
+
+	.many-small-lines-white {
+		bottom: 61px;
+		left: -16px;
+	}
+
+	.many-straight-lines-white {
+		top: -114px;
+		left: -62px;
+	}
+
+	.two-crosses--2 {
+		bottom: 126px;
+		left: -34px;
+	}
+}
+
+.promo__wrapper {
+	display: flex;
+	justify-content: space-between;
+}
+
+.promo__left {
+	max-width: 610px;
+	margin-top: 132px;
+}
+
+.promo__description {
+	margin-top: 39px;
+
+	.text {
+		max-width: 100%;
+	}
+}
+
+.promo__right {
+	position: relative;
+
+	width: 100%;
+	max-width: 610px;
+}
+
+.promo__img {
+	width: 100%;
+	min-height: 716px;
+
+	background-image: url('../images/promo/abous-us-desktop.png');
+
+	@include imageBorder;
+	@include backgroundStyle;
+
+	&::after {
+		display: none;
+	}
+
+	&::before {
+		top: auto;
+		bottom: -40px;
+		left: 50px;
+	}
+}
+
+.promo__button {
+	max-width: 176px;
+	margin-top: 38px;
+}
+
+.promo__mobile {
+	display: none;
+
+	padding: 0 10px;
+}
+
+.promo__inner {
+	position: relative;
+
+	height: 100%;
+}
+
+.career__link {
+	&:hover {
+		color: $ifm-link-hover;
+	}
+}

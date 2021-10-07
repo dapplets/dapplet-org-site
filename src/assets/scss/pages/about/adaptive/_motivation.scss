@@ -1,0 +1,74 @@
+@media (max-width: 1150px) {
+	.motivation {
+		padding-top: 21px;
+		padding-bottom: 52px;
+
+		background-image: none;
+	}
+
+	.motivation__image {
+		display: block;
+	}
+
+	.motivation__title-pages .title-pages--secondary {
+		position: static;
+
+		display: block;
+	}
+
+	.motivation__list {
+		max-width: 643px;
+		margin-top: 49px;
+		margin-right: 0;
+		margin-left: auto;
+	}
+
+	.motivation__item .text {
+		max-width: 499px;
+	}
+}
+
+@media (max-width: 640px) {
+	.motivation__item {
+		align-items: flex-start;
+	}
+
+	.motivation__list {
+		margin-top: 39px;
+	}
+
+	.motivation__item-number {
+		font-size: 38px;
+		line-height: 32px;
+	}
+}
+
+@media (max-width: 480px) {
+	.motivation {
+		padding-bottom: 0;
+
+		.container {
+			padding: 0;
+		}
+	}
+
+	.motivation__image {
+		max-width: 100%;
+		min-height: 27vh;
+	}
+
+	.motivation__list,
+	.motivation__title-pages {
+		padding: 0 10px;
+	}
+
+	.motivation__image-top {
+		background-image: url('../images/bg/motivation-mobile-top-bg.png');
+	}
+
+	.motivation__image-bottom {
+		margin-top: 16px;
+
+		background-image: url('../images/bg/motivation-mobile-bottom-bg.png');
+	}
+}

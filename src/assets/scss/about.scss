@@ -1,0 +1,29 @@
+@import './base';
+
+// SECTIONS
+@import './sections/header';
+@import './pages/about/sections/promo';
+@import './pages/about/sections/mission';
+@import './pages/about/sections/motivation';
+@import './pages/about/sections/team';
+@import './pages/about/sections/career';
+@import './sections/footer';
+
+// ELEMENTS
+@import './elements/button';
+@import './elements/languages';
+@import './elements/hamburger';
+@import './elements/input';
+@import './elements/text';
+@import './elements/bg-icons';
+@import './elements/title-pages';
+@import './elements/title';
+
+// MEDIA
+@import './adaptive/header';
+@import './pages/about/adaptive/promo';
+@import './pages/about/adaptive/mission';
+@import './pages/about/adaptive/motivation';
+@import './pages/about/adaptive/team';
+@import './pages/about/adaptive/career';
+@import './adaptive/footer';

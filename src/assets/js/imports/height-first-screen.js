@@ -1,18 +1,21 @@
-import $ from 'jquery';
-
-$(document).ready(function () {
+(function () {
   window.addEventListener('resize', resize);
 
-  function resize(event) {
+  function resize() {
     const vieportWeight = document.documentElement.clientWidth;
 
     if (vieportWeight <= 480) {
-      const height = document.documentElement.clientHeight;
-      return $('#promo').css({ height: (height - 80) });
+      const getHeight = document.documentElement.clientHeight;
+      const height = (getHeight - 80) + 'px';
+      return setHeightPromo(height);
     }
 
-    $('#promo').css({ height: '100%' });
+    return setHeightPromo('100%');
+  }
+
+  function setHeightPromo(height) {
+    document.querySelector('#promo').style.height = height;
   }
 
   resize();
-})
+}());

@@ -1,4 +1,6 @@
-(function () {
+import $ from 'jquery';
+
+$(document).ready(function () {
   window.addEventListener('resize', resize);
 
   function resize(event) {
@@ -13,4 +15,4 @@
   }
 
   resize();
-}());
+})

@@ -1,6 +1,7 @@
-import ajaxChimp from 'ajaxchimp';
+import $ from 'jquery';
+import ajaxChimp from './ajaxChimp';
 
-(function () {
+$(document).ready(function () {
   const getInputsSubscription = document.querySelectorAll('.input');
   getInputsSubscription.forEach(item => item.addEventListener('input', isCheckError));
 
@@ -38,4 +39,5 @@ import ajaxChimp from 'ajaxchimp';
       }
     }
   }
-}());
+})
+

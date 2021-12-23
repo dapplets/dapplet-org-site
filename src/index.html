@@ -1,57 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#d9304f" />
+    <meta name="msapplication-TileColor" content="#d9304f" />
+    <meta name="theme-color" content="#ffffff" />
 
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-  <link rel="manifest" href="/site.webmanifest">
-  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#d9304f">
-  <meta name="msapplication-TileColor" content="#d9304f">
-  <meta name="theme-color" content="#ffffff">
+    <meta
+      name="description"
+      content="Dapplets project is an open Augmented Web infrastructure for decentralized Apps (dapplets), all powered by crypto technologies. Our system is open-source and available to developers anywhere in the world"
+    />
 
-  <meta name="description"
-    content="Dapplets project is an open Augmented Web infrastructure for decentralized Apps (dapplets), all powered by crypto technologies. Our system is open-source and available to developers anywhere in the world">
+    <link rel="stylesheet" href="/assets/css/index.min.css" />
+    <title>
+      Dapplets Project - The Home of Augmented Web, powered by Crypto
+    </title>
+  </head>
 
-  <link rel="stylesheet" href="/assets/css/index.min.css">
-  <title>Dapplets Project - The Home of Augmented Web, powered by Crypto</title>
+  <body>
+    <div class="button button-augment" data-augment>
+      <input type="checkbox" />
+      <svg
+        width="39"
+        height="12"
+        viewBox="0 0 39 12"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M38.4984 0C30.136 11.4383 27.033 0.792803 21.9931 0.792803C20.0196 0.792803 19.5 2.35214 19.5 3.03749C19.5 2.35214 18.9828 0.792803 17.0093 0.792803C11.967 0.792803 8.86645 11.4383 0.50158 0C0.340576 12.544 12.5256 15.5218 19.4976 7.66297C26.4744 15.5098 38.6594 12.544 38.4984 0Z"
+          fill="white"
+        />
+      </svg>
+      <span>Augment Us!</span>
+    </div>
 
-</head>
+    <!-- HEADER -->
+    <header class="header" id="header">
+      <!-- HEADER__TOP -->
+      <div class="header__top">
+        <div class="container">
+          <div class="header__top-wrapper">
+            <!-- HEADER__TOP-LEFT -->
+            <div class="header__top-left">
+              <a href="/" class="header__main-page">
+                <img
+                  src="/assets/images/logo.svg"
+                  alt="Dapplets"
+                  class="header__top-logo"
+                />
+                <img
+                  src="/assets/images/logo-mobile.svg"
+                  alt="Dapplets"
+                  class="header__top-logo-mobile"
+                />
+              </a>
 
-
-<body>
-
-  <div class="button button-augment" data-augment>
-    <input type="checkbox">
-    <svg width="39" height="12" viewBox="0 0 39 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path
-        d="M38.4984 0C30.136 11.4383 27.033 0.792803 21.9931 0.792803C20.0196 0.792803 19.5 2.35214 19.5 3.03749C19.5 2.35214 18.9828 0.792803 17.0093 0.792803C11.967 0.792803 8.86645 11.4383 0.50158 0C0.340576 12.544 12.5256 15.5218 19.4976 7.66297C26.4744 15.5098 38.6594 12.544 38.4984 0Z"
-        fill="white" />
-    </svg>
-    <span>Augment Us!</span>
-  </div>
-
-  <!-- HEADER -->
-  <header class="header" id="header">
-
-    <!-- HEADER__TOP -->
-    <div class="header__top">
-      <div class="container">
-
-        <div class="header__top-wrapper">
-
-          <!-- HEADER__TOP-LEFT -->
-          <div class="header__top-left">
-            <a href="/" class="header__main-page">
-              <img src="/assets/images/logo.svg" alt="Dapplets" class="header__top-logo">
-              <img src="/assets/images/logo-mobile.svg" alt="Dapplets" class="header__top-logo-mobile">
-            </a>
-
-            <!-- <div class="header__top-inner">
+              <!-- <div class="header__top-inner">
               <div class="languages header__languages">
                 <span class="languages__active">ENG</span>
                 <ul class="languages__list ul-reset">
@@ -60,7 +72,7 @@
                 </ul>
               </div> -->
 
-            <!-- <button class="button icon header__icon">
+              <!-- <button class="button icon header__icon">
               <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
                   d="M15.445 13.4669L11.666 9.68786C12.2551 8.72092 12.5659 7.61012 12.564 6.47786C12.564 3.06086 9.603 0.100857 6.186 0.100857C5.37361 0.100726 4.56914 0.260642 3.81856 0.571471C3.06799 0.8823 2.38599 1.33795 1.81154 1.9124C1.2371 2.48685 0.781443 3.16884 0.470614 3.91942C0.159785 4.67 -0.000131279 5.47446 8.08612e-08 6.28686C8.08612e-08 9.70286 2.961 12.6639 6.377 12.6639C7.47195 12.6648 8.54731 12.3735 9.492 11.8199L13.291 15.6209C13.4697 15.799 13.7117 15.8991 13.964 15.8991C14.2163 15.8991 14.4583 15.799 14.637 15.6209L15.58 14.6779C15.951 14.3069 15.816 13.8379 15.445 13.4669ZM1.904 6.28686C1.90387 5.72445 2.01453 5.16753 2.22966 4.6479C2.44479 4.12827 2.76018 3.65611 3.15782 3.25838C3.55545 2.86065 4.02754 2.54515 4.54712 2.3299C5.0667 2.11465 5.6236 2.00386 6.186 2.00386C8.552 2.00386 10.66 4.11086 10.66 6.47786C10.6597 7.6137 10.2084 8.70294 9.40525 9.5061C8.60209 10.3093 7.51284 10.7606 6.377 10.7609C4.011 10.7599 1.904 8.65186 1.904 6.28686Z"
@@ -68,7 +80,7 @@
               </svg>
             </button> -->
 
-            <!-- <label class="header__search">
+              <!-- <label class="header__search">
               <input type="text" class="header__search-input" placeholder="Placeholder">
               <span class="header__search-icon">
                 <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -78,641 +90,790 @@
                 </svg>
               </span>
             </label> -->
-            <!-- </div> -->
-          </div>
+              <!-- </div> -->
+            </div>
 
-          <!-- HEADER__TOP-RIGHT -->
-          <div class="header__top-right">
-            <ul class="header__top-list ul-reset">
+            <!-- HEADER__TOP-RIGHT -->
+            <div class="header__top-right">
+              <ul class="header__top-list ul-reset">
+                <li class="header__top-item">
+                  <a href="https://docs.dapplets.org/docs/" target="_blank"
+                    >Docs</a
+                  >
+                </li>
+                <li class="header__top-item">
+                  <a href="#" target="_blank">Forum</a>
+                </li>
+              </ul>
+
+              <ul class="header__top-socials ul-reset">
+                <li class="header__top-social" title="GitHub">
+                  <a
+                    href="https://github.com/dapplets"
+                    class="header__top-social-link"
+                    target="_blank"
+                  >
+                    <svg
+                      width="31"
+                      height="30"
+                      viewBox="0 0 31 30"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M15.7998 30C24.0841 30 30.7998 23.2843 30.7998 15C30.7998 6.71572 24.0841 -3.8147e-06 15.7998 -3.8147e-06C7.51553 -3.8147e-06 0.799805 6.71572 0.799805 15C0.799805 23.2843 7.51553 30 15.7998 30ZM3.79978 15C3.79978 8.37 9.16978 3 15.7998 3C22.4298 3 27.7998 8.37 27.7998 15C27.7991 17.5143 27.0099 19.9651 25.5434 22.0074C24.077 24.0497 22.007 25.5807 19.6248 26.385C19.0248 26.505 18.7998 26.13 18.7998 25.815C18.7998 25.6796 18.8015 25.4452 18.8037 25.1332C18.8081 24.5121 18.8148 23.5833 18.8148 22.515C18.8148 21.39 18.4398 20.67 18.0048 20.295C20.6748 19.995 23.4798 18.975 23.4798 14.37C23.4798 13.05 23.0148 11.985 22.2498 11.145C22.3698 10.845 22.7898 9.615 22.1298 7.965C22.1298 7.965 21.1248 7.635 18.8298 9.195C17.8698 8.925 16.8498 8.79 15.8298 8.79C14.8098 8.79 13.7898 8.925 12.8298 9.195C10.5348 7.65 9.52978 7.965 9.52978 7.965C8.86978 9.615 9.28978 10.845 9.40978 11.145C8.64478 11.985 8.17978 13.065 8.17978 14.37C8.17978 18.96 10.9698 19.995 13.6398 20.295C13.2948 20.595 12.9798 21.12 12.8748 21.9C12.1848 22.215 10.4598 22.725 9.37978 20.91C9.15478 20.55 8.47978 19.665 7.53478 19.68C6.52978 19.695 7.12978 20.25 7.54978 20.475C8.05978 20.76 8.64478 21.825 8.77978 22.17C9.01978 22.845 9.79978 24.135 12.8148 23.58C12.8148 24.2358 12.8212 24.866 12.8256 25.304C12.828 25.5372 12.8298 25.716 12.8298 25.815C12.8298 26.13 12.6048 26.49 12.0048 26.385C7.23478 24.795 3.79978 20.31 3.79978 15Z"
+                        fill="#919191"
+                      />
+                    </svg>
+                  </a>
+                </li>
+                <li class="header__top-social" title="Discord">
+                  <a
+                    href="https://discord.com/invite/YcxbkcyjMV"
+                    class="header__top-social-link"
+                    target="_blank"
+                  >
+                    <svg
+                      width="31"
+                      height="30"
+                      viewBox="0 0 31 30"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M15.7998 30C24.0841 30 30.7998 23.2843 30.7998 15C30.7998 6.71572 24.0841 -3.8147e-06 15.7998 -3.8147e-06C7.51553 -3.8147e-06 0.799805 6.71572 0.799805 15C0.799805 23.2843 7.51553 30 15.7998 30ZM18.9458 6.75182C20.5179 7.01766 22.0213 7.48516 23.4238 8.11766C23.436 8.12253 23.4461 8.13164 23.4522 8.14332C25.9373 11.7385 27.1638 15.7957 26.7054 20.4652C26.7043 20.475 26.7012 20.4845 26.6961 20.4931C26.6911 20.5016 26.6842 20.509 26.6761 20.5147C25.0092 21.729 23.1491 22.6529 21.1743 23.2472C21.1603 23.2514 21.1455 23.2512 21.1317 23.2466C21.1179 23.242 21.1059 23.2333 21.0973 23.2216C20.682 22.6523 20.3043 22.0528 19.9743 21.4231C19.9698 21.4144 19.9673 21.4048 19.9667 21.3951C19.9662 21.3853 19.9678 21.3756 19.9713 21.3664C19.9749 21.3573 19.9804 21.3491 19.9874 21.3423C19.9944 21.3354 20.0027 21.3302 20.0119 21.3268C20.6105 21.105 21.1807 20.8382 21.7288 20.5229C21.7386 20.5171 21.7468 20.509 21.7527 20.4992C21.7585 20.4895 21.7619 20.4784 21.7624 20.4671C21.763 20.4557 21.7607 20.4444 21.7558 20.4342C21.7509 20.4239 21.7435 20.415 21.7343 20.4083C21.6179 20.3231 21.5033 20.2342 21.3933 20.1443C21.3833 20.1363 21.3711 20.1313 21.3583 20.1298C21.3455 20.1284 21.3326 20.1305 21.3209 20.1361C17.7633 21.7531 13.8648 21.7531 10.265 20.1361C10.2534 20.1308 10.2406 20.1289 10.228 20.1305C10.2153 20.1322 10.2034 20.1372 10.1935 20.1452C10.0835 20.2342 9.96801 20.3231 9.85251 20.4083C9.84343 20.4152 9.83619 20.4242 9.83144 20.4345C9.82669 20.4449 9.82459 20.4562 9.82532 20.4676C9.82604 20.4789 9.82958 20.4899 9.8356 20.4996C9.84163 20.5093 9.84996 20.5173 9.85984 20.5229C10.4099 20.8356 10.9837 21.1047 11.5758 21.3277C11.6143 21.3424 11.6327 21.3864 11.6134 21.4231C11.2908 22.0537 10.9131 22.6542 10.4896 23.2225C10.4806 23.2337 10.4685 23.242 10.4548 23.2463C10.441 23.2505 10.4263 23.2506 10.4126 23.2463C8.44115 22.6503 6.58404 21.7269 4.91901 20.5147C4.9111 20.5086 4.9045 20.501 4.89962 20.4924C4.89473 20.4837 4.89166 20.4741 4.89059 20.4642C4.50651 16.4254 5.28843 12.3352 8.14109 8.14149C8.14812 8.13044 8.15835 8.12181 8.17043 8.11674C9.57384 7.48333 11.0772 7.01582 12.6483 6.74999C12.6625 6.74774 12.6771 6.74987 12.69 6.7561C12.7029 6.76232 12.7137 6.77234 12.7208 6.78482C12.9301 7.14986 13.1189 7.52628 13.2863 7.91232C14.9537 7.66321 16.6488 7.66321 18.3161 7.91232C18.4664 7.56399 18.6809 7.12308 18.8734 6.78482C18.8806 6.77249 18.8914 6.76269 18.9044 6.75678C18.9174 6.75087 18.9318 6.74914 18.9458 6.75182ZM10.1743 15.8232C10.1743 17.0249 11.068 18.0048 12.1515 18.0048C13.2524 18.0048 14.1288 17.0258 14.1288 15.8232C14.1462 14.6287 13.2607 13.6415 12.1515 13.6415C11.0506 13.6415 10.1743 14.6205 10.1743 15.8232ZM17.4847 15.8232C17.4847 17.0249 18.3775 18.0048 19.4619 18.0048C20.572 18.0048 21.4392 17.0258 21.4392 15.8232C21.4566 14.6287 20.5711 13.6415 19.4619 13.6415C18.3601 13.6415 17.4847 14.6205 17.4847 15.8232Z"
+                        fill="#919191"
+                      />
+                    </svg>
+                  </a>
+                </li>
+                <li class="header__top-social" title="Telegram">
+                  <a
+                    href="https://t.me/dapplets"
+                    class="header__top-social-link"
+                    target="_blank"
+                  >
+                    <svg
+                      width="31"
+                      height="30"
+                      viewBox="0 0 31 30"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M30.7998 15C30.7998 23.2837 24.0836 30 15.7998 30C7.51606 30 0.799805 23.2837 0.799805 15C0.799805 6.71625 7.51606 -3.8147e-06 15.7998 -3.8147e-06C24.0836 -3.8147e-06 30.7998 6.71625 30.7998 15ZM16.3373 11.0737C14.8786 11.68 11.9623 12.9362 7.5898 14.8412C6.87981 15.1237 6.5073 15.4 6.47355 15.67C6.41605 16.1275 6.98855 16.3075 7.76605 16.5512C7.8723 16.585 7.9823 16.6187 8.0948 16.6562C8.86105 16.905 9.89106 17.1962 10.4261 17.2075C10.9123 17.2175 11.4548 17.0175 12.0536 16.6075C16.1386 13.8487 18.2473 12.455 18.3798 12.425C18.4736 12.4037 18.6036 12.3762 18.6911 12.455C18.7786 12.5325 18.7698 12.68 18.7611 12.72C18.7036 12.9612 16.4611 15.0475 15.2986 16.1275C14.9361 16.4637 14.6798 16.7025 14.6273 16.7575C14.5098 16.8787 14.3898 16.995 14.2748 17.1062C13.5623 17.7912 13.0298 18.3062 14.3048 19.1462C14.9173 19.55 15.4073 19.8837 15.8961 20.2162C16.4298 20.58 16.9623 20.9425 17.6523 21.395C17.8273 21.51 17.9948 21.6287 18.1586 21.745C18.7798 22.1887 19.3386 22.5862 20.0286 22.5237C20.4286 22.4862 20.8436 22.11 21.0536 20.9862C21.5498 18.3287 22.5273 12.5737 22.7536 10.2012C22.7673 10.0043 22.7589 9.80636 22.7286 9.61125C22.7104 9.45366 22.6336 9.30866 22.5136 9.205C22.3348 9.05875 22.0573 9.0275 21.9323 9.03C21.3686 9.04 20.5036 9.34125 16.3373 11.0737Z"
+                        fill="#919191"
+                      />
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+
+              <!-- open -->
+              <div class="hamburger header__hamburger" id="hamburger">
+                <span class="hamburger__item"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- HEADER_NAVIGATION -->
+      <nav class="header__navbar">
+        <div class="container">
+          <ul class="header__nav-list ul-reset">
+            <li class="header__nav-item">
+              <a href="/under-construction.html" class="header__nav-link"
+                >Store</a
+              >
+            </li>
+            <li class="header__nav-item">
+              <a href="/developers.html" class="header__nav-link">Developers</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="/join-us.html" class="header__nav-link">Join Us</a>
+            </li>
+            <li class="header__nav-item">
+              <a
+                href="https://blog.dapplets.org/"
+                class="header__nav-link"
+                target="_blank"
+                >Blog</a
+              >
+            </li>
+            <li class="header__nav-item">
+              <a href="/about.html" class="header__nav-link">About</a>
+            </li>
+          </ul>
+
+          <div class="header__nav-bottom">
+            <ul class="header__top-list header__bottom-list ul-reset">
               <li class="header__top-item">
-                <a href="https://docs.dapplets.org/docs/" target="_blank">Docs</a>
+                <a href="https://docs.dapplets.org/docs/" target="_blank"
+                  >Docs</a
+                >
               </li>
               <li class="header__top-item">
-                <a href="https://forum.dapplets.org/" target="_blank">Forum</a>
+                <a href="#" target="_blank">Forum</a>
               </li>
             </ul>
 
-            <ul class="header__top-socials ul-reset">
+            <ul class="header__top-socials header__bottom-socials ul-reset">
               <li class="header__top-social" title="GitHub">
-                <a href="https://github.com/dapplets" class="header__top-social-link" target="_blank">
-                  <svg width="31" height="30" viewBox="0 0 31 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd"
+                <a
+                  href="https://github.com/dapplets"
+                  class="header__top-social-link"
+                  target="_blank"
+                >
+                  <svg
+                    width="31"
+                    height="30"
+                    viewBox="0 0 31 30"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
                       d="M15.7998 30C24.0841 30 30.7998 23.2843 30.7998 15C30.7998 6.71572 24.0841 -3.8147e-06 15.7998 -3.8147e-06C7.51553 -3.8147e-06 0.799805 6.71572 0.799805 15C0.799805 23.2843 7.51553 30 15.7998 30ZM3.79978 15C3.79978 8.37 9.16978 3 15.7998 3C22.4298 3 27.7998 8.37 27.7998 15C27.7991 17.5143 27.0099 19.9651 25.5434 22.0074C24.077 24.0497 22.007 25.5807 19.6248 26.385C19.0248 26.505 18.7998 26.13 18.7998 25.815C18.7998 25.6796 18.8015 25.4452 18.8037 25.1332C18.8081 24.5121 18.8148 23.5833 18.8148 22.515C18.8148 21.39 18.4398 20.67 18.0048 20.295C20.6748 19.995 23.4798 18.975 23.4798 14.37C23.4798 13.05 23.0148 11.985 22.2498 11.145C22.3698 10.845 22.7898 9.615 22.1298 7.965C22.1298 7.965 21.1248 7.635 18.8298 9.195C17.8698 8.925 16.8498 8.79 15.8298 8.79C14.8098 8.79 13.7898 8.925 12.8298 9.195C10.5348 7.65 9.52978 7.965 9.52978 7.965C8.86978 9.615 9.28978 10.845 9.40978 11.145C8.64478 11.985 8.17978 13.065 8.17978 14.37C8.17978 18.96 10.9698 19.995 13.6398 20.295C13.2948 20.595 12.9798 21.12 12.8748 21.9C12.1848 22.215 10.4598 22.725 9.37978 20.91C9.15478 20.55 8.47978 19.665 7.53478 19.68C6.52978 19.695 7.12978 20.25 7.54978 20.475C8.05978 20.76 8.64478 21.825 8.77978 22.17C9.01978 22.845 9.79978 24.135 12.8148 23.58C12.8148 24.2358 12.8212 24.866 12.8256 25.304C12.828 25.5372 12.8298 25.716 12.8298 25.815C12.8298 26.13 12.6048 26.49 12.0048 26.385C7.23478 24.795 3.79978 20.31 3.79978 15Z"
-                      fill="#919191" />
+                      fill="#919191"
+                    />
                   </svg>
                 </a>
               </li>
               <li class="header__top-social" title="Discord">
-                <a href="https://discord.com/invite/YcxbkcyjMV" class="header__top-social-link" target="_blank">
-                  <svg width="31" height="30" viewBox="0 0 31 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd"
+                <a
+                  href="https://discord.com/invite/YcxbkcyjMV"
+                  class="header__top-social-link"
+                  target="_blank"
+                >
+                  <svg
+                    width="31"
+                    height="30"
+                    viewBox="0 0 31 30"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
                       d="M15.7998 30C24.0841 30 30.7998 23.2843 30.7998 15C30.7998 6.71572 24.0841 -3.8147e-06 15.7998 -3.8147e-06C7.51553 -3.8147e-06 0.799805 6.71572 0.799805 15C0.799805 23.2843 7.51553 30 15.7998 30ZM18.9458 6.75182C20.5179 7.01766 22.0213 7.48516 23.4238 8.11766C23.436 8.12253 23.4461 8.13164 23.4522 8.14332C25.9373 11.7385 27.1638 15.7957 26.7054 20.4652C26.7043 20.475 26.7012 20.4845 26.6961 20.4931C26.6911 20.5016 26.6842 20.509 26.6761 20.5147C25.0092 21.729 23.1491 22.6529 21.1743 23.2472C21.1603 23.2514 21.1455 23.2512 21.1317 23.2466C21.1179 23.242 21.1059 23.2333 21.0973 23.2216C20.682 22.6523 20.3043 22.0528 19.9743 21.4231C19.9698 21.4144 19.9673 21.4048 19.9667 21.3951C19.9662 21.3853 19.9678 21.3756 19.9713 21.3664C19.9749 21.3573 19.9804 21.3491 19.9874 21.3423C19.9944 21.3354 20.0027 21.3302 20.0119 21.3268C20.6105 21.105 21.1807 20.8382 21.7288 20.5229C21.7386 20.5171 21.7468 20.509 21.7527 20.4992C21.7585 20.4895 21.7619 20.4784 21.7624 20.4671C21.763 20.4557 21.7607 20.4444 21.7558 20.4342C21.7509 20.4239 21.7435 20.415 21.7343 20.4083C21.6179 20.3231 21.5033 20.2342 21.3933 20.1443C21.3833 20.1363 21.3711 20.1313 21.3583 20.1298C21.3455 20.1284 21.3326 20.1305 21.3209 20.1361C17.7633 21.7531 13.8648 21.7531 10.265 20.1361C10.2534 20.1308 10.2406 20.1289 10.228 20.1305C10.2153 20.1322 10.2034 20.1372 10.1935 20.1452C10.0835 20.2342 9.96801 20.3231 9.85251 20.4083C9.84343 20.4152 9.83619 20.4242 9.83144 20.4345C9.82669 20.4449 9.82459 20.4562 9.82532 20.4676C9.82604 20.4789 9.82958 20.4899 9.8356 20.4996C9.84163 20.5093 9.84996 20.5173 9.85984 20.5229C10.4099 20.8356 10.9837 21.1047 11.5758 21.3277C11.6143 21.3424 11.6327 21.3864 11.6134 21.4231C11.2908 22.0537 10.9131 22.6542 10.4896 23.2225C10.4806 23.2337 10.4685 23.242 10.4548 23.2463C10.441 23.2505 10.4263 23.2506 10.4126 23.2463C8.44115 22.6503 6.58404 21.7269 4.91901 20.5147C4.9111 20.5086 4.9045 20.501 4.89962 20.4924C4.89473 20.4837 4.89166 20.4741 4.89059 20.4642C4.50651 16.4254 5.28843 12.3352 8.14109 8.14149C8.14812 8.13044 8.15835 8.12181 8.17043 8.11674C9.57384 7.48333 11.0772 7.01582 12.6483 6.74999C12.6625 6.74774 12.6771 6.74987 12.69 6.7561C12.7029 6.76232 12.7137 6.77234 12.7208 6.78482C12.9301 7.14986 13.1189 7.52628 13.2863 7.91232C14.9537 7.66321 16.6488 7.66321 18.3161 7.91232C18.4664 7.56399 18.6809 7.12308 18.8734 6.78482C18.8806 6.77249 18.8914 6.76269 18.9044 6.75678C18.9174 6.75087 18.9318 6.74914 18.9458 6.75182ZM10.1743 15.8232C10.1743 17.0249 11.068 18.0048 12.1515 18.0048C13.2524 18.0048 14.1288 17.0258 14.1288 15.8232C14.1462 14.6287 13.2607 13.6415 12.1515 13.6415C11.0506 13.6415 10.1743 14.6205 10.1743 15.8232ZM17.4847 15.8232C17.4847 17.0249 18.3775 18.0048 19.4619 18.0048C20.572 18.0048 21.4392 17.0258 21.4392 15.8232C21.4566 14.6287 20.5711 13.6415 19.4619 13.6415C18.3601 13.6415 17.4847 14.6205 17.4847 15.8232Z"
-                      fill="#919191" />
+                      fill="#919191"
+                    />
                   </svg>
                 </a>
               </li>
               <li class="header__top-social" title="Telegram">
-                <a href="https://t.me/dapplets" class="header__top-social-link" target="_blank">
-                  <svg width="31" height="30" viewBox="0 0 31 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd"
+                <a
+                  href="https://t.me/dapplets"
+                  class="header__top-social-link"
+                  target="_blank"
+                >
+                  <svg
+                    width="31"
+                    height="30"
+                    viewBox="0 0 31 30"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
                       d="M30.7998 15C30.7998 23.2837 24.0836 30 15.7998 30C7.51606 30 0.799805 23.2837 0.799805 15C0.799805 6.71625 7.51606 -3.8147e-06 15.7998 -3.8147e-06C24.0836 -3.8147e-06 30.7998 6.71625 30.7998 15ZM16.3373 11.0737C14.8786 11.68 11.9623 12.9362 7.5898 14.8412C6.87981 15.1237 6.5073 15.4 6.47355 15.67C6.41605 16.1275 6.98855 16.3075 7.76605 16.5512C7.8723 16.585 7.9823 16.6187 8.0948 16.6562C8.86105 16.905 9.89106 17.1962 10.4261 17.2075C10.9123 17.2175 11.4548 17.0175 12.0536 16.6075C16.1386 13.8487 18.2473 12.455 18.3798 12.425C18.4736 12.4037 18.6036 12.3762 18.6911 12.455C18.7786 12.5325 18.7698 12.68 18.7611 12.72C18.7036 12.9612 16.4611 15.0475 15.2986 16.1275C14.9361 16.4637 14.6798 16.7025 14.6273 16.7575C14.5098 16.8787 14.3898 16.995 14.2748 17.1062C13.5623 17.7912 13.0298 18.3062 14.3048 19.1462C14.9173 19.55 15.4073 19.8837 15.8961 20.2162C16.4298 20.58 16.9623 20.9425 17.6523 21.395C17.8273 21.51 17.9948 21.6287 18.1586 21.745C18.7798 22.1887 19.3386 22.5862 20.0286 22.5237C20.4286 22.4862 20.8436 22.11 21.0536 20.9862C21.5498 18.3287 22.5273 12.5737 22.7536 10.2012C22.7673 10.0043 22.7589 9.80636 22.7286 9.61125C22.7104 9.45366 22.6336 9.30866 22.5136 9.205C22.3348 9.05875 22.0573 9.0275 21.9323 9.03C21.3686 9.04 20.5036 9.34125 16.3373 11.0737Z"
-                      fill="#919191" />
+                      fill="#919191"
+                    />
                   </svg>
                 </a>
               </li>
             </ul>
-
-            <!-- open -->
-            <div class="hamburger header__hamburger" id="hamburger">
-              <span class="hamburger__item"></span>
-            </div>
           </div>
         </div>
-      </div>
-    </div>
-
-    <!-- HEADER_NAVIGATION -->
-    <nav class="header__navbar">
-      <div class="container">
-        <ul class="header__nav-list ul-reset">
-          <li class="header__nav-item">
-            <a href="/under-construction.html" class="header__nav-link">Store</a>
-          </li>
-          <li class="header__nav-item">
-            <a href="/developers.html" class="header__nav-link">Developers</a>
-          </li>
-          <li class="header__nav-item">
-            <a href="/join-us.html" class="header__nav-link">Join Us</a>
-          </li>
-          <li class="header__nav-item">
-            <a href="https://blog.dapplets.org/" class="header__nav-link" target="_blank">Blog</a>
-          </li>
-          <li class="header__nav-item">
-            <a href="/about.html" class="header__nav-link">About</a>
-          </li>
-        </ul>
-
-        <div class="header__nav-bottom">
-          <ul class="header__top-list header__bottom-list ul-reset">
-            <li class="header__top-item">
-              <a href="https://docs.dapplets.org/docs/" target="_blank">Docs</a>
-            </li>
-            <li class="header__top-item">
-              <a href="https://forum.dapplets.org/" target="_blank">Forum</a>
-            </li>
-          </ul>
-
-          <ul class="header__top-socials header__bottom-socials ul-reset">
-            <li class="header__top-social" title="GitHub">
-              <a href="https://github.com/dapplets" class="header__top-social-link" target="_blank">
-                <svg width="31" height="30" viewBox="0 0 31 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M15.7998 30C24.0841 30 30.7998 23.2843 30.7998 15C30.7998 6.71572 24.0841 -3.8147e-06 15.7998 -3.8147e-06C7.51553 -3.8147e-06 0.799805 6.71572 0.799805 15C0.799805 23.2843 7.51553 30 15.7998 30ZM3.79978 15C3.79978 8.37 9.16978 3 15.7998 3C22.4298 3 27.7998 8.37 27.7998 15C27.7991 17.5143 27.0099 19.9651 25.5434 22.0074C24.077 24.0497 22.007 25.5807 19.6248 26.385C19.0248 26.505 18.7998 26.13 18.7998 25.815C18.7998 25.6796 18.8015 25.4452 18.8037 25.1332C18.8081 24.5121 18.8148 23.5833 18.8148 22.515C18.8148 21.39 18.4398 20.67 18.0048 20.295C20.6748 19.995 23.4798 18.975 23.4798 14.37C23.4798 13.05 23.0148 11.985 22.2498 11.145C22.3698 10.845 22.7898 9.615 22.1298 7.965C22.1298 7.965 21.1248 7.635 18.8298 9.195C17.8698 8.925 16.8498 8.79 15.8298 8.79C14.8098 8.79 13.7898 8.925 12.8298 9.195C10.5348 7.65 9.52978 7.965 9.52978 7.965C8.86978 9.615 9.28978 10.845 9.40978 11.145C8.64478 11.985 8.17978 13.065 8.17978 14.37C8.17978 18.96 10.9698 19.995 13.6398 20.295C13.2948 20.595 12.9798 21.12 12.8748 21.9C12.1848 22.215 10.4598 22.725 9.37978 20.91C9.15478 20.55 8.47978 19.665 7.53478 19.68C6.52978 19.695 7.12978 20.25 7.54978 20.475C8.05978 20.76 8.64478 21.825 8.77978 22.17C9.01978 22.845 9.79978 24.135 12.8148 23.58C12.8148 24.2358 12.8212 24.866 12.8256 25.304C12.828 25.5372 12.8298 25.716 12.8298 25.815C12.8298 26.13 12.6048 26.49 12.0048 26.385C7.23478 24.795 3.79978 20.31 3.79978 15Z"
-                    fill="#919191" />
-                </svg>
-              </a>
-            </li>
-            <li class="header__top-social" title="Discord">
-              <a href="https://discord.com/invite/YcxbkcyjMV" class="header__top-social-link" target="_blank">
-                <svg width="31" height="30" viewBox="0 0 31 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M15.7998 30C24.0841 30 30.7998 23.2843 30.7998 15C30.7998 6.71572 24.0841 -3.8147e-06 15.7998 -3.8147e-06C7.51553 -3.8147e-06 0.799805 6.71572 0.799805 15C0.799805 23.2843 7.51553 30 15.7998 30ZM18.9458 6.75182C20.5179 7.01766 22.0213 7.48516 23.4238 8.11766C23.436 8.12253 23.4461 8.13164 23.4522 8.14332C25.9373 11.7385 27.1638 15.7957 26.7054 20.4652C26.7043 20.475 26.7012 20.4845 26.6961 20.4931C26.6911 20.5016 26.6842 20.509 26.6761 20.5147C25.0092 21.729 23.1491 22.6529 21.1743 23.2472C21.1603 23.2514 21.1455 23.2512 21.1317 23.2466C21.1179 23.242 21.1059 23.2333 21.0973 23.2216C20.682 22.6523 20.3043 22.0528 19.9743 21.4231C19.9698 21.4144 19.9673 21.4048 19.9667 21.3951C19.9662 21.3853 19.9678 21.3756 19.9713 21.3664C19.9749 21.3573 19.9804 21.3491 19.9874 21.3423C19.9944 21.3354 20.0027 21.3302 20.0119 21.3268C20.6105 21.105 21.1807 20.8382 21.7288 20.5229C21.7386 20.5171 21.7468 20.509 21.7527 20.4992C21.7585 20.4895 21.7619 20.4784 21.7624 20.4671C21.763 20.4557 21.7607 20.4444 21.7558 20.4342C21.7509 20.4239 21.7435 20.415 21.7343 20.4083C21.6179 20.3231 21.5033 20.2342 21.3933 20.1443C21.3833 20.1363 21.3711 20.1313 21.3583 20.1298C21.3455 20.1284 21.3326 20.1305 21.3209 20.1361C17.7633 21.7531 13.8648 21.7531 10.265 20.1361C10.2534 20.1308 10.2406 20.1289 10.228 20.1305C10.2153 20.1322 10.2034 20.1372 10.1935 20.1452C10.0835 20.2342 9.96801 20.3231 9.85251 20.4083C9.84343 20.4152 9.83619 20.4242 9.83144 20.4345C9.82669 20.4449 9.82459 20.4562 9.82532 20.4676C9.82604 20.4789 9.82958 20.4899 9.8356 20.4996C9.84163 20.5093 9.84996 20.5173 9.85984 20.5229C10.4099 20.8356 10.9837 21.1047 11.5758 21.3277C11.6143 21.3424 11.6327 21.3864 11.6134 21.4231C11.2908 22.0537 10.9131 22.6542 10.4896 23.2225C10.4806 23.2337 10.4685 23.242 10.4548 23.2463C10.441 23.2505 10.4263 23.2506 10.4126 23.2463C8.44115 22.6503 6.58404 21.7269 4.91901 20.5147C4.9111 20.5086 4.9045 20.501 4.89962 20.4924C4.89473 20.4837 4.89166 20.4741 4.89059 20.4642C4.50651 16.4254 5.28843 12.3352 8.14109 8.14149C8.14812 8.13044 8.15835 8.12181 8.17043 8.11674C9.57384 7.48333 11.0772 7.01582 12.6483 6.74999C12.6625 6.74774 12.6771 6.74987 12.69 6.7561C12.7029 6.76232 12.7137 6.77234 12.7208 6.78482C12.9301 7.14986 13.1189 7.52628 13.2863 7.91232C14.9537 7.66321 16.6488 7.66321 18.3161 7.91232C18.4664 7.56399 18.6809 7.12308 18.8734 6.78482C18.8806 6.77249 18.8914 6.76269 18.9044 6.75678C18.9174 6.75087 18.9318 6.74914 18.9458 6.75182ZM10.1743 15.8232C10.1743 17.0249 11.068 18.0048 12.1515 18.0048C13.2524 18.0048 14.1288 17.0258 14.1288 15.8232C14.1462 14.6287 13.2607 13.6415 12.1515 13.6415C11.0506 13.6415 10.1743 14.6205 10.1743 15.8232ZM17.4847 15.8232C17.4847 17.0249 18.3775 18.0048 19.4619 18.0048C20.572 18.0048 21.4392 17.0258 21.4392 15.8232C21.4566 14.6287 20.5711 13.6415 19.4619 13.6415C18.3601 13.6415 17.4847 14.6205 17.4847 15.8232Z"
-                    fill="#919191" />
-                </svg>
-              </a>
-            </li>
-            <li class="header__top-social" title="Telegram">
-              <a href="https://t.me/dapplets" class="header__top-social-link" target="_blank">
-                <svg width="31" height="30" viewBox="0 0 31 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M30.7998 15C30.7998 23.2837 24.0836 30 15.7998 30C7.51606 30 0.799805 23.2837 0.799805 15C0.799805 6.71625 7.51606 -3.8147e-06 15.7998 -3.8147e-06C24.0836 -3.8147e-06 30.7998 6.71625 30.7998 15ZM16.3373 11.0737C14.8786 11.68 11.9623 12.9362 7.5898 14.8412C6.87981 15.1237 6.5073 15.4 6.47355 15.67C6.41605 16.1275 6.98855 16.3075 7.76605 16.5512C7.8723 16.585 7.9823 16.6187 8.0948 16.6562C8.86105 16.905 9.89106 17.1962 10.4261 17.2075C10.9123 17.2175 11.4548 17.0175 12.0536 16.6075C16.1386 13.8487 18.2473 12.455 18.3798 12.425C18.4736 12.4037 18.6036 12.3762 18.6911 12.455C18.7786 12.5325 18.7698 12.68 18.7611 12.72C18.7036 12.9612 16.4611 15.0475 15.2986 16.1275C14.9361 16.4637 14.6798 16.7025 14.6273 16.7575C14.5098 16.8787 14.3898 16.995 14.2748 17.1062C13.5623 17.7912 13.0298 18.3062 14.3048 19.1462C14.9173 19.55 15.4073 19.8837 15.8961 20.2162C16.4298 20.58 16.9623 20.9425 17.6523 21.395C17.8273 21.51 17.9948 21.6287 18.1586 21.745C18.7798 22.1887 19.3386 22.5862 20.0286 22.5237C20.4286 22.4862 20.8436 22.11 21.0536 20.9862C21.5498 18.3287 22.5273 12.5737 22.7536 10.2012C22.7673 10.0043 22.7589 9.80636 22.7286 9.61125C22.7104 9.45366 22.6336 9.30866 22.5136 9.205C22.3348 9.05875 22.0573 9.0275 21.9323 9.03C21.3686 9.04 20.5036 9.34125 16.3373 11.0737Z"
-                    fill="#919191" />
-                </svg>
-              </a>
-            </li>
-          </ul>
-
-        </div>
-      </div>
-    </nav>
-  </header>
-
-  <!-- PROMO -->
-  <section class="promo" id="promo">
-    <span class="big-circle-icon"></span>
-    <span class="two-circle-icon"></span>
-    <span class="waves-icon"></span>
-
-    <!-- PROMO__HEADER -->
-    <header class="promo__header">
-
-      <!-- NOTIFICATION -->
-      <div class="notification promo__notification">
-        <img src="/assets/images/icons/dappelts.svg" alt="Dapplets">
-        <p>powered by Crypto</p>
-      </div>
-
-      <div class="container">
-        <div class="promo__header-wrapper">
-
-          <!-- PROMO__HEADER-LEFT -->
-          <div class="promo__header-left">
-            <span class="middle-circle"></span>
-
-            <div class="promo__header-text">
-              <h1 class="promo__title">Dapplets Project</h1>
-              <span class="promo__subtitle">The Home of Augmented Web </span>
-            </div>
-
-            <div class="promo__expansion" style="height: 40px;">
-            </div>
-          </div>
-
-          <!-- PROMO__HEADER-RIGHT -->
-          <div class="promo__header-right">
-            <span class="many-small-lines"></span>
-
-            <div class="promo__header-image">
-              <div class="promo__header-background" data-augment-image></div>
-              <div class="promo__header-thumb"></div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-
-      <a href="#what-is" class="button icon center animate" data-click="scroll">
-        <img src="/assets/images/icons/chevron-down.svg" alt="Arrow Bottom">
-      </a>
+      </nav>
     </header>
 
-  </section>
+    <!-- PROMO -->
+    <section class="promo" id="promo">
+      <span class="big-circle-icon"></span>
+      <span class="two-circle-icon"></span>
+      <span class="waves-icon"></span>
 
-  <!-- WHAT-IS -->
-  <section class="what-is" id="what-is">
-    <span class="big-circle-icon"></span>
-    <span class="many-straight-lines-icon"></span>
-    <span class="two-triangles-1"></span>
-
-    <div class="container">
-
-      <!-- WHAT-IS__WRAPPER -->
-      <div class="what-is__wrapper">
-        <h2 class="title what-is__title what-is__title-mobile">
-          <span class="title--primary">What is</span>
-          <span class="title--secondary block">Dapplets Project?</span>
-        </h2>
-
-        <!-- WHAT-IS__LEFT -->
-        <div class="what-is__left">
-          <div class="what-is__left-img"></div>
-          <span class="many-small-lines"></span>
-          <span class="two-crosses"></span>
-          <span class="two-triangles-2"></span>
+      <!-- PROMO__HEADER -->
+      <header class="promo__header">
+        <!-- NOTIFICATION -->
+        <div class="notification promo__notification">
+          <img src="/assets/images/icons/dappelts.svg" alt="Dapplets" />
+          <p>powered by Crypto</p>
         </div>
 
-        <!-- WHAT-IS__RIGHT -->
-        <div class="what-is__right">
-          <span class="waves-icon"></span>
+        <div class="container">
+          <div class="promo__header-wrapper">
+            <!-- PROMO__HEADER-LEFT -->
+            <div class="promo__header-left">
+              <span class="middle-circle"></span>
 
+              <div class="promo__header-text">
+                <h1 class="promo__title">Dapplets Project</h1>
+                <span class="promo__subtitle">The Home of Augmented Web </span>
+              </div>
 
-          <!-- TITLE -->
-          <h2 class="title what-is__title">
+              <div class="promo__expansion" style="height: 40px"></div>
+            </div>
+
+            <!-- PROMO__HEADER-RIGHT -->
+            <div class="promo__header-right">
+              <span class="many-small-lines"></span>
+
+              <div class="promo__header-image">
+                <div class="promo__header-background" data-augment-image></div>
+                <div class="promo__header-thumb"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <a
+          href="#what-is"
+          class="button icon center animate"
+          data-click="scroll"
+        >
+          <img src="/assets/images/icons/chevron-down.svg" alt="Arrow Bottom" />
+        </a>
+      </header>
+    </section>
+
+    <!-- WHAT-IS -->
+    <section class="what-is" id="what-is">
+      <span class="big-circle-icon"></span>
+      <span class="many-straight-lines-icon"></span>
+      <span class="two-triangles-1"></span>
+
+      <div class="container">
+        <!-- WHAT-IS__WRAPPER -->
+        <div class="what-is__wrapper">
+          <h2 class="title what-is__title what-is__title-mobile">
             <span class="title--primary">What is</span>
             <span class="title--secondary block">Dapplets Project?</span>
           </h2>
 
-          <!-- WHAT-IS__DESCRIPTION -->
-          <div class="what-is__description">
-            <p class="text">
-              We are building an open Augmented Web Infrastructure for decentralized Apps (Dapplets), all powered by
-              crypto technologies.
-            </p>
-            <p class="text">
-              Our system is open-source and available to developers anywhere in the world.
-            </p>
-            <p class="text">
-              Dapplets Project is an open and self-governed Public Good entity. The platform is publicly available to
-              anyone and enables a lot of new augmenting applications, both public good and commercial. Anyone who
-              shares our values can join the project and share our common success.
-            </p>
+          <!-- WHAT-IS__LEFT -->
+          <div class="what-is__left">
+            <div class="what-is__left-img"></div>
+            <span class="many-small-lines"></span>
+            <span class="two-crosses"></span>
+            <span class="two-triangles-2"></span>
+          </div>
+
+          <!-- WHAT-IS__RIGHT -->
+          <div class="what-is__right">
+            <span class="waves-icon"></span>
+
+            <!-- TITLE -->
+            <h2 class="title what-is__title">
+              <span class="title--primary">What is</span>
+              <span class="title--secondary block">Dapplets Project?</span>
+            </h2>
+
+            <!-- WHAT-IS__DESCRIPTION -->
+            <div class="what-is__description">
+              <p class="text">
+                We are building an open Augmented Web Infrastructure for
+                decentralized Apps (Dapplets), all powered by crypto
+                technologies.
+              </p>
+              <p class="text">
+                Our system is open-source and available to developers anywhere
+                in the world.
+              </p>
+              <p class="text">
+                Dapplets Project is an open and self-governed Public Good
+                entity. The platform is publicly available to anyone and enables
+                a lot of new augmenting applications, both public good and
+                commercial. Anyone who shares our values can join the project
+                and share our common success.
+              </p>
+            </div>
           </div>
         </div>
-
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- WHY-WE -->
-  <section class="why-we" data-augment-image id="why-we">
-    <div class="container">
-
-      <!-- WHY-WE__WRAPPER -->
-      <div class="why-we__wrapper">
-        <!-- TITLE -->
-        <h2 class="title why-we__title">
-          <span class="title--primary">Why we</span>
-          <span class="title--secondary">do</span>
-          <span class="title--primary">it?</span>
-        </h2>
-
-        <!-- WHY-WE__LIST  -->
-        <ul class="why-we__list ul-reset">
-          <li class="why-we__item">
-            To provide you with a toolset for shaping <br> your own information ecosystem.
-          </li>
-          <li class="why-we__item">
-            To enable fundamentally new workflows <br> on popular websites.
-          </li>
-          <li class="why-we__item">
-            To provide web3 technologies <br> on the legacy web.
-          </li>
-          <li class="why-we__item">
-            To draw a
-            <span class="why-we__mustache"></span>
-            for everyone.
-          </li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <!-- INNOVATION -->
-  <section class="innovation" id="innovation">
-    <div class="container">
-
-      <!-- INNOVATION__WRAPPER -->
-      <div class="innovation__wrapper">
-
-        <!-- INNOVATION__LEFT -->
-        <div class="innovation__left">
-          <span class="big-circle-icon"></span>
-          <span class="many-straight-lines-icon"></span>
-          <span class="middle-circle"></span>
-
-          <h2 class="title">
-            <span class="title--primary">What is</span>
-            <span class="title--secondary">the</span>
-            <span class="title--secondary block">innovation<span class="title--primary">?</span></span>
+    <!-- WHY-WE -->
+    <section class="why-we" data-augment-image id="why-we">
+      <div class="container">
+        <!-- WHY-WE__WRAPPER -->
+        <div class="why-we__wrapper">
+          <!-- TITLE -->
+          <h2 class="title why-we__title">
+            <span class="title--primary">Why we</span>
+            <span class="title--secondary">do</span>
+            <span class="title--primary">it?</span>
           </h2>
 
-          <!-- INNOVATION__DESCRIPTION -->
-          <div class="innovation__description">
-            <p class="text">
-              Let's imagine a common situation: a user opens a browser and visits a site. The browser displays the data
-              received from the server.
-            </p>
-            <p class="text">
-              The server is under the control of the website owner, and today the browser shows what the owner wants
-              (and doesn't show anything he doesn't want).
-            </p>
-            <p class="text">
-              But the browser itself is under user control and that's the key to solving the problem.
-            </p>
-            <p class="text">
-              We add to the browser an augmentation engine that embeds small apps, called dapplets, directly into the
-              website page.
-            </p>
-            <p class="text">
-              These dapplets are stored in decentralized repositories and are unstoppable – no one can remove or disable
-              them and no one can prevent you from running dapplets in your browser.
-            </p>
-            <p class="text">
-              The user receives information from different sources at the same time - the site content from the site owner, and
-              its interpretation from any third-party sources he chooses for himself. This augmentation would be
-              seamless and contextualized.
+          <!-- WHY-WE__LIST  -->
+          <ul class="why-we__list ul-reset">
+            <li class="why-we__item">
+              To provide you with a toolset for shaping <br />
+              your own information ecosystem.
+            </li>
+            <li class="why-we__item">
+              To enable fundamentally new workflows <br />
+              on popular websites.
+            </li>
+            <li class="why-we__item">
+              To provide web3 technologies <br />
+              on the legacy web.
+            </li>
+            <li class="why-we__item">
+              To draw a
+              <span class="why-we__mustache"></span>
+              for everyone.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- INNOVATION -->
+    <section class="innovation" id="innovation">
+      <div class="container">
+        <!-- INNOVATION__WRAPPER -->
+        <div class="innovation__wrapper">
+          <!-- INNOVATION__LEFT -->
+          <div class="innovation__left">
+            <span class="big-circle-icon"></span>
+            <span class="many-straight-lines-icon"></span>
+            <span class="middle-circle"></span>
+
+            <h2 class="title">
+              <span class="title--primary">What is</span>
+              <span class="title--secondary">the</span>
+              <span class="title--secondary block"
+                >innovation<span class="title--primary">?</span></span
+              >
+            </h2>
+
+            <!-- INNOVATION__DESCRIPTION -->
+            <div class="innovation__description">
+              <p class="text">
+                Let's imagine a common situation: a user opens a browser and
+                visits a site. The browser displays the data received from the
+                server.
+              </p>
+              <p class="text">
+                The server is under the control of the website owner, and today
+                the browser shows what the owner wants (and doesn't show
+                anything he doesn't want).
+              </p>
+              <p class="text">
+                But the browser itself is under user control and that's the key
+                to solving the problem.
+              </p>
+              <p class="text">
+                We add to the browser an augmentation engine that embeds small
+                apps, called dapplets, directly into the website page.
+              </p>
+              <p class="text">
+                These dapplets are stored in decentralized repositories and are
+                unstoppable – no one can remove or disable them and no one can
+                prevent you from running dapplets in your browser.
+              </p>
+              <p class="text">
+                The user receives information from different sources at the same
+                time - the site content from the site owner, and its
+                interpretation from any third-party sources he chooses for
+                himself. This augmentation would be seamless and contextualized.
+              </p>
+            </div>
+          </div>
+
+          <!-- INNOVATION__RIGHT -->
+          <div class="innovation__right">
+            <span class="waves-icon"></span>
+            <span class="waves-icon-2"></span>
+            <span class="two-triangles-2"></span>
+            <span class="big-cross"></span>
+
+            <div class="innovation__right-img"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TO-USE -->
+    <section class="to-use" id="to-use">
+      <div class="container">
+        <!-- USE__WRAPPER -->
+        <div class="to-use__wrapper">
+          <span class="waves-icon"></span>
+          <span class="two-triangles-1"></span>
+          <span class="big-circle-icon"></span>
+          <span class="two-circle-icon"></span>
+
+          <h2 class="title to-use__title">
+            <span class="title--primary">How</span>
+            <span class="title--secondary">to use</span>
+            <span class="title--primary">it?</span>
+          </h2>
+
+          <ul class="to-use__list ul-reset">
+            <li class="to-use__item to-use__item--1">
+              <div class="to-use__item-img to-use__item-img--1"></div>
+              <p class="to-use__item-title">Install the main application</p>
+            </li>
+            <li class="to-use__item to-use__item--2">
+              <div class="to-use__item-img to-use__item-img--2"></div>
+              <p class="to-use__item-title">
+                Search the Dapplets Store and select your dapplets
+              </p>
+            </li>
+            <li class="to-use__item to-use__item--3">
+              <div class="to-use__item-img to-use__item-img--3"></div>
+              <p class="to-use__item-title">
+                Go to the website and turn on the dapplets of your choice
+              </p>
+            </li>
+            <li class="to-use__item to-use__item--4">
+              <div class="to-use__item-img to-use__item-img--4"></div>
+              <p class="to-use__item-title">
+                Get inspired by brand new experiences on familiar sites
+              </p>
+            </li>
+          </ul>
+
+          <div class="to-use__join">
+            <span class="two-crosses"></span>
+            <p>
+              Dapplets Platform is open-sorce and will always be free for all
+              end users. Become a part of growing society.
             </p>
           </div>
         </div>
+      </div>
+    </section>
 
-        <!-- INNOVATION__RIGHT -->
-        <div class="innovation__right">
-          <span class="waves-icon"></span>
-          <span class="waves-icon-2"></span>
-          <span class="two-triangles-2"></span>
-          <span class="big-cross"></span>
+    <!-- Crypto -->
+    <section class="crypto" id="crypto">
+      <span class="big-cross"></span>
+      <span class="middle-circle-1"></span>
 
-          <div class="innovation__right-img"></div>
+      <div class="container">
+        <!-- CRYPTO__WRAPPER -->
+        <div class="crypto__wrapper">
+          <!-- CRYPTO__LEFT -->
+          <div class="crypto__left">
+            <span class="triangle"></span>
+
+            <h2 class="title">
+              <span class="title--secondary">Crypto</span>
+              <span class="title--primary">inside!</span>
+            </h2>
+
+            <div class="crypto__description">
+              <p class="text crypto__text">
+                We are a true crypto project! Our augmentations are
+                decentralized, unstoppable, permissionless and incentivized by
+                cryptoeconomics.
+              </p>
+
+              <ul class="crypto__list ul-reset">
+                <li class="crypto__item text">
+                  The work of our platform is based on several crypto
+                  technologies, so it cannot be stopped or prohibited by nobody.
+                </li>
+                <li class="crypto__item text">
+                  We are using blockchain for saving dapplets registries. At
+                  this point we work with Ethereum and Near networks.
+                </li>
+                <li class="crypto__item text">
+                  We are using decentralized storage, like Swarm, IPFS and
+                  Arweave for hosting dapplets code and multimedia.
+                </li>
+                <li class="crypto__item text">
+                  We have our own crypto-economy based on well-known patterns,
+                  like Token Curated Registries, Prediction Markets etc.
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- CRYPTO__RIGHT -->
+          <div class="crypto__right">
+            <span class="many-straight-lines-icon"></span>
+            <span class="waves-icon"></span>
+            <span class="many-small-lines"></span>
+            <span class="many-small-lines"></span>
+            <span class="many-small-lines-white"></span>
+            <span class="two-circle-icon"></span>
+            <span class="big-circle-icon"></span>
+            <span class="middle-circle-2"></span>
+
+            <div class="crypto__right-img"></div>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- TO-USE -->
-  <section class="to-use" id="to-use">
-    <div class="container">
+    <!-- ECONOMIC -->
+    <section class="economic" id="economic">
+      <div class="container">
+        <!-- ECONOMIC__TOP -->
+        <div class="economic__top">
+          <h2 class="title title--img economic__title">
+            <span class="title--primary">Role model</span>
+            <span class="title--primary block">Economics</span>
+          </h2>
 
-      <!-- USE__WRAPPER -->
-      <div class="to-use__wrapper">
-        <span class="waves-icon"></span>
-        <span class="two-triangles-1"></span>
-        <span class="big-circle-icon"></span>
-        <span class="two-circle-icon"></span>
-
-        <h2 class="title to-use__title">
-          <span class="title--primary">How</span>
-          <span class="title--secondary">to use</span>
-          <span class="title--primary">it?</span>
-        </h2>
-
-        <ul class="to-use__list ul-reset">
-          <li class="to-use__item to-use__item--1">
-            <div class="to-use__item-img to-use__item-img--1"></div>
-            <p class="to-use__item-title">Install the main application</p>
-          </li>
-          <li class="to-use__item to-use__item--2">
-            <div class="to-use__item-img to-use__item-img--2"></div>
-            <p class="to-use__item-title">
-              Search the Dapplets Store and select your dapplets
-            </p>
-          </li>
-          <li class="to-use__item to-use__item--3">
-            <div class="to-use__item-img to-use__item-img--3"></div>
-            <p class="to-use__item-title">
-              Go to the website and turn on the dapplets of your choice
-            </p>
-          </li>
-          <li class="to-use__item to-use__item--4">
-            <div class="to-use__item-img to-use__item-img--4"></div>
-            <p class="to-use__item-title">
-              Get inspired by brand new experiences on familiar sites
-            </p>
-          </li>
-        </ul>
-
-        <div class="to-use__join">
-          <span class="two-crosses"></span>
-          <p>
-            Dapplets Platform is open-sorce and will always be free for all end users.
-            Become a part of growing society.
+          <p class="economic__text text">
+            Our community is built on the principles of self-organization and
+            assumes several roles within it. Each of the roles is economically
+            motivated to participate.
           </p>
         </div>
-      </div>
-    </div>
-  </section>
 
-  <!-- Crypto -->
-  <section class="crypto" id="crypto">
-    <span class="big-cross"></span>
-    <span class="middle-circle-1"></span>
-
-    <div class="container">
-
-      <!-- CRYPTO__WRAPPER -->
-      <div class="crypto__wrapper">
-
-        <!-- CRYPTO__LEFT -->
-        <div class="crypto__left">
-          <span class="triangle"></span>
-
-          <h2 class="title">
-            <span class="title--secondary">Crypto</span>
-            <span class="title--primary">inside!</span>
-          </h2>
-
-          <div class="crypto__description">
-            <p class="text crypto__text">
-              We are a true crypto project! Our augmentations are decentralized, unstoppable, permissionless and
-              incentivized by cryptoeconomics.
-            </p>
-
-            <ul class="crypto__list ul-reset">
-              <li class="crypto__item text">
-                The work of our platform is based on several crypto technologies, so it cannot be stopped or prohibited
-                by nobody.
-              </li>
-              <li class="crypto__item text">
-                We are using blockchain for saving dapplets registries. At this point we work with Ethereum and Near
-                networks.
-              </li>
-              <li class="crypto__item text">
-                We are using decentralized storage, like Swarm, IPFS and Arweave for hosting dapplets code and
-                multimedia.
-              </li>
-              <li class="crypto__item text">
-                We have our own crypto-economy based on well-known patterns, like Token Curated Registries,
-                Prediction
-                Markets etc.
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        <!-- CRYPTO__RIGHT -->
-        <div class="crypto__right">
-          <span class="many-straight-lines-icon"></span>
-          <span class="waves-icon"></span>
-          <span class="many-small-lines"></span>
-          <span class="many-small-lines"></span>
-          <span class="many-small-lines-white"></span>
+        <!-- ECONOMIC__BOTTOM -->
+        <div class="economic__bottom">
+          <span class="two-triangles-1"></span>
+          <span class="big-circle-icon big-circle-icon--1"></span>
+          <span class="big-circle-icon big-circle-icon--2"></span>
           <span class="two-circle-icon"></span>
-          <span class="big-circle-icon"></span>
-          <span class="middle-circle-2"></span>
+          <span class="waves-icon"></span>
+          <span class="many-straight-lines-icon"></span>
+          <span class="extra-large-circle-icon"></span>
 
-          <div class="crypto__right-img"></div>
+          <ul class="economic__list ul-reset">
+            <li class="economic__item">
+              <div>
+                <header class="economic__item-header">
+                  <!-- <span class="text economic__item-top">Are You a</span> -->
+                  <h4 class="economic__item-title">Developer</h4>
+                  <span class="text economic__item-bottom"
+                    >Become a part of our growing Community</span
+                  >
+                </header>
+
+                <span class="economic__item-line"></span>
+
+                <div class="ececonomic__item-desctiption">
+                  <p class="economic__item-text text">
+                    Developers write and publish apps because they help drive
+                    their business processes or can be monetized through user
+                    acquisition.
+                  </p>
+                </div>
+              </div>
+
+              <!-- <button class="button expansion economic__item-button">Join now</button> -->
+            </li>
+
+            <li class="economic__item">
+              <div>
+                <header class="economic__item-header">
+                  <!-- <span class="text economic__item-top">text here</span> -->
+                  <h4 class="economic__item-title">Auditor</h4>
+                  <!-- <span class="text economic__item-bottom">text here text here text here</span> -->
+                </header>
+
+                <span class="economic__item-line"></span>
+
+                <div class="ececonomic__item-desctiption">
+                  <p class="economic__item-text text">
+                    Auditors review the app's code and are responsible for
+                    making sure it’s secure for the end user. They can be
+                    rewarded by both developers and end users.
+                  </p>
+                </div>
+              </div>
+
+              <!-- <button class="button expansion economic__item-button">Browse Dapplets</button> -->
+            </li>
+
+            <li class="economic__item">
+              <div>
+                <header class="economic__item-header">
+                  <!-- <span class="text economic__item-top">Are You a</span> -->
+                  <h4 class="economic__item-title">Owner</h4>
+                  <span class="text economic__item-bottom"
+                    >Select a name for you dapplet and start the
+                    construction</span
+                  >
+                </header>
+
+                <span class="economic__item-line"></span>
+
+                <div class="economic__item-desctiption">
+                  <p class="economic__item-text text">
+                    Have a business idea on developing a dapplet, but can't
+                    write the code? Not a problem. Become a Dapplet Owner and
+                    start developing by simply reserving your app name and
+                    directory space.
+                  </p>
+                  <p class="economic__item-text text">
+                    Your application will be in Under Construction status, and
+                    you will have time to look for developers.
+                  </p>
+                  <p class="economic__item-text text">
+                    Applications in the Under Construction status can still be
+                    added to lists and will be available to users immediately
+                    after their launch.
+                  </p>
+                </div>
+              </div>
+
+              <!-- <button class="button expansion economic__item-button">Create Dapplet</button> -->
+            </li>
+
+            <li class="economic__item">
+              <div>
+                <header class="economic__item-header">
+                  <!-- <span class="text economic__item-top">Ready to be a</span> -->
+                  <h4 class="economic__item-title">Lister</h4>
+                  <span class="text economic__item-bottom"
+                    >Install App and create your first Listing</span
+                  >
+                </header>
+
+                <span class="economic__item-line"></span>
+
+                <div class="ececonomic__item-desctiption">
+                  <p class="economic__item-text text">
+                    Listers are a special role unknown in the classical web.
+                    Because our apps are published in decentralized
+                    repositories, they are all available to any user: unfiltered
+                    and uncensored. But how will the user know which apps are
+                    useful for him and which are not?
+                  </p>
+                  <p class="economic__item-text text">
+                    Therefore, you get a lister of your choice, whose job is to
+                    select the most interesting apps and make a list of them.
+                  </p>
+                  <p class="economic__item-text text">
+                    Popular listers can be rewarded by developers for listing
+                    their apps.
+                  </p>
+                </div>
+              </div>
+
+              <!-- <button class="button expansion economic__item-button">Create your first list</button> -->
+            </li>
+          </ul>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-
-  <!-- ECONOMIC -->
-  <section class="economic" id="economic">
-    <div class="container">
-
-      <!-- ECONOMIC__TOP -->
-      <div class="economic__top">
-        <h2 class="title title--img economic__title">
-          <span class="title--primary">Role model</span>
-          <span class="title--primary block">Economics</span>
-        </h2>
-
-        <p class="economic__text text">
-          Our community is built on the principles of self-organization and assumes several roles within it. Each of the
-          roles is economically motivated to participate.
-        </p>
-      </div>
-
-      <!-- ECONOMIC__BOTTOM -->
-      <div class="economic__bottom">
-        <span class="two-triangles-1"></span>
-        <span class="big-circle-icon big-circle-icon--1"></span>
-        <span class="big-circle-icon big-circle-icon--2"></span>
-        <span class="two-circle-icon"></span>
-        <span class="waves-icon"></span>
-        <span class="many-straight-lines-icon"></span>
-        <span class="extra-large-circle-icon"></span>
-
-        <ul class="economic__list ul-reset">
-
-          <li class="economic__item">
-            <div>
-              <header class="economic__item-header">
-                <!-- <span class="text economic__item-top">Are You a</span> -->
-                <h4 class="economic__item-title">Developer</h4>
-                <span class="text economic__item-bottom">Become a part of our growing Community</span>
-              </header>
-
-              <span class="economic__item-line"></span>
-
-              <div class="ececonomic__item-desctiption">
-                <p class="economic__item-text text">
-                  Developers write and publish apps because they help drive their business processes or can be monetized
-                  through user acquisition.
-                </p>
-              </div>
+    <!-- FOOTER -->
+    <footer class="footer" id="footer">
+      <!-- FOOTER__TOP -->
+      <div class="footer__top">
+        <div class="container">
+          <!-- FOOTER__HEADER -->
+          <div class="footer__header">
+            <!-- FOOTER__LOGO -->
+            <div class="footer__logo">
+              <a href="/" class="footer__logo-link">
+                <img
+                  src="/assets/images/logo-footer.svg"
+                  alt="Dapplets"
+                  class="footer__logo-img"
+                />
+              </a>
+              <p class="footer__logo-text text">
+                Open Augmented Web Infrastructure for Decentralized Apps powered
+                by crypto technologies.
+              </p>
             </div>
 
-            <!-- <button class="button expansion economic__item-button">Join now</button> -->
-          </li>
+            <span class="footer__line footer__line--1"></span>
 
-          <li class="economic__item">
-            <div>
-              <header class="economic__item-header">
-                <!-- <span class="text economic__item-top">text here</span> -->
-                <h4 class="economic__item-title">Auditor</h4>
-                <!-- <span class="text economic__item-bottom">text here text here text here</span> -->
-              </header>
-
-              <span class="economic__item-line"></span>
-
-              <div class="ececonomic__item-desctiption">
-                <p class="economic__item-text text">
-                  Auditors review the app's code and are responsible for making sure it’s secure for the end user. They
-                  can be rewarded by both developers and end users.
-                </p>
-              </div>
-            </div>
-
-            <!-- <button class="button expansion economic__item-button">Browse Dapplets</button> -->
-          </li>
-
-          <li class="economic__item">
-            <div>
-              <header class="economic__item-header">
-                <!-- <span class="text economic__item-top">Are You a</span> -->
-                <h4 class="economic__item-title">Owner</h4>
-                <span class="text economic__item-bottom">Select a name for you dapplet and start the construction</span>
-              </header>
-
-              <span class="economic__item-line"></span>
-
-              <div class="economic__item-desctiption">
-                <p class="economic__item-text text">
-                  Have a business idea on developing a dapplet, but can't write the code? Not a problem. Become
-                  a
-                  Dapplet Owner and start developing by simply reserving your app name and directory space.
-                </p>
-                <p class="economic__item-text text">
-                  Your application will be in Under Construction status, and you will have time to look for developers.
-                </p>
-                <p class="economic__item-text text">
-                  Applications in the Under Construction status can still be added to lists and will be available to
-                  users immediately after their launch.
-                </p>
-              </div>
-            </div>
-
-            <!-- <button class="button expansion economic__item-button">Create Dapplet</button> -->
-          </li>
-
-          <li class="economic__item">
-            <div>
-              <header class="economic__item-header">
-                <!-- <span class="text economic__item-top">Ready to be a</span> -->
-                <h4 class="economic__item-title">Lister</h4>
-                <span class="text economic__item-bottom">Install App and create your first Listing</span>
-              </header>
-
-              <span class="economic__item-line"></span>
-
-              <div class="ececonomic__item-desctiption">
-                <p class="economic__item-text text">
-                  Listers are a special role unknown in the classical web. Because our apps are published in
-                  decentralized
-                  repositories, they are all available to any user: unfiltered and uncensored. But how will the user
-                  know
-                  which apps are useful for him and which are not?
-                </p>
-                <p class="economic__item-text text">
-                  Therefore, you get a lister of your choice, whose job is to select the most interesting apps and make
-                  a
-                  list of them.
-                </p>
-                <p class="economic__item-text text">
-                  Popular listers can be rewarded by developers for listing their apps.
-                </p>
-              </div>
-            </div>
-
-            <!-- <button class="button expansion economic__item-button">Create your first list</button> -->
-          </li>
-
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <!-- FOOTER -->
-  <footer class="footer" id="footer">
-
-    <!-- FOOTER__TOP -->
-    <div class="footer__top">
-      <div class="container">
-
-        <!-- FOOTER__HEADER -->
-        <div class="footer__header">
-
-          <!-- FOOTER__LOGO -->
-          <div class="footer__logo">
-            <a href="/" class="footer__logo-link">
-              <img src="/assets/images/logo-footer.svg" alt="Dapplets" class="footer__logo-img">
-            </a>
-            <p class="footer__logo-text text">Open Augmented Web Infrastructure
-              for Decentralized Apps powered by crypto technologies.</p>
-          </div>
-
-          <span class="footer__line footer__line--1"></span>
-
-          <!-- FORM__SOCIALS -->
-          <ul class="footer__socials ul-reset">
-            <li class="footer__social" title="GitHub">
-              <a href="https://github.com/dapplets" class="footer__social-link">
-                <svg width="41" height="41" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M20.8939 40.0024C31.9396 40.0024 40.8939 31.0481 40.8939 20.0024C40.8939 8.95675 31.9396 0.00244141 20.8939 0.00244141C9.84823 0.00244141 0.893921 8.95675 0.893921 20.0024C0.893921 31.0481 9.84823 40.0024 20.8939 40.0024ZM4.89392 20.0024C4.89392 11.1624 12.0539 4.00244 20.8939 4.00244C29.7339 4.00244 36.8939 11.1624 36.8939 20.0024C36.893 23.3548 35.8408 26.6225 33.8855 29.3456C31.9302 32.0687 29.1702 34.1101 25.9939 35.1824C25.1939 35.3424 24.8939 34.8424 24.8939 34.4224C24.8939 34.2419 24.8962 33.9294 24.8991 33.5134C24.9051 32.6853 24.9139 31.4469 24.9139 30.0224C24.9139 28.5224 24.4139 27.5624 23.8339 27.0624C27.3939 26.6624 31.1339 25.3024 31.1339 19.1624C31.1339 17.4024 30.5139 15.9824 29.4939 14.8624C29.6539 14.4624 30.2139 12.8224 29.3339 10.6224C29.3339 10.6224 27.9939 10.1824 24.9339 12.2624C23.6539 11.9024 22.2939 11.7224 20.9339 11.7224C19.5739 11.7224 18.2139 11.9024 16.9339 12.2624C13.8739 10.2024 12.5339 10.6224 12.5339 10.6224C11.6539 12.8224 12.2139 14.4624 12.3739 14.8624C11.3539 15.9824 10.7339 17.4224 10.7339 19.1624C10.7339 25.2824 14.4539 26.6624 18.0139 27.0624C17.5539 27.4624 17.1339 28.1624 16.9939 29.2024C16.0739 29.6224 13.7739 30.3024 12.3339 27.8824C12.0339 27.4024 11.1339 26.2224 9.87392 26.2424C8.53392 26.2624 9.33392 27.0024 9.89392 27.3024C10.5739 27.6824 11.3539 29.1024 11.5339 29.5624C11.8539 30.4624 12.8939 32.1824 16.9139 31.4424C16.9139 32.3168 16.9224 33.1571 16.9284 33.7411C16.9315 34.0521 16.9339 34.2904 16.9339 34.4224C16.9339 34.8424 16.6339 35.3224 15.8339 35.1824C9.47392 33.0624 4.89392 27.0824 4.89392 20.0024Z"
-                    fill="#F5F5F5" />
-                </svg>
-              </a>
-            </li>
-            <li class="footer__social" title="Discord">
-              <a href="https://discord.com/invite/YcxbkcyjMV" class="footer__social-link">
-                <svg width="41" height="41" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M20.8939 40.0024C31.9396 40.0024 40.8939 31.0481 40.8939 20.0024C40.8939 8.95675 31.9396 0.00244141 20.8939 0.00244141C9.84823 0.00244141 0.893921 8.95675 0.893921 20.0024C0.893921 31.0481 9.84823 40.0024 20.8939 40.0024ZM25.0886 9.00485C27.1847 9.3593 29.1891 9.98263 31.0591 10.826C31.0755 10.8325 31.0889 10.8446 31.097 10.8602C34.4105 15.6537 36.0458 21.0633 35.4347 27.2893C35.4332 27.3024 35.429 27.3151 35.4223 27.3265C35.4155 27.3379 35.4064 27.3477 35.3956 27.3553C33.1731 28.9745 30.6929 30.2063 28.0598 30.9987C28.0412 31.0043 28.0214 31.004 28.0031 30.9979C27.9847 30.9917 27.9686 30.9801 27.9571 30.9645C27.4035 30.2055 26.8999 29.4062 26.4599 28.5665C26.4539 28.5549 26.4505 28.5422 26.4498 28.5292C26.4491 28.5162 26.4512 28.5032 26.4559 28.491C26.4607 28.4789 26.4679 28.4679 26.4773 28.4588C26.4866 28.4496 26.4978 28.4426 26.51 28.4382C27.3081 28.1424 28.0684 27.7867 28.7992 27.3663C28.8123 27.3586 28.8232 27.3477 28.831 27.3347C28.8388 27.3217 28.8433 27.307 28.844 27.2919C28.8447 27.2767 28.8417 27.2617 28.8351 27.248C28.8286 27.2343 28.8188 27.2225 28.8066 27.2135C28.6514 27.0999 28.4986 26.9813 28.3519 26.8615C28.3385 26.8508 28.3223 26.8441 28.3052 26.8422C28.2881 26.8402 28.2709 26.8431 28.2554 26.8505C23.5119 29.0065 18.3138 29.0065 13.5141 26.8505C13.4987 26.8435 13.4816 26.841 13.4647 26.8431C13.4479 26.8453 13.432 26.8521 13.4188 26.8627C13.2721 26.9813 13.1181 27.0999 12.9641 27.2135C12.952 27.2227 12.9424 27.2347 12.936 27.2485C12.9297 27.2623 12.9269 27.2774 12.9279 27.2925C12.9288 27.3077 12.9336 27.3224 12.9416 27.3352C12.9496 27.3481 12.9607 27.3588 12.9739 27.3663C13.7073 27.7833 14.4724 28.1421 15.2619 28.4394C15.3132 28.459 15.3377 28.5176 15.312 28.5665C14.8818 29.4074 14.3782 30.208 13.8136 30.9657C13.8016 30.9807 13.7855 30.9918 13.7671 30.9975C13.7488 31.0031 13.7292 31.0032 13.7109 30.9975C11.0823 30.2029 8.60616 28.9716 6.38613 27.3553C6.37558 27.3472 6.36679 27.3371 6.36027 27.3256C6.35376 27.314 6.34966 27.3013 6.34824 27.2881C5.83613 21.903 6.87868 16.4494 10.6822 10.8577C10.6916 10.843 10.7053 10.8315 10.7214 10.8247C12.5926 9.98019 14.597 9.35685 16.6919 9.00241C16.7108 8.99941 16.7302 9.00225 16.7474 9.01055C16.7647 9.01885 16.779 9.03221 16.7885 9.04885C17.0676 9.53557 17.3193 10.0375 17.5426 10.5522C19.7657 10.22 22.0258 10.22 24.2489 10.5522C24.4494 10.0877 24.7354 9.49985 24.992 9.04885C25.0016 9.03241 25.016 9.01935 25.0333 9.01146C25.0506 9.00358 25.0699 9.00127 25.0886 9.00485ZM13.3931 21.1C13.3931 22.7023 14.5848 24.0089 16.0295 24.0089C17.4974 24.0089 18.6658 22.7035 18.6658 21.1C18.689 19.5074 17.5084 18.1911 16.0295 18.1911C14.5616 18.1911 13.3931 19.4964 13.3931 21.1ZM23.1404 21.1C23.1404 22.7023 24.3308 24.0089 25.7767 24.0089C27.2568 24.0089 28.413 22.7035 28.413 21.1C28.4362 19.5074 27.2556 18.1911 25.7767 18.1911C24.3076 18.1911 23.1404 19.4964 23.1404 21.1Z"
-                    fill="#F5F5F5" />
-                </svg>
-              </a>
-            </li>
-            <li class="footer__social" title="Telegram">
-              <a href="https://t.me/dapplets" class="footer__social-link">
-                <svg width="41" height="41" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M40.8939 20.0024C40.8939 31.0474 31.9389 40.0024 20.8939 40.0024C9.84892 40.0024 0.893921 31.0474 0.893921 20.0024C0.893921 8.95744 9.84892 0.00244141 20.8939 0.00244141C31.9389 0.00244141 40.8939 8.95744 40.8939 20.0024ZM21.6106 14.7674C19.6656 15.5758 15.7773 17.2508 9.94725 19.7908C9.00059 20.1674 8.50392 20.5358 8.45892 20.8958C8.38225 21.5058 9.14559 21.7458 10.1823 22.0708C10.3239 22.1158 10.4706 22.1608 10.6206 22.2108C11.6423 22.5424 13.0156 22.9308 13.7289 22.9458C14.3773 22.9591 15.1006 22.6924 15.8989 22.1458C21.3456 18.4674 24.1573 16.6091 24.3339 16.5691C24.4589 16.5408 24.6323 16.5041 24.7489 16.6091C24.8656 16.7124 24.8539 16.9091 24.8423 16.9624C24.7656 17.2841 21.7756 20.0658 20.2256 21.5058C19.7423 21.9541 19.4006 22.2724 19.3306 22.3458C19.1739 22.5074 19.0139 22.6624 18.8606 22.8108C17.9106 23.7241 17.2006 24.4108 18.9006 25.5308C19.7173 26.0691 20.3706 26.5141 21.0223 26.9574C21.7339 27.4424 22.4439 27.9258 23.3639 28.5291C23.5973 28.6824 23.8206 28.8408 24.0389 28.9958C24.8673 29.5874 25.6123 30.1174 26.5323 30.0341C27.0656 29.9841 27.6189 29.4824 27.8989 27.9841C28.5606 24.4408 29.8639 16.7674 30.1656 13.6041C30.1839 13.3415 30.1728 13.0776 30.1323 12.8174C30.108 12.6073 30.0057 12.414 29.8456 12.2758C29.6073 12.0808 29.2373 12.0391 29.0706 12.0424C28.3189 12.0558 27.1656 12.4574 21.6106 14.7674Z"
-                    fill="#F5F5F5" />
-                </svg>
-              </a>
-            </li>
-            <li class="footer__social" title="Medium">
-              <a href="https://blog.dapplets.org/" class="footer__social-link">
-                <svg width="41" height="41" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M20.8939 40.0024C31.9396 40.0024 40.8939 31.0481 40.8939 20.0024C40.8939 8.95675 31.9396 0.00244141 20.8939 0.00244141C9.84823 0.00244141 0.893921 8.95675 0.893921 20.0024C0.893921 31.0481 9.84823 40.0024 20.8939 40.0024ZM14.7992 27.9999C19.2311 27.9999 22.8222 24.4177 22.8222 19.9999C22.8208 18.9478 22.6122 17.9063 22.2082 16.9348C21.8042 15.9633 21.2129 15.0809 20.4678 14.338C19.7228 13.5951 18.8387 13.0063 17.8661 12.6051C16.8934 12.204 15.8513 11.9983 14.7992 11.9999C10.3689 11.9999 6.77783 15.5804 6.77783 19.9999C6.77923 21.0519 6.98782 22.0933 7.39169 23.0647C7.79555 24.036 8.38679 24.9183 9.13164 25.6612C9.87649 26.4041 10.7604 26.993 11.7328 27.3942C12.7052 27.7955 13.7472 28.0013 14.7992 27.9999ZM27.6116 27.5306C29.8267 27.5306 31.6222 24.1599 31.6222 19.9999C31.6222 15.8417 29.8267 12.4693 27.6116 12.4693C25.3965 12.4693 23.6009 15.8399 23.6009 19.9999C23.6009 24.1581 25.3965 27.5306 27.6116 27.5306ZM33.8107 26.7466C34.5911 26.7466 35.2222 23.7262 35.2222 19.9999C35.2222 16.2737 34.5911 13.2533 33.8125 13.2533C33.032 13.2533 32.4009 16.2737 32.4009 19.9999C32.4009 23.7244 33.032 26.7466 33.8107 26.7466Z"
-                    fill="#F5F5F5" />
-                </svg>
-              </a>
-            </li>
-            <!-- <li class="footer__social" title="Twitter">
+            <!-- FORM__SOCIALS -->
+            <ul class="footer__socials ul-reset">
+              <li class="footer__social" title="GitHub">
+                <a
+                  href="https://github.com/dapplets"
+                  class="footer__social-link"
+                >
+                  <svg
+                    width="41"
+                    height="41"
+                    viewBox="0 0 41 41"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M20.8939 40.0024C31.9396 40.0024 40.8939 31.0481 40.8939 20.0024C40.8939 8.95675 31.9396 0.00244141 20.8939 0.00244141C9.84823 0.00244141 0.893921 8.95675 0.893921 20.0024C0.893921 31.0481 9.84823 40.0024 20.8939 40.0024ZM4.89392 20.0024C4.89392 11.1624 12.0539 4.00244 20.8939 4.00244C29.7339 4.00244 36.8939 11.1624 36.8939 20.0024C36.893 23.3548 35.8408 26.6225 33.8855 29.3456C31.9302 32.0687 29.1702 34.1101 25.9939 35.1824C25.1939 35.3424 24.8939 34.8424 24.8939 34.4224C24.8939 34.2419 24.8962 33.9294 24.8991 33.5134C24.9051 32.6853 24.9139 31.4469 24.9139 30.0224C24.9139 28.5224 24.4139 27.5624 23.8339 27.0624C27.3939 26.6624 31.1339 25.3024 31.1339 19.1624C31.1339 17.4024 30.5139 15.9824 29.4939 14.8624C29.6539 14.4624 30.2139 12.8224 29.3339 10.6224C29.3339 10.6224 27.9939 10.1824 24.9339 12.2624C23.6539 11.9024 22.2939 11.7224 20.9339 11.7224C19.5739 11.7224 18.2139 11.9024 16.9339 12.2624C13.8739 10.2024 12.5339 10.6224 12.5339 10.6224C11.6539 12.8224 12.2139 14.4624 12.3739 14.8624C11.3539 15.9824 10.7339 17.4224 10.7339 19.1624C10.7339 25.2824 14.4539 26.6624 18.0139 27.0624C17.5539 27.4624 17.1339 28.1624 16.9939 29.2024C16.0739 29.6224 13.7739 30.3024 12.3339 27.8824C12.0339 27.4024 11.1339 26.2224 9.87392 26.2424C8.53392 26.2624 9.33392 27.0024 9.89392 27.3024C10.5739 27.6824 11.3539 29.1024 11.5339 29.5624C11.8539 30.4624 12.8939 32.1824 16.9139 31.4424C16.9139 32.3168 16.9224 33.1571 16.9284 33.7411C16.9315 34.0521 16.9339 34.2904 16.9339 34.4224C16.9339 34.8424 16.6339 35.3224 15.8339 35.1824C9.47392 33.0624 4.89392 27.0824 4.89392 20.0024Z"
+                      fill="#F5F5F5"
+                    />
+                  </svg>
+                </a>
+              </li>
+              <li class="footer__social" title="Discord">
+                <a
+                  href="https://discord.com/invite/YcxbkcyjMV"
+                  class="footer__social-link"
+                >
+                  <svg
+                    width="41"
+                    height="41"
+                    viewBox="0 0 41 41"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M20.8939 40.0024C31.9396 40.0024 40.8939 31.0481 40.8939 20.0024C40.8939 8.95675 31.9396 0.00244141 20.8939 0.00244141C9.84823 0.00244141 0.893921 8.95675 0.893921 20.0024C0.893921 31.0481 9.84823 40.0024 20.8939 40.0024ZM25.0886 9.00485C27.1847 9.3593 29.1891 9.98263 31.0591 10.826C31.0755 10.8325 31.0889 10.8446 31.097 10.8602C34.4105 15.6537 36.0458 21.0633 35.4347 27.2893C35.4332 27.3024 35.429 27.3151 35.4223 27.3265C35.4155 27.3379 35.4064 27.3477 35.3956 27.3553C33.1731 28.9745 30.6929 30.2063 28.0598 30.9987C28.0412 31.0043 28.0214 31.004 28.0031 30.9979C27.9847 30.9917 27.9686 30.9801 27.9571 30.9645C27.4035 30.2055 26.8999 29.4062 26.4599 28.5665C26.4539 28.5549 26.4505 28.5422 26.4498 28.5292C26.4491 28.5162 26.4512 28.5032 26.4559 28.491C26.4607 28.4789 26.4679 28.4679 26.4773 28.4588C26.4866 28.4496 26.4978 28.4426 26.51 28.4382C27.3081 28.1424 28.0684 27.7867 28.7992 27.3663C28.8123 27.3586 28.8232 27.3477 28.831 27.3347C28.8388 27.3217 28.8433 27.307 28.844 27.2919C28.8447 27.2767 28.8417 27.2617 28.8351 27.248C28.8286 27.2343 28.8188 27.2225 28.8066 27.2135C28.6514 27.0999 28.4986 26.9813 28.3519 26.8615C28.3385 26.8508 28.3223 26.8441 28.3052 26.8422C28.2881 26.8402 28.2709 26.8431 28.2554 26.8505C23.5119 29.0065 18.3138 29.0065 13.5141 26.8505C13.4987 26.8435 13.4816 26.841 13.4647 26.8431C13.4479 26.8453 13.432 26.8521 13.4188 26.8627C13.2721 26.9813 13.1181 27.0999 12.9641 27.2135C12.952 27.2227 12.9424 27.2347 12.936 27.2485C12.9297 27.2623 12.9269 27.2774 12.9279 27.2925C12.9288 27.3077 12.9336 27.3224 12.9416 27.3352C12.9496 27.3481 12.9607 27.3588 12.9739 27.3663C13.7073 27.7833 14.4724 28.1421 15.2619 28.4394C15.3132 28.459 15.3377 28.5176 15.312 28.5665C14.8818 29.4074 14.3782 30.208 13.8136 30.9657C13.8016 30.9807 13.7855 30.9918 13.7671 30.9975C13.7488 31.0031 13.7292 31.0032 13.7109 30.9975C11.0823 30.2029 8.60616 28.9716 6.38613 27.3553C6.37558 27.3472 6.36679 27.3371 6.36027 27.3256C6.35376 27.314 6.34966 27.3013 6.34824 27.2881C5.83613 21.903 6.87868 16.4494 10.6822 10.8577C10.6916 10.843 10.7053 10.8315 10.7214 10.8247C12.5926 9.98019 14.597 9.35685 16.6919 9.00241C16.7108 8.99941 16.7302 9.00225 16.7474 9.01055C16.7647 9.01885 16.779 9.03221 16.7885 9.04885C17.0676 9.53557 17.3193 10.0375 17.5426 10.5522C19.7657 10.22 22.0258 10.22 24.2489 10.5522C24.4494 10.0877 24.7354 9.49985 24.992 9.04885C25.0016 9.03241 25.016 9.01935 25.0333 9.01146C25.0506 9.00358 25.0699 9.00127 25.0886 9.00485ZM13.3931 21.1C13.3931 22.7023 14.5848 24.0089 16.0295 24.0089C17.4974 24.0089 18.6658 22.7035 18.6658 21.1C18.689 19.5074 17.5084 18.1911 16.0295 18.1911C14.5616 18.1911 13.3931 19.4964 13.3931 21.1ZM23.1404 21.1C23.1404 22.7023 24.3308 24.0089 25.7767 24.0089C27.2568 24.0089 28.413 22.7035 28.413 21.1C28.4362 19.5074 27.2556 18.1911 25.7767 18.1911C24.3076 18.1911 23.1404 19.4964 23.1404 21.1Z"
+                      fill="#F5F5F5"
+                    />
+                  </svg>
+                </a>
+              </li>
+              <li class="footer__social" title="Telegram">
+                <a href="https://t.me/dapplets" class="footer__social-link">
+                  <svg
+                    width="41"
+                    height="41"
+                    viewBox="0 0 41 41"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M40.8939 20.0024C40.8939 31.0474 31.9389 40.0024 20.8939 40.0024C9.84892 40.0024 0.893921 31.0474 0.893921 20.0024C0.893921 8.95744 9.84892 0.00244141 20.8939 0.00244141C31.9389 0.00244141 40.8939 8.95744 40.8939 20.0024ZM21.6106 14.7674C19.6656 15.5758 15.7773 17.2508 9.94725 19.7908C9.00059 20.1674 8.50392 20.5358 8.45892 20.8958C8.38225 21.5058 9.14559 21.7458 10.1823 22.0708C10.3239 22.1158 10.4706 22.1608 10.6206 22.2108C11.6423 22.5424 13.0156 22.9308 13.7289 22.9458C14.3773 22.9591 15.1006 22.6924 15.8989 22.1458C21.3456 18.4674 24.1573 16.6091 24.3339 16.5691C24.4589 16.5408 24.6323 16.5041 24.7489 16.6091C24.8656 16.7124 24.8539 16.9091 24.8423 16.9624C24.7656 17.2841 21.7756 20.0658 20.2256 21.5058C19.7423 21.9541 19.4006 22.2724 19.3306 22.3458C19.1739 22.5074 19.0139 22.6624 18.8606 22.8108C17.9106 23.7241 17.2006 24.4108 18.9006 25.5308C19.7173 26.0691 20.3706 26.5141 21.0223 26.9574C21.7339 27.4424 22.4439 27.9258 23.3639 28.5291C23.5973 28.6824 23.8206 28.8408 24.0389 28.9958C24.8673 29.5874 25.6123 30.1174 26.5323 30.0341C27.0656 29.9841 27.6189 29.4824 27.8989 27.9841C28.5606 24.4408 29.8639 16.7674 30.1656 13.6041C30.1839 13.3415 30.1728 13.0776 30.1323 12.8174C30.108 12.6073 30.0057 12.414 29.8456 12.2758C29.6073 12.0808 29.2373 12.0391 29.0706 12.0424C28.3189 12.0558 27.1656 12.4574 21.6106 14.7674Z"
+                      fill="#F5F5F5"
+                    />
+                  </svg>
+                </a>
+              </li>
+              <li class="footer__social" title="Medium">
+                <a
+                  href="https://blog.dapplets.org/"
+                  class="footer__social-link"
+                >
+                  <svg
+                    width="41"
+                    height="41"
+                    viewBox="0 0 41 41"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M20.8939 40.0024C31.9396 40.0024 40.8939 31.0481 40.8939 20.0024C40.8939 8.95675 31.9396 0.00244141 20.8939 0.00244141C9.84823 0.00244141 0.893921 8.95675 0.893921 20.0024C0.893921 31.0481 9.84823 40.0024 20.8939 40.0024ZM14.7992 27.9999C19.2311 27.9999 22.8222 24.4177 22.8222 19.9999C22.8208 18.9478 22.6122 17.9063 22.2082 16.9348C21.8042 15.9633 21.2129 15.0809 20.4678 14.338C19.7228 13.5951 18.8387 13.0063 17.8661 12.6051C16.8934 12.204 15.8513 11.9983 14.7992 11.9999C10.3689 11.9999 6.77783 15.5804 6.77783 19.9999C6.77923 21.0519 6.98782 22.0933 7.39169 23.0647C7.79555 24.036 8.38679 24.9183 9.13164 25.6612C9.87649 26.4041 10.7604 26.993 11.7328 27.3942C12.7052 27.7955 13.7472 28.0013 14.7992 27.9999ZM27.6116 27.5306C29.8267 27.5306 31.6222 24.1599 31.6222 19.9999C31.6222 15.8417 29.8267 12.4693 27.6116 12.4693C25.3965 12.4693 23.6009 15.8399 23.6009 19.9999C23.6009 24.1581 25.3965 27.5306 27.6116 27.5306ZM33.8107 26.7466C34.5911 26.7466 35.2222 23.7262 35.2222 19.9999C35.2222 16.2737 34.5911 13.2533 33.8125 13.2533C33.032 13.2533 32.4009 16.2737 32.4009 19.9999C32.4009 23.7244 33.032 26.7466 33.8107 26.7466Z"
+                      fill="#F5F5F5"
+                    />
+                  </svg>
+                </a>
+              </li>
+              <!-- <li class="footer__social" title="Twitter">
               <a href="#" class="footer__social-link">
                 <svg width="41" height="41" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
@@ -730,43 +891,60 @@
                 </svg>
               </a>
             </li> -->
-            <li class="footer__social" title="Email">
-              <a href="mailto:contact@dapplets.org" class="footer__social-link">
-                <svg width="41" height="41" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M20.8939 40.0024C31.9396 40.0024 40.8939 31.0481 40.8939 20.0024C40.8939 8.95675 31.9396 0.00244141 20.8939 0.00244141C9.84823 0.00244141 0.893921 8.95675 0.893921 20.0024C0.893921 31.0481 9.84823 40.0024 20.8939 40.0024ZM34.2273 26.3358V15.4798L21.3579 22.2211C21.2148 22.2961 21.0555 22.3353 20.8939 22.3353C20.7323 22.3353 20.5731 22.2961 20.4299 22.2211L7.56059 15.4798V26.3358L7.56725 26.5811C7.62992 27.6862 8.11308 28.7254 8.91761 29.4855C9.72215 30.2457 10.7871 30.6692 11.8939 30.6691H29.8939L30.1393 30.6624C31.2443 30.5998 32.2835 30.1166 33.0437 29.3121C33.8038 28.5075 34.2273 27.4426 34.2273 26.3358ZM32.8006 10.4548C32.0039 9.73444 30.968 9.33565 29.8939 9.33578H11.8939L11.6459 9.34244C10.6162 9.40136 9.64119 9.82565 8.89625 10.5391C8.15132 11.2525 7.68529 12.2082 7.58192 13.2344L20.8939 20.2078L34.2059 13.2344C34.0982 12.1658 33.5974 11.1752 32.8006 10.4548Z"
-                    fill="#F5F5F5" />
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
-
-        <span class="footer__line footer__line--2"></span>
-
-        <!-- FOOTER__LINKS -->
-        <div class="footer__links">
-
-          <div class="footer__links-container">
-            <h5 class="footer__links-title">Home</h5>
-
-            <ul class="footer__social-link ul-reset">
-              <li class="footer__links-item">
-                <a href="/#what-is" class="footer__links-link">What is Dapplets Project?</a>
-              </li>
-              <li class="footer__links-item">
-                <a href="/#innovation" class="footer__links-link">Innovation</a>
-              </li>
-              <li class="footer__links-item">
-                <a href="/#to-use" class="footer__links-link">How to use it?</a>
-              </li>
-              <li class="footer__links-item">
-                <a href="/#economic" class="footer__links-link">Role model</a>
+              <li class="footer__social" title="Email">
+                <a
+                  href="mailto:contact@dapplets.org"
+                  class="footer__social-link"
+                >
+                  <svg
+                    width="41"
+                    height="41"
+                    viewBox="0 0 41 41"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M20.8939 40.0024C31.9396 40.0024 40.8939 31.0481 40.8939 20.0024C40.8939 8.95675 31.9396 0.00244141 20.8939 0.00244141C9.84823 0.00244141 0.893921 8.95675 0.893921 20.0024C0.893921 31.0481 9.84823 40.0024 20.8939 40.0024ZM34.2273 26.3358V15.4798L21.3579 22.2211C21.2148 22.2961 21.0555 22.3353 20.8939 22.3353C20.7323 22.3353 20.5731 22.2961 20.4299 22.2211L7.56059 15.4798V26.3358L7.56725 26.5811C7.62992 27.6862 8.11308 28.7254 8.91761 29.4855C9.72215 30.2457 10.7871 30.6692 11.8939 30.6691H29.8939L30.1393 30.6624C31.2443 30.5998 32.2835 30.1166 33.0437 29.3121C33.8038 28.5075 34.2273 27.4426 34.2273 26.3358ZM32.8006 10.4548C32.0039 9.73444 30.968 9.33565 29.8939 9.33578H11.8939L11.6459 9.34244C10.6162 9.40136 9.64119 9.82565 8.89625 10.5391C8.15132 11.2525 7.68529 12.2082 7.58192 13.2344L20.8939 20.2078L34.2059 13.2344C34.0982 12.1658 33.5974 11.1752 32.8006 10.4548Z"
+                      fill="#F5F5F5"
+                    />
+                  </svg>
+                </a>
               </li>
             </ul>
           </div>
 
-          <!-- <div class="footer__links-container">
+          <span class="footer__line footer__line--2"></span>
+
+          <!-- FOOTER__LINKS -->
+          <div class="footer__links">
+            <div class="footer__links-container">
+              <h5 class="footer__links-title">Home</h5>
+
+              <ul class="footer__social-link ul-reset">
+                <li class="footer__links-item">
+                  <a href="/#what-is" class="footer__links-link"
+                    >What is Dapplets Project?</a
+                  >
+                </li>
+                <li class="footer__links-item">
+                  <a href="/#innovation" class="footer__links-link"
+                    >Innovation</a
+                  >
+                </li>
+                <li class="footer__links-item">
+                  <a href="/#to-use" class="footer__links-link"
+                    >How to use it?</a
+                  >
+                </li>
+                <li class="footer__links-item">
+                  <a href="/#economic" class="footer__links-link">Role model</a>
+                </li>
+              </ul>
+            </div>
+
+            <!-- <div class="footer__links-container">
             <h5 class="footer__links-title">Dapplets Store</h5>
 
             <ul class="footer__social-link ul-reset">
@@ -785,77 +963,92 @@
             </ul>
           </div> -->
 
-          <div class="footer__links-container">
-            <h5 class="footer__links-title">Join Us</h5>
+            <div class="footer__links-container">
+              <h5 class="footer__links-title">Join Us</h5>
 
-            <ul class="footer__social-link ul-reset">
-              <li class="footer__links-item">
-                <a href="/join-us.html#owner" class="footer__links-link">Owner</a>
-              </li>
-              <li class="footer__links-item">
-                <a href="/join-us.html#lister" class="footer__links-link">Lister</a>
-              </li>
-              <li class="footer__links-item">
-                <a href="/join-us.html#auditors" class="footer__links-link">Developer</a>
-              </li>
-              <li class="footer__links-item">
-                <a href="/join-us.html#auditors" class="footer__links-link">Auditor</a>
-              </li>
-            </ul>
-          </div>
+              <ul class="footer__social-link ul-reset">
+                <li class="footer__links-item">
+                  <a href="/join-us.html#owner" class="footer__links-link"
+                    >Owner</a
+                  >
+                </li>
+                <li class="footer__links-item">
+                  <a href="/join-us.html#lister" class="footer__links-link"
+                    >Lister</a
+                  >
+                </li>
+                <li class="footer__links-item">
+                  <a href="/join-us.html#auditors" class="footer__links-link"
+                    >Developer</a
+                  >
+                </li>
+                <li class="footer__links-item">
+                  <a href="/join-us.html#auditors" class="footer__links-link"
+                    >Auditor</a
+                  >
+                </li>
+              </ul>
+            </div>
 
-          <div class="footer__links-container">
-            <h5 class="footer__links-title">About Dapplets</h5>
+            <div class="footer__links-container">
+              <h5 class="footer__links-title">About Dapplets</h5>
 
-            <ul class="footer__social-link ul-reset">
-              <li class="footer__links-item">
-                <a href="/about.html#mission" class="footer__links-link">Our Mission</a>
-              </li>
-              <li class="footer__links-item">
-                <a href="/about.html#motivation" class="footer__links-link">Motivation</a>
-              </li>
-              <!-- <li class="footer__links-item">
+              <ul class="footer__social-link ul-reset">
+                <li class="footer__links-item">
+                  <a href="/about.html#mission" class="footer__links-link"
+                    >Our Mission</a
+                  >
+                </li>
+                <li class="footer__links-item">
+                  <a href="/about.html#motivation" class="footer__links-link"
+                    >Motivation</a
+                  >
+                </li>
+                <!-- <li class="footer__links-item">
                 <a href="#" class="footer__links-link">Strategy</a>
               </li> -->
-              <!-- <li class="footer__links-item">
+                <!-- <li class="footer__links-item">
                 <a href="#" class="footer__links-link">Project News</a>
               </li> -->
-              <!-- <li class="footer__links-item">
+                <!-- <li class="footer__links-item">
                 <a href="#" class="footer__links-link">FAQ</a>
               </li> -->
-              <li class="footer__links-item">
-                <a href="/about.html#career" class="footer__links-link">Career at Dapplets</a>
-              </li>
-            </ul>
-          </div>
+                <li class="footer__links-item">
+                  <a href="/about.html#career" class="footer__links-link"
+                    >Career at Dapplets</a
+                  >
+                </li>
+              </ul>
+            </div>
 
-          <div class="footer__links-container">
-            <h5 class="footer__links-title">Forum</h5>
+            <div class="footer__links-container">
+              <h5 class="footer__links-title">Forum</h5>
 
-            <ul class="footer__social-link ul-reset">
-              <li class="footer__links-item">
-                <a href="https://forum.dapplets.org/" class="footer__links-link" target="_blank">Forum Dapplets</a>
-              </li>
-            </ul>
+              <ul class="footer__social-link ul-reset">
+                <li class="footer__links-item">
+                  <a href="#" class="footer__links-link" target="_blank"
+                    >Forum Dapplets</a
+                  >
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
-    </div>
 
-    <!-- FOOTER__BOTTOM -->
-    <div class="footer__bottom">
-      <div class="container">
-        <div class="footer__inner">
-          <p class="footer__copywriting text"></p>
+      <!-- FOOTER__BOTTOM -->
+      <div class="footer__bottom">
+        <div class="container">
+          <div class="footer__inner">
+            <p class="footer__copywriting text"></p>
 
-          <ul class="footer__inbound-links ul-reset">
-          </ul>
+            <ul class="footer__inbound-links ul-reset"></ul>
+          </div>
         </div>
       </div>
-    </div>
-  </footer>
+    </footer>
 
-  <!--
+    <!--
   <div class="cookies" id="cookies">
     <div class="cookies__wrapper">
       <h2 class="cookies__title">Cookies Policy</h2>
@@ -880,8 +1073,7 @@
   </div>
   -->
 
-  <script src="/assets/js/index.js"></script>
-  <script src="/assets/js/script.js"></script>
-</body>
-
+    <script src="/assets/js/index.js"></script>
+    <script src="/assets/js/script.js"></script>
+  </body>
 </html>

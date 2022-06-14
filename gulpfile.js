@@ -13,6 +13,7 @@ const dependents = require('gulp-dependents');
 const htmlmin = require('gulp-htmlmin');
 const gulpRename = require('gulp-rename');
 const named = require('vinyl-named');
+const gutil = require('gulp-util');
 
 const src_folder = './src/';
 const src_assets_folder = src_folder + 'assets/';
@@ -22,6 +23,17 @@ const node_modules_folder = './node_modules/';
 const dist_node_modules_folder = dist_folder + 'node_modules/';
 
 const node_dependencies = Object.keys(require('./package.json').dependencies || {});
+
+// prevent watch stopping after failing of the build
+const plumberConfig = {
+  errorHandler: function(error) {
+    gutil.log(
+        gutil.colors.cyan('Plumber') + gutil.colors.red(' found unhandled error:\n'),
+        error.toString()
+    );
+      this.emit('end');
+  }
+};
 
 gulp.task('clear', () => del([dist_folder]));
 
@@ -36,13 +48,12 @@ gulp.task('html', () => {
     .pipe(browserSync.stream());
 });
 
-
 gulp.task('scss', () => {
   return gulp.src([
     src_assets_folder + 'scss/**/*.scss'
   ], { since: gulp.lastRun('scss') })
     .pipe(sourcemaps.init())
-    .pipe(plumber())
+    .pipe(plumber(plumberConfig))
     .pipe(dependents())
     .pipe(scss({ outputStyle: 'expanded' }))
     .pipe(autoprefixer({ cascade: false }))
@@ -55,7 +66,7 @@ gulp.task('scss', () => {
 
 gulp.task('js', () => {
   return gulp.src([src_assets_folder + 'js/*.js'], { since: gulp.lastRun('js') })
-    .pipe(plumber())
+    .pipe(plumber(plumberConfig))
     .pipe(named())
     .pipe(webpack({
       mode: 'production'
@@ -72,7 +83,7 @@ gulp.task('js', () => {
 
 gulp.task('images', () => {
   return gulp.src([src_assets_folder + 'images/**/*.+(png|jpg|jpeg|gif|svg|ico)'], { since: gulp.lastRun('images') })
-    .pipe(plumber())
+    .pipe(plumber(plumberConfig))
     .pipe(gulp.dest(dist_assets_folder + 'images'))
     .pipe(browserSync.stream());
 });

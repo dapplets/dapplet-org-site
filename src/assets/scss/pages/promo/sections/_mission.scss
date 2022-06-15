@@ -2,25 +2,19 @@
   position: relative;
   z-index: 2;
 
-  min-height: 742px;
+  height: 742px;
+  padding-top: 111px;
 
   background: #FFF;
-  background-image: url("../images/bg/mission.png");
+  background-image: url("../images/bg/mission.svg");
+  background-repeat: no-repeat;
+  background-position: center;
   background-size: contain;
 }
 
 .mission-content {
   display: flex;
   flex-direction: column;
-
-  width: 1300px;
-  height: 100%;
-  margin: auto;
-  padding: 80px 160px;
-
-  // background-image: url("../images/bg/mission.png");
-  background-size: contain;
-  gap: 60px;
 }
 
 .mission-header {
@@ -34,11 +28,18 @@
 }
 
 .mission-text {
+  max-width: 963px;
+  margin: 61px auto 30px;
+
   text-align: center;
 
   font-size: 18px;
   font-weight: 400;
   line-height: 149%;
+
+  p {
+    margin-bottom: 28px;
+  }
 }
 
 .mission-divider {

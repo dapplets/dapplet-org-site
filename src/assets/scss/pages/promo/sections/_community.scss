@@ -14,17 +14,9 @@
   display: flex;
   flex-direction: column;
 
-  max-width: 606px;
+  max-width: 696px;
   margin-left: 103px;
   padding-top: 117px;
-  gap: 60px;
-}
-
-.community-header {
-  font-family: "Playfair Display";
-  font-size: 56px;
-  font-weight: 900;
-  line-height: 100%;
 }
 
 .community-item {
@@ -62,5 +54,5 @@
 }
 
 .community-message {
-  width: 696px;
+  margin-top: 52px;
 }

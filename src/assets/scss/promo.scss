@@ -60,14 +60,14 @@
   src: url(../fonts/Segoe/SegoeUI.ttf), url("Segoe UI.ttf") format("ttf");
 }
 
-* {
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-}
+// * {
+//   -ms-overflow-style: none;
+//   scrollbar-width: none;
+// }
 
-*::-webkit-scrollbar {
-  display: none;
-}
+// *::-webkit-scrollbar {
+//   display: none;
+// }
 
 body {
   /* stylelint-disable-next-line font-family-no-missing-generic-family-keyword */

@@ -16,24 +16,18 @@
   display: flex;
   flex-direction: column;
 
-  padding: 42px 0;
+  padding: 55px 0;
 
   background-color: #FFF;
 }
 
 .mission-header {
   text-align: center;
-
-  /* stylelint-disable-next-line font-family-no-missing-generic-family-keyword */
-  font-family: "Playfair Display";
-  font-size: 56px;
-  font-weight: 900;
-  font-style: normal;
 }
 
 .mission-text {
   max-width: 963px;
-  margin: 49px auto 29px;
+  margin: 54px auto 31px;
 
   text-align: center;
 

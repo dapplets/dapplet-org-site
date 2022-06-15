@@ -1,0 +1,40 @@
+.community {
+  height: 668px;
+  background-color: #fff;
+  width: 1300px;
+  margin: auto;
+}
+
+.community-content {
+  padding-top: 4px;
+  display: flex;
+}
+
+.community-text {
+  padding-top: 120px;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.community-header {
+  font-weight: 900;
+  font-size: 56px;
+  line-height: 100%;
+  font-family: "Playfair Display";
+}
+
+.community-item {
+  font-size: 18px;
+  line-height: 149%;
+  margin-bottom: 20px;
+}
+
+.community-image {
+  width: 686px;
+  height: 640px;
+}
+
+.community-message {
+  width: 696px;
+}

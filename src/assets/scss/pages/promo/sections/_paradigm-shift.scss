@@ -1,0 +1,72 @@
+.paradigm-shift {
+  position: relative;
+  width: 1300px;
+  margin: auto;
+  height: 773px;
+  background-image: url("../images/bg/paradigm-shift.png");
+}
+
+.paradigm-shift-content {
+  width: 1300px;
+  height: 100%;
+  margin: auto;
+  padding-top: 57px;
+  padding-bottom: 76px;
+  display: flex;
+}
+
+.paradigm-shift-text {
+  padding-top: 63px;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  width: 728px;
+}
+
+.paradigm-shift-header {
+  font-weight: 900;
+  font-size: 56px;
+  line-height: 100%;
+  font-family: "Playfair Display";
+}
+
+.paradigm-shift-message {
+  max-width: 650px;
+  text-align: start;
+}
+
+.ps-features-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  list-style-position: inside;
+  padding: 0;
+}
+
+.ps-features-item {
+  font-size: 18px;
+  line-height: 149%;
+}
+
+.ps-conclusion-subheader {
+  font-size: 18px;
+  line-height: 149%;
+}
+
+.ps-features-list .ps-features-item::marker {
+  color: #d9304f;
+}
+
+.paradigm-shift-image {
+  margin-left: -30px;
+  height: 675px;
+  z-index: 2;
+}
+
+.ps-squiggles {
+  position: absolute;
+  top: 606px;
+  right: -227px;
+  height: 342px;
+  z-index: 1;
+}

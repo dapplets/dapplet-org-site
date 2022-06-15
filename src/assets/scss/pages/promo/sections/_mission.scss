@@ -1,0 +1,40 @@
+.mission {
+  z-index: 2;
+  height: 100vh;
+  position: relative;
+  background: #fff;
+}
+
+.mission-content {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  width: 1300px;
+  height: 100%;
+  margin: auto;
+  background-image: url("../images/bg/mission.png");
+  background-size: contain;
+  padding: 80px 160px;
+}
+
+.mission-header {
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 56px;
+  text-align: center;
+}
+
+.mission-text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 149%;
+  text-align: center;
+}
+
+.mission-divider {
+  width: 246px;
+  height: 2px;
+  background: #2a2a2a;
+  align-self: center;
+}

@@ -1,0 +1,34 @@
+@import "./base";
+
+// SECTIONS
+@import "./pages/promo/sections/hero";
+@import "./pages/promo/sections/mission";
+
+@font-face {
+  font-family: "Segoe UI Regular";
+  src: url(../fonts/Segoe/SegoeUI.ttf), url("Segoe UI.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: "Playfair Display";
+  src: url(../fonts/PlayfairDisplay/PlayfairDisplay-VariableFont_wght.ttf),
+    url("PlayfairDisplay-VariableFont_wght.ttf") format("ttf");
+}
+
+*::-webkit-scrollbar {
+  display: none;
+}
+
+* {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+body {
+  font-family: "Segoe UI Regular";
+}
+
+a {
+  color: #2a2a2a;
+  text-decoration: underline;
+}

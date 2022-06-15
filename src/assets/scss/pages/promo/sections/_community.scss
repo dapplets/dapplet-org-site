@@ -35,9 +35,30 @@
 }
 
 .community-image {
+  position: relative;
+
   max-width: 533px;
   height: 640px;
   margin-left: -31px;
+
+  &::after {
+    position: absolute;
+
+    right: -165px;
+    bottom: 31px;
+
+    width: 315px;
+    height: 37px;
+
+    content: "";
+
+    background-image: url('../images/bg-icon/many-small-lines.svg');
+  }
+
+  &__img {
+    width: 100%;
+    height: 100%;
+  }
 }
 
 .community-message {

@@ -1,8 +1,8 @@
 .howto {
   min-height: 478px;
-  padding: 87px 0;
+  padding: 100px 0;
 
-  background: #FFF;
+  background-color: #FFF;
 }
 
 .howto__wrapper {
@@ -60,10 +60,11 @@
 }
 
 .howto-item__title {
-  margin-bottom: 13px;
+  margin-bottom: 9px;
 
   color: #2A2A2A;
 
+  /* stylelint-disable-next-line font-family-no-missing-generic-family-keyword */
   font-family: 'Playfair Display';
 
   font-size: 24px;

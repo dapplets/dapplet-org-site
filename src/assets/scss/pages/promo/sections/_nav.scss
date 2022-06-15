@@ -8,6 +8,12 @@
   height: 100px;
   margin: 0 auto;
   gap: 100px;
+
+  a {
+    &:hover {
+      color: #D9304F;
+    }
+  }
 }
 
 .divider-item {

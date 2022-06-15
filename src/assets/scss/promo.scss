@@ -1,4 +1,5 @@
 @import "./base";
+@import './fonts/playfair-display';
 
 // SECTIONS
 @import "./pages/promo/sections/hero";
@@ -22,6 +23,32 @@
   }
 }
 
+.button {
+  text-transform: uppercase;
+
+  color: #FFF;
+
+  border: none;
+  background: #D9304F;
+
+  font-size: 14px;
+
+  font-weight: 600;
+
+  &:hover {
+    color: #FFF;
+    background-color: #F26680;
+  }
+
+  &:focus {
+    outline: 0;
+  }
+
+  &:active {
+    background-color: #A6253C;
+  }
+}
+
 .container {
   max-width: 1330px;
   margin: 0 auto;
@@ -31,13 +58,6 @@
 @font-face {
   font-family: "Segoe UI Regular";
   src: url(../fonts/Segoe/SegoeUI.ttf), url("Segoe UI.ttf") format("ttf");
-}
-
-@font-face {
-  font-family: "Playfair Display";
-  src:
-    url(../fonts/PlayfairDisplay/PlayfairDisplay-VariableFont_wght.ttf),
-    url("PlayfairDisplay-VariableFont_wght.ttf") format("ttf");
 }
 
 * {

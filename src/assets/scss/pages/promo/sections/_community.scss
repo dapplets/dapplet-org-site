@@ -1,38 +1,43 @@
 .community {
-  height: 668px;
-  background-color: #fff;
-  width: 1300px;
-  margin: auto;
+  min-height: 668px;
+
+  background-color: #FFF;
 }
 
 .community-content {
-  padding-top: 4px;
   display: flex;
+
+  padding-top: 4px;
 }
 
 .community-text {
-  padding-top: 120px;
   display: flex;
   flex-direction: column;
+
+  max-width: 606px;
+  margin-left: 103px;
+  padding-top: 117px;
   gap: 60px;
 }
 
 .community-header {
-  font-weight: 900;
-  font-size: 56px;
-  line-height: 100%;
   font-family: "Playfair Display";
+  font-size: 56px;
+  font-weight: 900;
+  line-height: 100%;
 }
 
 .community-item {
+  margin-bottom: 20px;
+
   font-size: 18px;
   line-height: 149%;
-  margin-bottom: 20px;
 }
 
 .community-image {
-  width: 686px;
+  max-width: 533px;
   height: 640px;
+  margin-left: -31px;
 }
 
 .community-message {

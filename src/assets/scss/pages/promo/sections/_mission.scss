@@ -1,48 +1,56 @@
 .mission {
-  z-index: 2;
-  height: 714px;
   position: relative;
-  background: #fff;
-}
+  z-index: 2;
 
-.mission-container {
-  display: flex;
-  align-items: center;
-  width: 1300px;
-  height: 100%;
-  margin: auto;
-  background-image: url("../images/bg/mission.png");
-  background-size: contain;
+  height: 742px;
+  padding-top: 69px;
+
+  background: #FFF;
+  background-image: url("../images/bg/mission.svg");
   background-repeat: no-repeat;
-  padding: 0 160px;
+  background-position: center;
+  background-size: contain;
 }
 
 .mission-content {
-  background-color: #fff;
   display: flex;
   flex-direction: column;
-  gap: 60px;
-  padding: 40px 0;
+
+  padding: 42px 0;
+
+  background-color: #FFF;
 }
 
 .mission-header {
-  font-family: "Playfair Display";
-  font-style: normal;
-  font-weight: 900;
-  font-size: 56px;
   text-align: center;
+
+  /* stylelint-disable-next-line font-family-no-missing-generic-family-keyword */
+  font-family: "Playfair Display";
+  font-size: 56px;
+  font-weight: 900;
+  font-style: normal;
 }
 
 .mission-text {
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 149%;
+  max-width: 963px;
+  margin: 61px auto 30px;
+
   text-align: center;
+
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 149%;
+
+  p {
+    margin-bottom: 28px;
+  }
 }
 
 .mission-divider {
+  align-self: center;
+
   width: 246px;
   height: 2px;
-  background: #2a2a2a;
-  align-self: center;
+
+  background: #2A2A2A;
 }

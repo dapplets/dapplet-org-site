@@ -1,7 +1,7 @@
 .paradigm-shift {
   position: relative;
 
-  min-height: 764px;
+  min-height: 728px;
 
   background-image: url("../images/bg/paradigm-shift.png");
 }
@@ -10,14 +10,14 @@
   display: flex;
 
   padding-top: 57px;
-  padding-bottom: 18px;
+  padding-bottom: 14px;
 }
 
 .paradigm-shift-text {
   display: flex;
   flex-direction: column;
 
-  padding-top: 54px;
+  padding-top: 37px;
 }
 
 .paradigm-shift-header {
@@ -79,8 +79,7 @@
 .ps-squiggles {
   position: absolute;
   z-index: 1;
-  top: 606px;
-  right: -227px;
-
+  bottom: -144px;
+  right: 48px;
   height: 342px;
 }

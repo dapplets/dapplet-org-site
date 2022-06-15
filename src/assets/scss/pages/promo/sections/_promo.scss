@@ -2,51 +2,51 @@
 @import '../../../base/constans';
 
 .promo {
-	position: relative;
+  position: relative;
 
-	margin-top: 29px;
-	padding-top: 268px;
-	padding-bottom: 54px;
+  margin-top: 29px;
+  padding-top: 268px;
+  padding-bottom: 54px;
 
-	background-image: url('../images/bg/developers-bg.jpg');
+  background-image: url('../images/bg/developers-bg.jpg');
 
-	@include backgroundStyle;
+  @include backgroundStyle;
 }
 
 .promo-title {
-	text-align: center;
-	text-transform: uppercase;
+  text-align: center;
+  text-transform: uppercase;
 
-	color: $ifm-primary-color;
+  color: $ifm-primary-color;
 
-	font-size: 109px;
-	font-weight: 900;
+  font-size: 109px;
+  font-weight: 900;
 
-	span {
-		display: block;
-	}
+  span {
+    display: block;
+  }
 
-	&__primary {
-		letter-spacing: 0.1em;
+  &__primary {
+    letter-spacing: 0.1em;
 
-		font-size: 109px;
-	}
+    font-size: 109px;
+  }
 
-	&__secondary {
-		letter-spacing: 1.3em;
+  &__secondary {
+    letter-spacing: 1.3em;
 
-		font-size: 41px;
-		font-weight: 400;
-	}
+    font-size: 41px;
+    font-weight: 400;
+  }
 }
 
 .promo__buttons {
-	margin-top: 136px;
+  margin-top: 136px;
 }
 
 .button.promo__button {
-	max-width: 191px;
-	margin-right: auto;
-	margin-bottom: 54px;
-	margin-left: auto;
+  max-width: 191px;
+  margin-right: auto;
+  margin-bottom: 54px;
+  margin-left: auto;
 }

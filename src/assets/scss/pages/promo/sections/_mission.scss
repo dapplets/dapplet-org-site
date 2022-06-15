@@ -1,40 +1,51 @@
 .mission {
-  z-index: 2;
-  height: 100vh;
   position: relative;
-  background: #fff;
+  z-index: 2;
+
+  min-height: 742px;
+
+  background: #FFF;
+  background-image: url("../images/bg/mission.png");
+  background-size: contain;
 }
 
 .mission-content {
   display: flex;
   flex-direction: column;
-  gap: 60px;
+
   width: 1300px;
   height: 100%;
   margin: auto;
-  background-image: url("../images/bg/mission.png");
-  background-size: contain;
   padding: 80px 160px;
+
+  // background-image: url("../images/bg/mission.png");
+  background-size: contain;
+  gap: 60px;
 }
 
 .mission-header {
-  font-family: "Playfair Display";
-  font-style: normal;
-  font-weight: 900;
-  font-size: 56px;
   text-align: center;
+
+  /* stylelint-disable-next-line font-family-no-missing-generic-family-keyword */
+  font-family: "Playfair Display";
+  font-size: 56px;
+  font-weight: 900;
+  font-style: normal;
 }
 
 .mission-text {
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 149%;
   text-align: center;
+
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 149%;
 }
 
 .mission-divider {
+  align-self: center;
+
   width: 246px;
   height: 2px;
-  background: #2a2a2a;
-  align-self: center;
+
+  background: #2A2A2A;
 }

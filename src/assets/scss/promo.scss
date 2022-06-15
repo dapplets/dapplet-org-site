@@ -3,6 +3,26 @@
 // SECTIONS
 @import "./pages/promo/sections/hero";
 @import "./pages/promo/sections/mission";
+@import "./pages/promo/sections/howto";
+
+.title {
+  color: #2A2A2A;
+
+  font-family: "Playfair Display";
+  font-size: 56px;
+  font-weight: 900;
+  line-height: 100%;
+
+  &--center {
+    text-align: center;
+  }
+}
+
+.container {
+  max-width: 1330px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
 
 @font-face {
   font-family: "Segoe UI Regular";
@@ -11,12 +31,9 @@
 
 @font-face {
   font-family: "Playfair Display";
-  src: url(../fonts/PlayfairDisplay/PlayfairDisplay-VariableFont_wght.ttf),
+  src:
+    url(../fonts/PlayfairDisplay/PlayfairDisplay-VariableFont_wght.ttf),
     url("PlayfairDisplay-VariableFont_wght.ttf") format("ttf");
-}
-
-*::-webkit-scrollbar {
-  display: none;
 }
 
 * {
@@ -24,11 +41,17 @@
   scrollbar-width: none;
 }
 
+*::-webkit-scrollbar {
+  display: none;
+}
+
 body {
+  /* stylelint-disable-next-line font-family-no-missing-generic-family-keyword */
   font-family: "Segoe UI Regular";
 }
 
 a {
-  color: #2a2a2a;
   text-decoration: underline;
+
+  color: #2A2A2A;
 }

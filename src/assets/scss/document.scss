@@ -18,105 +18,124 @@
 @import './adaptive/footer';
 
 .document {
-	margin-top: 100px;
-	margin-bottom: 100px;
+  margin-top: 100px;
+  margin-bottom: 100px;
 
-	h1 {
-		color: #2A2A2A;
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: #2A2A2A;
+  }
 
-		font-size: 50px;
-		font-weight: 900;
-		line-height: 149%;
-	}
+  h1 {
+    color: #2A2A2A;
 
-	span {
-		color: #747376;
+    font-size: 50px;
+    font-weight: 900;
+    line-height: 149%;
+  }
 
-		font-size: 25px;
-		line-height: 149%;
-	}
+  h2 {
+    margin-top: 20px;
 
-	p,
-	li {
-		color: #2A2A2A;
+    font-size: 40px;
+    font-weight: 900;
+    line-height: 149%;
+  }
 
-		font-size: 16px;
-		line-height: 149%;
-	}
+  h3 {
+    margin-top: 20px;
+    margin-bottom: 2px;
+  }
 
-	ul {
-		margin-top: 20px;
-	}
+  h4 {
+    margin-top: 10px;
+    margin-bottom: 0;
+  }
 
-	p {
-		margin-top: 16px;
-		margin-bottom: 0;
-	}
+  span {
+    color: #747376;
 
-	li {
-		span {
-			font-size: 16px;
-		}
+    font-size: 25px;
+    line-height: 149%;
+  }
 
-		p {
-			margin-top: 5px;
+  p,
+  li {
+    color: #2A2A2A;
 
-			&:last-child {
-				margin-bottom: 10px;
-			}
-		}
-	}
+    font-size: 16px;
+    line-height: 149%;
+  }
 
-	h2 {
-		margin-top: 20px;
+  ul {
+    margin-top: 20px;
+  }
 
-		font-size: 40px;
-		font-weight: 900;
-		line-height: 149%;
-	}
+  p {
+    margin-top: 16px;
+    margin-bottom: 0;
+  }
 
-	a {
-		word-wrap: break-word;
+  li {
+    span {
+      font-size: 16px;
+    }
 
-		color: $ifm-link-hover;
-	}
+    p {
+      margin-top: 5px;
+
+      &:last-child {
+        margin-bottom: 10px;
+      }
+    }
+  }
+
+  a {
+    word-wrap: break-word;
+
+    color: $ifm-link-hover;
+  }
 }
 
 @media (max-width: 900px) {
-	.document {
-		h1 {
-			font-size: 41px;
-		}
-	}
+  .document {
+    h1 {
+      font-size: 41px;
+    }
+  }
 
-	.document h2 {
-		font-size: 24px;
-	}
+  .document h2 {
+    font-size: 24px;
+  }
 
-	.document span {
-		font-size: 21px;
-		line-height: 84%;
-	}
+  .document span {
+    font-size: 21px;
+    line-height: 84%;
+  }
 }
 
 @media (max-width: 480px) {
-	.document {
-		h1 {
-			font-size: 41px;
-		}
-	}
+  .document {
+    h1 {
+      font-size: 41px;
+    }
+  }
 
-	.document h2 {
-		font-size: 26px;
-	}
+  .document h2 {
+    font-size: 26px;
+  }
 
-	.document span {
-		font-size: 21px;
-		line-height: 84%;
-	}
+  .document span {
+    font-size: 21px;
+    line-height: 84%;
+  }
 
-	p,
-	li {
-		font-size: 14px;
-	}
+  p,
+  li {
+    font-size: 14px;
+  }
 }

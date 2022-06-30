@@ -49,17 +49,7 @@
     margin-left: auto;
   }
 
-  .howto-item {
-    width: 100%;
-    max-width: 230px;
-    height: 120px;
-
-    margin-bottom: 40px;
-
-    &:not(:last-child) {
-      margin-right: 5px;
-    }
-
+  .howto-item__text {
     br {
       display: inline;
       clear: none;
@@ -69,6 +59,18 @@
 
     br::after {
       content: ' ';
+    }
+  }
+
+  .howto-item {
+    width: 100%;
+    max-width: 230px;
+    height: 120px;
+
+    margin-bottom: 40px;
+
+    &:not(:last-child) {
+      margin-right: 5px;
     }
 
     &:nth-child(4),
@@ -96,7 +98,9 @@
   }
 
   .howto-list {
-    justify-content: space-evenly;
+    justify-content: space-between;
+
+    max-width: 500px;
   }
 
   .howto-item {

@@ -49,19 +49,6 @@
     margin-left: auto;
   }
 
-  .howto-item__text {
-    br {
-      display: inline;
-      clear: none;
-
-      content: ' ';
-    }
-
-    br::after {
-      content: ' ';
-    }
-  }
-
   .howto-item {
     width: 100%;
     max-width: 230px;

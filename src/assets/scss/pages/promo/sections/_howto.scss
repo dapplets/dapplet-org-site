@@ -9,7 +9,8 @@
   position: relative;
   z-index: 1;
 
-  &::after {
+  &::after,
+  &::before {
     position: absolute;
     z-index: -1;
 
@@ -22,6 +23,10 @@
     transform: translateY(-50%);
 
     background-color: #E3E3E3;
+  }
+
+  &::before {
+    display: none;
   }
 }
 
@@ -47,7 +52,7 @@
   width: 169px;
   height: 162px;
 
-  padding: 8px 9px 0;
+  padding: 8px 8px 0;
 
   text-align: center;
 
@@ -64,8 +69,7 @@
 
   color: #2A2A2A;
 
-  /* stylelint-disable-next-line font-family-no-missing-generic-family-keyword */
-  font-family: 'Playfair Display';
+  font-family: 'Playfair Display', sans-serif;
 
   font-size: 24px;
   font-weight: 900;

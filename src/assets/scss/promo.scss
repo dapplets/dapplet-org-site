@@ -1,8 +1,15 @@
 @import "./base";
 @import './fonts/playfair-display';
 
+// ELEMENETS
+@import "./pages/promo/elements/hamburger";
+@import "./pages/promo/elements/button";
+@import "./pages/promo/elements/title";
+@import "./pages/promo/elements/rectangle";
+@import "./pages/promo/elements/navbar";
+
 // SECTIONS
-@import "./pages/promo/sections/hero";
+@import "./pages/promo/sections/header";
 @import "./pages/promo/sections/mission";
 @import "./pages/promo/sections/paradigm-shift";
 @import "./pages/promo/sections/community";
@@ -10,76 +17,43 @@
 @import "./pages/promo/sections/collaborate";
 @import "./pages/promo/sections/footer";
 
-body {
-  background-color: #F5F5F5;
-}
-
-.title {
-  color: #2A2A2A;
-
-  font-family: "Playfair Display";
-  font-size: 56px;
-  font-weight: 900;
-  line-height: 100%;
-
-  &--center {
-    text-align: center;
-  }
-}
-
-.button {
-  text-transform: uppercase;
-
-  color: #FFF;
-
-  border: none;
-  background: #D9304F;
-
-  font-size: 14px;
-
-  font-weight: 600;
-
-  &:hover {
-    color: #FFF;
-    background-color: #F26680;
-  }
-
-  &:focus {
-    outline: 0;
-  }
-
-  &:active {
-    background-color: #A6253C;
-  }
-}
-
-.container {
-  max-width: 1330px;
-  margin: 0 auto;
-  padding: 0 15px;
-}
+// ADAPTIVE
+@import "./pages/promo/adaptive/header";
+@import "./pages/promo/adaptive/mission";
+@import "./pages/promo/adaptive/paradigm-shift";
+@import "./pages/promo/adaptive/community";
+@import "./pages/promo/adaptive/howto";
+@import "./pages/promo/adaptive/collaborate";
+@import "./pages/promo/adaptive/footer";
 
 @font-face {
   font-family: "Segoe UI Regular";
   src: url(../fonts/Segoe/SegoeUI.ttf), url("Segoe UI.ttf") format("ttf");
 }
 
-// * {
-//   -ms-overflow-style: none;
-//   scrollbar-width: none;
-// }
-
-// *::-webkit-scrollbar {
-//   display: none;
-// }
-
 body {
-  /* stylelint-disable-next-line font-family-no-missing-generic-family-keyword */
-  font-family: "Segoe UI Regular";
+  background-color: #F5F5F5;
+
+  font-family: "Segoe UI Regular", sans-serif;
+}
+
+.container {
+  width: 100%;
+  max-width: 1318px;
+  margin: 0 auto;
+  padding: 0 15px;
 }
 
 a {
   text-decoration: underline;
 
   color: #2A2A2A;
+}
+
+@media screen and (max-width: 480px) {
+  .title {
+    font-size: 24px;
+    font-weight: 900;
+    line-height: 100%;
+  }
 }

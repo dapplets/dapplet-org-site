@@ -15,8 +15,6 @@
   align-items: center;
   justify-content: space-between;
 
-  width: 980px;
-  height: 100%;
   margin: auto;
 }
 
@@ -26,8 +24,7 @@
   flex-direction: column;
   justify-content: space-evenly;
 
-  width: 682px;
-  height: 227px;
+  max-width: 682px;
 }
 
 .collaborate-text {
@@ -35,7 +32,7 @@
 
   color: #747376;
 
-  font-family: "Segoe UI Regular";
+  font-family: "Segoe UI Regular", sans-serif;
   font-size: 18px;
 
   font-weight: 400;
@@ -55,19 +52,13 @@
 }
 
 .collaborate-link {
+  min-width: 217px;
   margin-right: 11px;
+  margin-left: 50px;
 
   text-decoration: none;
 
-  text-transform: uppercase;
-
   color: #FFF;
-
-  font-family: "Segoe UI Regular";
-  font-size: 14px;
-
-  font-weight: 600;
-  line-height: 100%;
 
   &:hover {
     text-decoration: none;

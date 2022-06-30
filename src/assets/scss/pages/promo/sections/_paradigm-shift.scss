@@ -2,14 +2,15 @@
   position: relative;
 
   min-height: 728px;
+  padding-top: 80px;
 
   background-image: url("../images/bg/paradigm-shift.png");
 }
 
 .paradigm-shift-content {
   display: flex;
+  justify-content: space-between;
 
-  padding-top: 57px;
   padding-bottom: 14px;
 }
 
@@ -18,10 +19,6 @@
   flex-direction: column;
 
   padding-top: 37px;
-}
-
-.paradigm-shift-header {
-  white-space: nowrap;
 }
 
 .paradigm-shift-message {
@@ -67,6 +64,18 @@
     border-radius: 100%;
     background-color: #D9304F;
   }
+}
+
+.paradigm__right {
+  background-image: url('../images/promo-landing/paradigm-shift.png');
+
+  &::after {
+    left: 17px;
+  }
+}
+
+.paradigm-shift-header-table {
+  display: none;
 }
 
 .paradigm-shift-image {

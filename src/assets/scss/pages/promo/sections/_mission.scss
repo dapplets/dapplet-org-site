@@ -2,21 +2,21 @@
   position: relative;
   z-index: 2;
 
-  height: 742px;
+  height: 727px;
   padding-top: 54px;
 
   background: #FFF;
   background-image: url("../images/bg/mission.svg");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: contain;
+  background-size: auto;
 }
 
 .mission-content {
   display: flex;
   flex-direction: column;
 
-  padding: 44px 0;
+  padding: 56px 0;
 
   background-color: #FFF;
 }

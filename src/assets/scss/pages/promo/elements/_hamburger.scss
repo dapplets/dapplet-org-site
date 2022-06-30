@@ -1,0 +1,46 @@
+.hamburger {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 28px;
+  height: 28px;
+  padding: 11px 6px;
+
+  border: 1px solid #2A2A2A;
+  border-radius: 6px;
+}
+
+.hamburger__item {
+  position: relative;
+
+  display: block;
+
+  width: 100%;
+  height: 2px;
+
+  color: #2A2A2A;
+  background-color: currentColor;
+
+  &::after,
+  &::before {
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+
+    content: '';
+
+    background-color: currentColor;
+  }
+
+  &::after {
+    transform: translateY(5px);
+  }
+
+  &::before {
+    transform: translateY(-5px);
+  }
+}

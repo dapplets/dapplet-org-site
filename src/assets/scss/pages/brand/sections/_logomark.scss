@@ -1,0 +1,48 @@
+@import "../../../base/constans";
+@import "../../../base/mixins";
+
+.logomark {
+  position: relative;
+  background: $ifm-header-top-background;
+}
+.promo__bg-dots {
+}
+.logomark__bg-dots {
+  height: 100% !important;
+  opacity: 0.3 !important;
+  background-size: cover !important;
+}
+.container {
+}
+.logomark-container {
+  max-width: 1920px;
+  background: url("../images/brand/logomark_logo.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: 755px 650px;
+  margin: 0 auto;
+}
+.logomark__wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 213px 10px;
+  max-width: 755px;
+  margin-left: auto;
+}
+.logomark__title {
+  font-family: "Playfair Display", sans-serif;
+  font-weight: 900;
+  font-size: 56px;
+  line-height: 100%;
+  color: $ifm-border-color-hamburger;
+  display: inline-block;
+  padding-bottom: 60px;
+}
+.logomark__text {
+  font-family: "Segoe UI", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 149%;
+  text-align: justify;
+  color: #747376;
+}

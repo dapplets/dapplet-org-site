@@ -1,0 +1,9 @@
+@import "../../../base/constans";
+@import "../../../base/mixins";
+@media (max-width: 650px) {
+  .footer-brand__wrapper {
+    max-width: 230px;
+    flex-wrap: wrap;
+    margin: 0 auto;
+  }
+}

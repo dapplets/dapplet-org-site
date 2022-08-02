@@ -1,0 +1,69 @@
+@import "../../../base/constans";
+@import "../../../base/mixins";
+.collaborate {
+  background: url("../images/brand/icons/white_big_logo.svg");
+  background-repeat: no-repeat;
+  background-size: 50% 100%;
+}
+.container {
+}
+.collaborate__container {
+  margin: 0 auto;
+  max-width: 1920px;
+}
+.collaborate__wrapper {
+  max-width: 980px;
+  margin: 0 auto;
+  display: flex;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  padding: 110px 0px;
+}
+.collaborate__block-info {
+  max-width: 682px;
+}
+.collaborate__title {
+  font-family: "Playfair Display", sans-serif;
+  font-weight: 900;
+  font-size: 56px;
+  line-height: 100%;
+  color: $ifm-border-color-hamburger;
+  display: block;
+  margin-bottom: 20px;
+}
+.collaborate__text {
+  display: block;
+  font-family: "Segoe UI", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 149%;
+  text-align: justify;
+  color: #747376;
+  margin: 0;
+}
+.collaborate__button-block {
+}
+.collaborate__button {
+  display: block;
+  align-items: center;
+  background: #d9304f;
+  border: none;
+  outline: 0;
+  color: #fff;
+  padding: 58px 40px;
+  border-radius: 4px;
+  &:hover {
+    background: $ifm-button-hover;
+    text-decoration: none;
+    color: #fff;
+  }
+  &:active {
+    background: $ifm-button-check-bg-active;
+    text-decoration: none;
+    color: #fff;
+  }
+  &:focus {
+    outline: none;
+  }
+}

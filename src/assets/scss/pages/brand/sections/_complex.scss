@@ -1,0 +1,39 @@
+@import "../../../base/constans";
+@import "../../../base/mixins";
+.complex {
+}
+.container {
+}
+.complex__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px 10px;
+}
+.complex__title {
+  font-family: "Playfair Display", sans-serif;
+  font-weight: 900;
+  font-size: 56px;
+  line-height: 100%;
+  color: $ifm-border-color-hamburger;
+  display: inline-block;
+  margin-bottom: 60px;
+}
+.complex__text {
+  font-family: "Segoe UI", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 149%;
+  color: #747376;
+  margin-bottom: 62px;
+  display: inline-block;
+  max-width: 770px;
+  text-align: center;
+}
+.complex__img-block {
+  display: flex;
+  justify-content: center;
+}
+.complex__img {
+  width: 100%;
+}

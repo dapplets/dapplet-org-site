@@ -1,0 +1,39 @@
+@import "../../../base/constans";
+@import "../../../base/mixins";
+@media (max-width: 850px) {
+    .links__wrapper {
+        flex-wrap: wrap;
+    }
+    .links__item {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .links-title {
+        padding-bottom: 27px;
+    }
+    .links-text {
+        padding-bottom: 30px;
+        width: 70%;
+    }
+}
+@media (max-width: 650px) {
+    .links__wrapper {
+        padding: 40px 0;
+    }
+    .figma-bg {
+        background-size: 60px 87px;
+    }
+    .press-bg {
+        background-size: 60px 60px;
+    }
+    .brand-bg {
+        background-size: 60px 60px;
+    }
+    .links-title {
+        padding-bottom: 32px;
+    }
+    .links-text {
+        padding-bottom: 33px;
+        width: 100%;
+    }
+}

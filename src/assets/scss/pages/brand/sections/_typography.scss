@@ -1,0 +1,160 @@
+@import "../../../base/constans";
+@import "../../../base/mixins";
+
+.typography {
+}
+.container {
+}
+.typography__wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 0 60px 0;
+}
+
+.typography__delimeter {
+  width: 100%;
+  height: 1px;
+  background: $ifm-border-color-hamburger;
+}
+.typography__block-content {
+  padding: 100px 0;
+  display: grid;
+  grid-template-rows: repeat(3, auto);
+  grid-template-columns: repeat(5, 212px);
+  gap: 60px;
+  div:first-child {
+    grid-column: 1 / 4;
+  }
+  div:nth-child(2) {
+    grid-column: 4 / 6;
+  }
+  div:nth-child(4) {
+    grid-column: 2 / 4;
+  }
+  div:nth-child(5) {
+    grid-column: 4 / 6;
+  }
+}
+.typography__item {
+}
+.typography__block-info {
+  max-width: 520px;
+}
+.typography__title {
+  font-family: "Playfair Display", sans-serif;
+  font-weight: 900;
+  font-size: 56px;
+  line-height: 100%;
+  color: $ifm-border-color-hamburger;
+  display: inline-block;
+  padding-bottom: 20px;
+}
+.typography__text {
+  font-family: "Segoe UI", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 149%;
+  text-align: justify;
+  color: #747376;
+  text-align: justify;
+  margin: 0;
+}
+.typography__block-font {
+  display: flex;
+  flex-direction: column;
+}
+.h1-web {
+  padding-top: 20px;
+  .typography__font {
+    font-family: "Playfair Display", sans-serif;
+    font-weight: 900;
+    font-size: 128px;
+    line-height: 100%;
+  }
+  text-align: right;
+}
+.typography__font {
+  color: $ifm-border-color-hamburger;
+}
+.typography__font-name {
+  font-family: "Segoe UI", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 149%;
+  color: #747376;
+}
+.typography__font-info {
+  font-family: "Segoe UI", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 149%;
+  color: #747376;
+}
+.h2-web {
+  .typography__font {
+    font-family: "Playfair Display", sans-serif;
+    font-weight: 900;
+    font-size: 56px;
+    line-height: 100%;
+    padding-bottom: 10px;
+  }
+}
+.h3-web {
+  margin: 0 auto;
+  justify-content: end;
+  padding-left: 30px;
+  .typography__font {
+    font-family: "Playfair Display", sans-serif;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 100%;
+    padding-bottom: 15px;
+  }
+}
+.web-36 {
+  margin: 0 auto;
+  justify-content: end;
+  width: 65%;
+  .typography__font {
+    font-family: "Segoe UI", sans-serif;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 149%;
+    padding-bottom: 10px;
+  }
+}
+.text-24 {
+  .typography__font {
+    font-family: "Segoe UI", sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 149%;
+    padding-bottom: 10px;
+  }
+}
+.text-18 {
+  .typography__font {
+    font-family: "Segoe UI", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 149%;
+    padding-bottom: 10px;
+    padding-top: 10px;
+  }
+}
+.text-14 {
+  .typography__font {
+    font-family: "Segoe UI", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 149%;
+    padding-bottom: 15px;
+    padding-top: 10px;
+  }
+}
+.promo__button-download {
+}
+.typography-button {
+  max-width: 244px !important;
+  margin-top: -41px;
+}

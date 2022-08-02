@@ -1,0 +1,19 @@
+@import "../../../base/constans";
+@import "../../../base/mixins";
+
+@media (max-width: 650px) {
+    .mission__wrapper {
+        padding: 40px 0;
+    }
+    .mission__title {
+        font-size: 24px;
+        padding-bottom: 40px;
+    }
+    .mission__text-item {
+        font-size: 14px;
+    }
+    .mission__delimeter {
+        width: 130px;
+        margin-top: 40px;
+    }
+}

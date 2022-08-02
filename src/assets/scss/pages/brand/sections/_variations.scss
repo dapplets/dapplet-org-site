@@ -1,0 +1,49 @@
+@import "../../../base/constans";
+@import "../../../base/mixins";
+
+.variations {
+}
+.container {
+}
+.variations__wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 100px 0;
+}
+.variations__img-block {
+}
+.variations__item-img {
+  img {
+    max-width: 680px;
+  }
+}
+.variations__info-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 520px;
+}
+.variations__title {
+  font-family: "Playfair Display", sans-serif;
+  font-weight: 900;
+  font-size: 56px;
+  line-height: 100%;
+  color: $ifm-border-color-hamburger;
+  display: inline-block;
+  padding-bottom: 20px;
+}
+.variations__text {
+  font-family: "Segoe UI", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 149%;
+  text-align: justify;
+  color: #747376;
+  display: inline-block;
+  margin-bottom: 60px;
+}
+.promo__button-download {
+}
+.variations__button {
+  max-width: 198px !important ;
+}

@@ -1,0 +1,43 @@
+@import "../../../base/constans";
+@import "../../../base/mixins";
+
+.clearspace {
+}
+.container {
+}
+.clearspace__wrapper {
+  display: flex;
+  padding: 100px 0px;
+  justify-content: space-between;
+}
+.clearspace__block-info {
+  display: flex;
+  flex-direction: column;
+  max-width: 520px;
+  justify-content: center;
+}
+.clearspace__title {
+  font-family: "Playfair Display", sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 56px;
+  line-height: 100%;
+
+  color: $ifm-border-color-hamburger;
+  display: inline-block;
+  margin-bottom: 60px;
+}
+.clearspace__text {
+  font-family: "Segoe UI", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 149%;
+  text-align: justify;
+  color: #747376;
+  display: inline-block;
+}
+.clearspace__block-img {
+}
+.clearspace__img {
+}

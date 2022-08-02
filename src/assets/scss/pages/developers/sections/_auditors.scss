@@ -1,55 +1,35 @@
-@import '../../../base/mixins';
+@import "../../../base/mixins";
 
 .auditors {
-	padding-top: 165px;
-	padding-bottom: 139px;
+  padding: 20px 10px;
+  background-image: url("../images/bg/auditors-bg-desktop.jpg");
+  background: rgba(234, 240, 240, 0.6);
+  max-width: none;
+  
+  @include backgroundStyle;
 
-	background-image: url('../images/bg/auditors-bg-desktop.jpg');
-
-	@include backgroundStyle;
+  &-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
-.auditors__wrapper {
-	max-width: 610px;
-	margin-left: auto;
+.auditors-img {
+  width: 300px;
 }
 
 .auditors__description {
-	margin-top: 51px;
+  text-align: justify;
+}
 
-	.text {
-		max-width: 100%;
-	}
+.auditors__text {
+  font-size: 16px;
 }
 
 .auditors__title-pages {
-	.title-pages--secondary {
-		position: static;
-
-		display: block;
-
-		width: auto;
-		margin-top: -12px;
-
-		text-align: left;
-
-		&::after {
-			display: none;
-		}
-	}
-}
-
-.auditors__mobile-bg {
-	display: none;
-
-	max-width: 316px;
-	min-height: 260px;
-	margin-top: 40px;
-	margin-right: auto;
-
-	margin-left: auto;
-
-	background-image: url('../images/bg/auditors-bg-mobile.png');
-
-	@include backgroundStyle;
+  .title-pages--secondary {
+    position: static;
+  }
 }

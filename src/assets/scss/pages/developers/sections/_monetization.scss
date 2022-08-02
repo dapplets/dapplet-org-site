@@ -1,0 +1,34 @@
+@import "../../../base/mixins";
+
+.monetization {
+
+  .col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.monetization__text {
+  font-size: 16px;
+}
+
+.monetization__image-desktop {
+  display: none;
+}
+
+.monetization-text-emph {
+  color: #000;
+}
+
+.monetization__title-pages .title-pages--primary {
+  white-space: nowrap;
+}
+
+.monetization-img {
+  margin-bottom: 20px;
+
+  &-desktop {
+    display: none;
+  }
+}

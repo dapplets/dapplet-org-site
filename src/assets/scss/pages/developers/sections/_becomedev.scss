@@ -1,0 +1,44 @@
+.become-dev {
+  margin-bottom: 20px;
+
+  &-buttons {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  &-button {
+    color: #d9304f;
+    border: 1px solid #d9304f;
+    padding: 16px 0;
+    padding-left: 50px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+  }
+}
+
+.dev-steps {
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+}
+
+.dev-step {
+  width: 100%;
+  font-size: 16px;
+  line-height: 149%;
+  position: relative;
+  padding: 20px 0 20px 30px;
+}
+
+.number {
+  font-weight: 900;
+  font-size: 67px;
+  position: absolute;
+  color: #d9304f;
+  opacity: 0.2;
+  left: 7px;
+}

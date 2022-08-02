@@ -1,0 +1,93 @@
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .become-dev {
+    .title-pages {
+      width: 100%;
+
+      &--primary {
+        text-align: center;
+      }
+
+      &--secondary {
+        text-align: center;
+      }
+    }
+
+    &-buttons {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      gap: 36px;
+      justify-content: center;
+    }
+
+    &-button {
+      border: none;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+
+      &-text {
+        border: 1px solid #d9304f;
+        padding: 8px 7px;
+        width: 100%;
+        text-align: center;
+      }
+    }
+  }
+
+  .dev-steps {
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .become-dev {
+    margin-bottom: 175px;
+
+    .title-pages {
+      &--primary {
+        text-align: center;
+      }
+
+      &--secondary {
+        text-align: center;
+      }
+    }
+
+    &-buttons {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      gap: 36px;
+      justify-content: space-between;
+    }
+
+    &-button {
+      border: none;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+
+      &-text {
+        border: 1px solid #d9304f;
+        padding: 8px 7px;
+        width: 100%;
+        text-align: center;
+      }
+    }
+  }
+
+  .dev-steps {
+    align-self: center;
+    flex-wrap: wrap;
+    max-height: 300px;
+    margin-bottom: 70px;
+    max-width: 1332px;
+    width: 100%;
+  }
+
+  .dev-step {
+    max-width: 550px;
+    width: auto;
+  }
+}

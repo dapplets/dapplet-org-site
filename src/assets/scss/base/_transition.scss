@@ -9,10 +9,12 @@
 .subscribe__social-link svg path,
 .header__top-logo,
 .button-check::after,
-.you-developer__social-link svg path {
-	transition-timing-function: cubic-bezier(0.24, 0.22, 0.015, 1.56);
-	transition-duration: 0.2s;
-	transition-property: opacity, transform, visibility, width, height, fill, color, box-shadow, background-color, height;
+.you-developer__social-link svg path,
+.footer-link-project,
+.get-started,
+.header__link,
+.footer-social svg path {
+  transition-timing-function: cubic-bezier(0.24, 0.22, 0.015, 1.56);
+  transition-duration: 0.2s;
+  transition-property: opacity, transform, visibility, width, height, fill, color, box-shadow, background-color, height;
 }
-// .header__navbar,
-// .header__navbar.open

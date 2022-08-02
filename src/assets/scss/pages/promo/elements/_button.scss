@@ -1,0 +1,27 @@
+.button {
+  text-align: center;
+  text-transform: uppercase;
+
+  color: #FFF;
+
+  border: none;
+  border-radius: 4px;
+  background: #D9304F;
+
+  font-size: 14px;
+
+  font-weight: 600;
+
+  &:hover {
+    color: #FFF;
+    background-color: #F26680;
+  }
+
+  &:focus {
+    outline: 0;
+  }
+
+  &:active {
+    background-color: #A6253C;
+  }
+}

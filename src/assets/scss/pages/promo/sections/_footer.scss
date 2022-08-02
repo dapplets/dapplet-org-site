@@ -1,0 +1,65 @@
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 80px;
+
+  background: #2A2A2A;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+
+  width: 100%;
+}
+
+.footer-copy {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 310.16px;
+
+  color: #FFF;
+
+  font-family: "Segoe UI Regular", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  line-height: 100%;
+}
+
+.footer-heart {
+  width: 24px;
+  height: 24px;
+}
+
+.footer-link-project {
+  color: #FFF;
+
+  &:hover {
+    color: #D9304F;
+  }
+}
+
+.footer-socials {
+  display: flex;
+
+  margin-bottom: 0;
+  padding-left: 0;
+
+  list-style: none;
+}
+
+.footer-social {
+  &:hover {
+    svg path {
+      fill: #D9304F;
+    }
+  }
+
+  &:not(:last-child) {
+    margin-right: 20px;
+  }
+}

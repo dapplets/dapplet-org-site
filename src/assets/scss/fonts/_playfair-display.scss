@@ -1,0 +1,22 @@
+
+/* BOLD */
+@font-face {
+  font-family: 'Playfair Display';
+  font-weight: 900;
+  font-style: normal;
+  src:
+    local(''),
+    url('../fonts/PlayfairDisplay/PlayfairDisplay-Black.woff2') format('woff2'),
+    url('../fonts/PlayfairDisplay/PlayfairDisplay-Black.woff') format('woff2');
+}
+
+/* REGULAR */
+@font-face {
+  font-family: 'Playfair Display';
+  font-weight: 400;
+  font-style: normal;
+  src:
+    local(''),
+    url('../fonts/PlayfairDisplay/PlayfairDisplay-Regular.woff2') format('woff2'),
+    url('../fonts/PlayfairDisplay/PlayfairDisplay-Regular.woff') format('woff');
+}

@@ -1,0 +1,105 @@
+@media screen and (max-width: 1380px) {
+  .paradigm-shift-header {
+    white-space: initial;
+  }
+}
+
+@media screen and (max-width: 1240px) {
+  .paradigm-shift-message {
+    p br {
+      display: inline;
+
+      padding: 0 3px;
+
+      content: ' ';
+    }
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .paradigm-shift-content {
+    flex-direction: column-reverse;
+  }
+
+  .paradigm-shift-header {
+    display: none;
+
+    text-align: center;
+  }
+
+  .paradigm-shift-header-table {
+    display: block;
+  }
+
+  .paradigm-shift-message {
+    margin-top: 0;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .paradigm__right {
+    margin-top: 30px;
+    margin-right: auto;
+    margin-left: auto;
+
+    background-image: url('../images/promo-landing/paradigm-shift-table.png');
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .paradigm-shift {
+    min-height: 1122px;
+  }
+
+  .paradigm-shift-header {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  .ps-features-item br {
+    display: inline;
+
+    padding: 0 3px;
+
+    content: ' ';
+  }
+
+  .paradigm-shift-message {
+    max-width: 715px;
+  }
+
+  .paradigm-shift-text {
+    padding-top: 21px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .paradigm-shift {
+    min-height: 959px;
+    padding-top: 41px;
+  }
+
+  .paradigm__right {
+    margin-top: 39px;
+
+    background-image: url('../images/promo-landing/paradigm-shift-mobile.png');
+  }
+
+  .paradigm-shift-message {
+    margin-top: 20px;
+
+    font-size: 14px;
+
+    p {
+      margin-bottom: 11px;
+    }
+  }
+
+  .ps-features-list li {
+    margin-bottom: -11px;
+  }
+
+  .paradigm-shift-header {
+    max-width: 232px;
+  }
+}

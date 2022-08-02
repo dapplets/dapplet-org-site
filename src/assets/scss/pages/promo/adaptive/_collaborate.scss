@@ -1,0 +1,53 @@
+@media (max-width: 768px) {
+  .collaborate {
+    padding: 88px 0;
+  }
+
+  .collaborate-link {
+    min-width: 192px;
+    margin-left: 20px;
+  }
+
+  .collaborate-text {
+    max-width: 434px;
+    margin-top: 11px;
+  }
+}
+
+@media (max-width: 650px) {
+  .collaborate-content {
+    flex-direction: column;
+  }
+
+  .collaborate-text {
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .collaborate__title {
+    text-align: center;
+  }
+
+  .collaborate-link {
+    width: 100%;
+    max-width: 280px;
+    height: auto;
+    margin-top: 24px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 12px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .collaborate {
+    min-height: 380px;
+    padding: 38px 0;
+  }
+
+  .collaborate-text {
+    margin-top: 33px;
+
+    font-size: 14px;
+  }
+}

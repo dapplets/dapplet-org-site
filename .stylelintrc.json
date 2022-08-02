@@ -9,7 +9,7 @@
 	],
 	"rules": {
 		"indentation": [
-			"tab"
+			2
 		],
 		"color-hex-case": "upper",
 		"at-rule-no-unknown": null,

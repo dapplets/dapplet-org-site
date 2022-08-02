@@ -1,0 +1,134 @@
+@media (max-width: 1320px) {
+  .howto-item:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+
+@media (max-width: 1260px) {
+  .howto-list {
+    flex-wrap: wrap;
+
+    max-width: 815px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .howto {
+    padding-top: 133px;
+    padding-bottom: 56px;
+  }
+
+  .howto__wrapper {
+    &::before {
+      top: 12%;
+
+      display: block;
+    }
+
+    &::after {
+      top: 46%;
+    }
+  }
+
+  .howto-item {
+    width: 100%;
+    max-width: 230px;
+    height: 120px;
+
+    margin-bottom: 40px;
+
+    &:not(:last-child) {
+      margin-right: 5px;
+    }
+
+    &:nth-child(4),
+    &:nth-child(5),
+    &:nth-child(6) {
+      height: 162px;
+    }
+  }
+
+  .howto-item:last-child {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+    width: 100%;
+    max-width: 100%;
+    height: 120px;
+    margin-top: 0;
+    padding: 14px;
+  }
+}
+
+@media (max-width: 736px) {
+  .howto {
+    padding: 17px 0;
+  }
+
+  .howto__wrapper {
+    &::after,
+    &::before {
+      display: none;
+    }
+  }
+
+  .howto-list {
+    justify-content: space-between;
+
+    max-width: 500px;
+  }
+
+  .howto-item {
+    margin-bottom: 20px;
+
+    &:nth-child(4),
+    &:nth-child(5),
+    &:nth-child(6) {
+      height: 130px;
+    }
+  }
+}
+
+@media (max-width: 499px) {
+  .howto-list {
+    flex-direction: column;
+  }
+
+  .howto-item:last-child {
+    max-width: 230px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .howto {
+    padding: 10px 0;
+  }
+
+  .howto__title {
+    max-width: 182px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .howto-list {
+    margin-top: 39px;
+  }
+
+  .howto-item {
+    height: auto !important;
+    padding: 10px;
+
+    &:last-child {
+      max-width: 240px;
+      padding: 10px;
+    }
+  }
+
+  .howto-item:nth-child(4),
+  .howto-item:nth-child(5),
+  .howto-item:nth-child(6) {
+    height: auto;
+  }
+}

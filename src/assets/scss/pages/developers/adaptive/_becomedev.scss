@@ -68,6 +68,10 @@
       display: flex;
       flex-direction: column;
 
+      &:hover {
+        color: #d9304f;
+      }
+
       &-text {
         border: 1px solid #d9304f;
         padding: 8px 7px;

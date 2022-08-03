@@ -1,10 +1,13 @@
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .promo {
-    height: 944px;
+    height: calc(100vh - 80px);
     background-image: url("../images/bg/developers-bg-tablet.jpg");
+    flex-direction: column;
+    justify-content: center;
 
     &-content {
-      top: 350px;
+      display: block;
+      position: static;
     }
 
     &-title {
@@ -16,8 +19,11 @@
 
       &__secondary {
         letter-spacing: 1.3em;
-        margin-bottom: 328px;
       }
+    }
+
+    &-buttons {
+      bottom: 26px;
     }
 
     &-button {
@@ -32,12 +38,28 @@
 
 @media screen and (min-width: 1024px) {
   .promo {
-    height: 816px;
+    height: calc(100vh - 104px);
     background-image: url("../images/bg/developers-bg-desktop.png");
     margin-bottom: 80px;
+    flex-direction: column;
+    justify-content: center;
 
     &-content {
-      top: 296px;
+      display: block;
+      position: static;
+    }
+
+    &-buttons {
+      bottom: 10%;
+    }
+
+    &-button {
+      width: 176px;
+    }
+
+    &-button-icon {
+        margin-top: 65px !important;
+        display: block;
     }
 
     &-title {

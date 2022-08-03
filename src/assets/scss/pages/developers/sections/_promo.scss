@@ -37,6 +37,13 @@
     }
   }
 
+  &-buttons {
+    position: absolute;
+    bottom: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+
   &-button {
     width: 300px;
 

@@ -1,0 +1,36 @@
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .monetization__description {
+    align-self: flex-start;
+  }
+
+  .monetization__text {
+    max-width: none;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .monetization {
+    flex-direction: row-reverse;
+    gap: 60px;
+    align-items: flex-start;
+    margin-bottom: 185px;
+
+    &-text-emph {
+      margin-bottom: 60px !important;
+    }
+
+    .col {
+      display: flex;
+      flex-direction: column;
+      align-items: space-between;
+    }
+
+    &-img {
+      display: none;
+    }
+
+    .monetization__image-desktop {
+      display: block;
+    }
+  }
+}

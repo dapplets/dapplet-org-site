@@ -1,52 +1,54 @@
-@import '../../../base/mixins';
-@import '../../../base/constans';
+@import "../../../base/mixins";
+@import "../../../base/constans";
 
 .promo {
-	position: relative;
+  margin: 0;
+  position: relative;
+  height: 488px;
+  background-image: url("../images/bg/promo.png");
+  margin-bottom: 20px;
+  max-width: none;
 
-	margin-top: 29px;
-	padding-top: 268px;
-	padding-bottom: 54px;
+  @include backgroundStyle;
 
-	background-image: url('../images/bg/developers-bg.jpg');
+  &-content {
+    position: absolute;
+    top: 174px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
-	@include backgroundStyle;
-}
+  &-title {
+    text-align: center;
 
-.promo-title {
-	text-align: center;
-	text-transform: uppercase;
+    &__primary {
+      letter-spacing: 0.1em;
+      font-weight: 900;
+      font-size: 41px;
+      margin-bottom: 40px;
+    }
 
-	color: $ifm-primary-color;
+    &__secondary {
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      font-weight: 400;
+      margin-bottom: 46px;
+    }
+  }
 
-	font-size: 109px;
-	font-weight: 900;
+  &-buttons {
+    position: absolute;
+    bottom: 20px;
+    display: flex;
+    flex-direction: column;
+  }
 
-	span {
-		display: block;
-	}
+  &-button {
+    width: 300px;
 
-	&__primary {
-		letter-spacing: 0.1em;
-
-		font-size: 109px;
-	}
-
-	&__secondary {
-		letter-spacing: 1.3em;
-
-		font-size: 41px;
-		font-weight: 400;
-	}
-}
-
-.promo__buttons {
-	margin-top: 136px;
-}
-
-.button.promo__button {
-	max-width: 191px;
-	margin-right: auto;
-	margin-bottom: 54px;
-	margin-left: auto;
+    &-icon {
+      display: none;
+    }
+  }
 }

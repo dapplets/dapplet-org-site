@@ -1,0 +1,39 @@
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .grant {
+    flex-direction: row;
+    gap: 40px;
+    padding: 30px 20px;
+    background: url("/assets/images/bg/grant.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &-button {
+      width: 206px;
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .grant {
+    padding: 30px 310px;
+    flex-direction: row;
+    gap: 60px;
+    background: url("/assets/images/bg/grant-desktop.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 185px;
+
+    .title-pages {
+      align-self: start;
+      text-align: start;
+    }
+
+    &__text {
+      max-width: none;
+    }
+
+    &-button {
+      width: 206px;
+    }
+  }
+}

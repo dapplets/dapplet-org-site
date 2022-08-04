@@ -24,7 +24,7 @@
 
   <body>
     <script type="text/javascript">
-      console.log("231312")(function (window, document, dataLayerName, id) {
+      (function (window, document, dataLayerName, id) {
         (window[dataLayerName] = window[dataLayerName] || []),
           window[dataLayerName].push({
             start: new Date().getTime(),
@@ -75,13 +75,10 @@
       })(window, document, "dataLayer", "9bed06dd-be95-40d0-aea8-cf1e92ac2643");
     </script>
 
-    <!-- HEADER -->
     <header class="header" id="header">
-      <!-- HEADER__TOP -->
       <div class="header__top">
         <div class="container">
           <div class="header__top-wrapper">
-            <!-- HEADER__TOP-LEFT -->
             <div class="header__top-left">
               <a href="/" class="header__main-page">
                 <img
@@ -95,38 +92,8 @@
                   class="header__top-logo-mobile"
                 />
               </a>
-
-              <!-- <div class="header__top-inner">
-              <div class="languages header__languages">
-                <span class="languages__active">ENG</span>
-                <ul class="languages__list ul-reset">
-                  <li class="languages__item languages__item--active">ENG</li>
-                  <li class="languages__item">RU</li>
-                </ul>
-              </div> -->
-
-              <!-- <button class="button icon header__icon">
-              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M15.445 13.4669L11.666 9.68786C12.2551 8.72092 12.5659 7.61012 12.564 6.47786C12.564 3.06086 9.603 0.100857 6.186 0.100857C5.37361 0.100726 4.56914 0.260642 3.81856 0.571471C3.06799 0.8823 2.38599 1.33795 1.81154 1.9124C1.2371 2.48685 0.781443 3.16884 0.470614 3.91942C0.159785 4.67 -0.000131279 5.47446 8.08612e-08 6.28686C8.08612e-08 9.70286 2.961 12.6639 6.377 12.6639C7.47195 12.6648 8.54731 12.3735 9.492 11.8199L13.291 15.6209C13.4697 15.799 13.7117 15.8991 13.964 15.8991C14.2163 15.8991 14.4583 15.799 14.637 15.6209L15.58 14.6779C15.951 14.3069 15.816 13.8379 15.445 13.4669ZM1.904 6.28686C1.90387 5.72445 2.01453 5.16753 2.22966 4.6479C2.44479 4.12827 2.76018 3.65611 3.15782 3.25838C3.55545 2.86065 4.02754 2.54515 4.54712 2.3299C5.0667 2.11465 5.6236 2.00386 6.186 2.00386C8.552 2.00386 10.66 4.11086 10.66 6.47786C10.6597 7.6137 10.2084 8.70294 9.40525 9.5061C8.60209 10.3093 7.51284 10.7606 6.377 10.7609C4.011 10.7599 1.904 8.65186 1.904 6.28686Z"
-                  fill="#919191" />
-              </svg>
-            </button> -->
-
-              <!-- <label class="header__search">
-              <input type="text" class="header__search-input" placeholder="Placeholder">
-              <span class="header__search-icon">
-                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M15.445 13.4669L11.666 9.68785C12.2551 8.72092 12.5659 7.61012 12.564 6.47785C12.564 3.06085 9.603 0.100853 6.186 0.100853C5.37361 0.100722 4.56914 0.260638 3.81856 0.571467C3.06799 0.882296 2.38599 1.33795 1.81154 1.9124C1.2371 2.48685 0.781443 3.16884 0.470614 3.91942C0.159785 4.67 -0.000131279 5.47446 8.08612e-08 6.28685C8.08612e-08 9.70285 2.961 12.6639 6.377 12.6639C7.47195 12.6648 8.54731 12.3735 9.492 11.8199L13.291 15.6209C13.4697 15.799 13.7117 15.8991 13.964 15.8991C14.2163 15.8991 14.4583 15.799 14.637 15.6209L15.58 14.6779C15.951 14.3069 15.816 13.8379 15.445 13.4669ZM1.904 6.28685C1.90387 5.72445 2.01453 5.16753 2.22966 4.6479C2.44479 4.12826 2.76018 3.6561 3.15782 3.25838C3.55545 2.86065 4.02754 2.54515 4.54712 2.3299C5.0667 2.11464 5.6236 2.00385 6.186 2.00385C8.552 2.00385 10.66 4.11085 10.66 6.47785C10.6597 7.61369 10.2084 8.70294 9.40525 9.5061C8.60209 10.3093 7.51284 10.7606 6.377 10.7609C4.011 10.7599 1.904 8.65185 1.904 6.28685Z"
-                    fill="#E3E3E3" />
-                </svg>
-              </span>
-            </label> -->
-              <!-- </div> -->
             </div>
 
-            <!-- HEADER__TOP-RIGHT -->
             <div class="header__top-right">
               <ul class="header__top-list ul-reset">
                 <li class="header__top-item">
@@ -134,9 +101,6 @@
                     >Docs</a
                   >
                 </li>
-                <!-- <li class="header__top-item">
-                <a href="https://forum.dapplets.org/" target="_blank">Forum</a>
-              </li> -->
               </ul>
 
               <ul class="header__top-socials ul-reset">
@@ -273,9 +237,6 @@
                   >Docs</a
                 >
               </li>
-              <!-- <li class="header__top-item">
-              <a href="https://forum.dapplets.org/" target="_blank">Forum</a>
-            </li> -->
             </ul>
 
             <ul class="header__top-socials header__bottom-socials ul-reset">
@@ -371,23 +332,24 @@
       </nav>
     </header>
 
-    <!-- PROMO -->
     <section class="promo" id="promo">
-      <h1 class="promo-title">
-        <span class="promo-title__primary">Augmented Web</span>
-        <span class="promo-title__secondary">For developers</span>
-      </h1>
-      <div class="promo__buttons">
+      <div class="promo-content">
+        <h1 class="promo-title">
+          <div class="promo-title__primary">Augmented Web</div>
+          <div class="promo-title__secondary">For developers</div>
+        </h1>
+      </div>
+      <div class="promo-buttons">
         <a
-          href="#whitepapers"
-          class="button expansion promo__button"
+          href="https://docs.dapplets.org/docs/"
+          class="button expansion promo-button"
           data-click="scroll"
         >
           To Documentation
         </a>
         <a
           href="#collaboration"
-          class="button icon center animate promo__button-icon"
+          class="button icon center animate promo-button-icon"
           data-click="scroll"
         >
           <img src="/assets/images/icons/chevron-down.svg" alt="Arrow Bottom" />
@@ -395,420 +357,350 @@
       </div>
     </section>
 
-    <!-- COLLABORATION -->
     <section class="collaboration" id="collaboration">
-      <div class="container">
-        <div class="collaboration__wrapper">
-          <!-- COLLABORATION__LEFT -->
-          <div class="collaboration__left">
-            <!-- TITLE-PAGES -->
-            <h2 class="title-pages collaboration__title-pages">
-              <span class="title-pages--primary">Collaboration</span>
-              <span class="title-pages--secondary"
-                >Synergistic effect for all parties involved</span
-              >
-            </h2>
-
-            <!-- COLLABORATION__DESCRIPTION -->
-            <div class="collaboration__description">
-              <p class="text collaboration__text">
-                Decentralization of UX is one of the key steps in the transition
-                to Web3.
-              </p>
-              <p class="text collaboration__text">
-                Augmented Web gives the user a concentration of knowledge and
-                experience of the entire community right in the place and at the
-                moment of making a decision.
-              </p>
-              <p class="text collaboration__text">
-                Dapplets Project is built as an unstoppable, permissionless and
-                decentralized system based on a flexible economic model.
-              </p>
-              <p class="text collaboration__text">
-                Together we can give the economy and users new business models
-                that are currently unattainable.
-              </p>
-              <p class="text collaboration__text"></p>
-              <p class="text collaboration__text">
-                We invite developers all over the world to become part of our
-                community and contribute to the development of the Augmented
-                Web.
-              </p>
-            </div>
-            <a
-              href="#whitepapers"
-              class="button expansion collaboration__button"
-              data-click="scroll"
-              >Start Dapplet Construction</a
-            >
+      <div class="col">
+        <h2 class="title-pages collaboration__title-pages">
+          <div class="title-pages--primary">Collaboration</div>
+          <div class="title-pages--secondary underlined">
+            Synergistic effect for all parties involved
           </div>
-
-          <!-- COLLABORATION__RIGHT -->
-          <div class="collaboration__right">
-            <span class="two-crosses"></span>
-            <span class="many-small-lines"></span>
-            <span class="two-triangles-2"></span>
-
-            <div class="collaboration__img"></div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- INSIDE -->
-    <section class="inside">
-      <div class="container">
-        <!-- TITLE-PAGES -->
-        <h2 class="title-pages inside__title-pages inside__title-pages-mobile">
-          <span class="title-pages--primary">Dapplets Inside</span>
-          <span class="title-pages--secondary">Inner Layers Structure </span>
         </h2>
 
-        <div class="inside__wrapper">
-          <!-- inside__left -->
-          <div class="inside__left">
-            <div class="inside__img"></div>
-          </div>
+        <picture class="collaboration_img">
+          <source
+            media="(min-width: 768px) and (max-width: 1024px)"
+            srcset="/assets/images/collaboration/collaboration-tablet.png"
+          />
+          <img src="/assets/images/collaboration/collaboration.png" />
+        </picture>
 
-          <!-- inside__right -->
-          <div class="inside__right">
-            <!-- TITLE-PAGES -->
-            <h2 class="title-pages inside__title-pages">
-              <span class="title-pages--primary">Dapplets Inside</span>
-              <span class="title-pages--secondary"
-                >Inner Layers Structure
-              </span>
-            </h2>
-
-            <div class="inside__description">
-              <ul class="inside__list ul-reset">
-                <li class="inside__item item">
-                  Legacy Website operated by a 3-rd party.
-                </li>
-                <li class="inside__item item">
-                  Core of the platform, a browser plugin responsible for basic
-                  functionality, loading and operation of subsequent modules.
-                </li>
-                <li class="inside__item item">
-                  Dapplets Adapter responsible for working with a particular
-                  site. The adapter defines the set of available augmentations
-                  and inserts them into the website at predefined places at the
-                  dapplet's request. An adapter is like the video card driver
-                  for the hardware on your computer.
-                </li>
-                <li class="inside__item item">
-                  A Dapplet is a small application that performs one business
-                  task.
-                </li>
-              </ul>
-              <p class="text inside__text">
-                When working with a site, the Adapter determines the ways and
-                types of possible augmentations, while the dapplet configures
-                augmentations it uses.
-              </p>
-            </div>
-          </div>
+        <div class="collaboration__description">
+          <p class="text collaboration__text">
+            In the internet business, as we know it now, only website owners can
+            create and earn money from business processes that run on their
+            websites. This is because ownership means full control over the
+            users' communications.
+          </p>
+          <p class="text collaboration__text">
+            Dapplets Project disrupts this paradigm and creates technology that
+            enables new kinds of applications - dapplets. These dapplets run on
+            top of existing websites, in the websites' context, but out of the
+            website owners' control. This new paradigm enables tons of brand new
+            applications and business opportunities.
+          </p>
+          <p class="text collaboration__text">
+            Dapplets technology also has a big social impact. It allows
+            censorship-resistant user flows on centrally owned websites, even
+            for banned content and banned users. It cancels the “cancel culture“
+            effectively.
+          </p>
+          <p class="text collaboration__text">
+            Dapplets is a true Web3 project: unstoppable, permissionless,
+            anonymous, open-source and decentralized, not only on the backend
+            level but on the UX level too.
+          </p>
+          <p class="text collaboration__text">
+            We invite developers all over the world to become a part of our
+            community and contribute to the development of the Augmented Web.
+          </p>
         </div>
       </div>
+
+      <img
+        class="collaboration_img-desktop"
+        src="/assets/images/collaboration/collaboration-desktop.png"
+      />
     </section>
 
-    <!-- FRACTAL -->
-    <section class="fractal">
-      <div class="fractal__bg-table"></div>
-
-      <div class="fractal__wrapper">
-        <!-- TITLE-PAGES -->
-        <h2 class="title-pages fractal__title-pages">
-          <span class="title-pages--primary">Fractal Augmentations</span>
-          <span class="title-pages--secondary">Down The Rabbit Hole</span>
-        </h2>
-
-        <div class="fractal__description">
-          <p class="text fractal__text">
-            The idea of a fractal lies in recursive self-similarity. A zoom-in
-            gives a picture that is different in detail but follows the same
-            principles. <br />
-            The idea of Fractal Augmentation follows a similar principle. <br />
-            Augmentation becomes a target for further augmentations of higher
-            order.
-          </p>
-          <p class="text fractal__text">
-            For example, one augmentation adds an entire block of content, a
-            tweet, or a post to a page. A second augmentation might add to that
-            block a button that performs some kind of action. A third
-            augmentation can add some kind of indicator or label to the button,
-            which shows that the status of a task has changed or that there are
-            new notifications.
-          </p>
-          <p class="text fractal__text">
-            This structure is very similar to that of a fractal, which is why we
-            chose to call it “fractal augmentation”.
-          </p>
+    <section class="become-dev" id="become-dev">
+      <h2 class="title-pages collaboration__title-pages">
+        <div class="title-pages--primary">How to become a developer</div>
+        <div class="title-pages--secondary">Down The Rabbit Hole</div>
+      </h2>
+      <div class="dev-steps">
+        <div class="dev-step">
+          <div class="number">1</div>
+          Read our documentation
         </div>
-      </div>
-    </section>
-
-    <!-- MONETICATION -->
-    <section class="monetication">
-      <span class="waves-icon"></span>
-      <span class="big-circle-icon big-circle-icon--1"></span>
-      <span class="big-circle-icon big-circle-icon--2"></span>
-      <span class="big-circle-icon big-circle-icon--3"></span>
-      <span class="big-circle-icon big-circle-icon--4"></span>
-      <span class="two-triangles-1"></span>
-      <span class="two-circle-icon"></span>
-
-      <div class="container">
-        <div class="monetication__top">
-          <!-- TITLE-PAGES -->
-          <h2 class="title-pages monetication__title-pages">
-            <span class="title-pages--primary">Dapplets</span>
-            <span class="title-pages--primary block">Monetisation</span>
-            <span class="title-pages--secondary"
-              >Developers Four-ways-to-earn</span
-            >
-          </h2>
-
-          <!-- MONETICATION__DESCRIPTION -->
-          <div class="monetication__description">
-            <p class="monetication__text text">
-              Despite the fact that our platform is developing as a Public Good
-              project, the contribution by dapplet developers and owners will
-              certainly be rewarded.
-            </p>
-            <p class="monetication__text text">
-              We see several monetisation options for app development. They are:
-            </p>
-          </div>
+        <div class="dev-step">
+          <div class="number">2</div>
+          Go through all of the exercises in our documentation
+        </div>
+        <div class="dev-step">
+          <div class="number">3</div>
+          Join our community of developers on Discord
+        </div>
+        <div class="dev-step">
+          <div class="number">4</div>
+          Choose any dapplet idea from our list of ideas or think of your own
+          one
+        </div>
+        <div class="dev-step">
+          <div class="number">5</div>
+          Now you have a Web3 app with your own token
+        </div>
+        <div class="dev-step">
+          <div class="number">6</div>
+          The best dapps may receive grants from the platform to support further
+          development
         </div>
       </div>
 
-      <!-- MONETICATION__BOTTOM -->
-      <div class="monetication__bottom">
-        <span class="big-cross"></span>
-
-        <!-- MONETICATION__LIST -->
-        <ul class="monetication__list ul-reset">
-          <li class="monetication__item monetication__item--1">
-            <div class="monetication__inner left">
-              <p class="text">
-                Compensation from beneficiaries of app development, as well as
-                companies whose business challenges were solved by dapplets
-              </p>
-            </div>
-          </li>
-
-          <li class="monetication__item monetication__item--2">
-            <div class="monetication__inner right">
-              <p class="text">
-                Adding paid features inside dapplets, such as subscriptions,
-                premium content, advanced features, etc.
-              </p>
-            </div>
-          </li>
-
-          <li class="monetication__item monetication__item--3">
-            <div class="monetication__inner left">
-              <p class="text">
-                Developing dapplets that act as boosters for mass adoption of
-                augmentation technology and capitalization of the dapplet
-                platform's internal economy
-              </p>
-            </div>
-          </li>
-
-          <li class="monetication__item monetication__item--4">
-            <div class="monetication__inner right">
-              <p class="text">
-                Grants from Network protocols supporting the ecosystem
-                development
-              </p>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </section>
-
-    <!-- WHITEPAPERS -->
-    <section class="whitepapers" id="whitepapers">
-      <div class="container">
-        <div class="whitepapers__wrapper">
-          <!-- whitepapers__TITLE -->
-          <h2 class="whitepapers__title">
-            <span class="whitepapers__title-primary"
-              >Whitepapers & Manuals</span
-            >
-            <span class="whitepapers__title-secandary">Quick on-boarding</span>
-          </h2>
-
-          <!-- whitepapers__LIST -->
-          <ul class="whitepapers__list ul-reset">
-            <!-- <li class="whitepapers__item whitepapers__item--1">
-            <div class="whitepapers__img"></div>
-            <a href="#" class="button expansion border whitepapers__button">Dapplets Whitepaper v1.0</a>
-          </li> -->
-            <li class="whitepapers__item whitepapers__item--2">
-              <div class="whitepapers__img"></div>
-              <a
-                href="https://docs.dapplets.org/docs/"
-                class="button expansion border whitepapers__button"
-                target="_blank"
-              >
-                Dev’s Documentation v. 0.1
-              </a>
-            </li>
-            <li class="whitepapers__item whitepapers__item--3">
-              <div class="whitepapers__img"></div>
-              <a
-                href="https://github.com/dapplets"
-                class="button expansion border whitepapers__button"
-                target="_blank"
-              >
-                Dapplets Github
-              </a>
-            </li>
-            <!-- <li class="whitepapers__item whitepapers__item--4">
-            <div class="whitepapers__img"></div>
-            <a href="https://forum.dapplets.org/" class="button expansion border whitepapers__button" target="_blank">
-              Dapplets Forum
-            </a>
-          </li> -->
-          </ul>
-
-          <!-- whitepapers__DISCORD -->
-          <p class="whitepapers__discord">
-            AMA 24/7 in
-            <a href="https://discord.gg/YcxbkcyjMV" class="whitepapers__link"
-              >our Discord</a
-            >
-          </p>
-        </div>
+      <div class="become-dev-buttons">
+        <a class="become-dev-button" href="https://docs.dapplets.org/docs/">
+          <picture>
+            <source
+              media="(min-width: 768px)"
+              srcset="/assets/images/become-dev/docs-tablet.png"
+            />
+            <img src="/assets/images/become-dev/docs.png" />
+          </picture>
+          <div class="become-dev-button-text">Documentation</div>
+        </a>
+        <a class="become-dev-button" href="https://discord.gg/YcxbkcyjMV">
+          <picture>
+            <source
+              media="(min-width: 768px)"
+              srcset="/assets/images/become-dev/discord-tablet.png"
+            />
+            <img src="/assets/images/become-dev/discord.png" />
+          </picture>
+          <div class="become-dev-button-text">Discord</div>
+        </a>
+        <a class="become-dev-button" href="https://github.com/dapplets">
+          <picture>
+            <source
+              media="(min-width: 768px)"
+              srcset="/assets/images/become-dev/github-tablet.png"
+            />
+            <img src="/assets/images/become-dev/github.png" alt="" />
+          </picture>
+          <div class="become-dev-button-text">Github</div>
+        </a>
+        <a
+          class="become-dev-button"
+          href="https://github.com/dapplets/dapplets-ideas"
+        >
+          <picture>
+            <source
+              media="(min-width: 768px)"
+              srcset="/assets/images/become-dev/ideas-tablet.png"
+            />
+            <img src="/assets/images/become-dev/ideas.png" alt="" />
+          </picture>
+          <div class="become-dev-button-text">Ideas List</div>
+        </a>
       </div>
     </section>
 
     <section class="ideas">
-      <div class="container">
-        <!-- TITLE-PAGES -->
+      <div class="col">
         <h2 class="title-pages ideas__title-pages ideas__title-pages-table">
-          <span class="title-pages--primary">Some Dapplets</span>
-          <span class="title-pages--primary block">Ideas</span>
-          <span class="title-pages--secondary">Feel free to take one</span>
+          <div class="title-pages--primary">Some Dapplet Ideas</div>
+          <div class="title-pages--secondary underlined">
+            Feel free to take one
+          </div>
         </h2>
 
-        <div class="ideas__wrapper">
-          <!-- IDEAS__LEFT -->
-          <div class="ideas__left">
-            <!-- TITLE-PAGES -->
-            <h2 class="title-pages ideas__title-pages">
-              <span class="title-pages--primary">Some Dapplets</span>
-              <span class="title-pages--primary block">Ideas</span>
-              <span class="title-pages--secondary">Feel free to take one</span>
-            </h2>
+        <picture class="ideas-img">
+          <source
+            media="(min-width: 768px) and (max-width: 1024px)"
+            srcset="/assets/images/ideas/ideas-tablet.png"
+          />
+          <img src="/assets/images/ideas/ideas.png" alt="" />
+        </picture>
 
-            <div class="ideas__description">
-              <p class="ideas__text text">
-                Today we're at the very beginning of the journey. The technology
-                has been developed, but the application options are still
-                emerging.
-              </p>
-              <p class="ideas__text text">We see a lot of development ideas.</p>
-              <ul class="ideas__list ul-reset">
-                <li class="ideas__text text">
-                  We want to change the standard workflow for many businesses.
-                </li>
-                <li class="ideas__text text">
-                  We want to simplify the NFT experience and make it seamless.
-                  NFT creation, demonstration and trading will be integrated
-                  into the existing web.
-                </li>
-                <li class="ideas__text text">
-                  We see great potential in organizing betting games. To achieve
-                  this, we are integrating crypto projects that work with
-                  Prediction Markets.
-                </li>
-              </ul>
-              <p class="ideas__text text">
-                But this is only what we see ourselves.
-              </p>
-              <p class="ideas__text text">
-                We launched a service for collecting ideas for development from
-                users of our platform. Each idea is a ready-made business case
-                with a formed audience. You can take the proposed ideas for
-                yourself or just vote for the ones you like.
-              </p>
-            </div>
-          </div>
+        <div class="ideas__description">
+          <p class="ideas__text text">
+            Today we're at the very beginning of the journey. The technology has
+            been developed, but the application options are still emerging.
+          </p>
+          <p class="ideas__subtitle text">We see a lot of development ideas:</p>
+          <ul class="ideas__list ul-reset">
+            <li class="ideas__text text">
+              <span class="ideas__subtitle">Public Stickers</span> - a dapplet
+              that allows users to place stickers directly on public content.
+            </li>
+            <li class="ideas__text text">
+              <span class="ideas__subtitle">Total Comments</span> - a universal
+              dapplet that allows its users to annotate the content of any
+              website.
+            </li>
+            <li class="ideas__text text">
+              <span class="ideas__subtitle">Tips & Donations</span> - a dapplet
+              that lets users send tips to content creators and contributors.
+              This can work in different communities, different blockchains, and
+              tokens.
+            </li>
+            <li class="ideas__text text">
+              <span class="ideas__subtitle">Avatar NFT Augmentations</span>
+              - Avatar augmentation - clothes, accessories, gadgets, and bodies
+              for your Avatar. In the form of NFTs that can be bought, sold, and
+              traded.
+            </li>
+            <li class="ideas__text text">
+              <span class="ideas__subtitle">Instant NFT Minting</span> - a
+              dapplet that allows its user to turn any content (e.g. a social
+              media post) into an NFT.
+            </li>
+            <li class="ideas__text text">
+              <span class="ideas__subtitle">Instant Message Encryption</span>
+              - a dapplet that can encrypt texts as they are being written. To
+              retain privacy and protect users from message parsing by web
+              crawlers.
+            </li>
+            <li class="ideas__text text">
+              <span class="ideas__subtitle">Universal Chat</span> - a dapplet
+              with an online chat that’s displayed on top of any website. It
+              allows users to have direct discussions anywhere within the
+              content’s framework.
+            </li>
+            <li class="ideas__text text">
+              <span class="ideas__subtitle">Site Reviews</span> - a dapplet that
+              provides independent and unstoppable site and project reviews,
+              with undeletable comments, and ratings, all stored in blockchain.
+            </li>
+            <li class="ideas__text text">
+              <span class="ideas__subtitle">Avatar Trolling</span> - a dapplet
+              that provides the opportunity to change other users' avatars and
+              draw something on top.
+            </li>
+          </ul>
 
-          <!-- IDEAS__RIGHT -->
-          <div class="ideas__right">
-            <div class="ideas__img"></div>
-          </div>
+          <p class="ideas__text text">
+            A full list of ideas ready for development can be found in “Ideas
+            List” on our Github.
+          </p>
         </div>
+      </div>
+
+      <img
+        class="ideas_img-desktop"
+        src="/assets/images/ideas/ideas-desktop.png"
+      />
+    </section>
+
+    <section class="grant">
+      <img src="/assets/images/grant/grant.png" alt="" />
+
+      <div>
+        <h2 class="title-pages">
+          <span class="title-pages--primary">Grant Program</span>
+        </h2>
+        <p class="grant__text text">
+          Dapplets Project has a Grant Program for developers that are
+          contributing to the growth and development of the Dapplets ecosystem.
+          To request a grant please fill in this application form.
+        </p>
+        <a
+          href="https://docs.google.com/forms/d/e/1FAIpQLSfd8x9SoIhxMGZV0cniKC8DDbpTdSmmetvl7YiAyXDDXmq8rw/viewform"
+          class="button expansion grant-button"
+        >
+          fill the form
+        </a>
       </div>
     </section>
 
-    <!-- VOTE -->
-    <!-- <section class="vote">
-    <div class="container">
-      <h3 class="vote__text">Leave Your Vote for the Best Dapplet Ideas</h3>
-      <a href="https://forum.dapplets.org/" class="button expansion vote__button" target="_blank">
-        Vote now
-      </a>
-    </div>
-  </section> -->
+    <section class="monetization">
+      <div class="col">
+        <h2 class="title-pages monetization__title-pages">
+          <span class="title-pages--primary">
+            Dapplet
+            <br class="desktop-only" />
+            Monetization
+          </span>
+        </h2>
+
+        <picture class="monetization-img">
+          <source
+            media="(min-width: 768px) and (max-width: 1024px)"
+            srcset="/assets/images/monetization/monetization-tablet.png"
+          />
+          <img src="/assets/images/monetization/monetization.png" alt="" />
+        </picture>
+
+        <div class="monetization__description">
+          <p class="monetization__text monetization-text-emph text">
+            AUGE is a native utility ecosystem token.
+          </p>
+          <p class="monetization__text text">
+            AUGE emission is based on the Bonding Curve model. The Bonding Curve
+            is a form of a smart-contract that buys and sells tokens, based on
+            the price formula that’s been introduced.
+          </p>
+          <p class="monetization__text text">
+            For any independent project, the owner may prefer to have their own
+            token. It is unfair to enforce the dapplet Owner to use AUGE as the
+            project token. We thus need to accept, that both tokens will exist.
+          </p>
+          <p class="monetization__text text">
+            Dapplets Platform provides any dapplet developer with the
+            opportunity to create their tokenomy based on their own token.
+          </p>
+          <p class="monetization__text text">
+            Internal platform mechanisms allow the creation of dapplet tokens on
+            the basis of connected Bonding Curves. The AUGE Bonding Curve
+            functions as the main curve while the dapplet token curve functions
+            as the second curve. This way, the AUGE token works as collateral
+            for the dapplet’s Bonding Curve.
+          </p>
+        </div>
+      </div>
+      <img
+        class="monetization__image-desktop"
+        src="/assets/images/monetization/monetization-desktop.png"
+        alt=""
+      />
+    </section>
 
     <section class="auditors">
-      <div class="container">
-        <div class="auditors__wrapper">
-          <!-- TITLE-PAGES -->
-          <h2 class="title-pages auditors__title-pages">
-            <span class="title-pages--primary">Auditors</span>
-            <span class="title-pages--secondary"
-              >“I am the watcher on the walls”</span
-            >
-          </h2>
+      <div class="auditors-content">
+        <img
+          class="auditors-img"
+          src="/assets/images/auditors/dev-auditors.png"
+          alt=""
+        />
 
-          <div class="auditors__mobile-bg"></div>
-
-          <div class="auditors__description">
-            <p class="auditors__text text">
-              Our platform is being built as a permissionless open-source
-              project and can be used by anyone. That’s why end-user security is
-              one of our topmost priorities.
-            </p>
-            <p class="auditors__text text">
-              We call on any developer to join our community as a code auditor.
-              This is a highly respected expert-level role in our community.
-              Your job is to check dapplets and adapters for any malicious
-              functionality and ensure overall code quality. The audit workflow
-              is formalized as a set of verification tasks and auditing
-              questions, which makes the job affordable for any skilled
-              developer.
-            </p>
-            <p class="auditors__text text">
-              Since all the complex and low-level work is done by adapters,
-              developers can keep the dapplet code clean and simple. A basic
-              dapplet usually contains around 100 lines of code. This makes its
-              audit much easier and reliable for the end-user.
-            </p>
-            <p class="auditors__text text">
-              Feel free to contact us if you would like to participate in the
-              project as an auditor. Later the audit on-boarding process will
-              become permissionless and autonomous.
-            </p>
+        <h2 class="title-pages auditors__title-pages">
+          <div class="title-pages--primary">Auditors</div>
+          <div class="title-pages--secondary">
+            “I am the watcher on the walls”
           </div>
+        </h2>
+
+        <div class="auditors__description">
+          <p class="auditors__text text">
+            Our platform is being built as a permissionless open-source project
+            and can be used by anyone. That’s why end-user security is one of
+            our topmost priorities.
+          </p>
+          <p class="auditors__text text">
+            We call on any developer to join our community as a code auditor.
+            This is a highly respected expert-level role in our community. Your
+            job is to check dapplets and adapters for any malicious
+            functionality and ensure overall code quality. The audit workflow is
+            formalized as a set of verification tasks and auditing questions,
+            which makes the job affordable for any skilled developer.
+          </p>
+          <p class="auditors__text text">
+            Since all the complex and low-level work is done by adapters,
+            developers can keep the dapplet code clean and simple. A basic
+            dapplet usually contains around 100 lines of code. This makes its
+            audit much easier and reliable for the end-user.
+          </p>
+          <p class="auditors__text text">
+            Feel free to contact us if you would like to participate in the
+            project as an auditor. Later the audit on-boarding process will
+            become permissionless and autonomous.
+          </p>
         </div>
       </div>
     </section>
 
-    <!-- FOOTER -->
     <footer class="footer" id="footer">
-      <!-- FOOTER__TOP -->
       <div class="footer__top">
         <div class="container">
-          <!-- FOOTER__HEADER -->
           <div class="footer__header">
-            <!-- FOOTER__LOGO -->
             <div class="footer__logo">
               <a href="/" class="footer__logo-link">
                 <img
@@ -824,8 +716,6 @@
             </div>
 
             <span class="footer__line footer__line--1"></span>
-
-            <!-- FORM__SOCIALS -->
             <ul class="footer__socials ul-reset">
               <li class="footer__social" title="GitHub">
                 <a
@@ -927,15 +817,6 @@
                   </svg>
                 </a>
               </li>
-              <!--<li class="footer__social" title="Facebook">
-              <a href="#" class="footer__social-link">
-                <svg width="41" height="41" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M40.8939 20.125C40.8939 9.01 31.94 0 20.8964 0C9.8478 0.0025 0.893921 9.01 0.893921 20.1275C0.893921 30.17 8.20801 38.495 17.7668 40.005V25.9425H12.6924V20.1275H17.7718V15.69C17.7718 10.6475 20.7589 7.8625 25.3259 7.8625C27.5156 7.8625 29.8028 8.255 29.8028 8.255V13.205H27.2806C24.7984 13.205 24.0235 14.7575 24.0235 16.35V20.125H29.5678L28.6829 25.94H24.021V40.0025C33.5798 38.4925 40.8939 30.1675 40.8939 20.125Z"
-                    fill="#F5F5F5" />
-                </svg>
-              </a>
-            </li>-->
               <li class="footer__social" title="Email">
                 <a
                   href="mailto:contact@dapplets.org"
@@ -962,7 +843,6 @@
 
           <span class="footer__line footer__line--2"></span>
 
-          <!-- FOOTER__LINKS -->
           <div class="footer__links">
             <div class="footer__links-container">
               <h5 class="footer__links-title">Home</h5>
@@ -988,25 +868,6 @@
                 </li>
               </ul>
             </div>
-
-            <!-- <div class="footer__links-container">
-            <h5 class="footer__links-title">Dapplets Store</h5>
-
-            <ul class="footer__social-link ul-reset">
-              <li class="footer__links-item">
-                <a href="#" class="footer__links-link">Category</a>
-              </li>
-              <li class="footer__links-item">
-                <a href="#" class="footer__links-link">Category</a>
-              </li>
-              <li class="footer__links-item">
-                <a href="#" class="footer__links-link">Category</a>
-              </li>
-              <li class="footer__links-item">
-                <a href="#" class="footer__links-link">Category</a>
-              </li>
-            </ul>
-          </div> -->
 
             <div class="footer__links-container">
               <h5 class="footer__links-title">Join Us</h5>
@@ -1049,15 +910,6 @@
                     >Motivation</a
                   >
                 </li>
-                <!-- <li class="footer__links-item">
-                <a href="#" class="footer__links-link">Strategy</a>
-              </li> -->
-                <!-- <li class="footer__links-item">
-                <a href="#" class="footer__links-link">Project News</a>
-              </li> -->
-                <!-- <li class="footer__links-item">
-                <a href="#" class="footer__links-link">FAQ</a>
-              </li> -->
                 <li class="footer__links-item">
                   <a href="/about.html#career" class="footer__links-link"
                     >Career at Dapplets</a
@@ -1070,33 +922,16 @@
                 </li>
               </ul>
             </div>
-
-            <!-- <div class="footer__links-container">
-            <h5 class="footer__links-title">Forum</h5>
-
-            <ul class="footer__social-link ul-reset">
-              <li class="footer__links-item">
-                <a href="https://forum.dapplets.org/" class="footer__links-link" target="_blank">Forum Dapplets</a>
-              </li>
-            </ul>
-          </div> -->
           </div>
         </div>
       </div>
 
-      <!-- FOOTER__BOTTOM -->
       <div class="footer__bottom">
         <div class="container">
           <div class="footer__inner">
             <p class="footer__copywriting text"></p>
 
-            <ul class="footer__inbound-links ul-reset">
-              <li class="footer__inbound-item text">
-                <a href="/privacy-policy.html" class="footer__inbound-link"
-                  >Privacy Policy</a
-                >
-              </li>
-            </ul>
+            <ul class="footer__inbound-links ul-reset"></ul>
           </div>
         </div>
       </div>

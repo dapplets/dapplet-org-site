@@ -1,122 +1,118 @@
-
 @media (max-width: 1538px) {
-	.economic .two-triangles-1 {
-		right: -29px;
-	}
+  .economic .two-triangles-1 {
+    right: -29px;
+  }
 }
 
 @media (max-width: 1410px) {
-	.economic__top {
-		padding: 0;
-	}
+  .economic__top {
+    padding: 0;
+  }
 
-	.economic .two-triangles-1 {
-		display: none;
-	}
+  .economic .two-triangles-1 {
+    display: none;
+  }
 }
 
 @media (max-width: 1310px) {
-	.economic__item {
-		max-width: 540px;
-	}
+  .economic__item {
+    max-width: 540px;
+  }
 }
 
 @media (max-width: 1150px) {
-	.economic {
-		padding-bottom: 33px;
+  .economic {
+    padding-bottom: 33px;
 
-		.big-circle-icon,
-		.mini-circle-icon,
-		.waves-icon,
-		.many-straight-lines-icon,
-		.extra-large-circle-icon {
-			display: none;
-		}
-	}
+    .big-circle-icon,
+    .mini-circle-icon,
+    .waves-icon,
+    .many-straight-lines-icon,
+    .extra-large-circle-icon {
+      display: none;
+    }
+  }
 
-	.economic__top {
-		align-items: baseline;
-		flex-direction: column;
-	}
+  .economic__top {
+    align-items: baseline;
+    flex-direction: column;
+  }
 
-	.economic__title {
-		margin-bottom: 35px;
-	}
+  .economic__title {
+    margin-bottom: 35px;
+  }
 
-	.economic__text.text,
-	.economic__title {
-		padding-left: 10px;
-	}
+  .economic__text.text,
+  .economic__title {
+    padding-left: 10px;
+  }
 
-	.economic__list {
-		flex-direction: column;
+  .economic__list {
+    flex-direction: column;
+    margin-top: 25px;
+  }
 
-		margin-top: 25px;
-	}
+  .economic__item {
+    max-width: 100%;
+    min-height: 100%;
+    margin-right: 0;
+    margin-left: 0;
+    padding: 20px 22px;
 
-	.economic__item {
-		max-width: 100%;
-		min-height: 100%;
-		margin-right: 0;
-		margin-left: 0;
-		padding: 20px 22px;
-
-		.text {
-			max-width: 100%;
-		}
-	}
+    .text {
+      max-width: 100%;
+    }
+  }
 }
 
 @media screen and (max-width: 523px) {
-	.economic {
-		.title {
-			font-size: 59px;
-		}
-	}
+  .economic {
+    .title {
+      font-size: 59px;
+    }
+  }
 }
 
 @media screen and (max-width: 480px) {
-	.economic {
-		padding-top: 42px;
-		padding-bottom: 53px;
+  .economic {
+    padding-top: 42px;
+    padding-bottom: 53px;
 
-		.container {
-			padding: 0;
-		}
-	}
+    .container {
+      padding: 0;
+    }
+  }
 
-	.economic__item {
-		min-height: 100%;
-		margin-bottom: 46px;
-		padding: 12px 11px;
-	}
+  .economic__item {
+    min-height: 100%;
+    margin-bottom: 46px;
+    padding: 12px 11px;
+  }
 
-	.economic__item::after {
-		top: -9px;
-		right: 0;
+  .economic__item::after {
+    top: -9px;
+    right: 0;
+    border-top: 50px solid #fff;
+    border-left: 50px solid transparent;
+  }
 
-		border-top: 50px solid #FFF;
-		border-left: 50px solid transparent;
-	}
+  .economic__title {
+    margin-bottom: 20px;
+    text-align: left;
+  }
 
-	.economic__title {
-		margin-bottom: 20px;
+  .ececonomic__item-desctiption {
+    padding-right: 11px;
+  }
 
-		text-align: left;
-	}
+  .economic__item-line {
+    max-width: 121px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+  }
 
-	.ececonomic__item-desctiption {
-		padding-right: 11px;
-	}
-
-	.economic__item-line {
-		max-width: 121px;
-		margin-top: 5px;
-		margin-bottom: 10px;
-	}
-
-	.economic__item-button {
-		width: 100%;
-		margin-right: 20px;
-	}
+  .economic__item-button {
+    width: 100%;
+    margin-right: 20px;
+  }
 }

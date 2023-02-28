@@ -1,36 +1,44 @@
-@import "../../../base/constans";
-@import "../../../base/mixins";
+@import '../../../base/constans';
+@import '../../../base/mixins';
+
 @media (max-width: 1300px) {
-    .logomark__wrapper {
-        max-width: 600px;
-    }
+  .logomark__wrapper {
+    max-width: 600px;
+  }
 }
+
 @media (max-width: 1024px) {
-    .logomark-container {
-        background-position: center 0;
-    }
-    .logomark__wrapper {
-        padding: 620px 0 40px 0;
-        max-width: 100%;
-    }
-    .logomark__title {
-        padding-bottom: 40px;
-    }
+  .logomark-container {
+    background-position: center 0;
+  }
+
+  .logomark__wrapper {
+    padding: 620px 0 40px;
+    max-width: 100%;
+  }
+
+  .logomark__title {
+    padding-bottom: 40px;
+  }
 }
+
 @media (max-width: 650px) {
-    .logomark-container {
-        background-position: center 0;
-        background-size: 320px 270px;
-    }
-    .logomark__wrapper {
-        padding: 314px 0 40px 0;
-        max-width: 100%;
-    }
-    .logomark__title {
-        padding-bottom: 20px;
-        font-size: 24px;
-    }
-    .logomark__text {
-        font-size: 14px;
-    }
+  .logomark-container {
+    background-position: center 0;
+    background-size: 320px 270px;
+  }
+
+  .logomark__wrapper {
+    padding: 314px 0 40px;
+    max-width: 100%;
+  }
+
+  .logomark__title {
+    padding-bottom: 20px;
+    font-size: 24px;
+  }
+
+  .logomark__text {
+    font-size: 14px;
+  }
 }

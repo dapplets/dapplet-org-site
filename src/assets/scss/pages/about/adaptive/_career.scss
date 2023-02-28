@@ -1,33 +1,32 @@
 @media (max-width: 1150px) {
-	.career {
-		background-image: url('../images/bg/career-bg-table.jpg');
-	}
+  .career {
+    background-image: url('../images/bg/career-bg-table.jpg');
+  }
 }
 
 @media (max-width: 480px) {
-	.career {
-		padding-top: 40px;
-		padding-bottom: 39px;
+  .career {
+    padding-top: 40px;
+    padding-bottom: 39px;
+    background-image: url('../images/bg/career-bg-mobile.jpg');
+  }
 
-		background-image: url('../images/bg/career-bg-mobile.jpg');
-	}
+  .career__title {
+    font-size: 26px;
+    font-weight: 900;
+  }
 
-	.career__title {
-		font-size: 26px;
-		font-weight: 900;
-	}
+  .career__description,
+  .career__link {
+    font-size: 14px;
+  }
 
-	.career__description,
-	.career__link {
-		font-size: 14px;
-	}
+  .career__link {
+    display: inline;
+  }
 
-	.career__link {
-		display: inline;
-	}
-
-	.career__button {
-		width: 100%;
-		max-width: 100%;
-	}
+  .career__button {
+    width: 100%;
+    max-width: 100%;
+  }
 }

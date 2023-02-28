@@ -24,55 +24,51 @@
 
   <body>
     <script type="text/javascript">
-      (function (window, document, dataLayerName, id) {
-        (window[dataLayerName] = window[dataLayerName] || []),
+      ;(function (window, document, dataLayerName, id) {
+        ;(window[dataLayerName] = window[dataLayerName] || []),
           window[dataLayerName].push({
             start: new Date().getTime(),
-            event: "stg.start",
-          });
-        var scripts = document.getElementsByTagName("script")[0],
-          tags = document.createElement("script");
+            event: 'stg.start',
+          })
+        var scripts = document.getElementsByTagName('script')[0],
+          tags = document.createElement('script')
         function stgCreateCookie(a, b, c) {
-          var d = "";
+          var d = ''
           if (c) {
-            var e = new Date();
-            e.setTime(e.getTime() + 24 * c * 60 * 60 * 1e3),
-              (d = "; expires=" + e.toUTCString());
+            var e = new Date()
+            e.setTime(e.getTime() + 24 * c * 60 * 60 * 1e3), (d = '; expires=' + e.toUTCString())
           }
-          document.cookie = a + "=" + b + d + "; path=/";
+          document.cookie = a + '=' + b + d + '; path=/'
         }
         var isStgDebug =
-          (window.location.href.match("stg_debug") ||
-            document.cookie.match("stg_debug")) &&
-          !window.location.href.match("stg_disable_debug");
-        stgCreateCookie("stg_debug", isStgDebug ? 1 : "", isStgDebug ? 14 : -1);
-        var qP = [];
-        dataLayerName !== "dataLayer" &&
-          qP.push("data_layer_name=" + dataLayerName),
-          isStgDebug && qP.push("stg_debug");
-        var qPString = qP.length > 0 ? "?" + qP.join("&") : "";
-        (tags.async = !0),
-          (tags.src =
-            "https://dapplets.containers.piwik.pro/" + id + ".js" + qPString),
-          scripts.parentNode.insertBefore(tags, scripts);
+          (window.location.href.match('stg_debug') || document.cookie.match('stg_debug')) &&
+          !window.location.href.match('stg_disable_debug')
+        stgCreateCookie('stg_debug', isStgDebug ? 1 : '', isStgDebug ? 14 : -1)
+        var qP = []
+        dataLayerName !== 'dataLayer' && qP.push('data_layer_name=' + dataLayerName),
+          isStgDebug && qP.push('stg_debug')
+        var qPString = qP.length > 0 ? '?' + qP.join('&') : ''
+        ;(tags.async = !0),
+          (tags.src = 'https://dapplets.containers.piwik.pro/' + id + '.js' + qPString),
+          scripts.parentNode.insertBefore(tags, scripts)
         !(function (a, n, i) {
-          a[n] = a[n] || {};
+          a[n] = a[n] || {}
           for (var c = 0; c < i.length; c++)
             !(function (i) {
-              (a[n][i] = a[n][i] || {}),
+              ;(a[n][i] = a[n][i] || {}),
                 (a[n][i].api =
                   a[n][i].api ||
                   function () {
-                    var a = [].slice.call(arguments, 0);
-                    "string" == typeof a[0] &&
+                    var a = [].slice.call(arguments, 0)
+                    'string' == typeof a[0] &&
                       window[dataLayerName].push({
-                        event: n + "." + i + ":" + a[0],
+                        event: n + '.' + i + ':' + a[0],
                         parameters: [].slice.call(arguments, 1),
-                      });
-                  });
-            })(i[c]);
-        })(window, "ppms", ["tm", "cm"]);
-      })(window, document, "dataLayer", "9bed06dd-be95-40d0-aea8-cf1e92ac2643");
+                      })
+                  })
+            })(i[c])
+        })(window, 'ppms', ['tm', 'cm'])
+      })(window, document, 'dataLayer', '9bed06dd-be95-40d0-aea8-cf1e92ac2643')
     </script>
 
     <!-- HEADER -->
@@ -84,11 +80,7 @@
             <!-- HEADER__TOP-LEFT -->
             <div class="header__top-left">
               <a href="/" class="header__main-page">
-                <img
-                  src="/assets/images/logo.svg"
-                  alt="Dapplets"
-                  class="header__top-logo"
-                />
+                <img src="/assets/images/logo.svg" alt="Dapplets" class="header__top-logo" />
                 <img
                   src="/assets/images/logo-mobile.svg"
                   alt="Dapplets"
@@ -130,14 +122,10 @@
             <div class="header__top-right">
               <ul class="header__top-list ul-reset">
                 <li class="header__top-item">
-                  <a href="https://docs.dapplets.org/docs/" target="_blank"
-                    >Docs</a
-                  >
+                  <a href="https://docs.dapplets.org/docs/" target="_blank">Docs</a>
                 </li>
                 <li class="header__top-item">
-                  <a
-                    href="https://docs.dapplets.org/docs/whitepapers/summary/"
-                    target="_blank"
+                  <a href="https://docs.dapplets.org/docs/whitepapers/summary/" target="_blank"
                     >Whitepapers</a
                   >
                 </li>
@@ -192,11 +180,7 @@
                   </a>
                 </li>
                 <li class="header__top-social" title="Telegram">
-                  <a
-                    href="https://t.me/dapplets"
-                    class="header__top-social-link"
-                    target="_blank"
-                  >
+                  <a href="https://t.me/dapplets" class="header__top-social-link" target="_blank">
                     <svg
                       width="31"
                       height="30"
@@ -248,25 +232,16 @@
         <div class="container">
           <ul class="header__nav-list ul-reset">
             <li class="header__nav-item">
-              <a href="/under-construction.html" class="header__nav-link"
-                >Store</a
-              >
+              <a href="/under-construction.html" class="header__nav-link">Store</a>
             </li>
             <li class="header__nav-item">
               <a href="/developers.html" class="header__nav-link">Developers</a>
             </li>
             <li class="header__nav-item">
-              <a href="/join-us.html" class="header__nav-link active"
-                >Join Us</a
-              >
+              <a href="/join-us.html" class="header__nav-link active">Join Us</a>
             </li>
             <li class="header__nav-item">
-              <a
-                href="https://blog.dapplets.org/"
-                class="header__nav-link"
-                target="_blank"
-                >Blog</a
-              >
+              <a href="https://blog.dapplets.org/" class="header__nav-link" target="_blank">Blog</a>
             </li>
             <li class="header__nav-item">
               <a href="/about.html" class="header__nav-link">About</a>
@@ -276,9 +251,7 @@
           <div class="header__nav-bottom">
             <ul class="header__top-list header__bottom-list ul-reset">
               <li class="header__top-item">
-                <a href="https://docs.dapplets.org/docs/" target="_blank"
-                  >Docs</a
-                >
+                <a href="https://docs.dapplets.org/docs/" target="_blank">Docs</a>
               </li>
               <!-- <li class="header__top-item">
               <a href="https://forum.dapplets.org/" target="_blank">Forum</a>
@@ -331,11 +304,7 @@
                 </a>
               </li>
               <li class="header__top-social" title="Telegram">
-                <a
-                  href="https://t.me/dapplets"
-                  class="header__top-social-link"
-                  target="_blank"
-                >
+                <a href="https://t.me/dapplets" class="header__top-social-link" target="_blank">
                   <svg
                     width="31"
                     height="30"
@@ -400,21 +369,11 @@
           <div class="promo__buttons">
             <span class="triangle"></span>
 
-            <a
-              href="#model"
-              class="button expansion promo__button"
-              data-click="scroll"
+            <a href="#model" class="button expansion promo__button" data-click="scroll"
               >Learn More</a
             >
-            <a
-              href="#model"
-              class="button icon center animate"
-              data-click="scroll"
-            >
-              <img
-                src="/assets/images/icons/chevron-down.svg"
-                alt="Arrow Bottom"
-              />
+            <a href="#model" class="button icon center animate" data-click="scroll">
+              <img src="/assets/images/icons/chevron-down.svg" alt="Arrow Bottom" />
             </a>
           </div>
         </div>
@@ -450,9 +409,8 @@
               <div class="model__item-inner right">
                 <h3 class="model__item-title">User</h3>
                 <p class="text model__item-text">
-                  Users install and use dapplets because these dapplets are able
-                  to solve their problems and provide the functionality they
-                  need.
+                  Users install and use dapplets because these dapplets are able to solve their
+                  problems and provide the functionality they need.
                 </p>
               </div>
             </li>
@@ -460,10 +418,9 @@
               <div class="model__item-inner left">
                 <h3 class="model__item-title">Lister</h3>
                 <p class="text model__item-text">
-                  Listers are a special role unknown in the classical web. Their
-                  job is to select the most interesting apps and make a list of
-                  them. Popular listers can be rewarded by developers for
-                  listing their apps.
+                  Listers are a special role unknown in the classical web. Their job is to select
+                  the most interesting apps and make a list of them. Popular listers can be rewarded
+                  by developers for listing their apps.
                 </p>
               </div>
             </li>
@@ -471,9 +428,8 @@
               <div class="model__item-inner right">
                 <h3 class="model__item-title">Developer</h3>
                 <p class="text model__item-text">
-                  Developers and Owners write and publish apps because they help
-                  drive their business processes or can be monetized through
-                  user acquisition.
+                  Developers and Owners write and publish apps because they help drive their
+                  business processes or can be monetized through user acquisition.
                 </p>
               </div>
             </li>
@@ -481,9 +437,8 @@
               <div class="model__item-inner left">
                 <h3 class="model__item-title">Auditor</h3>
                 <p class="text model__item-text">
-                  Auditors review the app's code and are responsible for making
-                  sure it’s safe for the end user. They can be rewarded by both
-                  developers and end users.
+                  Auditors review the app's code and are responsible for making sure it’s safe for
+                  the end user. They can be rewarded by both developers and end users.
                 </p>
               </div>
             </li>
@@ -509,36 +464,29 @@
 
             <div class="owner__description">
               <p class="text owner__text">
-                An Owner is a person who started the development and created the
-                first registry entry for a new dapplet. An Owner receives all
-                rights to the new app.
+                An Owner is a person who started the development and created the first registry
+                entry for a new dapplet. An Owner receives all rights to the new app.
               </p>
               <p class="text owner__text">
-                The Owner does not need to have coding or design skills. Any
-                person who has an idea and a vision of the future app can become
-                an Owner.
+                The Owner does not need to have coding or design skills. Any person who has an idea
+                and a vision of the future app can become an Owner.
               </p>
               <p class="text owner__text">
-                The Owner "lays the first stone" of the future application,
-                creating it in “Under Construction’ status. A dapplet with this
-                status becomes an item of the Dapplet Store. It can be added by
-                the user or the lister to the Listings. This dapplet will be
-                activated for the user as soon as its status changes to
-                "Working". Any dapplet in “Under Construction” status can be
-                transferred to another Owner.
+                The Owner "lays the first stone" of the future application, creating it in “Under
+                Construction’ status. A dapplet with this status becomes an item of the Dapplet
+                Store. It can be added by the user or the lister to the Listings. This dapplet will
+                be activated for the user as soon as its status changes to "Working". Any dapplet in
+                “Under Construction” status can be transferred to another Owner.
               </p>
               <p class="text owner__text">
-                After the "laying of the first stone" the Owner has to find the
-                development team and execute the development of the application.
-                He is given two months for this process. If after two months the
-                dapplet is not uploaded to the registry, the name record will
-                disappear and the dapplet will have to be registered again.
+                After the "laying of the first stone" the Owner has to find the development team and
+                execute the development of the application. He is given two months for this process.
+                If after two months the dapplet is not uploaded to the registry, the name record
+                will disappear and the dapplet will have to be registered again.
               </p>
             </div>
 
-            <a
-              href="/under-construction.html"
-              class="button expansion owner__button"
+            <a href="/under-construction.html" class="button expansion owner__button"
               >Start Dapplet Construction</a
             >
           </div>
@@ -575,9 +523,7 @@
       <div class="container">
         <!-- LISTER__WRAPPER -->
         <div class="lister__wrapper">
-          <h2
-            class="title-pages lister__title-pages lister__title-pages-mobile"
-          >
+          <h2 class="title-pages lister__title-pages lister__title-pages-mobile">
             <span class="title-pages--primary">Lister</span>
             <span class="title-pages--secondary">One to find them all</span>
           </h2>
@@ -609,28 +555,23 @@
                 Listers are a special role unknown in the classical web.
               </p>
               <p class="text lister__text">
-                Because our apps are published in decentralized repositories,
-                they are all available to any user: unfiltered and uncensored.
-                But how will the user know which apps are useful for him and
-                which are not?
+                Because our apps are published in decentralized repositories, they are all available
+                to any user: unfiltered and uncensored. But how will the user know which apps are
+                useful for him and which are not?
               </p>
               <p class="text lister__text">
-                The lister's job is to find "diamond" apps and compile a list of
-                them. Users can subscribe to listings of their choice. Having
-                subscribed to a lister, the user begins to see the world "with
-                the lister’s eyes." All apps added by the lister to his list are
-                automatically activated for his subscribed users.
+                The lister's job is to find "diamond" apps and compile a list of them. Users can
+                subscribe to listings of their choice. Having subscribed to a lister, the user
+                begins to see the world "with the lister’s eyes." All apps added by the lister to
+                his list are automatically activated for his subscribed users.
               </p>
               <p class="text lister__text">
-                For users, the lister becomes a guide to the world of dapplets.
-                For a developer, the lister becomes an ambassador for his apps.
-                A developer can motivate a lister for adding his app to the
-                listing.
+                For users, the lister becomes a guide to the world of dapplets. For a developer, the
+                lister becomes an ambassador for his apps. A developer can motivate a lister for
+                adding his app to the listing.
               </p>
 
-              <a
-                href="/under-construction.html"
-                class="button expansion lister__button"
+              <a href="/under-construction.html" class="button expansion lister__button"
                 >Create your first list</a
               >
             </div>
@@ -645,9 +586,7 @@
       <span class="big-circle-icon"></span>
 
       <div class="container">
-        <h2
-          class="title-pages auditors__title-pages auditors__title-pages-mobile"
-        >
+        <h2 class="title-pages auditors__title-pages auditors__title-pages-mobile">
           <span class="title-pages--primary"
             >Developers and <span class="block">auditors</span>
           </span>
@@ -668,25 +607,23 @@
 
             <div class="auditors__description">
               <p class="text auditors__text">
-                Decentralization of UX is one of the key steps in the transition
-                to Web3.
+                Decentralization of UX is one of the key steps in the transition to Web3.
               </p>
               <p class="text auditors__text">
-                Augmented Web gives the user a concentration of knowledge and
-                experience of the entire community right in the place and at the
-                moment of making a decision.
+                Augmented Web gives the user a concentration of knowledge and experience of the
+                entire community right in the place and at the moment of making a decision.
               </p>
               <p class="text auditors__text">
-                Dapplets Project is built as an unstoppable, permissionless and
-                decentralized system based on a flexible economic model.
+                Dapplets Project is built as an unstoppable, permissionless and decentralized system
+                based on a flexible economic model.
               </p>
               <p class="text auditors__text">
-                Together, we can give the economy and users new business models
-                that are currently unattainable.
+                Together, we can give the economy and users new business models that are currently
+                unattainable.
               </p>
               <p class="text auditors__text">
-                We invite developers from all over the world to join our
-                community and contribute to the development of Augmented Web.
+                We invite developers from all over the world to join our community and contribute to
+                the development of Augmented Web.
               </p>
             </div>
 
@@ -709,16 +646,10 @@
     <section class="you-developer" id="developer">
       <div class="container">
         <h4 class="you-developer__title">Are you a Developer?</h4>
-        <p class="you-developer__subtitle">
-          Become a part of our growing Community
-        </p>
+        <p class="you-developer__subtitle">Become a part of our growing Community</p>
         <ul class="you-developer__socials ul-reset">
           <li class="you-developer__social" title="Telegram">
-            <a
-              href="https://t.me/dapplets"
-              class="you-developer__social-link"
-              target="_blank"
-            >
+            <a href="https://t.me/dapplets" class="you-developer__social-link" target="_blank">
               <svg
                 width="31"
                 height="30"
@@ -793,15 +724,11 @@
             <!-- FOOTER__LOGO -->
             <div class="footer__logo">
               <a href="/" class="footer__logo-link">
-                <img
-                  src="/assets/images/logo-footer.svg"
-                  alt="Dapplets"
-                  class="footer__logo-img"
-                />
+                <img src="/assets/images/logo-footer.svg" alt="Dapplets" class="footer__logo-img" />
               </a>
               <p class="footer__logo-text text">
-                Open Augmented Web Infrastructure for Decentralized Apps powered
-                by crypto technologies.
+                Open Augmented Web Infrastructure for Decentralized Apps powered by crypto
+                technologies.
               </p>
             </div>
 
@@ -810,10 +737,7 @@
             <!-- FORM__SOCIALS -->
             <ul class="footer__socials ul-reset">
               <li class="footer__social" title="GitHub">
-                <a
-                  href="https://github.com/dapplets"
-                  class="footer__social-link"
-                >
+                <a href="https://github.com/dapplets" class="footer__social-link">
                   <svg
                     width="41"
                     height="41"
@@ -831,10 +755,7 @@
                 </a>
               </li>
               <li class="footer__social" title="Discord">
-                <a
-                  href="https://discord.com/invite/YcxbkcyjMV"
-                  class="footer__social-link"
-                >
+                <a href="https://discord.com/invite/YcxbkcyjMV" class="footer__social-link">
                   <svg
                     width="41"
                     height="41"
@@ -870,10 +791,7 @@
                 </a>
               </li>
               <li class="footer__social" title="Medium">
-                <a
-                  href="https://blog.dapplets.org/"
-                  class="footer__social-link"
-                >
+                <a href="https://blog.dapplets.org/" class="footer__social-link">
                   <svg
                     width="41"
                     height="41"
@@ -919,10 +837,7 @@
               </a>
             </li>-->
               <li class="footer__social" title="Email">
-                <a
-                  href="mailto:contact@dapplets.org"
-                  class="footer__social-link"
-                >
+                <a href="mailto:contact@dapplets.org" class="footer__social-link">
                   <svg
                     width="41"
                     height="41"
@@ -951,19 +866,13 @@
 
               <ul class="footer__social-link ul-reset">
                 <li class="footer__links-item">
-                  <a href="/#what-is" class="footer__links-link"
-                    >What is Dapplets Project?</a
-                  >
+                  <a href="/#what-is" class="footer__links-link">What is Dapplets Project?</a>
                 </li>
                 <li class="footer__links-item">
-                  <a href="/#innovation" class="footer__links-link"
-                    >Innovation</a
-                  >
+                  <a href="/#innovation" class="footer__links-link">Innovation</a>
                 </li>
                 <li class="footer__links-item">
-                  <a href="/#to-use" class="footer__links-link"
-                    >How to use it?</a
-                  >
+                  <a href="/#to-use" class="footer__links-link">How to use it?</a>
                 </li>
                 <li class="footer__links-item">
                   <a href="/#economic" class="footer__links-link">Role model</a>
@@ -995,24 +904,16 @@
 
               <ul class="footer__social-link ul-reset">
                 <li class="footer__links-item">
-                  <a href="/join-us.html#owner" class="footer__links-link"
-                    >Owner</a
-                  >
+                  <a href="/join-us.html#owner" class="footer__links-link">Owner</a>
                 </li>
                 <li class="footer__links-item">
-                  <a href="/join-us.html#lister" class="footer__links-link"
-                    >Lister</a
-                  >
+                  <a href="/join-us.html#lister" class="footer__links-link">Lister</a>
                 </li>
                 <li class="footer__links-item">
-                  <a href="/join-us.html#auditors" class="footer__links-link"
-                    >Developer</a
-                  >
+                  <a href="/join-us.html#auditors" class="footer__links-link">Developer</a>
                 </li>
                 <li class="footer__links-item">
-                  <a href="/join-us.html#auditors" class="footer__links-link"
-                    >Auditor</a
-                  >
+                  <a href="/join-us.html#auditors" class="footer__links-link">Auditor</a>
                 </li>
               </ul>
             </div>
@@ -1022,14 +923,10 @@
 
               <ul class="footer__social-link ul-reset">
                 <li class="footer__links-item">
-                  <a href="/about.html#mission" class="footer__links-link"
-                    >Our Mission</a
-                  >
+                  <a href="/about.html#mission" class="footer__links-link">Our Mission</a>
                 </li>
                 <li class="footer__links-item">
-                  <a href="/about.html#motivation" class="footer__links-link"
-                    >Motivation</a
-                  >
+                  <a href="/about.html#motivation" class="footer__links-link">Motivation</a>
                 </li>
                 <!-- <li class="footer__links-item">
                 <a href="#" class="footer__links-link">Strategy</a>
@@ -1041,14 +938,10 @@
                 <a href="#" class="footer__links-link">FAQ</a>
               </li> -->
                 <li class="footer__links-item">
-                  <a href="/about.html#career" class="footer__links-link"
-                    >Career at Dapplets</a
-                  >
+                  <a href="/about.html#career" class="footer__links-link">Career at Dapplets</a>
                 </li>
                 <li class="footer__links-item">
-                  <a href="/brand.html" class="footer__links-link"
-                    >Brand Toolkit</a
-                  >
+                  <a href="/brand.html" class="footer__links-link">Brand Toolkit</a>
                 </li>
               </ul>
             </div>
@@ -1074,9 +967,7 @@
 
             <ul class="footer__inbound-links ul-reset">
               <li class="footer__inbound-item text">
-                <a href="/privacy-policy.html" class="footer__inbound-link"
-                  >Privacy Policy</a
-                >
+                <a href="/privacy-policy.html" class="footer__inbound-link">Privacy Policy</a>
               </li>
             </ul>
           </div>

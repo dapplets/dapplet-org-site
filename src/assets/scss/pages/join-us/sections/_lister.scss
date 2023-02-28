@@ -1,163 +1,146 @@
 @import '../../../base/mixins';
 
 .lister {
-	position: relative;
-	z-index: 1;
+  position: relative;
+  z-index: 1;
+  overflow-x: hidden;
+  padding-top: 35px;
+  padding-bottom: 100px;
 
-	overflow-x: hidden;
+  .waves-icon {
+    transform: rotate(180deg);
+  }
 
-	padding-top: 35px;
-	padding-bottom: 100px;
+  .waves-icon--1 {
+    z-index: -1;
+    top: 139px;
+    left: 76px;
+  }
 
-	.waves-icon {
-		transform: rotate(180deg);
-	}
+  .waves-icon--2 {
+    z-index: -1;
+    bottom: -78px;
+    left: -64px;
+  }
 
-	.waves-icon--1 {
-		z-index: -1;
-		top: 139px;
-		left: 76px;
-	}
+  .big-cross {
+    z-index: -1;
+    top: -41px;
+    left: 377px;
+  }
 
-	.waves-icon--2 {
-		z-index: -1;
-		bottom: -78px;
-		left: -64px;
-	}
+  .big-circle-icon {
+    top: 328px;
+    left: -57px;
+  }
 
-	.big-cross {
-		z-index: -1;
-		top: -41px;
-		left: 377px;
-	}
+  .two-circle-icon {
+    top: 268px;
+    left: 199px;
+    transform: rotate(80deg);
+  }
 
-	.big-circle-icon {
-		top: 328px;
-		left: -57px;
-	}
-
-	.two-circle-icon {
-		top: 268px;
-		left: 199px;
-
-		transform: rotate(80deg);
-	}
-
-	.two-triangles-2 {
-		z-index: -1;
-		top: 55px;
-		left: 65%;
-
-		display: none;
-	}
+  .two-triangles-2 {
+    z-index: -1;
+    top: 55px;
+    left: 65%;
+    display: none;
+  }
 }
 
 .lister__item {
-	position: relative;
+  position: relative;
+  width: 100%;
+  max-width: 610px;
+  min-height: 200px;
 
-	width: 100%;
-	max-width: 610px;
-	min-height: 200px;
+  &:not(:last-child) {
+    margin-bottom: 80px;
+  }
 
-	&:not(:last-child) {
-		margin-bottom: 80px;
-	}
+  &::after {
+    position: absolute;
+    z-index: -1;
+    z-index: 1;
+    bottom: -85px;
+    left: 50%;
+    width: 17px;
+    height: 85px;
+    content: '';
+    transform: translateX(-50%);
+    background-image: url('../images/icons/line-with-polygon-4-lister.svg');
+    background-size: auto !important;
 
-	&::after {
-		position: absolute;
-		z-index: -1;
-		z-index: 1;
-		bottom: -85px;
-		left: 50%;
+    @include backgroundStyle;
+  }
 
-		width: 17px;
-		height: 85px;
+  &::before {
+    position: absolute;
+    z-index: -1;
+    top: 10px;
+    left: -20px;
+    width: 100%;
+    height: 100%;
+    content: '';
+    background-image: url('../images/lister/border.svg');
 
-		content: '';
-		transform: translateX(-50%);
+    @include backgroundStyle;
+  }
 
-		background-image: url('../images/icons/line-with-polygon-4-lister.svg');
-		background-size: auto !important;
+  &--1 {
+    background-image: url('../images/lister/1.png');
+  }
 
-		@include backgroundStyle;
-	}
+  &--2 {
+    background-image: url('../images/lister/2.png');
+  }
 
-	&::before {
-		position: absolute;
+  &--3 {
+    background-image: url('../images/lister/3.png');
 
-		z-index: -1;
-		top: 10px;
+    &::after {
+      display: none;
+    }
+  }
 
-		left: -20px;
-
-		width: 100%;
-		height: 100%;
-
-		content: '';
-
-		background-image: url('../images/lister/border.svg');
-
-		@include backgroundStyle;
-	}
-
-	&--1 {
-		background-image: url('../images/lister/1.png');
-	}
-
-	&--2 {
-		background-image: url('../images/lister/2.png');
-	}
-
-	&--3 {
-		background-image: url('../images/lister/3.png');
-
-		&::after {
-			display: none;
-		}
-	}
-
-	@include backgroundStyle;
+  @include backgroundStyle;
 }
 
 .lister__wrapper {
-	display: flex;
-	justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 .lister__left {
-	position: relative;
-
-	width: 100%;
-	max-width: 610px;
-	margin-right: 40px;
+  position: relative;
+  width: 100%;
+  max-width: 610px;
+  margin-right: 40px;
 }
 
 .lister__right {
-	position: relative;
-
-	padding-top: 91px;
+  position: relative;
+  padding-top: 91px;
 }
 
 .lister__description {
-	margin-top: 51px;
+  margin-top: 51px;
 }
 
 .lister__button {
-	max-width: 176px;
-	margin-top: 50px;
+  max-width: 176px;
+  margin-top: 50px;
 }
 
 .lister__title-pages {
-	.title-pages--secondary {
-		right: auto;
-		left: 3px;
-
-		width: 168%;
-
-		text-align: center;
-	}
+  .title-pages--secondary {
+    right: auto;
+    left: 3px;
+    width: 168%;
+    text-align: center;
+  }
 }
 
 .lister__title-pages-mobile {
-	display: none;
+  display: none;
 }

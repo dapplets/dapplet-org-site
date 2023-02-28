@@ -1,4 +1,4 @@
-@import "../../../base/mixins";
+@import '../../../base/mixins';
 
 .collaboration {
   margin-bottom: 40px;
@@ -14,8 +14,6 @@
   }
 }
 
-
-
 .collaboration__title-pages {
   .title-pages--secondary {
     position: static;
@@ -28,6 +26,7 @@
 
 .collaboration__description {
   text-align: justify;
+
   .text {
     max-width: 100%;
   }

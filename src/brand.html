@@ -21,55 +21,51 @@
 
   <body>
     <script type="text/javascript">
-      (function (window, document, dataLayerName, id) {
-        (window[dataLayerName] = window[dataLayerName] || []),
+      ;(function (window, document, dataLayerName, id) {
+        ;(window[dataLayerName] = window[dataLayerName] || []),
           window[dataLayerName].push({
             start: new Date().getTime(),
-            event: "stg.start",
-          });
-        var scripts = document.getElementsByTagName("script")[0],
-          tags = document.createElement("script");
+            event: 'stg.start',
+          })
+        var scripts = document.getElementsByTagName('script')[0],
+          tags = document.createElement('script')
         function stgCreateCookie(a, b, c) {
-          var d = "";
+          var d = ''
           if (c) {
-            var e = new Date();
-            e.setTime(e.getTime() + 24 * c * 60 * 60 * 1e3),
-              (d = "; expires=" + e.toUTCString());
+            var e = new Date()
+            e.setTime(e.getTime() + 24 * c * 60 * 60 * 1e3), (d = '; expires=' + e.toUTCString())
           }
-          document.cookie = a + "=" + b + d + "; path=/";
+          document.cookie = a + '=' + b + d + '; path=/'
         }
         var isStgDebug =
-          (window.location.href.match("stg_debug") ||
-            document.cookie.match("stg_debug")) &&
-          !window.location.href.match("stg_disable_debug");
-        stgCreateCookie("stg_debug", isStgDebug ? 1 : "", isStgDebug ? 14 : -1);
-        var qP = [];
-        dataLayerName !== "dataLayer" &&
-          qP.push("data_layer_name=" + dataLayerName),
-          isStgDebug && qP.push("stg_debug");
-        var qPString = qP.length > 0 ? "?" + qP.join("&") : "";
-        (tags.async = !0),
-          (tags.src =
-            "https://dapplets.containers.piwik.pro/" + id + ".js" + qPString),
-          scripts.parentNode.insertBefore(tags, scripts);
+          (window.location.href.match('stg_debug') || document.cookie.match('stg_debug')) &&
+          !window.location.href.match('stg_disable_debug')
+        stgCreateCookie('stg_debug', isStgDebug ? 1 : '', isStgDebug ? 14 : -1)
+        var qP = []
+        dataLayerName !== 'dataLayer' && qP.push('data_layer_name=' + dataLayerName),
+          isStgDebug && qP.push('stg_debug')
+        var qPString = qP.length > 0 ? '?' + qP.join('&') : ''
+        ;(tags.async = !0),
+          (tags.src = 'https://dapplets.containers.piwik.pro/' + id + '.js' + qPString),
+          scripts.parentNode.insertBefore(tags, scripts)
         !(function (a, n, i) {
-          a[n] = a[n] || {};
+          a[n] = a[n] || {}
           for (var c = 0; c < i.length; c++)
             !(function (i) {
-              (a[n][i] = a[n][i] || {}),
+              ;(a[n][i] = a[n][i] || {}),
                 (a[n][i].api =
                   a[n][i].api ||
                   function () {
-                    var a = [].slice.call(arguments, 0);
-                    "string" == typeof a[0] &&
+                    var a = [].slice.call(arguments, 0)
+                    'string' == typeof a[0] &&
                       window[dataLayerName].push({
-                        event: n + "." + i + ":" + a[0],
+                        event: n + '.' + i + ':' + a[0],
                         parameters: [].slice.call(arguments, 1),
-                      });
-                  });
-            })(i[c]);
-        })(window, "ppms", ["tm", "cm"]);
-      })(window, document, "dataLayer", "9bed06dd-be95-40d0-aea8-cf1e92ac2643");
+                      })
+                  })
+            })(i[c])
+        })(window, 'ppms', ['tm', 'cm'])
+      })(window, document, 'dataLayer', '9bed06dd-be95-40d0-aea8-cf1e92ac2643')
     </script>
 
     <!-- PROMO -->
@@ -94,9 +90,7 @@
           <div class="promo__main">
             <div class="promo__header-text">
               <h1 class="promo__title">Brand assets & Press kit</h1>
-              <span class="promo__subtitle"
-                >To find out more about us download our media kit</span
-              >
+              <span class="promo__subtitle">To find out more about us download our media kit</span>
             </div>
             <a
               href="https://www.figma.com/file/05xKhEtiha8CqkBNdOLN8h/Dapplets-Project-Brand-Identity?node-id=736%3A412"
@@ -104,10 +98,7 @@
               class="promo__button-download"
             >
               Download files
-              <img
-                src="/assets/images/brand/icons/download-cloud.svg"
-                alt="Dapplets"
-              />
+              <img src="/assets/images/brand/icons/download-cloud.svg" alt="Dapplets" />
             </a>
           </div>
         </div>
@@ -123,13 +114,9 @@
           </div>
           <div class="resources__main">
             <div class="resources__left-block">
-              <span class="resources__left-title"
-                >Please do things like...</span
-              >
+              <span class="resources__left-title">Please do things like...</span>
               <ol class="resources__left-text">
-                <li class="resources__item">
-                  Use the Dapplets logo to promote our project.
-                </li>
+                <li class="resources__item">Use the Dapplets logo to promote our project.</li>
                 <li class="resources__item">
                   Use the Dapplets logo in a video or an article about us.
                 </li>
@@ -137,41 +124,33 @@
                   Use the Dapplets logo and branding to advertise your dapplets.
                 </li>
                 <li class="resources__item">
-                  Contact us if you’re not sure whether it is appropriate to use
-                  the Dapplets logo.
+                  Contact us if you’re not sure whether it is appropriate to use the Dapplets logo.
                 </li>
                 <li class="resources__item">
-                  Use all of the files in our archive in SVG format for your
-                  promo materials.
+                  Use all of the files in our archive in SVG format for your promo materials.
                 </li>
               </ol>
             </div>
             <div class="resources__right-block">
-              <span class="resources__right-title"
-                >Please don’t do things like...</span
-              >
+              <span class="resources__right-title">Please don’t do things like...</span>
               <ol class="resources__right-text">
                 <li class="resources__item">
-                  Take our logo from our social media instead of the wonderful
-                  resources provided below.
+                  Take our logo from our social media instead of the wonderful resources provided
+                  below.
                 </li>
                 <li class="resources__item">
-                  Use the Dapplets logo as your personal avatar, or as a dapplet
-                  icon.
+                  Use the Dapplets logo as your personal avatar, or as a dapplet icon.
                 </li>
                 <li class="resources__item">
-                  Create your own version of the Dapplets logo or modify the
-                  existing one.
+                  Create your own version of the Dapplets logo or modify the existing one.
                 </li>
                 <li class="resources__item">
-                  Use Dapplet branding on unlicensed stock images or other
-                  materials.
+                  Use Dapplet branding on unlicensed stock images or other materials.
                 </li>
 
                 <li class="resources__item">
-                  Create promotional materials using the Dapplets logo together
-                  with low quality stock images. Please pay attention to their
-                  resolution, composition, and contrast.
+                  Create promotional materials using the Dapplets logo together with low quality
+                  stock images. Please pay attention to their resolution, composition, and contrast.
                 </li>
               </ol>
             </div>
@@ -189,8 +168,8 @@
               <span class="links-title">Figma Assets</span>
             </div>
             <span class="links-text"
-              >You know how to use our branding, but all that info is useless if
-              you don’t have our curated assets.</span
+              >You know how to use our branding, but all that info is useless if you don’t have our
+              curated assets.</span
             >
             <a
               class="links-link"
@@ -204,8 +183,8 @@
               <span class="links-title">Press Kit</span>
             </div>
             <span class="links-text"
-              >If you want to use our image for any marketing-related purposes
-              be sure to download our press kit.</span
+              >If you want to use our image for any marketing-related purposes be sure to download
+              our press kit.</span
             >
             <a
               class="links-link"
@@ -219,8 +198,8 @@
               <span class="links-title">Brand Guidelines</span>
             </div>
             <span class="links-text"
-              >Use our branding to its best advantage with our detailed
-              guidelines for branding and design.</span
+              >Use our branding to its best advantage with our detailed guidelines for branding and
+              design.</span
             >
             <a
               class="links-link"
@@ -239,37 +218,24 @@
           <span class="mission__title">Mission Statement</span>
           <div class="mission__text-block">
             <p class="mission__text-item">
-              In the internet business, as we know it now, only website owners
-              can create and earn money from business processes that run on
-              their websites. This is because ownership means full control over
-              the users' communications.
+              In the internet business, as we know it now, only website owners can create and earn
+              money from business processes that run on their websites. This is because ownership
+              means full control over the users' communications.
             </p>
-            <p
-              style="padding-left: 5px; padding-right: 5px"
-              class="mission__text-item"
-            >
-              Dapplets Project disrupts this paradigm and creates technology
-              that enables new kinds of applications - dapplets. These dapplets
-              run on top of existing websites, in the websites' context, but out
-              of the website owners' control. This new paradigm enables tons of
-              brand new applications and business opportunities.
+            <p style="padding-left: 5px; padding-right: 5px" class="mission__text-item">
+              Dapplets Project disrupts this paradigm and creates technology that enables new kinds
+              of applications - dapplets. These dapplets run on top of existing websites, in the
+              websites' context, but out of the website owners' control. This new paradigm enables
+              tons of brand new applications and business opportunities.
             </p>
-            <p
-              style="padding-left: 10px; padding-right: 10px"
-              class="mission__text-item"
-            >
-              Dapplets technology also has a big social impact: it allows
-              censorship-resistant user flows on centrally owned websites, even
-              for banned content and banned users. It cancels the “cancel
-              culture“ effectively.
+            <p style="padding-left: 10px; padding-right: 10px" class="mission__text-item">
+              Dapplets technology also has a big social impact: it allows censorship-resistant user
+              flows on centrally owned websites, even for banned content and banned users. It
+              cancels the “cancel culture“ effectively.
             </p>
-            <p
-              style="padding-left: 25px; padding-right: 25px"
-              class="mission__text-item"
-            >
-              Dapplets is a true Web3 project: unstoppable, permissionless,
-              anonymous, open-source, and decentralized, not only on the backend
-              level but on the UX level too.
+            <p style="padding-left: 25px; padding-right: 25px" class="mission__text-item">
+              Dapplets is a true Web3 project: unstoppable, permissionless, anonymous, open-source,
+              and decentralized, not only on the backend level but on the UX level too.
             </p>
           </div>
           <div class="mission__delimeter"></div>
@@ -284,10 +250,9 @@
           <div class="logomark__wrapper">
             <span class="logomark__title">Logomark construction </span>
             <div class="logomark__text">
-              The Dapplets Project logo is carefully consturcted using the
-              principles of the golden ratio. Its smooth, circular design is
-              created to attract the viewer’s gaze without overpowering it with
-              an excess of information. Like all of Dapplets Project’s designs
+              The Dapplets Project logo is carefully consturcted using the principles of the golden
+              ratio. Its smooth, circular design is created to attract the viewer’s gaze without
+              overpowering it with an excess of information. Like all of Dapplets Project’s designs
               it is minimal and beautiful in its simplicity.
             </div>
           </div>
@@ -300,16 +265,12 @@
         <div class="complex__wrapper">
           <span class="complex__title">Complex logo construction</span>
           <p class="complex__text">
-            The Dapplets logo consists of a Logomark - an icon and a Wordmark -
-            written text. The space between the two is equal to 0.12 multiplied
-            by x. X being the length of the Logomark’s top side.
+            The Dapplets logo consists of a Logomark - an icon and a Wordmark - written text. The
+            space between the two is equal to 0.12 multiplied by x. X being the length of the
+            Logomark’s top side.
           </p>
           <div class="complex__img-block">
-            <img
-              class="complex__img"
-              src="/assets/images/brand/complex_logo.png"
-              alt="Dapplets"
-            />
+            <img class="complex__img" src="/assets/images/brand/complex_logo.png" alt="Dapplets" />
           </div>
         </div>
       </div>
@@ -321,18 +282,14 @@
           <div class="clearspace__block-info">
             <span class="clearspace__title">Clearspace</span>
             <p class="clearspace__text">
-              We urge anyone who uses our logo to leave a clearspace all around
-              it. This will ensure the end material is comprehensible <br />
-              and up to mark. To calculate the clearspace just take the size of
-              letter “a” in the Dapplets logo you are using.
+              We urge anyone who uses our logo to leave a clearspace all around it. This will ensure
+              the end material is comprehensible <br />
+              and up to mark. To calculate the clearspace just take the size of letter “a” in the
+              Dapplets logo you are using.
             </p>
           </div>
           <div class="clearspace__block-img">
-            <img
-              class="clearspace__img"
-              src="/assets/images/brand/clearspace.png"
-              alt=""
-            />
+            <img class="clearspace__img" src="/assets/images/brand/clearspace.png" alt="" />
           </div>
         </div>
       </div>
@@ -342,20 +299,15 @@
       <div class="container">
         <div class="minimum__wrapper">
           <div class="minimum__block-img">
-            <img
-              class="minimum__img"
-              src="/assets/images/brand/minimum_size.png"
-              alt=""
-            />
+            <img class="minimum__img" src="/assets/images/brand/minimum_size.png" alt="" />
           </div>
           <div class="minimum__block-info">
             <span class="minimum__title">Minimum size</span>
             <p class="minimum__text">
-              The Dapplets logo does not have a maxmium size, so go as big as
-              you like. We do however have a minimum size - 160px * 34px. We
-              cannot stress how important it is to follow these recommendations,
-              as otherwise the image’s quality and comprehensibility will be
-              affected negatively.
+              The Dapplets logo does not have a maxmium size, so go as big as you like. We do
+              however have a minimum size - 160px * 34px. We cannot stress how important it is to
+              follow these recommendations, as otherwise the image’s quality and comprehensibility
+              will be affected negatively.
             </p>
           </div>
         </div>
@@ -369,10 +321,9 @@
           <div class="monocolor__item monocolor__info">
             <span class="monocolor__title">Mono color logo</span>
             <p class="monocolor__text">
-              Our logo is only available in the beautiful colours that are
-              presented here. These colours were carefully and thoughtfully
-              selected by our designers with respect to our ideology, vision,
-              and mission. Any other colours simply do not reflect all of these
+              Our logo is only available in the beautiful colours that are presented here. These
+              colours were carefully and thoughtfully selected by our designers with respect to our
+              ideology, vision, and mission. Any other colours simply do not reflect all of these
               factors and are thus not recommended for use.
             </p>
           </div>
@@ -405,12 +356,11 @@
           <div class="variations__info-block">
             <span class="variations__title">Variations</span>
             <p class="variations__text">
-              There are three variations of the Dapplets logo. However, the
-              option with the complex logo and the squared logomark is the main
-              one. When choosing a dapplets logo please always select the this
-              option unless it is absolutely impossible for you to use it. The
-              other two options are created for irregular situations and are not
-              to be used if the first option is a viable choice.
+              There are three variations of the Dapplets logo. However, the option with the complex
+              logo and the squared logomark is the main one. When choosing a dapplets logo please
+              always select the this option unless it is absolutely impossible for you to use it.
+              The other two options are created for irregular situations and are not to be used if
+              the first option is a viable choice.
             </p>
             <a
               href="https://www.figma.com/file/05xKhEtiha8CqkBNdOLN8h/Dapplets-Project-Brand-Identity?node-id=855%3A54"
@@ -418,10 +368,7 @@
               class="promo__button-download variations__button"
             >
               Download
-              <img
-                src="/assets/images/brand/icons/download-cloud.svg"
-                alt="Dapplets"
-              />
+              <img src="/assets/images/brand/icons/download-cloud.svg" alt="Dapplets" />
             </a>
           </div>
         </div>
@@ -434,14 +381,13 @@
           <div class="colors__item colors__block-info">
             <span class="colors__title">Colors usage</span>
             <p class="colors__text">
-              The colours presented below are to be used in accordance to their
-              respective titles. E.g. #F5CF6C - for warnings.
+              The colours presented below are to be used in accordance to their respective titles.
+              E.g. #F5CF6C - for warnings.
             </p>
             <p class="colors__text">
-              All of the colours that are presented are selected by the Dapplets
-              design team with the utmost care. Their subtle attraction enables
-              the viewer’s engagement without causing any unncessary
-              distraction.
+              All of the colours that are presented are selected by the Dapplets design team with
+              the utmost care. Their subtle attraction enables the viewer’s engagement without
+              causing any unncessary distraction.
             </p>
           </div>
 
@@ -544,76 +490,57 @@
             <div class="typography__item typography__block-info">
               <span class="typography__title">Main Typography</span>
               <p class="typography__text">
-                The typography, like all of the branding materials presented by
-                Dapplets Project, relies on the W3C specifications and
-                guidelines. In doing so we assure our community with full
-                accessibility and availability of our designs. We hope to enable
-                anyone using our branding with the possibility to ensure high
-                technical and editorial quality.
+                The typography, like all of the branding materials presented by Dapplets Project,
+                relies on the W3C specifications and guidelines. In doing so we assure our community
+                with full accessibility and availability of our designs. We hope to enable anyone
+                using our branding with the possibility to ensure high technical and editorial
+                quality.
               </p>
             </div>
             <div class="typography__item typography__block-font h1-web">
               <span class="typography__font">Web H1</span>
-              <span class="typography__font-name">
-                Playfair Display, 128px
-              </span>
+              <span class="typography__font-name"> Playfair Display, 128px </span>
               <span class="typography__font-info"> Line Height 100% </span>
             </div>
             <div class="typography__item typography__block-font h2-web">
               <span class="typography__font">Web H2</span>
-              <span class="typography__font-name">
-                Playfair Display Black, 56px
-              </span>
+              <span class="typography__font-name"> Playfair Display Black, 56px </span>
               <span class="typography__font-info">Line Height 100% </span>
             </div>
             <div class="typography__item typography__block-font h3-web">
               <span class="typography__font">Web H3</span>
-              <span class="typography__font-name">
-                Playfair Display Black, 24px
-              </span>
+              <span class="typography__font-name"> Playfair Display Black, 24px </span>
               <span class="typography__font-info">Line Height 100% </span>
             </div>
             <div class="typography__item typography__block-font web-36">
               <span class="typography__font">Web 36 Text</span>
-              <span class="typography__font-name">
-                Segoe UI Regular, 36px
-              </span>
+              <span class="typography__font-name"> Segoe UI Regular, 36px </span>
               <span class="typography__font-info">Line Height 149% </span>
             </div>
             <div class="typography__item typography__block-font text-24">
               <span class="typography__font">24 Text</span>
-              <span class="typography__font-name">
-                Segoe UI Regular, 24px
-              </span>
+              <span class="typography__font-name"> Segoe UI Regular, 24px </span>
               <span class="typography__font-info">Line Height 149% </span>
             </div>
             <div class="typography__item typography__block-font text-18">
               <span class="typography__font">18 Text</span>
-              <span class="typography__font-name">
-                Segoe UI Regular, 18px
-              </span>
+              <span class="typography__font-name"> Segoe UI Regular, 18px </span>
               <span class="typography__font-info">Line Height 149% </span>
             </div>
 
             <div class="typography__item typography__block-font text-18">
               <span class="typography__font">18 Text</span>
-              <span class="typography__font-name">
-                Segoe UI Regular, 18px
-              </span>
+              <span class="typography__font-name"> Segoe UI Regular, 18px </span>
               <span class="typography__font-info">Line Height 100% </span>
             </div>
             <div class="typography__item typography__block-font text-14">
               <span class="typography__font">14 Text</span>
-              <span class="typography__font-name">
-                Segoe UI Regular, 14px
-              </span>
+              <span class="typography__font-name"> Segoe UI Regular, 14px </span>
               <span class="typography__font-info">Line Height 149% </span>
             </div>
             <div class="typography__item typography__block-font text-14">
               <span class="typography__font">14 Text</span>
-              <span class="typography__font-name">
-                Segoe UI Regular, 14px
-              </span>
+              <span class="typography__font-name"> Segoe UI Regular, 14px </span>
               <span class="typography__font-info">Line Height 100% </span>
             </div>
           </div>
@@ -623,10 +550,7 @@
             class="promo__button-download typography-button"
           >
             Download fonts
-            <img
-              src="/assets/images/brand/icons/download-cloud.svg"
-              alt="Dapplets"
-            />
+            <img src="/assets/images/brand/icons/download-cloud.svg" alt="Dapplets" />
           </a>
         </div>
         <div class="typography__delimeter"></div>
@@ -640,158 +564,98 @@
             <div class="alternative__item alternative__block-info">
               <span class="alternative__title">Alternative</span>
               <p class="alternative__text">
-                Our Alternative typography is created for anyone who is not able
-                to or does not wish to use the main typography. We do however,
-                insist that these typographies are not mixed and mashed to
-                create an entirely new organism. Both are constructed to be
-                their most effective and attractive selves and would like to
-                remain that way.
+                Our Alternative typography is created for anyone who is not able to or does not wish
+                to use the main typography. We do however, insist that these typographies are not
+                mixed and mashed to create an entirely new organism. Both are constructed to be
+                their most effective and attractive selves and would like to remain that way.
               </p>
             </div>
-            <div
-              class="alternative__item alternative__block-font alternative__h1-web"
-            >
+            <div class="alternative__item alternative__block-font alternative__h1-web">
               <span class="alternative__font">Web H1</span>
-              <span class="alternative__font-name">
-                Montserrat Black, 177px
-              </span>
+              <span class="alternative__font-name"> Montserrat Black, 177px </span>
               <span class="alternative__font-info"> Line Height Auto </span>
             </div>
-            <div
-              class="alternative__item alternative__block-font alternative__h2-web"
-            >
+            <div class="alternative__item alternative__block-font alternative__h2-web">
               <span class="alternative__font">Web H2</span>
-              <span class="alternative__font-name">
-                Montserrat Black, 67px
-              </span>
+              <span class="alternative__font-name"> Montserrat Black, 67px </span>
               <span class="alternative__font-info"> Line Height 149%</span>
             </div>
-            <div
-              class="alternative__item alternative__block-font alternative__h3-web"
-            >
+            <div class="alternative__item alternative__block-font alternative__h3-web">
               <span class="alternative__font">Web H3</span>
-              <span class="alternative__font-name">
-                Montserrat Black, 67px
-              </span>
+              <span class="alternative__font-name"> Montserrat Black, 67px </span>
               <span class="alternative__font-info"> Line Height 149%</span>
             </div>
-            <div
-              class="alternative__item alternative__block-font alternative__montserrat-black"
-            >
+            <div class="alternative__item alternative__block-font alternative__montserrat-black">
               <span class="alternative__font">Web H3</span>
-              <span class="alternative__font-name">
-                Montserrat Black, 67px
-              </span>
+              <span class="alternative__font-name"> Montserrat Black, 67px </span>
               <span class="alternative__font-info"> Line Height 149%</span>
             </div>
-            <div
-              class="alternative__item alternative__block-font alternative__web-41-content"
-            >
+            <div class="alternative__item alternative__block-font alternative__web-41-content">
               <span class="alternative__font">Web 41 Content</span>
-              <span class="alternative__font-name">
-                Montserrat Regular, 41px
-              </span>
+              <span class="alternative__font-name"> Montserrat Regular, 41px </span>
               <span class="alternative__font-info">Line Height 149% </span>
             </div>
-            <div
-              class="alternative__item alternative__block-font alternative__web-41-header"
-            >
+            <div class="alternative__item alternative__block-font alternative__web-41-header">
               <span class="alternative__font">Web 41 Header</span>
-              <span class="alternative__font-name">
-                Montserrat Black, 41px
-              </span>
+              <span class="alternative__font-name"> Montserrat Black, 41px </span>
               <span class="alternative__font-info">Line Height 149% </span>
             </div>
-            <div
-              class="alternative__item alternative__block-font alternative__web-26-mobile"
-            >
+            <div class="alternative__item alternative__block-font alternative__web-26-mobile">
               <span class="alternative__font">WebMobile 26 Header</span>
-              <span class="alternative__font-name">
-                Montserrat Black, 26px
-              </span>
+              <span class="alternative__font-name"> Montserrat Black, 26px </span>
               <span class="alternative__font-info">Line Height 149% </span>
             </div>
 
-            <div
-              class="alternative__item alternative__block-font alternative__web-content"
-            >
+            <div class="alternative__item alternative__block-font alternative__web-content">
               <span class="alternative__font">Web Content</span>
-              <span class="alternative__font-name">
-                Montserrat Regular, 16px
-              </span>
+              <span class="alternative__font-name"> Montserrat Regular, 16px </span>
               <span class="alternative__font-info">Line Height 149% </span>
             </div>
-            <div
-              class="alternative__item alternative__block-font alternative__mobile-content"
-            >
+            <div class="alternative__item alternative__block-font alternative__mobile-content">
               <span class="alternative__font">WebMobile Content</span>
-              <span class="alternative__font-name">
-                Montserrat Regular, 14px
-              </span>
+              <span class="alternative__font-name"> Montserrat Regular, 14px </span>
               <span class="alternative__font-info">Line Height 149% </span>
             </div>
-            <div
-              class="alternative__item alternative__block-font alternative__web-content-black"
-            >
+            <div class="alternative__item alternative__block-font alternative__web-content-black">
               <span class="alternative__font">Web Content Black</span>
-              <span class="alternative__font-name">
-                Montserrat Black, 16px
-              </span>
+              <span class="alternative__font-name"> Montserrat Black, 16px </span>
               <span class="alternative__font-info">Line Height 149% </span>
             </div>
             <div
               class="alternative__item alternative__block-font alternative__mobile-content-black"
             >
               <span class="alternative__font">WebMobile Content Black</span>
-              <span class="alternative__font-name">
-                Montserrat Black, 14px</span
-              >
+              <span class="alternative__font-name"> Montserrat Black, 14px</span>
               <span class="alternative__font-info">Line Height 149% </span>
             </div>
-            <div
-              class="alternative__item alternative__block-font alternative__inapp-h1"
-            >
+            <div class="alternative__item alternative__block-font alternative__inapp-h1">
               <span class="alternative__font">InApp H1</span>
               <span class="alternative__font-name"> Roboto Bold, 22px</span>
               <span class="alternative__font-info">Line Height 149% </span>
             </div>
-            <div
-              class="alternative__item alternative__block-font alternative__inapp-h2"
-            >
+            <div class="alternative__item alternative__block-font alternative__inapp-h2">
               <span class="alternative__font">InApp H2</span>
               <span class="alternative__font-name"> Roboto Bold, 16px </span>
               <span class="alternative__font-info"> Line Height 149% </span>
             </div>
-            <div
-              class="alternative__item alternative__block-font alternative__inapp-149"
-            >
+            <div class="alternative__item alternative__block-font alternative__inapp-149">
               <span class="alternative__font">InApp Regular Text 149</span>
               <span class="alternative__font-name"> Roboto Bold, 14px </span>
               <span class="alternative__font-info"> Line Height 149% </span>
             </div>
-            <div
-              class="alternative__item alternative__block-font alternative__inapp-100"
-            >
+            <div class="alternative__item alternative__block-font alternative__inapp-100">
               <span class="alternative__font">InApp Regular Text 100</span>
               <span class="alternative__font-name"> Roboto Bold, 14px </span>
               <span class="alternative__font-info"> Line Height 100% </span>
             </div>
-            <div
-              class="alternative__item alternative__block-font alternative__inapp-notification"
-            >
-              <span class="alternative__font"
-                >InApp_OnTag & Notification Text</span
-              >
+            <div class="alternative__item alternative__block-font alternative__inapp-notification">
+              <span class="alternative__font">InApp_OnTag & Notification Text</span>
               <span class="alternative__font-name"> Roboto Regular, 10px </span>
               <span class="alternative__font-info"> Line Height 100% </span>
             </div>
-            <div
-              class="alternative__item alternative__block-font alternative__inapp-uppercase"
-            >
+            <div class="alternative__item alternative__block-font alternative__inapp-uppercase">
               <span class="alternative__font">InApp_OnTag Uppercase</span>
-              <span class="alternative__font-name">
-                Roboto Regular Uppercase, 10px
-              </span>
+              <span class="alternative__font-name"> Roboto Regular Uppercase, 10px </span>
               <span class="alternative__font-info"> Line Height 100% </span>
             </div>
           </div>
@@ -801,10 +665,7 @@
             class="promo__button-download alternative-button"
           >
             Download fonts
-            <img
-              src="/assets/images/brand/icons/download-cloud.svg"
-              alt="Dapplets"
-            />
+            <img src="/assets/images/brand/icons/download-cloud.svg" alt="Dapplets" />
           </a>
         </div>
       </div>
@@ -817,13 +678,16 @@
             <div class="collaborate__block-info">
               <span class="collaborate__title">Wanna collaborate?</span>
               <span class="collaborate__text"
-                >Do you have an exciting idea that you’d like to bring to life
-                with us?<br />
+                >Do you have an exciting idea that you’d like to bring to life with us?<br />
                 Let us know how we can help you.</span
               >
             </div>
             <div class="collaborate__button-block">
-              <a href="https://discord.com/invite/YcxbkcyjMV" target="_blank" class="collaborate__button">
+              <a
+                href="https://discord.com/invite/YcxbkcyjMV"
+                target="_blank"
+                class="collaborate__button"
+              >
                 Contact us
                 <img src="/assets/images/brand/icons/arrow-right.svg" alt="" />
               </a>
@@ -838,11 +702,7 @@
       <div class="container">
         <div class="footer-brand__wrapper">
           <span class="footer-brand__text">Designed in 2022 with</span>
-          <img
-            class="footer-brand__img"
-            src="/assets/images/brand/icons/heart.svg"
-            alt=""
-          />
+          <img class="footer-brand__img" src="/assets/images/brand/icons/heart.svg" alt="" />
           <span class="footer-brand__text">by Dapplets Project</span>
         </div>
       </div>

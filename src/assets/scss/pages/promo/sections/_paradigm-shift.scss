@@ -1,34 +1,27 @@
 .paradigm-shift {
   position: relative;
-
   min-height: 728px;
   padding-top: 80px;
-
-  background-image: url("../images/bg/paradigm-shift.png");
+  background-image: url('../images/bg/paradigm-shift.png');
 }
 
 .paradigm-shift-content {
   display: flex;
   justify-content: space-between;
-
   padding-bottom: 14px;
 }
 
 .paradigm-shift-text {
   display: flex;
   flex-direction: column;
-
   padding-top: 37px;
 }
 
 .paradigm-shift-message {
   max-width: 650px;
   margin-top: 54px;
-
   text-align: start;
-
   color: #747376;
-
   font-size: 18px;
   font-weight: 400;
   line-height: 149%;
@@ -37,32 +30,25 @@
 .ps-features-list {
   display: flex;
   flex-direction: column;
-
   padding: 0;
-
   list-style: none;
-
   gap: 21px;
 }
 
 .ps-features-item {
   position: relative;
-
   padding-left: 20px;
 
   &::before {
     position: absolute;
     top: 50%;
     left: 0;
-
     width: 8px;
     height: 8px;
-
-    content: "";
+    content: '';
     transform: translateY(-50%);
-
     border-radius: 100%;
-    background-color: #D9304F;
+    background-color: #d9304f;
   }
 }
 
@@ -80,7 +66,6 @@
 
 .paradigm-shift-image {
   z-index: 2;
-
   height: 675px;
   margin-left: -30px;
 }
@@ -90,6 +75,5 @@
   z-index: 1;
   right: 48px;
   bottom: -144px;
-
   height: 342px;
 }

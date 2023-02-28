@@ -1,82 +1,78 @@
 @media screen and (max-width: 1150px) {
-	.why-we {
-		margin: 0;
-		padding-top: 180px;
+  .why-we {
+    margin: 0;
+    padding-top: 180px;
+    background-image: url('../images/bg/why-we-bg-table.jpg');
+  }
 
-		background-image: url('../images/bg/why-we-bg-table.jpg');
-	}
+  .why-we__wrapper {
+    align-items: center;
+    flex-direction: column;
+  }
 
-	.why-we__wrapper {
-		align-items: center;
-		flex-direction: column;
-	}
+  .why-we__title {
+    text-align: center;
+  }
 
-	.why-we__title {
-		text-align: center;
-	}
-
-	.why-we__list {
-		max-width: 100%;
-		padding-top: 117px;
-		padding-left: 50px;
-	}
+  .why-we__list {
+    max-width: 100%;
+    padding-top: 117px;
+    padding-left: 50px;
+  }
 }
 
 @media screen and (max-width: 700px) {
-	.why-we__list {
-		margin-right: 0;
-	}
+  .why-we__list {
+    margin-right: 0;
+  }
 }
 
 @media screen and (max-width: 620px) {
-	.why-we__item {
-		br {
-			display: inline;
-			clear: none;
+  .why-we__item {
+    br {
+      display: inline;
+      clear: none;
+      content: ' ';
+    }
 
-			content: ' ';
-		}
-
-		br::after {
-			content: ' ';
-		}
-	}
+    br::after {
+      content: ' ';
+    }
+  }
 }
 
 @media screen and (max-width: 480px) {
-	.why-we {
-		margin-top: 17px;
-		padding-top: 80px;
-		padding-bottom: 74px;
+  .why-we {
+    margin-top: 17px;
+    padding-top: 80px;
+    padding-bottom: 74px;
+    background-image: url('../images/bg/why-we-bg-mobile.jpg');
 
-		background-image: url('../images/bg/why-we-bg-mobile.jpg');
+    .container {
+      padding-right: 7px;
+    }
+  }
 
-		.container {
-			padding-right: 7px;
-		}
-	}
+  .why-we__list {
+    padding-top: 35px;
+  }
 
-	.why-we__list {
-		padding-top: 35px;
-	}
+  .why-we__item {
+    font-size: 16px;
+    line-height: 149%;
 
-	.why-we__item {
-		font-size: 16px;
-		line-height: 149%;
+    br {
+      display: inline;
+      clear: none;
+      content: ' ';
+    }
 
-		br {
-			display: inline;
-			clear: none;
+    br::after {
+      content: ' ';
+    }
+  }
 
-			content: ' ';
-		}
-
-		br::after {
-			content: ' ';
-		}
-	}
-
-	.why-we__item:not(:last-child) {
-		margin-bottom: 49px;
-	}
+  .why-we__item:not(:last-child) {
+    margin-bottom: 49px;
+  }
 }

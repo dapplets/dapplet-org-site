@@ -1,31 +1,37 @@
-@import "../../../base/constans";
-@import "../../../base/mixins";
+@import '../../../base/constans';
+@import '../../../base/mixins';
 
 .alternative {
 }
+
 .container {
 }
+
 .alternative__wrapper {
   display: flex;
   flex-direction: column;
-  padding: 60px 0 120px 0;
+  padding: 60px 0 120px;
 }
+
 .alternative__block-content {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
+
 .alternative__item {
   display: flex;
   flex-direction: column;
   flex: 1 1 auto;
 }
+
 .alternative__block-info {
   max-width: 520px;
   padding-bottom: 60px;
 }
+
 .alternative__title {
-  font-family: "Playfair Display", sans-serif;
+  font-family: 'Playfair Display', sans-serif;
   font-weight: 900;
   font-size: 56px;
   line-height: 100%;
@@ -34,8 +40,9 @@
   padding-bottom: 20px;
   padding-top: 5px;
 }
+
 .alternative__text {
-  font-family: "Segoe UI", sans-serif;
+  font-family: 'Segoe UI', sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 149%;
@@ -43,24 +50,29 @@
   color: #747376;
   margin: 0;
 }
+
 .alternative__block-font {
   display: flex;
   flex-direction: column;
 }
+
 .alternative__h1-web {
   text-align: right;
+
   .alternative__font {
-    font-family: "Montserrat", sans-serif;
+    font-family: Montserrat, sans-serif;
     font-weight: 900;
     font-size: 177px;
     line-height: 216px;
   }
 }
+
 .alternative__font {
   color: $ifm-border-color-hamburger;
 }
+
 .alternative__font-name {
-  font-family: "Segoe UI", sans-serif;
+  font-family: 'Segoe UI', sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 149%;
@@ -68,207 +80,243 @@
   display: inline-block;
   padding-top: 10px;
 }
+
 .alternative__font-info {
-  font-family: "Segoe UI", sans-serif;
+  font-family: 'Segoe UI', sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 149%;
   color: #747376;
 }
+
 .alternative__h2-web {
   height: 152px;
   width: 393px;
   padding-top: 20px;
   margin-bottom: 75px;
+
   .alternative__font {
-    font-family: "Montserrat", sans-serif;
+    font-family: Montserrat, sans-serif;
     font-weight: 900;
     font-size: 67px;
     line-height: 149%;
   }
 }
+
 .alternative__h3-web {
   height: 152px;
   width: 393px;
   padding-left: 15px;
   justify-content: flex-end;
+
   .alternative__font {
-    font-family: "Montserrat", sans-serif;
+    font-family: Montserrat, sans-serif;
     font-weight: 900;
     font-size: 41px;
     line-height: 149%;
     margin-top: 15px;
   }
+
   .alternative__font-name {
     display: inline-block;
-    padding: 0px !important;
+    padding: 0 !important;
   }
 }
+
 .alternative__montserrat-black {
   height: 152px;
   width: 393px;
   padding-left: 40px;
   justify-content: flex-end;
+
   .alternative__font {
-    font-family: "Montserrat", sans-serif;
+    font-family: Montserrat, sans-serif;
     font-weight: 400;
     font-size: 41px;
     line-height: 149%;
     padding-left: 180px;
     padding: 0;
   }
+
   .alternative__font-name {
     display: inline-block;
-    padding: 0px !important;
+    padding: 0 !important;
   }
 }
+
 .alternative__web-41-content {
   height: 113px;
   width: 393px;
   margin-bottom: 65px;
 
   .alternative__font {
-    font-family: "Montserrat", sans-serif;
+    font-family: Montserrat, sans-serif;
     font-weight: 400;
     font-size: 41px;
     line-height: 149%;
   }
 }
+
 .alternative__web-41-header {
   height: 113px;
   width: 393px;
   padding-left: 25px;
+
   .alternative__font {
-    font-family: "Montserrat", sans-serif;
+    font-family: Montserrat, sans-serif;
     font-weight: 900;
     font-size: 41px;
     line-height: 149%;
   }
 }
+
 .alternative__web-26-mobile {
   height: 113px;
   width: 393px;
   padding-left: 40px;
   padding-top: 20px;
+
   .alternative__font {
-    font-family: "Montserrat", sans-serif;
+    font-family: Montserrat, sans-serif;
     font-weight: 900;
     font-size: 26px;
     line-height: 149%;
   }
 }
+
 .alternative__web-content {
   height: 76px;
   width: 310px;
   margin-bottom: 60px;
+
   .alternative__font {
-    font-family: "Montserrat", sans-serif;
+    font-family: Montserrat, sans-serif;
     font-weight: 400;
     font-size: 16px;
     line-height: 149%;
   }
 }
+
 .alternative__mobile-content {
   height: 76px;
   width: 310px;
+
   .alternative__font {
-    font-family: "Montserrat", sans-serif;
+    font-family: Montserrat, sans-serif;
     font-weight: 400;
     font-size: 14px;
     line-height: 149%;
   }
 }
+
 .alternative__web-content-black {
   height: 76px;
   width: 310px;
+
   .alternative__font {
-    font-family: "Montserrat", sans-serif;
+    font-family: Montserrat, sans-serif;
     font-weight: 900;
     font-size: 16px;
     line-height: 149%;
   }
 }
+
 .alternative__mobile-content-black {
   height: 76px;
   width: 310px;
   padding-left: 10px;
+
   .alternative__font {
-    font-family: "Montserrat", sans-serif;
+    font-family: Montserrat, sans-serif;
     font-weight: 900;
     font-size: 14px;
     line-height: 149%;
   }
 }
+
 .alternative__inapp-h1 {
   height: 78px;
   width: 310px;
   margin-bottom: 60px;
+
   .alternative__font {
-    font-family: "Roboto", sans-serif;
+    font-family: Roboto, sans-serif;
     font-weight: 700;
     font-size: 22px;
     line-height: 26px;
   }
 }
+
 .alternative__inapp-h2 {
   height: 78px;
   width: 310px;
+
   .alternative__font {
-    font-family: "Roboto", sans-serif;
+    font-family: Roboto, sans-serif;
     font-weight: 700;
     font-size: 16px;
     line-height: 19px;
   }
 }
+
 .alternative__inapp-149 {
   height: 78px;
   width: 310px;
   padding-left: 10px;
+
   .alternative__font {
-    font-family: "Roboto", sans-serif;
+    font-family: Roboto, sans-serif;
     font-weight: 400;
     font-size: 14px;
     line-height: 149%;
   }
 }
+
 .alternative__inapp-100 {
   height: 78px;
   width: 310px;
   padding-left: 20px;
   padding-top: 15px;
+
   .alternative__font {
-    font-family: "Roboto", sans-serif;
+    font-family: Roboto, sans-serif;
     font-weight: 400;
     font-size: 14px;
     line-height: 100%;
   }
 }
+
 .alternative__inapp-notification {
   height: 62px;
   width: 310px;
   margin-bottom: 60px;
   flex: 0 0 auto;
+
   .alternative__font {
-    font-family: "Roboto", sans-serif;
+    font-family: Roboto, sans-serif;
     font-weight: 500;
     font-size: 10px;
     line-height: 100%;
   }
 }
+
 .alternative__inapp-uppercase {
   height: 62px;
   width: 310px;
   padding-left: 15px;
+
   .alternative__font {
-    font-family: "Roboto", sans-serif;
+    font-family: Roboto, sans-serif;
     font-weight: 400;
     font-size: 10px;
     line-height: 100%;
     text-transform: uppercase;
   }
 }
+
 .promo__button-download {
 }
+
 .alternative-button {
   max-width: 255px !important;
   margin: 0 !important;

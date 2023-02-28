@@ -1,170 +1,160 @@
 @media (max-width: 1410px) {
-	.promo__img::before {
-		bottom: -26px;
-		left: 144px;
-
-		width: 80%;
-	}
+  .promo__img::before {
+    bottom: -26px;
+    left: 144px;
+    width: 80%;
+  }
 }
 
 @media (max-width: 1280px) {
-	.promo__right {
-		max-width: 485px;
-	}
+  .promo__right {
+    max-width: 485px;
+  }
 
-	.promo__img {
-		min-height: 570px;
-	}
+  .promo__img {
+    min-height: 570px;
+  }
 
-	.promo__img::before {
-		bottom: -14px;
-		left: 110px;
-	}
+  .promo__img::before {
+    bottom: -14px;
+    left: 110px;
+  }
 
-	.promo__left {
-		margin-top: 75px;
-	}
+  .promo__left {
+    margin-top: 75px;
+  }
 }
 
 @media (max-width: 1150px) {
-	.promo {
-		padding-top: 0;
-		padding-bottom: 50px;
+  .promo {
+    padding-top: 0;
+    padding-bottom: 50px;
 
-		.container {
-			padding: 0;
-		}
-	}
+    .container {
+      padding: 0;
+    }
+  }
 
-	.promo__wrapper {
-		flex-direction: column-reverse;
-	}
+  .promo__wrapper {
+    flex-direction: column-reverse;
+  }
 
-	.promo__left {
-		max-width: 100%;
-		margin-top: 18px;
-		padding: 0 20px;
-	}
+  .promo__left {
+    max-width: 100%;
+    margin-top: 18px;
+    padding: 0 20px;
+  }
 
-	.promo__title {
-		.block {
-			display: inline;
-		}
-	}
+  .promo__title {
+    .block {
+      display: inline;
+    }
+  }
 
-	.promo__right {
-		max-width: 748px;
-	}
+  .promo__right {
+    max-width: 748px;
+  }
 
-	.promo__img {
-		background-image: url('../images/promo/abous-us-table.png');
+  .promo__img {
+    background-image: url('../images/promo/abous-us-table.png');
 
-		&::before {
-			display: none;
-		}
-	}
+    &::before {
+      display: none;
+    }
+  }
 
-	.promo__button {
-		margin-top: 42px;
+  .promo__button {
+    margin-top: 42px;
+    text-align: center;
+  }
 
-		text-align: center;
-	}
+  .promo__button-icon {
+    display: none;
+  }
 
-	.promo__button-icon {
-		display: none;
-	}
+  .promo .many-small-lines-white {
+    z-index: -1;
+    bottom: -137px;
+    left: 9px;
+  }
 
-	.promo .many-small-lines-white {
-		z-index: -1;
-		bottom: -137px;
-		left: 9px;
-	}
+  .promo .two-crosses--2 {
+    z-index: -1;
+    bottom: -88px;
+    left: -56px;
+    transform: rotate(90deg);
+  }
 
-	.promo .two-crosses--2 {
-		z-index: -1;
-		bottom: -88px;
-		left: -56px;
+  .promo .two-crosses--1 {
+    top: 238px;
+    right: -23px;
+  }
 
-		transform: rotate(90deg);
-	}
+  .promo .two-circle-icon {
+    display: none;
+  }
 
-	.promo .two-crosses--1 {
-		top: 238px;
-		right: -23px;
-	}
-
-	.promo .two-circle-icon {
-		display: none;
-	}
-
-	.promo .big-circle-icon {
-		z-index: -1;
-		top: auto;
-		right: -108px;
-		bottom: 119px;
-	}
+  .promo .big-circle-icon {
+    z-index: -1;
+    top: auto;
+    right: -108px;
+    bottom: 119px;
+  }
 }
 
 @media (max-width: 480px) {
-	.promo {
-		padding-bottom: 10px;
-	}
+  .promo {
+    padding-bottom: 10px;
+  }
 
-	.promo__right {
-		display: none;
-	}
+  .promo__right {
+    display: none;
+  }
 
-	.promo__mobile {
-		display: block;
+  .promo__mobile {
+    display: block;
+    min-height: 488px;
+    background-image: url('../images/promo/abous-us-mobile.png');
 
-		min-height: 488px;
+    @include backgroundStyle;
+  }
 
-		background-image: url('../images/promo/abous-us-mobile.png');
+  .promo__button {
+    display: none;
+  }
 
-		@include backgroundStyle;
-	}
+  .promo__button-mobile {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+  }
 
-	.promo__button {
-		display: none;
-	}
+  .promo__title-mobile {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    max-width: 50px;
+    transform: translateY(-50%);
+    font-size: 50px !important;
+  }
 
-	.promo__button-mobile {
-		position: absolute;
-		bottom: 10px;
-		left: 0;
+  .promo__left {
+    margin-top: 78px;
+    padding: 0 10px;
+  }
 
-		display: block;
+  .promo__description {
+    margin-top: 22px;
+  }
 
-		width: 100%;
-		max-width: 100%;
-		margin: 0;
-	}
-
-	.promo__title-mobile {
-		position: absolute;
-		top: 50%;
-		left: 0;
-
-		max-width: 50px;
-
-		transform: translateY(-50%);
-
-		font-size: 50px !important;
-	}
-
-	.promo__left {
-		margin-top: 78px;
-		padding: 0 10px;
-	}
-
-	.promo__description {
-		margin-top: 22px;
-	}
-
-	.promo .many-small-lines-white,
-	.promo .two-crosses--2,
-	.promo .two-crosses--1,
-	.promo .big-circle-icon {
-		display: none;
-	}
+  .promo .many-small-lines-white,
+  .promo .two-crosses--2,
+  .promo .two-crosses--1,
+  .promo .big-circle-icon {
+    display: none;
+  }
 }

@@ -2,148 +2,131 @@
 @import '../base/animate';
 
 .button {
-	position: relative;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  white-space: nowrap;
+  border: none;
+  background-color: transparent;
 
-	display: flex;
-	align-items: center;
-	justify-content: center;
+  &:hover {
+    text-decoration: none;
+  }
 
-	cursor: pointer;
-	white-space: nowrap;
+  &.icon {
+    padding: 5px;
+  }
 
-	border: none;
-	background-color: transparent;
+  &.expansion {
+    min-width: 176px;
+    padding: 8px 20px;
+    color: #fff;
+    background-color: $ifm-background-color-button;
+    font-size: 16px;
+    line-height: 149%;
 
-	&:hover {
-		text-decoration: none;
-	}
+    &:hover,
+    &:focus {
+      background-color: $ifm-button-hover;
+    }
 
-	&.icon {
-		padding: 5px;
-	}
+    &:active {
+      background-color: $ifm-button-active;
+    }
+  }
 
-	&.expansion {
-		min-width: 176px;
-		padding: 8px 20px;
+  &.border {
+    color: $ifm-color-button;
+    border: 1px solid $ifm-color-button;
+    background-color: transparent;
 
-		color: #FFF;
+    &:hover,
+    &:focus {
+      color: $ifm-button-hover;
+      border-color: $ifm-button-hover;
+      background-color: transparent;
+    }
 
-		background-color: $ifm-background-color-button;
+    &:active,
+    &:focus {
+      color: $ifm-button-active;
+      border-color: $ifm-button-active;
+      background-color: transparent;
+    }
+  }
 
-		font-size: 16px;
-		line-height: 149%;
+  &.center {
+    margin: 0 auto;
+    margin-top: 10px;
+  }
 
-		&:hover,
-		&:focus {
-			background-color: $ifm-button-hover;
-		}
+  &.animate {
+    animation: topToBottom 1.5s infinite;
+  }
 
-		&:active {
-			background-color: $ifm-button-active;
-		}
-	}
+  &.wight-900 {
+    font-weight: 900;
+  }
 
-	&.border {
-		color: $ifm-color-button;
-		border: 1px solid $ifm-color-button;
-		background-color: transparent;
+  &.augment {
+    max-width: 188px;
+    margin-top: 55px;
+    margin-left: 118px;
+    padding: 12px 17px;
+  }
 
-		&:hover,
-		&:focus {
-			color: $ifm-button-hover;
-			border-color: $ifm-button-hover;
-			background-color: transparent;
-		}
-
-		&:active,
-		&:focus {
-			color: $ifm-button-active;
-
-			border-color: $ifm-button-active;
-			background-color: transparent;
-		}
-	}
-
-	&.center {
-		margin: 0 auto;
-		margin-top: 10px;
-	}
-
-	&.animate {
-		animation: topToBottom 1.5s infinite;
-	}
-
-	&.wight-900 {
-		font-weight: 900;
-	}
-
-	&.augment {
-		max-width: 188px;
-		margin-top: 55px;
-		margin-left: 118px;
-		padding: 12px 17px;
-	}
-
-	&:focus {
-		outline: none;
-	}
+  &:focus {
+    outline: none;
+  }
 }
 
 .button-augment {
-	position: fixed;
-	z-index: 20;
-	right: 40px;
-	bottom: 30px;
+  position: fixed;
+  z-index: 20;
+  right: 40px;
+  bottom: 30px;
+  padding: 13px 14px;
+  cursor: pointer;
+  color: #fff;
+  border-radius: 34px;
+  background-color: $ifm-background-color-button;
+  box-shadow: 0 3px 4px rgb(0 0 0 / 9%), 0 10px 8px rgb(38 117 209 / 4%);
+  font-size: 16px;
+  font-weight: 400;
 
-	padding: 13px 14px;
+  span {
+    margin-left: 10px;
+  }
 
-	cursor: pointer;
+  input[type='checkbox'] {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    opacity: 0;
+  }
 
-	color: #FFF;
-	border-radius: 34px;
-	background-color: $ifm-background-color-button;
-	box-shadow: 0 3px 4px rgba(0, 0, 0, 0.09), 0 10px 8px rgba(38, 117, 209, 0.04);
+  &:hover,
+  &:focus {
+    background-color: $ifm-button-hover;
+  }
 
-	font-size: 16px;
-	font-weight: 400;
+  &:active {
+    background-color: $ifm-button-active;
+  }
 
-	span {
-		margin-left: 10px;
-	}
-
-	input[type="checkbox"] {
-		position: absolute;
-
-		width: 100%;
-		height: 100%;
-
-		cursor: pointer;
-
-		opacity: 0;
-	}
-
-	&:hover,
-	&:focus {
-		background-color: $ifm-button-hover;
-	}
-
-	&:active {
-		background-color: $ifm-button-active;
-	}
-
-	&.hide {
-		visibility: hidden;
-
-		pointer-events: none;
-
-		opacity: 0;
-	}
+  &.hide {
+    visibility: hidden;
+    pointer-events: none;
+    opacity: 0;
+  }
 }
 
 .button-link {
-	display: block;
-
-	width: 100%;
-	max-width: 24px;
-	height: 100%;
+  display: block;
+  width: 100%;
+  max-width: 24px;
+  height: 100%;
 }

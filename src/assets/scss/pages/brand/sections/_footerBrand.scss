@@ -1,24 +1,28 @@
-@import "../../../base/constans";
-@import "../../../base/mixins";
+@import '../../../base/constans';
+@import '../../../base/mixins';
 
 .footer-brand {
   background: $ifm-border-color-hamburger;
 }
+
 .container {
 }
+
 .footer-brand__wrapper {
   padding: 23px 0;
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
 .footer-brand__text {
   color: #fff;
-  font-family: "Segoe UI", sans-serif;
+  font-family: 'Segoe UI', sans-serif;
   font-weight: 600;
   font-size: 16px;
   line-height: 100%;
 }
+
 .footer-brand__img {
   padding: 0 20px;
 }

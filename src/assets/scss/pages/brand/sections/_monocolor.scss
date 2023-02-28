@@ -1,13 +1,15 @@
-@import "../../../base/constans";
-@import "../../../base/mixins";
+@import '../../../base/constans';
+@import '../../../base/mixins';
 
 .monocolor {
   background: $ifm-header-top-background;
   position: relative;
   padding: 88px 60px;
 }
+
 .container {
 }
+
 .monocolor__bg-dots {
   height: 100% !important;
   opacity: 0.3 !important;
@@ -22,19 +24,22 @@
   position: relative;
   z-index: 1;
 }
+
 .monocolor__item {
   max-width: 620px;
+
   img {
     max-width: 620px;
   }
 }
+
 .monocolor__info {
   display: flex;
   flex-direction: column;
 }
-.monocolor__title {
-  font-family: "Playfair Display", sans-serif;
 
+.monocolor__title {
+  font-family: 'Playfair Display', sans-serif;
   font-weight: 900;
   font-size: 56px;
   line-height: 100%;
@@ -42,21 +47,27 @@
   display: inline-block;
   padding-bottom: 60px;
 }
+
 .monocolor__text {
-  font-family: "Segoe UI", sans-serif;
+  font-family: 'Segoe UI', sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 149%;
   text-align: justify;
   color: #747376;
 }
+
 .monocolor__white-red {
 }
+
 .monocolor__white-black {
 }
+
 .monocolor__red-white {
 }
+
 .monocolor__black-white {
 }
+
 .monocolor__blue-white {
 }

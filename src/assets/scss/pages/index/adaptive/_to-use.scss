@@ -1,159 +1,150 @@
 @media (max-width: 1547px) {
-	.to-use .two-triangles-1 {
-		top: 43px;
-		right: 102px;
-	}
+  .to-use .two-triangles-1 {
+    top: 43px;
+    right: 102px;
+  }
 }
 
 @media (max-width: 1290px) {
-	.to-use__join::after,
-	.to-use__join::before {
-		display: none;
-	}
+  .to-use__join::after,
+  .to-use__join::before {
+    display: none;
+  }
 }
 
 @media (max-width: 1150px) {
-	.to-use {
-		overflow: hidden;
+  .to-use {
+    overflow: hidden;
+    padding-top: 122px;
+    padding-bottom: 51px;
+  }
 
-		padding-top: 122px;
-		padding-bottom: 51px;
-	}
+  .to-use .big-circle-icon,
+  .to-use .mini-circle-icon {
+    display: none;
+  }
 
-	.to-use .big-circle-icon,
-	.to-use .mini-circle-icon {
-		display: none;
-	}
+  .to-use .waves-icon {
+    top: -116px;
+    left: 404px;
+  }
 
-	.to-use .waves-icon {
-		top: -116px;
-		left: 404px;
-	}
+  .to-use .two-triangles-1 {
+    top: 120px;
+    right: -130px;
+  }
 
-	.to-use .two-triangles-1 {
-		top: 120px;
-		right: -130px;
-	}
+  .to-use__list {
+    justify-content: space-between;
+    max-width: 610px;
+    margin: 0 auto;
+    margin-top: 79px;
+  }
 
-	.to-use__list {
-		justify-content: space-between;
+  .to-use__title {
+    padding-left: 57px;
+  }
 
-		max-width: 610px;
+  .to-use__item {
+    margin: 0;
 
-		margin: 0 auto;
+    &:not(:last-child) {
+      margin-right: 0;
+      margin-bottom: 66px;
+      margin-left: 0;
+    }
+  }
 
-		margin-top: 79px;
-	}
+  .to-use__join {
+    align-items: flex-start;
+    margin-top: 0;
+  }
 
-	.to-use__title {
-		padding-left: 57px;
-	}
+  .to-use__join p {
+    max-width: 457px;
+  }
 
-	.to-use__item {
-		margin: 0;
+  .to-use__button-install {
+    display: none;
+  }
 
-		&:not(:last-child) {
-			margin-right: 0;
-			margin-bottom: 66px;
-			margin-left: 0;
-		}
-	}
-
-	.to-use__join {
-		align-items: flex-start;
-
-		margin-top: 0;
-	}
-
-	.to-use__join p { max-width: 457px; }
-
-	.to-use__button-install {
-		display: none;
-	}
-
-	.to-use__button-table {
-		display: flex !important;
-
-		min-width: 186px !important;
-	}
+  .to-use__button-table {
+    display: flex !important;
+    min-width: 186px !important;
+  }
 }
 
 @media (max-width: 674px) {
-	.to-use__join {
-		flex-direction: column;
-		justify-content: center;
+  .to-use__join {
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 40px;
 
-		margin-top: 40px;
+    p {
+      margin: 0 auto;
+      text-align: center;
+    }
 
-		p {
-			margin: 0 auto;
-
-			text-align: center;
-		}
-
-		.to-use__button-install {
-			max-width: 176px;
-			margin: 0 auto;
-			margin-top: 20px;
-		}
-	}
+    .to-use__button-install {
+      max-width: 176px;
+      margin: 0 auto;
+      margin-top: 20px;
+    }
+  }
 }
 
 @media (max-width: 585px) {
-	.to-use__list {
-		flex-direction: column;
+  .to-use__list {
+    flex-direction: column;
+    max-width: 300px;
+    margin-right: auto;
+    margin-left: auto;
+  }
 
-		max-width: 300px;
-		margin-right: auto;
-		margin-left: auto;
-	}
+  .to-use .two-crosses {
+    display: none;
+  }
 
-	.to-use .two-crosses {
-		display: none;
-	}
+  .to-use__item {
+    max-width: 100%;
+  }
 
-	.to-use__item {
-		max-width: 100%;
-	}
-
-	.to-use__item-title {
-		text-align: center;
-	}
+  .to-use__item-title {
+    text-align: center;
+  }
 }
 
 @media (max-width: 480px) {
-	.to-use {
-		overflow: visible;
+  .to-use {
+    overflow: visible;
+    padding-top: 0;
+  }
 
-		padding-top: 0;
-	}
+  .to-use .waves-icon,
+  .to-use .two-triangles-1 {
+    display: none;
+  }
 
-	.to-use .waves-icon,
-	.to-use .two-triangles-1 {
-		display: none;
-	}
+  .to-use__title {
+    max-width: 100%;
+    padding-left: 0;
+  }
 
-	.to-use__title {
-		max-width: 100%;
-		padding-left: 0;
-	}
+  .to-use__list {
+    margin-top: 56px;
+  }
 
-	.to-use__list {
-		margin-top: 56px;
-	}
+  .to-use__item:not(:last-child) {
+    margin-bottom: 24px;
+  }
 
-	.to-use__item:not(:last-child) {
-		margin-bottom: 24px;
-	}
+  .to-use__join {
+    margin-top: 44px;
 
-	.to-use__join {
-		margin-top: 44px;
-
-		p {
-			text-align: left;
-
-			font-size: 14px;
-			line-height: 149%;
-		}
-	}
+    p {
+      text-align: left;
+      font-size: 14px;
+      line-height: 149%;
+    }
+  }
 }

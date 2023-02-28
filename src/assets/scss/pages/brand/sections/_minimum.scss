@@ -1,27 +1,33 @@
-@import "../../../base/constans";
-@import "../../../base/mixins";
+@import '../../../base/constans';
+@import '../../../base/mixins';
 
 .minimum {
 }
+
 .container {
 }
+
 .minimum__wrapper {
   display: flex;
   justify-content: space-between;
   padding: 105px 0;
 }
+
 .minimum__block-img {
 }
+
 .minimum__img {
 }
+
 .minimum__block-info {
   display: flex;
   flex-direction: column;
   justify-content: center;
   max-width: 520px;
 }
+
 .minimum__title {
-  font-family: "Playfair Display", sans-serif;
+  font-family: 'Playfair Display', sans-serif;
   font-weight: 900;
   font-size: 56px;
   line-height: 100%;
@@ -29,8 +35,9 @@
   display: inline-block;
   margin-bottom: 55px;
 }
+
 .minimum__text {
-  font-family: "Segoe UI", sans-serif;
+  font-family: 'Segoe UI', sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 149%;

@@ -1,11 +1,11 @@
-@import "../../../base/mixins";
-@import "../../../base/constans";
+@import '../../../base/mixins';
+@import '../../../base/constans';
 
 .promo {
   margin: 0;
   position: relative;
   height: 488px;
-  background-image: url("../images/bg/promo.png");
+  background-image: url('../images/bg/promo.png');
   margin-bottom: 20px;
   max-width: none;
 

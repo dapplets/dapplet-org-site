@@ -1,159 +1,153 @@
 @media screen and (max-width: 1500px) {
-	.what-is .waves-icon {
-		display: none;
-	}
+  .what-is .waves-icon {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 1270px) {
-	.what-is__right {
-		margin-top: 50px;
-		margin-left: -130px;
-	}
+  .what-is__right {
+    margin-top: 50px;
+    margin-left: -130px;
+  }
 
-	.what-is__description {
-		margin-left: 180px;
-	}
+  .what-is__description {
+    margin-left: 180px;
+  }
 
-	.what-is__button {
-		margin-left: 183px !important;
-	}
+  .what-is__button {
+    margin-left: 183px !important;
+  }
 }
 
 @media screen and (max-width: 1184px) {
-	.what-is .many-small-lines {
-		left: 344px;
-	}
+  .what-is .many-small-lines {
+    left: 344px;
+  }
 }
 
 @media screen and (max-width: 1180px) {
-	.what-is {
-		overflow: hidden;
+  .what-is {
+    overflow: hidden;
+    padding-top: 88px;
+    padding-bottom: 88px;
+  }
 
-		padding-top: 88px;
-		padding-bottom: 88px;
-	}
+  .what-is__left-img {
+    width: 588px;
+    height: 441px;
+    background-image: url('../images/what-is/dogs-table.png');
+  }
 
-	.what-is__left-img {
-		width: 588px;
-		height: 441px;
+  .what-is .many-small-lines {
+    top: 84px;
+    right: -681px;
+    left: auto;
+  }
 
-		background-image: url('../images/what-is/dogs-table.png');
-	}
+  .what-is__title {
+    font-size: 41px;
+    line-height: 149%;
+  }
 
-	.what-is .many-small-lines {
-		top: 84px;
-		right: -681px;
-		left: auto;
-	}
+  .what-is__right {
+    max-width: 100%;
+    margin-top: 66px;
+    margin-left: 0;
+  }
 
-	.what-is__title {
-		font-size: 41px;
-		line-height: 149%;
-	}
+  .what-is__description {
+    margin-top: 42px;
+    margin-left: 78px;
 
-	.what-is__right {
-		max-width: 100%;
-		margin-top: 66px;
-		margin-left: 0;
-	}
+    p {
+      max-width: 100%;
+    }
+  }
 
-	.what-is__description {
-		margin-top: 42px;
-		margin-left: 78px;
+  .what-is__button {
+    display: none;
+  }
 
-		p {
-			max-width: 100%;
-		}
-	}
+  .what-is .two-triangles-2 {
+    bottom: -522px;
+    left: -99px;
+  }
 
-	.what-is__button {
-		display: none;
-	}
+  .what-is .two-crosses {
+    top: -8px;
+    left: -39px;
+  }
 
-	.what-is .two-triangles-2 {
-		bottom: -522px;
-		left: -99px;
-	}
+  .what-is__wrapper {
+    flex-direction: column;
+  }
 
-	.what-is .two-crosses {
-		top: -8px;
-		left: -39px;
-	}
-
-	.what-is__wrapper {
-		flex-direction: column;
-	}
-
-	.what-is .many-straight-lines-icon {
-		display: none;
-	}
+  .what-is .many-straight-lines-icon {
+    display: none;
+  }
 }
 
 @media (max-width: 700px) {
-	.what-is__left-img {
-		width: 453px;
-		height: 340px;
+  .what-is__left-img {
+    width: 453px;
+    height: 340px;
+    background-size: contain;
+  }
 
-		background-size: contain;
-	}
+  .what-is__left-img::after {
+    top: -41px;
+    right: -67px;
+    width: 120px;
+  }
 
-	.what-is__left-img::after {
-		top: -41px;
-		right: -67px;
-
-		width: 120px;
-	}
-
-	.what-is__description {
-		margin-left: 0;
-	}
+  .what-is__description {
+    margin-left: 0;
+  }
 }
 
 @media screen and (max-width: 570px) {
-	.what-is .two-triangles-1,
-	.what-is .big-circle-icon,
-	.what-is .two-crosses,
-	.what-is .two-triangles-2,
-	.what-is .many-small-lines {
-		display: none;
-	}
+  .what-is .two-triangles-1,
+  .what-is .big-circle-icon,
+  .what-is .two-crosses,
+  .what-is .two-triangles-2,
+  .what-is .many-small-lines {
+    display: none;
+  }
 }
 
 @media (max-width: 515px) {
-	.what-is {
-		padding-top: 55px;
-		padding-bottom: 11px;
-	}
+  .what-is {
+    padding-top: 55px;
+    padding-bottom: 11px;
+  }
 
-	.what-is__title {
-		display: none;
-	}
+  .what-is__title {
+    display: none;
+  }
 
-	.what-is__right {
-		margin-top: 0;
-	}
+  .what-is__right {
+    margin-top: 0;
+  }
 
-	.what-is__title-mobile {
-		display: block;
+  .what-is__title-mobile {
+    display: block;
+    margin-bottom: 19px;
+  }
 
-		margin-bottom: 19px;
-	}
+  .what-is__left-img {
+    width: 100%;
+    height: 300px;
+    margin-right: 0;
+    background-image: url('../images/what-is/dogs-mobile.png');
+    background-size: cover;
 
-	.what-is__left-img {
-		width: 100%;
-		height: 300px;
-		margin-right: 0;
+    &::after,
+    &::before {
+      display: none;
+    }
+  }
 
-		background-image: url('../images/what-is/dogs-mobile.png');
-		background-size: cover;
-
-		&::after,
-		&::before {
-			display: none;
-		}
-	}
-
-	.what-is__description {
-		margin-top: 22px;
-	}
+  .what-is__description {
+    margin-top: 22px;
+  }
 }

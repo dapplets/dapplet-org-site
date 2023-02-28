@@ -1,25 +1,28 @@
-@import "../../../base/constans";
-@import "../../../base/mixins";
+@import '../../../base/constans';
+@import '../../../base/mixins';
 
 @media (max-width: 1400px) {
   .typography__block-content {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    gap: 0px;
+    gap: 0;
   }
 
   .h2-web {
     width: 393px;
   }
+
   .h3-web {
     width: 393px;
     margin: 0;
   }
+
   .web-36 {
     width: 393px;
     margin: 0;
   }
+
   .typography__item {
     margin-bottom: 60px;
   }
@@ -29,20 +32,25 @@
   .typography__item {
     width: 97px;
   }
+
   .typography__block-info {
     max-width: none;
     width: 100%;
   }
+
   .h1-web {
     text-align: left;
     width: 100%;
   }
+
   .h2-web {
     width: 302px;
   }
+
   .h3-web {
     width: 302px;
   }
+
   .web-36 {
     width: 302px;
   }
@@ -52,18 +60,23 @@
   .typography-button {
     max-width: 255px !important;
   }
+
   .typography__wrapper {
-    padding: 0px 0 60px 0;
+    padding: 0 0 60px;
   }
+
   .typography__block-content {
     padding: 90px 0;
   }
+
   .h2-web {
     width: 242px;
   }
+
   .h3-web {
     width: 242px;
   }
+
   .web-36 {
     width: 242px;
   }
@@ -73,18 +86,22 @@
   .typography__block-content {
     padding: 0;
   }
+
   .typography__title {
     font-size: 24px;
   }
+
   .typography__text {
     font-size: 14px;
   }
+
   .typography__item {
     width: 100%;
     margin-bottom: 40px;
     text-align: left;
     padding: 0;
   }
+
   .typography-button {
     max-width: 100% !important;
     width: 100%;

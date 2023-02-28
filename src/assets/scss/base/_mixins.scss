@@ -1,43 +1,37 @@
 @mixin backgroundStyle {
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 @mixin imageBorder {
-	&::before {
-		position: absolute;
-		z-index: -1;
-		top: -19px;
-		left: 28px;
+  &::before {
+    position: absolute;
+    z-index: -1;
+    top: -19px;
+    left: 28px;
+    width: 99%;
+    height: 99%;
+    content: '';
+    border: 1px solid #e3e3e3;
+  }
 
-		width: 99%;
-		height: 99%;
-
-		content: '';
-
-		border: 1px solid #E3E3E3;
-	}
-
-	&::after {
-		position: absolute;
-		z-index: 1;
-		top: -33px;
-		right: -68px;
-
-		width: 142px;
-		height: 76px;
-
-		content: '';
-		transform: rotate(45deg);
-
-		border-bottom: 1px solid #E3E3E3;
-		background: #FFF;
-	}
+  &::after {
+    position: absolute;
+    z-index: 1;
+    top: -33px;
+    right: -68px;
+    width: 142px;
+    height: 76px;
+    content: '';
+    transform: rotate(45deg);
+    border-bottom: 1px solid #e3e3e3;
+    background: #fff;
+  }
 }
 
 @media (max-width: 730px) {
-	.collaboration__img::after {
-		display: none;
-	}
+  .collaboration__img::after {
+    display: none;
+  }
 }

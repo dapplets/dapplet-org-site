@@ -1,39 +1,46 @@
-@import "../../../base/constans";
-@import "../../../base/mixins";
+@import '../../../base/constans';
+@import '../../../base/mixins';
 
 .resources {
   width: 100%;
-  padding: 0px 10px;
+  padding: 0 10px;
 }
+
 .container {
 }
+
 .resources__wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 120px 0;
 }
+
 .resources__header-text {
   margin-bottom: 60px;
 }
+
 .resources__title {
-  font-family: "Playfair Display", sans-serif;
+  font-family: 'Playfair Display', sans-serif;
   font-style: normal;
   font-weight: 900;
   font-size: 56px;
   line-height: 100%;
   margin: 0;
 }
+
 .resources__main {
   display: flex;
   width: 100%;
   justify-content: space-between;
 }
+
 .resources__left-block {
   display: flex;
   flex-direction: column;
   width: 600px;
 }
+
 .resources__left-title {
   margin-bottom: 20px;
   display: inline-block;
@@ -41,14 +48,16 @@
   font-weight: 900;
   font-size: 24px;
   line-height: 100%;
-  font-family: "Playfair Display", sans-serif;
+  font-family: 'Playfair Display', sans-serif;
 }
+
 .resources__left-text {
   padding: 0 25px;
   margin: 0;
 }
+
 .resources__item {
-  font-family: "Segoe UI";
+  font-family: 'Segoe UI';
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -56,11 +65,13 @@
   color: #747376;
   text-align: justify;
 }
+
 .resources__right-block {
   display: flex;
   flex-direction: column;
   width: 600px;
 }
+
 .resources__right-title {
   margin-bottom: 20px;
   display: inline-block;
@@ -68,8 +79,9 @@
   font-weight: 900;
   font-size: 24px;
   line-height: 100%;
-  font-family: "Playfair Display", sans-serif;
+  font-family: 'Playfair Display', sans-serif;
 }
+
 .resources__right-text {
   padding: 0 25px;
   margin: 0;

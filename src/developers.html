@@ -24,55 +24,51 @@
 
   <body>
     <script type="text/javascript">
-      (function (window, document, dataLayerName, id) {
-        (window[dataLayerName] = window[dataLayerName] || []),
+      ;(function (window, document, dataLayerName, id) {
+        ;(window[dataLayerName] = window[dataLayerName] || []),
           window[dataLayerName].push({
             start: new Date().getTime(),
-            event: "stg.start",
-          });
-        var scripts = document.getElementsByTagName("script")[0],
-          tags = document.createElement("script");
+            event: 'stg.start',
+          })
+        var scripts = document.getElementsByTagName('script')[0],
+          tags = document.createElement('script')
         function stgCreateCookie(a, b, c) {
-          var d = "";
+          var d = ''
           if (c) {
-            var e = new Date();
-            e.setTime(e.getTime() + 24 * c * 60 * 60 * 1e3),
-              (d = "; expires=" + e.toUTCString());
+            var e = new Date()
+            e.setTime(e.getTime() + 24 * c * 60 * 60 * 1e3), (d = '; expires=' + e.toUTCString())
           }
-          document.cookie = a + "=" + b + d + "; path=/";
+          document.cookie = a + '=' + b + d + '; path=/'
         }
         var isStgDebug =
-          (window.location.href.match("stg_debug") ||
-            document.cookie.match("stg_debug")) &&
-          !window.location.href.match("stg_disable_debug");
-        stgCreateCookie("stg_debug", isStgDebug ? 1 : "", isStgDebug ? 14 : -1);
-        var qP = [];
-        dataLayerName !== "dataLayer" &&
-          qP.push("data_layer_name=" + dataLayerName),
-          isStgDebug && qP.push("stg_debug");
-        var qPString = qP.length > 0 ? "?" + qP.join("&") : "";
-        (tags.async = !0),
-          (tags.src =
-            "https://dapplets.containers.piwik.pro/" + id + ".js" + qPString),
-          scripts.parentNode.insertBefore(tags, scripts);
+          (window.location.href.match('stg_debug') || document.cookie.match('stg_debug')) &&
+          !window.location.href.match('stg_disable_debug')
+        stgCreateCookie('stg_debug', isStgDebug ? 1 : '', isStgDebug ? 14 : -1)
+        var qP = []
+        dataLayerName !== 'dataLayer' && qP.push('data_layer_name=' + dataLayerName),
+          isStgDebug && qP.push('stg_debug')
+        var qPString = qP.length > 0 ? '?' + qP.join('&') : ''
+        ;(tags.async = !0),
+          (tags.src = 'https://dapplets.containers.piwik.pro/' + id + '.js' + qPString),
+          scripts.parentNode.insertBefore(tags, scripts)
         !(function (a, n, i) {
-          a[n] = a[n] || {};
+          a[n] = a[n] || {}
           for (var c = 0; c < i.length; c++)
             !(function (i) {
-              (a[n][i] = a[n][i] || {}),
+              ;(a[n][i] = a[n][i] || {}),
                 (a[n][i].api =
                   a[n][i].api ||
                   function () {
-                    var a = [].slice.call(arguments, 0);
-                    "string" == typeof a[0] &&
+                    var a = [].slice.call(arguments, 0)
+                    'string' == typeof a[0] &&
                       window[dataLayerName].push({
-                        event: n + "." + i + ":" + a[0],
+                        event: n + '.' + i + ':' + a[0],
                         parameters: [].slice.call(arguments, 1),
-                      });
-                  });
-            })(i[c]);
-        })(window, "ppms", ["tm", "cm"]);
-      })(window, document, "dataLayer", "9bed06dd-be95-40d0-aea8-cf1e92ac2643");
+                      })
+                  })
+            })(i[c])
+        })(window, 'ppms', ['tm', 'cm'])
+      })(window, document, 'dataLayer', '9bed06dd-be95-40d0-aea8-cf1e92ac2643')
     </script>
 
     <header class="header" id="header">
@@ -81,11 +77,7 @@
           <div class="header__top-wrapper">
             <div class="header__top-left">
               <a href="/" class="header__main-page">
-                <img
-                  src="/assets/images/logo.svg"
-                  alt="Dapplets"
-                  class="header__top-logo"
-                />
+                <img src="/assets/images/logo.svg" alt="Dapplets" class="header__top-logo" />
                 <img
                   src="/assets/images/logo-mobile.svg"
                   alt="Dapplets"
@@ -97,14 +89,10 @@
             <div class="header__top-right">
               <ul class="header__top-list ul-reset">
                 <li class="header__top-item">
-                  <a href="https://docs.dapplets.org/docs/" target="_blank"
-                    >Docs</a
-                  >
+                  <a href="https://docs.dapplets.org/docs/" target="_blank">Docs</a>
                 </li>
                 <li class="header__top-item">
-                  <a
-                    href="https://docs.dapplets.org/docs/whitepapers/summary/"
-                    target="_blank"
+                  <a href="https://docs.dapplets.org/docs/whitepapers/summary/" target="_blank"
                     >Whitepapers</a
                   >
                 </li>
@@ -159,11 +147,7 @@
                   </a>
                 </li>
                 <li class="header__top-social" title="Telegram">
-                  <a
-                    href="https://t.me/dapplets"
-                    class="header__top-social-link"
-                    target="_blank"
-                  >
+                  <a href="https://t.me/dapplets" class="header__top-social-link" target="_blank">
                     <svg
                       width="31"
                       height="30"
@@ -215,25 +199,16 @@
         <div class="container">
           <ul class="header__nav-list ul-reset">
             <li class="header__nav-item">
-              <a href="/under-construction.html" class="header__nav-link"
-                >Store</a
-              >
+              <a href="/under-construction.html" class="header__nav-link">Store</a>
             </li>
             <li class="header__nav-item">
-              <a href="/developers.html" class="header__nav-link active"
-                >Developers</a
-              >
+              <a href="/developers.html" class="header__nav-link active">Developers</a>
             </li>
             <li class="header__nav-item">
               <a href="/join-us.html" class="header__nav-link">Join Us</a>
             </li>
             <li class="header__nav-item">
-              <a
-                href="https://blog.dapplets.org/"
-                class="header__nav-link"
-                target="_blank"
-                >Blog</a
-              >
+              <a href="https://blog.dapplets.org/" class="header__nav-link" target="_blank">Blog</a>
             </li>
             <li class="header__nav-item">
               <a href="/about.html" class="header__nav-link">About</a>
@@ -243,9 +218,7 @@
           <div class="header__nav-bottom">
             <ul class="header__top-list header__bottom-list ul-reset">
               <li class="header__top-item">
-                <a href="https://docs.dapplets.org/docs/" target="_blank"
-                  >Docs</a
-                >
+                <a href="https://docs.dapplets.org/docs/" target="_blank">Docs</a>
               </li>
             </ul>
 
@@ -295,11 +268,7 @@
                 </a>
               </li>
               <li class="header__top-social" title="Telegram">
-                <a
-                  href="https://t.me/dapplets"
-                  class="header__top-social-link"
-                  target="_blank"
-                >
+                <a href="https://t.me/dapplets" class="header__top-social-link" target="_blank">
                   <svg
                     width="31"
                     height="30"
@@ -386,32 +355,28 @@
 
         <div class="collaboration__description">
           <p class="text collaboration__text">
-            In the internet business, as we know it now, only website owners can
-            create and earn money from business processes that run on their
-            websites. This is because ownership means full control over the
-            users' communications.
+            In the internet business, as we know it now, only website owners can create and earn
+            money from business processes that run on their websites. This is because ownership
+            means full control over the users' communications.
           </p>
           <p class="text collaboration__text">
-            Dapplets Project disrupts this paradigm and creates technology that
-            enables new kinds of applications - dapplets. These dapplets run on
-            top of existing websites, in the websites' context, but out of the
-            website owners' control. This new paradigm enables tons of brand new
-            applications and business opportunities.
+            Dapplets Project disrupts this paradigm and creates technology that enables new kinds of
+            applications - dapplets. These dapplets run on top of existing websites, in the
+            websites' context, but out of the website owners' control. This new paradigm enables
+            tons of brand new applications and business opportunities.
           </p>
           <p class="text collaboration__text">
-            Dapplets technology also has a big social impact. It allows
-            censorship-resistant user flows on centrally owned websites, even
-            for banned content and banned users. It cancels the “cancel culture“
-            effectively.
+            Dapplets technology also has a big social impact. It allows censorship-resistant user
+            flows on centrally owned websites, even for banned content and banned users. It cancels
+            the “cancel culture“ effectively.
           </p>
           <p class="text collaboration__text">
-            Dapplets is a true Web3 project: unstoppable, permissionless,
-            anonymous, open-source and decentralized, not only on the backend
-            level but on the UX level too.
+            Dapplets is a true Web3 project: unstoppable, permissionless, anonymous, open-source and
+            decentralized, not only on the backend level but on the UX level too.
           </p>
           <p class="text collaboration__text">
-            We invite developers all over the world to become a part of our
-            community and contribute to the development of the Augmented Web.
+            We invite developers all over the world to become a part of our community and contribute
+            to the development of the Augmented Web.
           </p>
         </div>
       </div>
@@ -442,8 +407,7 @@
         </div>
         <div class="dev-step">
           <div class="number">4</div>
-          Choose any dapplet idea from our list of ideas or think of your own
-          one
+          Choose any dapplet idea from our list of ideas or think of your own one
         </div>
         <div class="dev-step">
           <div class="number">5</div>
@@ -451,18 +415,14 @@
         </div>
         <div class="dev-step">
           <div class="number">6</div>
-          The best dapps may receive grants from the platform to support further
-          development
+          The best dapps may receive grants from the platform to support further development
         </div>
       </div>
 
       <div class="become-dev-buttons">
         <a class="become-dev-button" href="https://docs.dapplets.org/docs/">
           <picture>
-            <source
-              media="(min-width: 768px)"
-              srcset="/assets/images/become-dev/docs-tablet.png"
-            />
+            <source media="(min-width: 768px)" srcset="/assets/images/become-dev/docs-tablet.png" />
             <img src="/assets/images/become-dev/docs.png" />
           </picture>
           <div class="become-dev-button-text">Documentation</div>
@@ -487,10 +447,7 @@
           </picture>
           <div class="become-dev-button-text">Github</div>
         </a>
-        <a
-          class="become-dev-button"
-          href="https://github.com/dapplets/dapplets-ideas"
-        >
+        <a class="become-dev-button" href="https://github.com/dapplets/dapplets-ideas">
           <picture>
             <source
               media="(min-width: 768px)"
@@ -507,9 +464,7 @@
       <div class="col">
         <h2 class="title-pages ideas__title-pages ideas__title-pages-table">
           <div class="title-pages--primary">Some Dapplet Ideas</div>
-          <div class="title-pages--secondary underlined">
-            Feel free to take one
-          </div>
+          <div class="title-pages--secondary underlined">Feel free to take one</div>
         </h2>
 
         <picture class="ideas-img">
@@ -522,72 +477,61 @@
 
         <div class="ideas__description">
           <p class="ideas__text text">
-            Today we're at the very beginning of the journey. The technology has
-            been developed, but the application options are still emerging.
+            Today we're at the very beginning of the journey. The technology has been developed, but
+            the application options are still emerging.
           </p>
           <p class="ideas__subtitle text">We see a lot of development ideas:</p>
           <ul class="ideas__list ul-reset">
             <li class="ideas__text text">
-              <span class="ideas__subtitle">Public Stickers</span> - a dapplet
-              that allows users to place stickers directly on public content.
+              <span class="ideas__subtitle">Public Stickers</span> - a dapplet that allows users to
+              place stickers directly on public content.
             </li>
             <li class="ideas__text text">
-              <span class="ideas__subtitle">Total Comments</span> - a universal
-              dapplet that allows its users to annotate the content of any
-              website.
+              <span class="ideas__subtitle">Total Comments</span> - a universal dapplet that allows
+              its users to annotate the content of any website.
             </li>
             <li class="ideas__text text">
-              <span class="ideas__subtitle">Tips & Donations</span> - a dapplet
-              that lets users send tips to content creators and contributors.
-              This can work in different communities, different blockchains, and
-              tokens.
+              <span class="ideas__subtitle">Tips & Donations</span> - a dapplet that lets users send
+              tips to content creators and contributors. This can work in different communities,
+              different blockchains, and tokens.
             </li>
             <li class="ideas__text text">
               <span class="ideas__subtitle">Avatar NFT Augmentations</span>
-              - Avatar augmentation - clothes, accessories, gadgets, and bodies
-              for your Avatar. In the form of NFTs that can be bought, sold, and
-              traded.
+              - Avatar augmentation - clothes, accessories, gadgets, and bodies for your Avatar. In
+              the form of NFTs that can be bought, sold, and traded.
             </li>
             <li class="ideas__text text">
-              <span class="ideas__subtitle">Instant NFT Minting</span> - a
-              dapplet that allows its user to turn any content (e.g. a social
-              media post) into an NFT.
+              <span class="ideas__subtitle">Instant NFT Minting</span> - a dapplet that allows its
+              user to turn any content (e.g. a social media post) into an NFT.
             </li>
             <li class="ideas__text text">
               <span class="ideas__subtitle">Instant Message Encryption</span>
-              - a dapplet that can encrypt texts as they are being written. To
-              retain privacy and protect users from message parsing by web
-              crawlers.
+              - a dapplet that can encrypt texts as they are being written. To retain privacy and
+              protect users from message parsing by web crawlers.
             </li>
             <li class="ideas__text text">
-              <span class="ideas__subtitle">Universal Chat</span> - a dapplet
-              with an online chat that’s displayed on top of any website. It
-              allows users to have direct discussions anywhere within the
-              content’s framework.
+              <span class="ideas__subtitle">Universal Chat</span> - a dapplet with an online chat
+              that’s displayed on top of any website. It allows users to have direct discussions
+              anywhere within the content’s framework.
             </li>
             <li class="ideas__text text">
-              <span class="ideas__subtitle">Site Reviews</span> - a dapplet that
-              provides independent and unstoppable site and project reviews,
-              with undeletable comments, and ratings, all stored in blockchain.
+              <span class="ideas__subtitle">Site Reviews</span> - a dapplet that provides
+              independent and unstoppable site and project reviews, with undeletable comments, and
+              ratings, all stored in blockchain.
             </li>
             <li class="ideas__text text">
-              <span class="ideas__subtitle">Avatar Trolling</span> - a dapplet
-              that provides the opportunity to change other users' avatars and
-              draw something on top.
+              <span class="ideas__subtitle">Avatar Trolling</span> - a dapplet that provides the
+              opportunity to change other users' avatars and draw something on top.
             </li>
           </ul>
 
           <p class="ideas__text text">
-            A full list of ideas ready for development can be found in “Ideas
-            List” on our Github.
+            A full list of ideas ready for development can be found in “Ideas List” on our Github.
           </p>
         </div>
       </div>
 
-      <img
-        class="ideas_img-desktop"
-        src="/assets/images/ideas/ideas-desktop.png"
-      />
+      <img class="ideas_img-desktop" src="/assets/images/ideas/ideas-desktop.png" />
     </section>
 
     <section class="grant">
@@ -598,9 +542,9 @@
           <span class="title-pages--primary">Grant Program</span>
         </h2>
         <p class="grant__text text">
-          Dapplets Project has a Grant Program for developers that are
-          contributing to the growth and development of the Dapplets ecosystem.
-          To request a grant please fill in this application form.
+          Dapplets Project has a Grant Program for developers that are contributing to the growth
+          and development of the Dapplets ecosystem. To request a grant please fill in this
+          application form.
         </p>
         <a
           href="https://docs.google.com/forms/d/e/1FAIpQLSfd8x9SoIhxMGZV0cniKC8DDbpTdSmmetvl7YiAyXDDXmq8rw/viewform"
@@ -634,25 +578,24 @@
             AUGE is a native utility ecosystem token.
           </p>
           <p class="monetization__text text">
-            AUGE emission is based on the Bonding Curve model. The Bonding Curve
-            is a form of a smart-contract that buys and sells tokens, based on
-            the price formula that’s been introduced.
+            AUGE emission is based on the Bonding Curve model. The Bonding Curve is a form of a
+            smart-contract that buys and sells tokens, based on the price formula that’s been
+            introduced.
           </p>
           <p class="monetization__text text">
-            For any independent project, the owner may prefer to have their own
-            token. It is unfair to enforce the dapplet Owner to use AUGE as the
-            project token. We thus need to accept, that both tokens will exist.
+            For any independent project, the owner may prefer to have their own token. It is unfair
+            to enforce the dapplet Owner to use AUGE as the project token. We thus need to accept,
+            that both tokens will exist.
           </p>
           <p class="monetization__text text">
-            Dapplets Platform provides any dapplet developer with the
-            opportunity to create their tokenomy based on their own token.
+            Dapplets Platform provides any dapplet developer with the opportunity to create their
+            tokenomy based on their own token.
           </p>
           <p class="monetization__text text">
-            Internal platform mechanisms allow the creation of dapplet tokens on
-            the basis of connected Bonding Curves. The AUGE Bonding Curve
-            functions as the main curve while the dapplet token curve functions
-            as the second curve. This way, the AUGE token works as collateral
-            for the dapplet’s Bonding Curve.
+            Internal platform mechanisms allow the creation of dapplet tokens on the basis of
+            connected Bonding Curves. The AUGE Bonding Curve functions as the main curve while the
+            dapplet token curve functions as the second curve. This way, the AUGE token works as
+            collateral for the dapplet’s Bonding Curve.
           </p>
         </div>
       </div>
@@ -665,43 +608,33 @@
 
     <section class="auditors">
       <div class="auditors-content">
-        <img
-          class="auditors-img"
-          src="/assets/images/auditors/dev-auditors.png"
-          alt=""
-        />
+        <img class="auditors-img" src="/assets/images/auditors/dev-auditors.png" alt="" />
 
         <h2 class="title-pages auditors__title-pages">
           <div class="title-pages--primary">Auditors</div>
-          <div class="title-pages--secondary">
-            “I am the watcher on the walls”
-          </div>
+          <div class="title-pages--secondary">“I am the watcher on the walls”</div>
         </h2>
 
         <div class="auditors__description">
           <p class="auditors__text text">
-            Our platform is being built as a permissionless open-source project
-            and can be used by anyone. That’s why end-user security is one of
-            our topmost priorities.
+            Our platform is being built as a permissionless open-source project and can be used by
+            anyone. That’s why end-user security is one of our topmost priorities.
           </p>
           <p class="auditors__text text">
-            We call on any developer to join our community as a code auditor.
-            This is a highly respected expert-level role in our community. Your
-            job is to check dapplets and adapters for any malicious
-            functionality and ensure overall code quality. The audit workflow is
-            formalized as a set of verification tasks and auditing questions,
-            which makes the job affordable for any skilled developer.
+            We call on any developer to join our community as a code auditor. This is a highly
+            respected expert-level role in our community. Your job is to check dapplets and adapters
+            for any malicious functionality and ensure overall code quality. The audit workflow is
+            formalized as a set of verification tasks and auditing questions, which makes the job
+            affordable for any skilled developer.
           </p>
           <p class="auditors__text text">
-            Since all the complex and low-level work is done by adapters,
-            developers can keep the dapplet code clean and simple. A basic
-            dapplet usually contains around 100 lines of code. This makes its
-            audit much easier and reliable for the end-user.
+            Since all the complex and low-level work is done by adapters, developers can keep the
+            dapplet code clean and simple. A basic dapplet usually contains around 100 lines of
+            code. This makes its audit much easier and reliable for the end-user.
           </p>
           <p class="auditors__text text">
-            Feel free to contact us if you would like to participate in the
-            project as an auditor. Later the audit on-boarding process will
-            become permissionless and autonomous.
+            Feel free to contact us if you would like to participate in the project as an auditor.
+            Later the audit on-boarding process will become permissionless and autonomous.
           </p>
         </div>
       </div>
@@ -713,25 +646,18 @@
           <div class="footer__header">
             <div class="footer__logo">
               <a href="/" class="footer__logo-link">
-                <img
-                  src="/assets/images/logo-footer.svg"
-                  alt="Dapplets"
-                  class="footer__logo-img"
-                />
+                <img src="/assets/images/logo-footer.svg" alt="Dapplets" class="footer__logo-img" />
               </a>
               <p class="footer__logo-text text">
-                Open Augmented Web Infrastructure for Decentralized Apps powered
-                by crypto technologies.
+                Open Augmented Web Infrastructure for Decentralized Apps powered by crypto
+                technologies.
               </p>
             </div>
 
             <span class="footer__line footer__line--1"></span>
             <ul class="footer__socials ul-reset">
               <li class="footer__social" title="GitHub">
-                <a
-                  href="https://github.com/dapplets"
-                  class="footer__social-link"
-                >
+                <a href="https://github.com/dapplets" class="footer__social-link">
                   <svg
                     width="41"
                     height="41"
@@ -749,10 +675,7 @@
                 </a>
               </li>
               <li class="footer__social" title="Discord">
-                <a
-                  href="https://discord.com/invite/YcxbkcyjMV"
-                  class="footer__social-link"
-                >
+                <a href="https://discord.com/invite/YcxbkcyjMV" class="footer__social-link">
                   <svg
                     width="41"
                     height="41"
@@ -788,10 +711,7 @@
                 </a>
               </li>
               <li class="footer__social" title="Medium">
-                <a
-                  href="https://blog.dapplets.org/"
-                  class="footer__social-link"
-                >
+                <a href="https://blog.dapplets.org/" class="footer__social-link">
                   <svg
                     width="41"
                     height="41"
@@ -828,10 +748,7 @@
                 </a>
               </li> -->
               <li class="footer__social" title="Email">
-                <a
-                  href="mailto:contact@dapplets.org"
-                  class="footer__social-link"
-                >
+                <a href="mailto:contact@dapplets.org" class="footer__social-link">
                   <svg
                     width="41"
                     height="41"
@@ -859,19 +776,13 @@
 
               <ul class="footer__social-link ul-reset">
                 <li class="footer__links-item">
-                  <a href="/#what-is" class="footer__links-link"
-                    >What is Dapplets Project?</a
-                  >
+                  <a href="/#what-is" class="footer__links-link">What is Dapplets Project?</a>
                 </li>
                 <li class="footer__links-item">
-                  <a href="/#innovation" class="footer__links-link"
-                    >Innovation</a
-                  >
+                  <a href="/#innovation" class="footer__links-link">Innovation</a>
                 </li>
                 <li class="footer__links-item">
-                  <a href="/#to-use" class="footer__links-link"
-                    >How to use it?</a
-                  >
+                  <a href="/#to-use" class="footer__links-link">How to use it?</a>
                 </li>
                 <li class="footer__links-item">
                   <a href="/#economic" class="footer__links-link">Role model</a>
@@ -884,24 +795,16 @@
 
               <ul class="footer__social-link ul-reset">
                 <li class="footer__links-item">
-                  <a href="/join-us.html#owner" class="footer__links-link"
-                    >Owner</a
-                  >
+                  <a href="/join-us.html#owner" class="footer__links-link">Owner</a>
                 </li>
                 <li class="footer__links-item">
-                  <a href="/join-us.html#lister" class="footer__links-link"
-                    >Lister</a
-                  >
+                  <a href="/join-us.html#lister" class="footer__links-link">Lister</a>
                 </li>
                 <li class="footer__links-item">
-                  <a href="/join-us.html#auditors" class="footer__links-link"
-                    >Developer</a
-                  >
+                  <a href="/join-us.html#auditors" class="footer__links-link">Developer</a>
                 </li>
                 <li class="footer__links-item">
-                  <a href="/join-us.html#auditors" class="footer__links-link"
-                    >Auditor</a
-                  >
+                  <a href="/join-us.html#auditors" class="footer__links-link">Auditor</a>
                 </li>
               </ul>
             </div>
@@ -911,24 +814,16 @@
 
               <ul class="footer__social-link ul-reset">
                 <li class="footer__links-item">
-                  <a href="/about.html#mission" class="footer__links-link"
-                    >Our Mission</a
-                  >
+                  <a href="/about.html#mission" class="footer__links-link">Our Mission</a>
                 </li>
                 <li class="footer__links-item">
-                  <a href="/about.html#motivation" class="footer__links-link"
-                    >Motivation</a
-                  >
+                  <a href="/about.html#motivation" class="footer__links-link">Motivation</a>
                 </li>
                 <li class="footer__links-item">
-                  <a href="/about.html#career" class="footer__links-link"
-                    >Career at Dapplets</a
-                  >
+                  <a href="/about.html#career" class="footer__links-link">Career at Dapplets</a>
                 </li>
                 <li class="footer__links-item">
-                  <a href="/brand.html" class="footer__links-link"
-                    >Brand Toolkit</a
-                  >
+                  <a href="/brand.html" class="footer__links-link">Brand Toolkit</a>
                 </li>
               </ul>
             </div>

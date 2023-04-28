@@ -1,27 +1,23 @@
 @import '../base/mixins';
 
 .notification {
-	position: absolute;
-	z-index: 10;
-	right: 0;
-	bottom: 76px;
+  position: absolute;
+  z-index: 10;
+  right: 0;
+  bottom: 76px;
+  width: 518px;
+  height: 102px;
+  padding: 13px 30px;
+  background-image: url('../images/icons/notification.svg');
 
-	width: 518px;
-	height: 102px;
-	padding: 13px 30px;
+  @include backgroundStyle;
 
-	background-image: url('../images/icons/notification.svg');
+  background-position: inherit;
 
-	@include backgroundStyle;
-
-	background-position: inherit;
-
-	p {
-		margin-bottom: 0;
-
-		color: #FFF;
-
-		font-size: 16px;
-		line-height: 24px;
-	}
+  p {
+    margin-bottom: 0;
+    color: #fff;
+    font-size: 16px;
+    line-height: 24px;
+  }
 }

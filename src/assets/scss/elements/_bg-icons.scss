@@ -19,130 +19,111 @@
 .triangle,
 .many-straight-lines-mini-icon,
 .many-straight-lines-white {
-	position: absolute;
-	z-index: 2;
+  position: absolute;
+  z-index: 2;
+  display: block;
+  opacity: 0.2;
 
-	display: block;
-
-	opacity: 0.2;
-
-	@include backgroundStyle;
+  @include backgroundStyle;
 }
 
 .big-circle-icon {
-	width: 212px;
-	height: 212px;
-
-	background-image: url('../images/bg-icon/big-circle-icon.svg');
+  width: 212px;
+  height: 212px;
+  background-image: url('../images/bg-icon/big-circle-icon.svg');
 }
 
 .two-circle-icon {
-	width: 58px;
-	height: 54px;
-
-	background-image: url('../images/bg-icon/two-circle-icon.svg');
+  width: 58px;
+  height: 54px;
+  background-image: url('../images/bg-icon/two-circle-icon.svg');
 }
 
 .waves-icon,
 .waves-icon-2 {
-	width: 393px;
-	height: 106px;
-
-	background-image: url('../images/bg-icon/waves-icon.svg');
+  width: 393px;
+  height: 106px;
+  background-image: url('../images/bg-icon/waves-icon.svg');
 }
 
 .many-straight-lines-icon {
-	width: 472px;
-	height: 472px;
-
-	background-image: url('../images/bg-icon/many-straight-lines-icon.svg');
+  width: 472px;
+  height: 472px;
+  background-image: url('../images/bg-icon/many-straight-lines-icon.svg');
 }
 
 .two-triangles-1 {
-	width: 178px;
-	height: 131px;
-
-	background-image: url('../images/bg-icon/two-triangles-1.svg');
+  width: 178px;
+  height: 131px;
+  background-image: url('../images/bg-icon/two-triangles-1.svg');
 }
 
 .two-triangles-2 {
-	width: 178px;
-	height: 131px;
-
-	background-image: url('../images/bg-icon/two-triangles-2.svg');
+  width: 178px;
+  height: 131px;
+  background-image: url('../images/bg-icon/two-triangles-2.svg');
 }
 
 .two-crosses {
-	width: 102px;
-	height: 121px;
-
-	background-image: url('../images/bg-icon/two-crosses.svg');
+  width: 102px;
+  height: 121px;
+  background-image: url('../images/bg-icon/two-crosses.svg');
 }
 
 .many-small-lines {
-	width: 314px;
-	height: 45px;
-
-	background-image: url('../images/bg-icon/many-small-lines.svg');
+  width: 314px;
+  height: 45px;
+  background-image: url('../images/bg-icon/many-small-lines.svg');
 }
 
 .mini-circle-icon {
-	width: 18px;
-	height: 18px;
-
-	background-image: url('../images/bg-icon/mini-circle-icon.svg');
+  width: 18px;
+  height: 18px;
+  background-image: url('../images/bg-icon/mini-circle-icon.svg');
 }
 
 .many-small-lines-white {
-	width: 284px;
-	height: 45px;
-
-	background-image: url('../images/bg-icon/many-small-lines-white.svg');
+  width: 284px;
+  height: 45px;
+  background-image: url('../images/bg-icon/many-small-lines-white.svg');
 }
 
 .extra-large-circle-icon {
-	width: 523px;
-	height: 612px;
-
-	background-image: url('../images/bg-icon/extra-large-circle-icon.svg');
+  width: 523px;
+  height: 612px;
+  background-image: url('../images/bg-icon/extra-large-circle-icon.svg');
 }
 
 .big-cross {
-	width: 208px;
-	height: 208px;
-
-	opacity: 1;
-	background-image: url('../images/bg-icon/big-cross.svg');
+  width: 208px;
+  height: 208px;
+  opacity: 1;
+  background-image: url('../images/bg-icon/big-cross.svg');
 }
 
 .middle-circle,
 .middle-circle-1,
 .middle-circle-2 {
-	width: 63px;
-	height: 63px;
-
-	background-image: url('../images/bg-icon/middle-circle.svg');
+  width: 63px;
+  height: 63px;
+  background-image: url('../images/bg-icon/middle-circle.svg');
 }
 
 .triangle {
-	width: 131px;
-	height: 131px;
-
-	background-image: url('../images/bg-icon/triangle.svg');
+  width: 131px;
+  height: 131px;
+  background-image: url('../images/bg-icon/triangle.svg');
 }
 
 .many-straight-lines-mini-icon {
-	width: 307px;
-	height: 307px;
-
-	background-image: url('../images/bg-icon/many-straight-lines-mini-icon.svg');
+  width: 307px;
+  height: 307px;
+  background-image: url('../images/bg-icon/many-straight-lines-mini-icon.svg');
 }
 
 .many-straight-lines-white {
-	width: 365px;
-	height: 365px;
-
-	opacity: 1;
-
-	background-image: url('../images/bg-icon/many-straight-lines-white.svg');
+  width: 365px;
+  height: 365px;
+  opacity: 1;
+  background-image: url('../images/bg-icon/many-straight-lines-white.svg');
 }

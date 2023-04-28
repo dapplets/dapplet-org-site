@@ -1,61 +1,51 @@
 @import '../base/constans';
 
 .hamburger__item {
-	position: relative;
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 2px;
+  pointer-events: none;
+  background-color: $ifm-border-color-hamburger;
 
-	display: block;
+  &::after,
+  &::before {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    content: '';
+    background-color: $ifm-border-color-hamburger;
+  }
 
-	width: 100%;
-	height: 2px;
+  &::after {
+    top: 5px;
+  }
 
-	pointer-events: none;
-
-	background-color: $ifm-border-color-hamburger;
-
-	&::after,
-	&::before {
-		position: absolute;
-		left: 0;
-
-		width: 100%;
-		height: 100%;
-
-		content: '';
-
-		background-color: $ifm-border-color-hamburger;
-	}
-
-	&::after {
-		top: 5px;
-	}
-
-	&::before {
-		top: 10px;
-	}
+  &::before {
+    top: 10px;
+  }
 }
 
 .hamburger {
-	display: none;
+  display: none;
+  width: 40px;
+  height: 40px;
+  padding: 13px 10px;
+  border: 1px solid $ifm-border-color-hamburger;
 
-	width: 40px;
-	height: 40px;
-	padding: 13px 10px;
+  &.open {
+    .hamburger__item {
+      background-color: transparent;
 
-	border: 1px solid $ifm-border-color-hamburger;
+      &::after {
+        transform: rotate(45deg);
+      }
 
-	&.open {
-		.hamburger__item {
-			background-color: transparent;
-
-			&::after {
-				transform: rotate(45deg);
-			}
-
-			&::before {
-				top: 5px;
-
-				transform: rotate(-45deg);
-			}
-		}
-	}
+      &::before {
+        top: 5px;
+        transform: rotate(-45deg);
+      }
+    }
+  }
 }

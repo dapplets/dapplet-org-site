@@ -1,8 +1,7 @@
 .howto {
   min-height: 478px;
   padding: 90px 0;
-
-  background-color: #FFF;
+  background-color: #fff;
 }
 
 .howto__wrapper {
@@ -13,16 +12,12 @@
   &::before {
     position: absolute;
     z-index: -1;
-
     top: 50%;
-
     width: 100%;
     height: 2px;
-
-    content: "";
+    content: '';
     transform: translateY(-50%);
-
-    background-color: #E3E3E3;
+    background-color: #e3e3e3;
   }
 
   &::before {
@@ -32,15 +27,12 @@
 
 .howto-list {
   position: relative;
-
   display: flex;
   align-items: center;
   justify-content: space-between;
-
   margin-top: 63px;
   margin-bottom: 0;
   padding-left: 0;
-
   list-style: none;
 }
 
@@ -48,16 +40,12 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-
   width: 169px;
   height: 162px;
-
   padding: 8px 8px 0;
-
   text-align: center;
-
-  border: 1px solid #E3E3E3;
-  background: #FFF;
+  border: 1px solid #e3e3e3;
+  background: #fff;
 
   &:not(:last-child) {
     margin-right: 20px;
@@ -66,11 +54,8 @@
 
 .howto-item__title {
   margin-bottom: 9px;
-
-  color: #2A2A2A;
-
+  color: #2a2a2a;
   font-family: 'Playfair Display', sans-serif;
-
   font-size: 24px;
   font-weight: 900;
   line-height: 100%;
@@ -79,18 +64,16 @@
 .howto-item__text,
 .howto-item__link {
   color: #747376;
-
   font-size: 18px;
   font-weight: 400;
   line-height: 149%;
 }
 
 .howto-item__link {
-  color: #D9304F;
+  color: #d9304f;
 
   &:hover {
     text-decoration: none;
-
-    color: #D9304F;
+    color: #d9304f;
   }
 }

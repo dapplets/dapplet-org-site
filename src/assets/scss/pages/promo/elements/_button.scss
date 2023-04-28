@@ -1,20 +1,16 @@
 .button {
   text-align: center;
   text-transform: uppercase;
-
-  color: #FFF;
-
+  color: #fff;
   border: none;
   border-radius: 4px;
-  background: #D9304F;
-
+  background: #d9304f;
   font-size: 14px;
-
   font-weight: 600;
 
   &:hover {
-    color: #FFF;
-    background-color: #F26680;
+    color: #fff;
+    background-color: #f26680;
   }
 
   &:focus {
@@ -22,6 +18,6 @@
   }
 
   &:active {
-    background-color: #A6253C;
+    background-color: #a6253c;
   }
 }

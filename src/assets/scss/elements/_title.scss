@@ -2,52 +2,47 @@
 @import '../base/mixins';
 
 .title {
-	position: relative;
+  position: relative;
+  font-size: 67px;
+  font-weight: 900;
+  line-height: 149%;
 
-	font-size: 67px;
-	font-weight: 900;
-	line-height: 149%;
+  &--primary {
+    color: $ifm-primary-color;
+  }
 
-	&--primary {
-		color: $ifm-primary-color;
-	}
+  &--secondary {
+    color: $ifm-secondary-color;
+  }
 
-	&--secondary {
-		color: $ifm-secondary-color;
-	}
+  .block {
+    display: block;
+  }
 
-	.block {
-		display: block;
-	}
+  &.title--img::before {
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    right: -49px;
+    width: 89px;
+    height: 89px;
+    content: '';
+    transform: translateY(-50%);
+    background-image: url('../images/icons/ampersand.svg');
 
-	&.title--img::before {
-		position: absolute;
-		z-index: -1;
-		top: 50%;
-		right: -49px;
-
-		width: 89px;
-		height: 89px;
-
-		content: '';
-		transform: translateY(-50%);
-
-		background-image: url('../images/icons/ampersand.svg');
-
-		@include backgroundStyle;
-	}
+    @include backgroundStyle;
+  }
 }
 
 @media screen and (max-width: 480px) {
-	.title {
-		font-size: 26px !important;
-		line-height: 149% !important;
-	}
+  .title {
+    font-size: 26px !important;
+    line-height: 149% !important;
+  }
 
-	.title.title--img::before {
-		right: -11px;
-
-		width: 36px;
-		height: 36px;
-	}
+  .title.title--img::before {
+    right: -11px;
+    width: 36px;
+    height: 36px;
+  }
 }

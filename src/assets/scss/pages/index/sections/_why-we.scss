@@ -2,87 +2,74 @@
 @import '../../../base/constans';
 
 .why-we {
-	position: relative;
-	z-index: 1;
+  position: relative;
+  z-index: 1;
+  margin-top: 53px;
+  padding-top: 134px;
+  padding-bottom: 151px;
+  background-color: #e1e2e4;
+  background-image: url('../images/bg/why-we-bg.jpg');
 
-	margin-top: 53px;
-	padding-top: 134px;
-	padding-bottom: 151px;
+  &::after {
+    position: absolute;
+    z-index: 0;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    content: '';
+    opacity: 0;
+    background-image: url('../images/bg/why-we-bg-aug.jpg');
 
-	background-color: #E1E2E4;
-	background-image: url('../images/bg/why-we-bg.jpg');
+    @include backgroundStyle;
+  }
 
-	&::after {
-		position: absolute;
-		z-index: 0;
-		z-index: -1;
-		top: 0;
-		left: 0;
+  &.augment-image::after {
+    opacity: 1;
+  }
 
-		width: 100%;
-		height: 100%;
-
-		content: '';
-
-		opacity: 0;
-
-		background-image: url('../images/bg/why-we-bg-aug.jpg');
-
-		@include backgroundStyle;
-	}
-
-	&.augment-image::after {
-		opacity: 1;
-	}
-
-	@include backgroundStyle;
+  @include backgroundStyle;
 }
 
 .why-we__wrapper {
-	display: flex;
-	justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 .why-we__list {
-	max-width: 560px;
-	margin-right: 59px;
-	padding-top: 190px;
+  max-width: 560px;
+  margin-right: 59px;
+  padding-top: 190px;
 }
 
 .why-we__item {
-	position: relative;
+  position: relative;
+  color: $ifm-primary-color;
+  font-size: 25px;
+  line-height: 37px;
 
-	color: $ifm-primary-color;
+  &:not(:last-child) {
+    margin-bottom: 70px;
+  }
 
-	font-size: 25px;
-	line-height: 37px;
-
-	&:not(:last-child) {
-		margin-bottom: 70px;
-	}
-
-	&::before {
-		position: absolute;
-		top: 50%;
-		left: -38px;
-
-		width: 4px;
-		height: 74px;
-
-		content: '';
-		transform: translateY(-50%) rotate(20deg);
-
-		background-color: #588CA3;
-	}
+  &::before {
+    position: absolute;
+    top: 50%;
+    left: -38px;
+    width: 4px;
+    height: 74px;
+    content: '';
+    transform: translateY(-50%) rotate(20deg);
+    background-color: #588ca3;
+  }
 }
 
 .why-we__mustache {
-	display: inline-block;
+  display: inline-block;
+  width: 55px;
+  height: 19px;
+  background-image: url('../images/icons/mustache-icon.svg');
 
-	width: 55px;
-	height: 19px;
-
-	background-image: url('../images/icons/mustache-icon.svg');
-
-	@include backgroundStyle;
+  @include backgroundStyle;
 }

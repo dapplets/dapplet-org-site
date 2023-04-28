@@ -1,158 +1,155 @@
 @media (max-width: 1664px) {
-	.crypto .many-straight-lines-icon {
-		right: -21px;
-	}
+  .crypto .many-straight-lines-icon {
+    right: -21px;
+  }
 
-	.crypto .many-small-lines {
-		right: -47px;
-	}
+  .crypto .many-small-lines {
+    right: -47px;
+  }
 
-	.crypto__right {
-		margin-right: 22px;
-	}
+  .crypto__right {
+    margin-right: 22px;
+  }
 
-	.crypto__left {
-		margin-right: 20px;
-	}
+  .crypto__left {
+    margin-right: 20px;
+  }
 
-	.crypto .two-circle-icon {
-		right: 0;
-	}
+  .crypto .two-circle-icon {
+    right: 0;
+  }
 }
 
 @media (max-width: 1420px) {
-	.crypto .many-straight-lines-icon {
-		right: -5px;
-	}
+  .crypto .many-straight-lines-icon {
+    right: -5px;
+  }
 
-	.crypto .many-small-lines {
-		right: -7px;
-	}
+  .crypto .many-small-lines {
+    right: -7px;
+  }
 }
 
 @media (max-width: 1150px) {
-	.crypto {
-		padding-top: 60px;
-		padding-bottom: 53px;
-	}
+  .crypto {
+    padding-top: 60px;
+    padding-bottom: 53px;
+  }
 
-	.crypto__right {
-		margin-top: 0;
-		margin-right: 20px;
-	}
+  .crypto__right {
+    margin-top: 0;
+    margin-right: 20px;
+  }
 
-	.crypto__description {
-		margin-left: 0;
+  .crypto__description {
+    margin-left: 0;
 
-		.text {
-			max-width: 100%;
-		}
-	}
+    .text {
+      max-width: 100%;
+    }
+  }
 
-	.crypto__list {
-		max-width: 100%;
-		padding-left: 41px;
-	}
+  .crypto__list {
+    max-width: 100%;
+    padding-left: 41px;
+  }
 
-	.crypto .two-circle-icon {
-		right: 21px;
-		bottom: -160px;
-	}
+  .crypto .two-circle-icon {
+    right: 21px;
+    bottom: -160px;
+  }
 
-	.many-straight-lines-icon,
-	.waves-icon,
-	.triangle {
-		display: none;
-	}
+  .many-straight-lines-icon,
+  .waves-icon,
+  .triangle {
+    display: none;
+  }
 
-	.crypto__wrapper {
-		flex-direction: column-reverse;
-	}
+  .crypto__wrapper {
+    flex-direction: column-reverse;
+  }
 
-	.crypto__left {
-		margin-top: 39px;
-		margin-right: 0;
-	}
+  .crypto__left {
+    margin-top: 39px;
+    margin-right: 0;
+  }
 
-	.crypto__right-img {
-		width: 100%;
-		max-width: 728px;
-		height: 380px;
+  .crypto__right-img {
+    width: 100%;
+    max-width: 728px;
+    height: 380px;
+    background-image: url('../images/crypto/mustache-table.jpg');
+  }
 
-		background-image: url('../images/crypto/mustache-table.jpg');
-	}
+  .crypto .many-small-lines {
+    right: -168px;
+    bottom: 295px;
+  }
 
-	.crypto .many-small-lines {
-		right: -168px;
-		bottom: 295px;
-	}
-
-	.crypto .many-small-lines-white {
-		right: 548px;
-		bottom: 54px;
-	}
+  .crypto .many-small-lines-white {
+    right: 548px;
+    bottom: 54px;
+  }
 }
 
 @media (max-width: 480px) {
-	.crypto {
-		padding-top: 31px;
-		padding-bottom: 31px;
+  .crypto {
+    padding-top: 31px;
+    padding-bottom: 31px;
 
-		.container {
-			padding: 0;
-		}
-	}
+    .container {
+      padding: 0;
+    }
+  }
 
-	.crypto__right-img {
-		max-width: 480px;
-		height: 220px;
-		margin: 0 auto;
+  .crypto__right-img {
+    max-width: 480px;
+    height: 220px;
+    margin: 0 auto;
+    background-image: url('../images/crypto/mustache-mobile.jpg');
 
-		background-image: url('../images/crypto/mustache-mobile.jpg');
+    &::before {
+      display: none;
+    }
+  }
 
-		&::before {
-			display: none;
-		}
-	}
+  .crypto__right {
+    margin-right: 0;
+  }
 
-	.crypto__right {
-		margin-right: 0;
-	}
+  .crypto__left {
+    margin-top: 25px;
+    padding-left: 5px;
 
-	.crypto__left {
-		margin-top: 25px;
-		padding-left: 5px;
+    .title {
+      padding-left: 3px;
+    }
+  }
 
-		.title {
-			padding-left: 3px;
-		}
-	}
+  .crypto__list {
+    max-width: 400px;
+    padding-top: 18px;
+    padding-right: 20px;
+    padding-left: 30px;
+    text-align: left;
+  }
 
-	.crypto__list {
-		max-width: 400px;
-		padding-top: 18px;
-		padding-right: 20px;
-		padding-left: 30px;
+  .crypto__text.text {
+    max-width: 269px;
+    margin-left: 10px;
+  }
 
-		text-align: left;
-	}
+  .crypto__description {
+    margin-top: 19px;
+  }
 
-	.crypto__text.text {
-		max-width: 269px;
-		margin-left: 10px;
-	}
+  .crypto .many-small-lines {
+    right: -232px;
+    bottom: 115px;
+  }
 
-	.crypto__description {
-		margin-top: 19px;
-	}
-
-	.crypto .many-small-lines {
-		right: -232px;
-		bottom: 115px;
-	}
-
-	.crypto .two-circle-icon,
-	.crypto .middle-circle-1 {
-		display: none;
-	}
+  .crypto .two-circle-icon,
+  .crypto .middle-circle-1 {
+    display: none;
+  }
 }

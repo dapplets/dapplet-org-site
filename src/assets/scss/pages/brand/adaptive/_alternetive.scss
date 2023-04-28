@@ -1,48 +1,60 @@
-@import "../../../base/constans";
-@import "../../../base/mixins";
+@import '../../../base/constans';
+@import '../../../base/mixins';
 
 @media (max-width: 1050px) {
   .alternative-button {
     max-width: 255px !important;
   }
+
   .alternative__text {
     margin-bottom: 50px;
   }
+
   .alternative__item {
     width: 167px;
     padding: 0;
   }
+
   .alternative__block-info {
     max-width: none;
     width: 100%;
   }
+
   .alternative__h1-web {
     width: 100%;
     text-align: left;
     margin-bottom: 45px;
   }
+
   .alternative__h2-web {
     width: 270px;
   }
+
   .alternative__h3-web {
     width: 190px;
   }
+
   .alternative__montserrat-black {
     width: 190px;
   }
+
   .alternative__web-content {
     margin-bottom: 90px;
   }
+
   .alternative__web-41-content {
     width: 335px;
   }
+
   .alternative__web-41-header {
     width: 335px;
   }
+
   .alternative__web-26-mobile {
     width: 100%;
     margin-bottom: 30px;
   }
+
   .alternative__inapp-notification {
     width: 310px;
   }
@@ -50,29 +62,36 @@
 
 @media (max-width: 650px) {
   .alternative__wrapper {
-    padding: 40px 0px 60px 0px;
+    padding: 40px 0 60px;
   }
+
   .alternative__block-content {
     padding-bottom: 20px;
   }
+
   .alternative__item {
     width: 100%;
     margin: 0;
     margin-bottom: 20px;
   }
+
   .alternative__h1-web {
     margin-bottom: 40px;
+
     .alternative__font {
       font-size: 107px;
       line-height: 130px;
     }
   }
+
   .alternative__title {
     font-size: 24px;
   }
+
   .alternative__text {
     font-size: 14px;
   }
+
   .alternative-button {
     max-width: 100% !important;
     width: 100%;

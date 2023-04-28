@@ -1,8 +1,7 @@
 .community {
   min-height: 668px;
   padding: 63px 0;
-
-  background-color: #FFF;
+  background-color: #fff;
 }
 
 .community-content {
@@ -13,7 +12,6 @@
 .community-text {
   display: flex;
   flex-direction: column;
-
   max-width: 696px;
   padding-top: 92px;
 }
@@ -24,27 +22,21 @@
 
 .community-item {
   margin-bottom: 20px;
-
   font-size: 18px;
   line-height: 149%;
 }
 
 .community__image {
   position: relative;
-
   background-image: url('../images/promo-landing/community.png');
 
   &::before {
     position: absolute;
-
     right: -165px;
     bottom: 31px;
-
     width: 315px;
     height: 37px;
-
-    content: "";
-
+    content: '';
     background-image: url('../images/bg-icon/many-small-lines.svg');
   }
 }

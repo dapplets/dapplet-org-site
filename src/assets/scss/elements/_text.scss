@@ -1,25 +1,23 @@
 @import '../base/constans';
 
 .text {
-	max-width: 610px;
+  max-width: 610px;
+  color: $ifm-primary-color;
+  font-size: 16px;
+  line-height: 149%;
 
-	color: $ifm-primary-color;
-
-	font-size: 16px;
-	line-height: 149%;
-
-	&:not(:last-child) {
-		margin-bottom: 26px;
-	}
+  &:not(:last-child) {
+    margin-bottom: 26px;
+  }
 }
 
 @media screen and (max-width: 480px) {
-	.text {
-		font-size: 14px;
-		line-height: 149%;
-	}
+  .text {
+    font-size: 14px;
+    line-height: 149%;
+  }
 
-	.text:not(:last-child) {
-		margin-bottom: 24px;
-	}
+  .text:not(:last-child) {
+    margin-bottom: 24px;
+  }
 }

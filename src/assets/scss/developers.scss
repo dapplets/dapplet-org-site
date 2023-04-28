@@ -1,35 +1,35 @@
-@import "./base";
+@import './base';
 
 // ELEMENTS
-@import "./elements/button";
-@import "./elements/languages";
-@import "./elements/hamburger";
-@import "./elements/input";
-@import "./elements/text";
-@import "./elements/bg-icons";
-@import "./elements/title-pages";
+@import './elements/button';
+@import './elements/languages';
+@import './elements/hamburger';
+@import './elements/input';
+@import './elements/text';
+@import './elements/bg-icons';
+@import './elements/title-pages';
 
 // SECTIONS
-@import "./sections/header";
-@import "./pages/developers/sections/promo";
-@import "./pages/developers/sections/collaboration";
-@import "./pages/developers/sections/becomedev";
-@import "./pages/developers/sections/ideas";
-@import "./pages/developers/sections/grant";
-@import "./pages/developers/sections/monetization";
-@import "./pages/developers/sections/auditors";
-@import "./sections/footer";
+@import './sections/header';
+@import './pages/developers/sections/promo';
+@import './pages/developers/sections/collaboration';
+@import './pages/developers/sections/becomedev';
+@import './pages/developers/sections/ideas';
+@import './pages/developers/sections/grant';
+@import './pages/developers/sections/monetization';
+@import './pages/developers/sections/auditors';
+@import './sections/footer';
 
 // MEDIA
-@import "./adaptive/header";
-@import "./pages/developers/adaptive/promo";
-@import "./pages/developers/adaptive/collaboration";
-@import "./pages/developers/adaptive/becomedev";
-@import "./pages/developers/adaptive/ideas";
-@import "./pages/developers/adaptive/grant";
-@import "./pages/developers/adaptive/monetization";
-@import "./pages/developers/adaptive/auditors";
-@import "./adaptive/footer";
+@import './adaptive/header';
+@import './pages/developers/adaptive/promo';
+@import './pages/developers/adaptive/collaboration';
+@import './pages/developers/adaptive/becomedev';
+@import './pages/developers/adaptive/ideas';
+@import './pages/developers/adaptive/grant';
+@import './pages/developers/adaptive/monetization';
+@import './pages/developers/adaptive/auditors';
+@import './adaptive/footer';
 
 section {
   padding: 0 10px;
@@ -75,12 +75,13 @@ section {
       position: relative;
     }
 
-    .underlined:after {
+    .underlined::after {
       display: block;
+
       // bottom: -18px;
       left: -310px;
       width: 492px;
-      content: "";
+      content: '';
     }
   }
 }
@@ -92,12 +93,12 @@ section {
       margin-bottom: 30px;
     }
 
-    .underlined:after {
+    .underlined::after {
       display: block;
       bottom: -18px;
       left: -310px;
       width: 665px;
-      content: "";
+      content: '';
     }
   }
 }

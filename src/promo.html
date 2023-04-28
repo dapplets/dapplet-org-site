@@ -24,55 +24,51 @@
 
   <body>
     <script type="text/javascript">
-      (function (window, document, dataLayerName, id) {
-        (window[dataLayerName] = window[dataLayerName] || []),
+      ;(function (window, document, dataLayerName, id) {
+        ;(window[dataLayerName] = window[dataLayerName] || []),
           window[dataLayerName].push({
             start: new Date().getTime(),
-            event: "stg.start",
-          });
-        var scripts = document.getElementsByTagName("script")[0],
-          tags = document.createElement("script");
+            event: 'stg.start',
+          })
+        var scripts = document.getElementsByTagName('script')[0],
+          tags = document.createElement('script')
         function stgCreateCookie(a, b, c) {
-          var d = "";
+          var d = ''
           if (c) {
-            var e = new Date();
-            e.setTime(e.getTime() + 24 * c * 60 * 60 * 1e3),
-              (d = "; expires=" + e.toUTCString());
+            var e = new Date()
+            e.setTime(e.getTime() + 24 * c * 60 * 60 * 1e3), (d = '; expires=' + e.toUTCString())
           }
-          document.cookie = a + "=" + b + d + "; path=/";
+          document.cookie = a + '=' + b + d + '; path=/'
         }
         var isStgDebug =
-          (window.location.href.match("stg_debug") ||
-            document.cookie.match("stg_debug")) &&
-          !window.location.href.match("stg_disable_debug");
-        stgCreateCookie("stg_debug", isStgDebug ? 1 : "", isStgDebug ? 14 : -1);
-        var qP = [];
-        dataLayerName !== "dataLayer" &&
-          qP.push("data_layer_name=" + dataLayerName),
-          isStgDebug && qP.push("stg_debug");
-        var qPString = qP.length > 0 ? "?" + qP.join("&") : "";
-        (tags.async = !0),
-          (tags.src =
-            "https://dapplets.containers.piwik.pro/" + id + ".js" + qPString),
-          scripts.parentNode.insertBefore(tags, scripts);
+          (window.location.href.match('stg_debug') || document.cookie.match('stg_debug')) &&
+          !window.location.href.match('stg_disable_debug')
+        stgCreateCookie('stg_debug', isStgDebug ? 1 : '', isStgDebug ? 14 : -1)
+        var qP = []
+        dataLayerName !== 'dataLayer' && qP.push('data_layer_name=' + dataLayerName),
+          isStgDebug && qP.push('stg_debug')
+        var qPString = qP.length > 0 ? '?' + qP.join('&') : ''
+        ;(tags.async = !0),
+          (tags.src = 'https://dapplets.containers.piwik.pro/' + id + '.js' + qPString),
+          scripts.parentNode.insertBefore(tags, scripts)
         !(function (a, n, i) {
-          a[n] = a[n] || {};
+          a[n] = a[n] || {}
           for (var c = 0; c < i.length; c++)
             !(function (i) {
-              (a[n][i] = a[n][i] || {}),
+              ;(a[n][i] = a[n][i] || {}),
                 (a[n][i].api =
                   a[n][i].api ||
                   function () {
-                    var a = [].slice.call(arguments, 0);
-                    "string" == typeof a[0] &&
+                    var a = [].slice.call(arguments, 0)
+                    'string' == typeof a[0] &&
                       window[dataLayerName].push({
-                        event: n + "." + i + ":" + a[0],
+                        event: n + '.' + i + ':' + a[0],
                         parameters: [].slice.call(arguments, 1),
-                      });
-                  });
-            })(i[c]);
-        })(window, "ppms", ["tm", "cm"]);
-      })(window, document, "dataLayer", "9bed06dd-be95-40d0-aea8-cf1e92ac2643");
+                      })
+                  })
+            })(i[c])
+        })(window, 'ppms', ['tm', 'cm'])
+      })(window, document, 'dataLayer', '9bed06dd-be95-40d0-aea8-cf1e92ac2643')
     </script>
 
     <!-- HEADER -->
@@ -93,25 +89,15 @@
               </li>
             </ul>
             <a href="index.html" class="navbar__home">
-              <img
-                src="/assets/images/logo-black.svg"
-                alt="Dapplets"
-                class="black"
-              />
-              <img
-                src="/assets/images/logo-white.svg"
-                alt="Dapplets"
-                class="white"
-              />
+              <img src="/assets/images/logo-black.svg" alt="Dapplets" class="black" />
+              <img src="/assets/images/logo-white.svg" alt="Dapplets" class="white" />
             </a>
             <ul class="navbar__items">
               <li class="navbar__item">
                 <a href="join-us.html" class="navbar__link">Join us</a>
               </li>
               <li class="navbar__item">
-                <a href="https://blog.dapplets.org/" class="navbar__link"
-                  >Blog</a
-                >
+                <a href="https://blog.dapplets.org/" class="navbar__link">Blog</a>
               </li>
             </ul>
           </nav>
@@ -141,28 +127,24 @@
           <h2 class="title mission-header">Our Mission</h2>
           <div class="mission-text">
             <p>
-              In the internet business, as we know it now, only website owners
-              can create and earn money from business processes that run on
-              their websites. This is because ownership means full control over
-              the users' communications.
+              In the internet business, as we know it now, only website owners can create and earn
+              money from business processes that run on their websites. This is because ownership
+              means full control over the users' communications.
             </p>
             <p>
-              Dapplets Project disrupts this paradigm and creates technology
-              that enables new kinds of applications - dapplets. These dapplets
-              run on top of existing websites, in the websites' context, but out
-              of the website owners' control. This new paradigm enables tons of
-              brand new applications and business opportunities.
+              Dapplets Project disrupts this paradigm and creates technology that enables new kinds
+              of applications - dapplets. These dapplets run on top of existing websites, in the
+              websites' context, but out of the website owners' control. This new paradigm enables
+              tons of brand new applications and business opportunities.
             </p>
             <p>
-              Dapplets technology also has a big social impact: it allows
-              censorship-resistant user flows on centrally owned websites, even
-              for banned content and banned users. It cancels the “cancel
-              culture“ effectively.
+              Dapplets technology also has a big social impact: it allows censorship-resistant user
+              flows on centrally owned websites, even for banned content and banned users. It
+              cancels the “cancel culture“ effectively.
             </p>
             <p>
-              Dapplets is a true Web3 project: unstoppable, permissionless,
-              anonymous, open-source, and decentralized, not only on the backend
-              level but on the UX level too.
+              Dapplets is a true Web3 project: unstoppable, permissionless, anonymous, open-source,
+              and decentralized, not only on the backend level but on the UX level too.
             </p>
           </div>
           <div class="mission-divider"></div>
@@ -179,33 +161,24 @@
 
         <div class="paradigm-shift-content">
           <div class="paradigm-shift-text">
-            <h2 class="title paradigm-shift-header">
-              Why we do it: Paradigm Shift
-            </h2>
+            <h2 class="title paradigm-shift-header">Why we do it: Paradigm Shift</h2>
             <div class="paradigm-shift-message">
               <p>
-                Augmented Web consists of a Platform and of Applications
-                (Dapplets) running <br />
-                on top. The platform's goal is to provide the Dapplet Developer
-                with tools <br />
-                and services for rapid dapplet development. It features
-                out-of-the-box tooling for
+                Augmented Web consists of a Platform and of Applications (Dapplets) running <br />
+                on top. The platform's goal is to provide the Dapplet Developer with tools <br />
+                and services for rapid dapplet development. It features out-of-the-box tooling for
               </p>
               <ul class="ps-features-list">
                 <li class="ps-features-item">access to crypto wallets</li>
                 <li class="ps-features-item">rapid augmentation development</li>
-                <li class="ps-features-item">
-                  versioning and dependency management
-                </li>
+                <li class="ps-features-item">versioning and dependency management</li>
                 <li class="ps-conclusion-subheader">Because of that:</li>
                 <li class="ps-features-item">
-                  A simple dapplet is about 100 lines of code and takes only a
-                  few hours <br />
+                  A simple dapplet is about 100 lines of code and takes only a few hours <br />
                   to develop.
                 </li>
                 <li class="ps-features-item">
-                  The ecosystem is decentralized, permissionless, anonymous,
-                  unstoppable, <br />
+                  The ecosystem is decentralized, permissionless, anonymous, unstoppable, <br />
                   and incentivized.
                 </li>
               </ul>
@@ -226,27 +199,23 @@
         <div class="community-content">
           <div class="rectangle community__image"></div>
           <div class="community-text">
-            <h2 class="title community__title">
-              Become a part of our growing community
-            </h2>
+            <h2 class="title community__title">Become a part of our growing community</h2>
 
             <div class="community-message">
               <p class="community-item">
-                Our community is built on the principles of self-organization
-                and assumes several roles within it. Each of the roles is
-                economically motivated to participate.
+                Our community is built on the principles of self-organization and assumes several
+                roles within it. Each of the roles is economically motivated to participate.
               </p>
               <p class="community-item">
-                As a developer, you can write and publish apps that will help
-                drive your own business processes or can be monetized through
-                user acquisition. Dapplets give developers opportunities to take
-                their own niche in a market that at its early stages.
+                As a developer, you can write and publish apps that will help drive your own
+                business processes or can be monetized through user acquisition. Dapplets give
+                developers opportunities to take their own niche in a market that at its early
+                stages.
               </p>
               <p class="community-item">
-                We invite new developers all over the world to become a part of
-                our community and contribute to the development of the Augmented
-                Web. Together we can give the economy and users new business
-                models that are currently unattainable.
+                We invite new developers all over the world to become a part of our community and
+                contribute to the development of the Augmented Web. Together we can give the economy
+                and users new business models that are currently unattainable.
               </p>
             </div>
           </div>
@@ -256,9 +225,7 @@
 
     <!-- HOWTO -->
     <section class="howto">
-      <h2 class="title title--center howto__title">
-        How to become a developer
-      </h2>
+      <h2 class="title title--center howto__title">How to become a developer</h2>
 
       <div class="howto__wrapper">
         <div class="container">
@@ -266,18 +233,14 @@
             <li class="howto-item">
               <h6 class="howto-item__title">Read</h6>
               <span class="howto-item__text">our</span>
-              <a href="https://docs.dapplets.org/docs/" class="howto-item__link"
-                >documentation</a
-              >
+              <a href="https://docs.dapplets.org/docs/" class="howto-item__link">documentation</a>
             </li>
 
             <li class="howto-item">
               <h6 class="howto-item__title">Go</h6>
               <span class="howto-item__text">
                 through all of the
-                <a
-                  href="https://docs.dapplets.org/docs/exercises"
-                  class="howto-item__link"
+                <a href="https://docs.dapplets.org/docs/exercises" class="howto-item__link"
                   >exercises
                 </a>
                 in it
@@ -288,11 +251,7 @@
               <h6 class="howto-item__title">Join</h6>
               <span class="howto-item__text">
                 our community of developers on
-                <a
-                  href="https://discord.com/invite/YcxbkcyjMV"
-                  class="howto-item__link"
-                  >Discord</a
-                >
+                <a href="https://discord.com/invite/YcxbkcyjMV" class="howto-item__link">Discord</a>
               </span>
             </li>
 
@@ -300,9 +259,7 @@
               <h6 class="howto-item__title">Choose</h6>
               <span class="howto-item__text">
                 any dapplet idea from
-                <a
-                  href="https://github.com/dapplets/dapplets-ideas"
-                  class="howto-item__link"
+                <a href="https://github.com/dapplets/dapplets-ideas" class="howto-item__link"
                   >our list of ideas</a
                 >
                 or think of your own one
@@ -355,11 +312,10 @@
             <h2 class="title collaborate__title">Wanna collaborate?</h2>
             <div class="collaborate-text">
               <p>
-                Staying in&nbsp;touch and communicating with people who have
-                an&nbsp;interest in&nbsp;the Project is&nbsp;a&nbsp;huge part
-                of&nbsp;our internal values. Knowing who you are, what you think
-                about our initiative, and how we&nbsp;could be&nbsp;beneficial
-                to&nbsp;each other will help&nbsp;us efficiently and effectively
+                Staying in&nbsp;touch and communicating with people who have an&nbsp;interest
+                in&nbsp;the Project is&nbsp;a&nbsp;huge part of&nbsp;our internal values. Knowing
+                who you are, what you think about our initiative, and how we&nbsp;could
+                be&nbsp;beneficial to&nbsp;each other will help&nbsp;us efficiently and effectively
                 shape Dapplets Project.
               </p>
             </div>
@@ -397,9 +353,7 @@
 
             <span class="footer-project">
               by
-              <a href="/index.html" class="footer-link-project">
-                Dapplets Project
-              </a>
+              <a href="/index.html" class="footer-link-project"> Dapplets Project </a>
             </span>
           </div>
           <ul class="footer-socials">
@@ -422,10 +376,7 @@
               </a>
             </li>
             <li class="footer-social" title="Discord">
-              <a
-                href="https://discord.com/invite/YcxbkcyjMV"
-                class="footer-social-link"
-              >
+              <a href="https://discord.com/invite/YcxbkcyjMV" class="footer-social-link">
                 <svg
                   width="41"
                   height="41"
@@ -498,10 +449,7 @@
               </a>
             </li> -->
             <li class="footer-social" title="Facebook">
-              <a
-                href="https://www.facebook.com/dapplets"
-                class="footer-social-link"
-              >
+              <a href="https://www.facebook.com/dapplets" class="footer-social-link">
                 <svg
                   width="41"
                   height="41"

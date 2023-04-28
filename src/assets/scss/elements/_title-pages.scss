@@ -1,83 +1,72 @@
 .title-pages {
-	position: relative;
+  position: relative;
 
-	&--primary {
-		color: #2A2A2A;
+  &--primary {
+    color: #2a2a2a;
+    font-size: 67px;
+    font-weight: 900;
+    line-height: 149%;
+  }
 
-		font-size: 67px;
-		font-weight: 900;
-		line-height: 149%;
-	}
+  &--secondary {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    bottom: 19px;
+    width: 150%;
+    text-align: right;
+    color: #588ca3;
+    font-size: 16px;
+    font-weight: 900;
+    line-height: 149%;
 
-	&--secondary {
-		position: absolute;
-		right: 0;
-		bottom: 0;
-		bottom: 19px;
+    &::after {
+      position: absolute;
+      z-index: -1;
+      bottom: 5px;
+      left: 0;
+      width: 100%;
+      content: '';
+      border-bottom: 2px solid #588ca3;
+    }
+  }
 
-		width: 150%;
-
-		text-align: right;
-
-		color: #588CA3;
-
-		font-size: 16px;
-		font-weight: 900;
-		line-height: 149%;
-
-		&::after {
-			position: absolute;
-			z-index: -1;
-			bottom: 5px;
-			left: 0;
-
-			width: 100%;
-
-			content: '';
-
-			border-bottom: 2px solid #588CA3;
-		}
-	}
-
-	&.block,
-	.block {
-		display: block;
-	}
+  &.block,
+  .block {
+    display: block;
+  }
 }
 
 @media (max-width: 1150px) {
-	.title-pages--secondary {
-		width: auto;
+  .title-pages--secondary {
+    width: auto;
+    text-align: left;
+    font-size: 16px;
 
-		text-align: left;
+    &::after {
+      display: none;
+    }
+  }
 
-		font-size: 16px;
+  .model__title-pages {
+    .title-pages--secondary {
+      bottom: 10px;
+      left: 204px;
+    }
+  }
 
-		&::after {
-			display: none;
-		}
-	}
-
-	.model__title-pages {
-		.title-pages--secondary {
-			bottom: 10px;
-			left: 204px;
-		}
-	}
-
-	.title-pages--primary {
-		font-size: 41px;
-	}
+  .title-pages--primary {
+    font-size: 41px;
+  }
 }
 
 @media (max-width: 480px) {
-	.title-pages--primary {
-		font-size: 26px;
-	}
+  .title-pages--primary {
+    font-size: 26px;
+  }
 
-	.model__title-pages .title-pages--secondary {
-		position: static;
-
-		display: block;
-	}
+  .model__title-pages .title-pages--secondary {
+    position: static;
+    display: block;
+  }
 }

@@ -1,146 +1,141 @@
 @media (max-width: 1700px) {
-	.mission .many-straight-lines-icon {
-		right: 69px;
-	}
+  .mission .many-straight-lines-icon {
+    right: 69px;
+  }
 }
 
 @media (max-width: 1310px) {
-	.mission__left {
-		max-width: 485px;
-	}
+  .mission__left {
+    max-width: 485px;
+  }
 
-	.mission__img {
-		min-height: 570px;
-	}
+  .mission__img {
+    min-height: 570px;
+  }
 
-	.mission__img::after {
-		background-size: contain;
-	}
+  .mission__img::after {
+    background-size: contain;
+  }
 
-	.mission__right {
-		margin-top: 40px;
-	}
+  .mission__right {
+    margin-top: 40px;
+  }
 }
 
 @media (max-width: 1190px) {
-	.mission__list {
-		max-width: 570px;
-	}
+  .mission__list {
+    max-width: 570px;
+  }
 }
 
 @media (max-width: 1150px) {
-	.mission {
-		overflow: hidden;
+  .mission {
+    overflow: hidden;
+    padding-top: 10px;
+    padding-bottom: 42px;
 
-		padding-top: 10px;
-		padding-bottom: 42px;
+    .container {
+      padding: 0;
+    }
+  }
 
-		.container {
-			padding: 0;
-		}
-	}
+  .mission__wrapper {
+    flex-direction: column;
+  }
 
-	.mission__wrapper {
-		flex-direction: column;
-	}
+  .mission__left {
+    max-width: 727px;
+    margin-right: 20px;
+    margin-left: auto;
+  }
 
-	.mission__left {
-		max-width: 727px;
-		margin-right: 20px;
-		margin-left: auto;
-	}
+  .mission__right {
+    padding: 0 20px;
+  }
 
-	.mission__right {
-		padding: 0 20px;
-	}
+  .mission__img {
+    min-height: 602px;
+    background-image: url('../images/bg/mission-table.png');
+  }
 
-	.mission__img {
-		min-height: 602px;
+  .mission__img::after {
+    background-image: url('../images/bg/mission-table-border.svg');
+  }
 
-		background-image: url('../images/bg/mission-table.png');
-	}
+  .mission__title {
+    font-size: 41px;
+  }
 
-	.mission__img::after {
-		background-image: url('../images/bg/mission-table-border.svg');
-	}
+  .mission__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 100%;
+  }
 
-	.mission__title {
-		font-size: 41px;
-	}
+  .mission__item.text:not(:last-child) {
+    margin-bottom: 0;
+  }
 
-	.mission__list {
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: space-between;
+  .mission__item {
+    max-width: 48%;
 
-		max-width: 100%;
-	}
+    &:not(:last-child) {
+      margin-bottom: 50px !important;
+    }
+  }
 
-	.mission__item.text:not(:last-child) {
-		margin-bottom: 0;
-	}
+  .mission .many-straight-lines-icon {
+    display: none;
+  }
 
-	.mission__item {
-		max-width: 48%;
-
-		&:not(:last-child) {
-			margin-bottom: 50px !important;
-		}
-	}
-
-	.mission .many-straight-lines-icon {
-		display: none;
-	}
-
-	.mission .two-triangles-2 {
-		z-index: -1;
-		bottom: -110px;
-		left: -61px;
-	}
+  .mission .two-triangles-2 {
+    z-index: -1;
+    bottom: -110px;
+    left: -61px;
+  }
 }
 
 @media (max-width: 590px) {
-	.mission__list {
-		flex-direction: column;
-	}
+  .mission__list {
+    flex-direction: column;
+  }
 
-	.mission__item {
-		max-width: 100%;
-	}
+  .mission__item {
+    max-width: 100%;
+  }
 }
 
 @media (max-width: 480px) {
-	.mission {
-		padding-top: 84px;
-		padding-bottom: 38px;
-	}
+  .mission {
+    padding-top: 84px;
+    padding-bottom: 38px;
+  }
 
-	.mission__left {
-		max-width: 290px;
-		margin-right: auto;
-		margin-left: auto;
-	}
+  .mission__left {
+    max-width: 290px;
+    margin-right: auto;
+    margin-left: auto;
+  }
 
-	.mission__right {
-		margin-top: 52px;
-		padding: 0 10px;
-	}
+  .mission__right {
+    margin-top: 52px;
+    padding: 0 10px;
+  }
 
-	.mission__img {
-		min-height: 350px;
+  .mission__img {
+    min-height: 350px;
+    background-image: url('../images/bg/mission-mobile.png');
+  }
 
-		background-image: url('../images/bg/mission-mobile.png');
-	}
+  .mission__img::after {
+    top: -10px;
+    left: 13px;
+    background-image: url('../images/bg/mission-mobile-border.svg');
+    background-size: contain;
+  }
 
-	.mission__img::after {
-		top: -10px;
-		left: 13px;
-
-		background-image: url('../images/bg/mission-mobile-border.svg');
-		background-size: contain;
-	}
-
-	.mission .two-crosses {
-		display: none;
-	}
+  .mission .two-crosses {
+    display: none;
+  }
 }

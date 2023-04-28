@@ -1,15 +1,15 @@
 // BASE
-@import './base/_bootstrap-reboot.min.scss';
+@import './base/_bootstrap-reboot.min';
 @import './base/container';
 @import './base/classes';
 @import './base/transition';
 
 // FONTS
-@import './fonts/_montserrat.scss';
-@import './fonts/_roboto.scss';
-@import './fonts/_playfair-display.scss';
-@import './fonts/_segoe.scss';
+@import './fonts/_montserrat';
+@import './fonts/_roboto';
+@import './fonts/_playfair-display';
+@import './fonts/_segoe';
 
 body {
-  font-family: "Montserrat", sans-serif;
+  font-family: Montserrat, sans-serif;
 }

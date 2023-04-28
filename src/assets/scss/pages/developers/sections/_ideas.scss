@@ -1,4 +1,4 @@
-@import "../../../base/mixins";
+@import '../../../base/mixins';
 
 .ideas {
   margin-bottom: 20px;
@@ -43,8 +43,8 @@
     position: relative;
   }
 
-  li:before {
-    content: "";
+  li::before {
+    content: '';
     position: absolute;
     top: 0;
     bottom: 0;
@@ -52,6 +52,6 @@
     left: -25px;
     width: 14px;
     height: 14px;
-    background-image: url("../images/icons/ideas-list-bullet.svg");
+    background-image: url('../images/icons/ideas-list-bullet.svg');
   }
 }

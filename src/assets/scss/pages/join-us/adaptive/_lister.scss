@@ -1,152 +1,145 @@
 @media (max-width: 1150px) {
-	.lister {
-		overflow: visible;
+  .lister {
+    overflow: visible;
+    padding-top: 30px;
+    padding-bottom: 25px;
+  }
 
-		padding-top: 30px;
-		padding-bottom: 25px;
-	}
+  .lister__wrapper {
+    flex-direction: column;
+  }
 
-	.lister__wrapper {
-		flex-direction: column;
-	}
+  .lister__left {
+    margin-top: 41px;
+    margin-right: 0;
+  }
 
-	.lister__left {
-		margin-top: 41px;
-		margin-right: 0;
-	}
+  .lister__item:not(:last-child) {
+    margin-bottom: 40px;
+  }
 
-	.lister__item:not(:last-child) {
-		margin-bottom: 40px;
-	}
+  .lister__item::after {
+    bottom: -50px;
+    height: 54px;
+    background-image: url('../images/icons/line-with-polygon-4-table.svg');
+  }
 
-	.lister__item::after {
-		bottom: -50px;
+  .lister__right {
+    padding-top: 41px;
+  }
 
-		height: 54px;
+  .lister__description {
+    margin-top: 21px;
 
-		background-image: url('../images/icons/line-with-polygon-4-table.svg');
-	}
+    .text {
+      max-width: 100%;
+    }
+  }
 
-	.lister__right {
-		padding-top: 41px;
-	}
+  .lister__title-pages {
+    display: none;
+    max-width: 310px;
 
-	.lister__description {
-		margin-top: 21px;
+    .title-pages--secondary {
+      bottom: 11px;
+      left: 128px;
+      width: auto;
+    }
+  }
 
-		.text {
-			max-width: 100%;
-		}
-	}
+  .lister__title-pages-mobile {
+    display: block;
+  }
 
-	.lister__title-pages {
-		display: none;
+  .lister__left,
+  .lister__button {
+    margin-right: auto;
+    margin-left: auto;
+  }
 
-		max-width: 310px;
+  .lister .waves-icon,
+  .lister .big-cross,
+  .lister .big-circle-icon,
+  .lister .two-circle-icon {
+    display: none;
+  }
 
-		.title-pages--secondary {
-			bottom: 11px;
-			left: 128px;
+  .lister .two-triangles-2 {
+    display: block;
+  }
 
-			width: auto;
-		}
-	}
-
-	.lister__title-pages-mobile {
-		display: block;
-	}
-
-	.lister__left,
-	.lister__button {
-		margin-right: auto;
-		margin-left: auto;
-	}
-
-	.lister .waves-icon,
-	.lister .big-cross,
-	.lister .big-circle-icon,
-	.lister .two-circle-icon {
-		display: none;
-	}
-
-	.lister .two-triangles-2 {
-		display: block;
-	}
-
-	.lister__button {
-		max-width: 219px;
-		margin-top: 23px;
-	}
+  .lister__button {
+    max-width: 219px;
+    margin-top: 23px;
+  }
 }
 
 @media (max-width: 768px) {
-	.lister__left {
-		max-width: 689px;
-	}
+  .lister__left {
+    max-width: 689px;
+  }
 }
 
 @media (max-width: 680px) {
-	.lister__item::before {
-		display: none;
-	}
+  .lister__item::before {
+    display: none;
+  }
 }
 
 @media (max-width: 510px) {
-	.lister .two-triangles-2 {
-		display: none;
-	}
+  .lister .two-triangles-2 {
+    display: none;
+  }
 }
 
 @media (max-width: 480px) {
-	.lister {
-		padding-top: 10px;
-	}
+  .lister {
+    padding-top: 10px;
+  }
 
-	.lister__left {
-		margin-top: 16px;
-	}
+  .lister__left {
+    margin-top: 16px;
+  }
 
-	.lister__right {
-		padding-top: 6px;
-	}
+  .lister__right {
+    padding-top: 6px;
+  }
 
-	.lister__button {
-		width: 100%;
-		max-width: 100%;
-		margin-top: 31px;
-	}
+  .lister__button {
+    width: 100%;
+    max-width: 100%;
+    margin-top: 31px;
+  }
 
-	.lister__item,
-	.lister__left {
-		max-width: 300px;
-	}
+  .lister__item,
+  .lister__left {
+    max-width: 300px;
+  }
 
-	.lister__item:not(:last-child) {
-		margin-bottom: 20px;
-	}
+  .lister__item:not(:last-child) {
+    margin-bottom: 20px;
+  }
 
-	.lister__item::after {
-		bottom: -25px;
+  .lister__item::after {
+    bottom: -25px;
+    height: 25px;
+    background-image: url('../images/icons/line-with-polygon-4-mobile.svg');
+  }
 
-		height: 25px;
+  .lister__title-pages .title-pages--secondary {
+    bottom: 4px;
+    left: 89px;
+  }
 
-		background-image: url('../images/icons/line-with-polygon-4-mobile.svg');
-	}
+  .lister__item--1 {
+    background-image: url('../images/lister/1-mobile.png');
+  }
 
-	.lister__title-pages .title-pages--secondary {
-		bottom: 4px;
-		left: 89px;
-	}
+  .lister__item--2 {
+    background-image: url('../images/lister/2-mobile.png');
+  }
 
-	.lister__item--1 {
-		background-image: url('../images/lister/1-mobile.png');
-	}
-
-	.lister__item--2 {
-		background-image: url('../images/lister/2-mobile.png');
-	}
-
-	.lister__item--3 {
-		background-image: url('../images/lister/3-mobile.png');
-	}
+  .lister__item--3 {
+    background-image: url('../images/lister/3-mobile.png');
+  }
 }

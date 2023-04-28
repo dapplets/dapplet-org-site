@@ -1,7 +1,7 @@
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .auditors {
     padding: 149px 79px;
-    background: url("/assets/images/bg/auditors-bg-tablet.png");
+    background: url('/assets/images/bg/auditors-bg-tablet.png');
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -13,7 +13,7 @@
     }
 
     &-content {
-      background: rgba(234, 240, 240, 0.6);
+      background: rgb(234 240 240 / 60%);
       padding: 40px 20px;
       display: flex;
       flex-direction: column;
@@ -31,13 +31,13 @@
   .auditors {
     height: 950px;
     padding: 165px 0;
-    background: url("/assets/images/bg/auditors-bg-desktop.png");
+    background: url('/assets/images/bg/auditors-bg-desktop.png');
 
     &-content {
       position: absolute;
       right: 310px;
       width: 610px;
-      background: rgba(234, 240, 240, 0.6);
+      background: rgb(234 240 240 / 60%);
       padding: 40px 20px;
     }
 

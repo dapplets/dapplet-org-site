@@ -1,8 +1,8 @@
-@import "../../../base/constans";
-@import "../../../base/mixins";
+@import '../../../base/constans';
+@import '../../../base/mixins';
 
 .promo {
-  background: $ifm-border-color-hamburger url("../images/brand/big_logo.png");
+  background: $ifm-border-color-hamburger url('../images/brand/big_logo.png');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: 100% 0%;
@@ -12,39 +12,45 @@
   height: 100vh;
   padding: 30px 10px;
 }
+
 .promo__bg-dots {
   position: absolute;
   top: 0;
   left: 0;
-  background: url("../images/brand/dots.png") no-repeat;
+  background: url('../images/brand/dots.png') no-repeat;
   background-size: contain;
   width: 100%;
   height: 100vh;
   opacity: 0.6;
   z-index: 1;
 }
+
 .container {
 }
+
 .promo__wrapper {
   display: flex;
   flex-direction: column;
   width: 100%;
   height: calc(100vh - 40px);
 }
+
 .promo__top-left {
   position: relative;
   z-index: 1;
 }
+
 .header__promo-page {
 }
+
 .header__top-logo {
 }
+
 .promo__main {
   display: flex;
   flex-direction: column;
   justify-content: center;
   width: 70%;
-
   flex: 1 0 auto;
 }
 
@@ -54,28 +60,31 @@
   margin-bottom: 60px;
   margin-top: -60px;
 }
+
 .promo__title {
-  font-family: "Playfair Display", sans-serif;
+  font-family: 'Playfair Display', sans-serif;
   font-weight: 900;
   font-size: 128px;
   line-height: 100%;
   margin-bottom: 10px;
 }
+
 .promo__subtitle {
-  font-family: "Segoe UI", sans-serif;
+  font-family: 'Segoe UI', sans-serif;
   font-weight: 400;
   font-size: 36px;
   line-height: 149%;
   display: inline-block;
   width: 60%;
 }
+
 .promo__button-download {
   display: inline-block;
   position: relative;
   z-index: 2;
   padding: 12px 40px;
   background: $ifm-background-color-button;
-  font-family: "Segoe UI", sans-serif;
+  font-family: 'Segoe UI', sans-serif;
   font-weight: 600;
   font-size: 14px;
   line-height: 14px;
@@ -84,21 +93,25 @@
   border-radius: 4px;
   border: none;
   max-width: 250px;
+
   img {
     margin-left: 10px;
   }
+
   &:hover {
     background: $ifm-button-hover;
     border: none !important;
     text-decoration: none !important;
     color: #fff;
   }
+
   &:active {
     background: $ifm-button-check-bg-active;
     border: none !important;
     text-decoration: none !important;
     color: #fff;
   }
+
   &:focus {
     outline: none;
     text-decoration: none;

@@ -2,50 +2,46 @@
 @import '../../../base/mixins';
 
 .career {
-	padding-top: 34px;
-	padding-bottom: 32px;
+  padding-top: 34px;
+  padding-bottom: 32px;
+  background-image: url('../images/bg/career-bg.jpg');
 
-	background-image: url('../images/bg/career-bg.jpg');
-
-	@include backgroundStyle;
+  @include backgroundStyle;
 }
 
 .career__title,
 .career__description,
 .career__link {
-	text-align: center;
-
-	color: $ifm-primary-color;
-
-	line-height: 149%;
+  text-align: center;
+  color: $ifm-primary-color;
+  line-height: 149%;
 }
 
 .career__title {
-	font-size: 41px;
-	font-weight: 400;
+  font-size: 41px;
+  font-weight: 400;
 }
 
 .career__description {
-	max-width: 530px;
-	margin-top: 19px;
-	margin-right: auto;
-	margin-left: auto;
+  max-width: 530px;
+  margin-top: 19px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .career__description,
 .career__link {
-	font-size: 16px;
+  font-size: 16px;
 }
 
 .career__link {
-	display: block;
-
-	text-decoration: underline;
+  display: block;
+  text-decoration: underline;
 }
 
 .career__button {
-	max-width: 176px;
-	margin-top: 20px;
-	margin-right: auto;
-	margin-left: auto;
+  max-width: 176px;
+  margin-top: 20px;
+  margin-right: auto;
+  margin-left: auto;
 }

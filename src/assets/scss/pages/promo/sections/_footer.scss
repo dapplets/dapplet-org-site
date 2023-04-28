@@ -2,16 +2,13 @@
   display: flex;
   align-items: center;
   justify-content: center;
-
   height: 80px;
-
-  background: #2A2A2A;
+  background: #2a2a2a;
 }
 
 .footer-content {
   display: flex;
   justify-content: space-between;
-
   width: 100%;
 }
 
@@ -19,12 +16,9 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-
   width: 310.16px;
-
-  color: #FFF;
-
-  font-family: "Segoe UI Regular", sans-serif;
+  color: #fff;
+  font-family: 'Segoe UI Regular', sans-serif;
   font-weight: 600;
   font-style: normal;
   line-height: 100%;
@@ -36,26 +30,24 @@
 }
 
 .footer-link-project {
-  color: #FFF;
+  color: #fff;
 
   &:hover {
-    color: #D9304F;
+    color: #d9304f;
   }
 }
 
 .footer-socials {
   display: flex;
-
   margin-bottom: 0;
   padding-left: 0;
-
   list-style: none;
 }
 
 .footer-social {
   &:hover {
     svg path {
-      fill: #D9304F;
+      fill: #d9304f;
     }
   }
 

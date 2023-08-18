@@ -2,8 +2,8 @@
   "name": "@dapplets/dapplets-org",
   "version": "0.1.0",
   "scripts": {
-    "start": "gulp",
-    "build": "gulp build",
+    "start": "gulp --openssl-legacy-provider",
+    "build": "gulp build  --openssl-legacy-provider",
     "prettify": "prettier --write ./src",
     "eslint": "eslint ./src --ext .js --fix",
     "stylelint": "stylelint ./src/**/*.{css,scss,module.scss} --fix"

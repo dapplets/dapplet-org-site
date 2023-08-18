@@ -1,0 +1,74 @@
+@import '../../../base/constans';
+@import '../../../base/mixins';
+
+.about-features {
+  width: 100%;
+  padding: 0 10px;
+  background: #f5f5f5;
+background-image: url('../../assets/images/features/hero.png');
+  .container {
+    display: flex;
+    flex-direction: column;
+    padding-top: 157px;
+    padding-bottom: 267px;
+  }
+}
+
+.about-features__title {
+  color: #2a2a2a;
+  font-family: Montserrat, sans-serif;
+  font-size: 67px;
+
+  font-weight: 900;
+  line-height: 100%;
+  display: flex;
+  flex: 1 1 auto;
+  max-width: 960px;
+}
+.about-features__text {
+    display: flex;
+    flex: 1 1 auto;
+    max-width: 580px;
+  color: #2a2a2a;
+  font-family: Montserrat, sans-serif;
+  font-size: 16px;
+
+  font-weight: 400;
+  line-height: 149%;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.about-features__buttons-block {
+    display: flex;
+    width: 440px;
+    justify-content: space-between;
+}
+
+.about-features__button-red {
+    width: 200px;
+    font-family: Montserrat, sans-serif;
+    font-size: 16px;
+    
+    font-weight: 400;
+    line-height: 100%; /* 16px */
+    text-transform: uppercase;
+}
+
+.about-features__button-white {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #D9304F;
+    width: 200px;
+    border: 1px solid #D9304F;
+    background-color: #fff;
+    font-family: Montserrat, sans-serif;
+font-size: 16px;
+
+font-weight: 400;
+line-height: 100%; /* 16px */
+text-transform: uppercase;
+&:hover{
+    color: #D9304F;
+}
+}

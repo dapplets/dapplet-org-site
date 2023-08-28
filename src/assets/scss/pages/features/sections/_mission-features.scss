@@ -1,0 +1,42 @@
+@import '../../../base/constans';
+@import '../../../base/mixins';
+
+.mission-features {
+  width: 100%;
+  padding: 0 10px;
+  background-image: url('../../assets/images/features/Noise.png');
+  background-size: cover;
+  .container {
+    display: flex;
+    flex-direction: column;
+    padding: 50px 0px;
+    flex: 1 1 auto;
+    max-width: 980px;
+    padding-bottom: 120px;
+  }
+}
+
+.mission-features__title {
+  color: #2a2a2a;
+  font-family: Montserrat, sans-serif;
+  font-size: 41px;
+  font-weight: 900;
+  line-height: 100%;
+  margin: 0 auto;
+  padding-bottom: 50px;
+  background-color: #fff;
+}
+
+.mission-features__text {
+  color: #747376;
+  text-align: center;
+  font-family: Montserrat, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 149%;
+  background-color: #fff;
+}
+
+.mission-features__text-item {
+  text-align: center;
+}

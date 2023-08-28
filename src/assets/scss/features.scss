@@ -1,0 +1,31 @@
+@import './base';
+
+// SECTIONS
+@import './sections/header';
+@import './pages/features/sections/about-features';
+@import './pages/features/sections/features';
+@import './pages/features/sections/mission-features';
+@import './sections/footer';
+
+// ELEMENTS
+@import './elements/button';
+@import './elements/languages';
+@import './elements/hamburger';
+@import './elements/input';
+@import './elements/text';
+@import './elements/bg-icons';
+@import './elements/title-pages';
+@import './elements/title';
+
+// MEDIA
+@import './adaptive/header';
+@import './pages/features/adaptive/about-features';
+@import './pages/features/adaptive/features';
+@import './pages/features/adaptive/mission-features';
+@import './adaptive/footer';
+
+.features-body{
+    .header__navbar{
+        background: #f5f5f5;
+    }
+}

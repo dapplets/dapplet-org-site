@@ -1,4 +1,6 @@
 ;(function () {
+  if (!document.querySelector('#promo')) return
+
   window.addEventListener('resize', resize)
 
   function resize() {

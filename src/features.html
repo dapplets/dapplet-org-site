@@ -71,23 +71,6 @@
       })(window, document, 'dataLayer', '9bed06dd-be95-40d0-aea8-cf1e92ac2643')
     </script>
 
-    <div class="button button-augment" data-augment>
-      <input type="checkbox" />
-      <svg
-        width="39"
-        height="12"
-        viewBox="0 0 39 12"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M38.4984 0C30.136 11.4383 27.033 0.792803 21.9931 0.792803C20.0196 0.792803 19.5 2.35214 19.5 3.03749C19.5 2.35214 18.9828 0.792803 17.0093 0.792803C11.967 0.792803 8.86645 11.4383 0.50158 0C0.340576 12.544 12.5256 15.5218 19.4976 7.66297C26.4744 15.5098 38.6594 12.544 38.4984 0Z"
-          fill="white"
-        />
-      </svg>
-      <span>Augment Us!</span>
-    </div>
-
     <!-- HEADER -->
     <header class="header" id="header">
       <!-- HEADER__TOP -->
@@ -447,193 +430,119 @@
         <div class="features-content">
           <ul class="features-list">
             <li class="features-item">
-              <p class="features-item__title">Адаптеры (Parser Configs)</p>
+              <p class="features-item__title">Adapters System</p>
 
               <p class="features-item__text">
-                На данный момент реализованы адаптеры для следующих веб-сайтов: Twitter, GitHub,
-                Instagram, YouTube, Google Drive, Google Search и универсальный адаптер. Любой
-                разработчик может создать адаптер и в будущем даже заработать на нём.
+                Embed your dapp into the existing website. Use the adapters already available
+                (Twitter, GitHub) or make your own.
               </p>
             </li>
             <li class="features-item">
-              <p class="features-item__title">Поддержка динамических веб-сайтов</p>
+              <p class="features-item__title">Live Parsing</p>
 
               <p class="features-item__text">
-                Платформа предоставляет механизм парсинга веб-страниц при помощи конфигурационных
-                JSON-файлов с CSS и XPath запросами, которые создаются сообществом разработчиков
-                адаптеров для разных веб-сайтов. Разработчики дапплетов могут сразу работать с
-                полезными данными, не беспокоясь о внутреннем устройстве веб-страниц.
+                Parse web pages using configuration JSON files with CSS and XPath queries prepared
+                for different websites. Work with valuable data without worrying about the internals
+                of web pages.
               </p>
             </li>
             <li class="features-item">
-              <p class="features-item__title">Внедрение виджетов</p>
+              <p class="features-item__title">Built-in Widgets</p>
 
               <p class="features-item__text">
-                Ядро платформы содержит набор встроенных веб-компонентов (Web Components), которые
-                могут быть вставлены в любой веб-сайт. Каждый компонент отрисовывается внутри Shadow
-                DOM, что обеспечивает надежную изоляцию стилей от стилей контекстной веб-страницы и
-                предотвращает конфликты между ними. Одни и те же компоненты могут выглядеть на
-                разных веб-сайтах по-разному. Стилизацией компонентов занимается сообщество
-                разработчиков адаптеров, которые создают файлы с разными CSS-стилями, чтобы дизайн
-                компонентов был максимально похожим на дизайн контекстной веб-страницы. Платформа
-                автоматически загружает соответствующие стили в зависимости от открытого веб-сайта.
+                Insert UI components into any website. The platform automatically loads
+                community-provided CSS styles depending on the webpage context.
               </p>
             </li>
             <li class="features-item">
-              <p class="features-item__title">Реестр модулей на смарт-контрактах</p>
+              <p class="features-item__title">Themes</p>
 
               <p class="features-item__text">
-                Все модули (дапплеты и адаптеры) регистрируются в смарт-контрактах на блокчейне
-                Ethereum. Там хранятся манифесты модулей (заголовки, описание, ссылки на иконки,
-                ссылки на исполняемый код и их хэши), зависимости между ними, ИД контекстов,
-                информация о владении и администраторах. Расширение проверяет загружаемые файлы на
-                целостность при помощи хэширования (Keccak-256) перед загрузкой исполняемого кода.
+                Widgets can be styled according to the chosen theme supporting consistent embedding
+                even on dark themes.
               </p>
             </li>
             <li class="features-item">
-              <p class="features-item__title">Темы</p>
+              <p class="features-item__title">Support for dynamic webpages</p>
 
               <p class="features-item__text">
-                Виджеты могут быть стилизованы в соответствии с выбранной темой на контекстной
-                веб-странице. Это позволяет делать бесшовный дизайн даже на тёмных темах. Платформа
-                автоматически следит за изменением темы и применяет соответствующие стили на лету.
+                Handle embedding widgets into dynamically created DOM-elements with Mutation
+                Observer.
               </p>
             </li>
             <li class="features-item">
-              <p class="features-item__title">Оверлей</p>
+              <p class="features-item__title">Extension Overlay</p>
 
               <p class="features-item__text">
-                Выдвигающаяся боковая панель, в которой разработчики дапплетов могут отображать
-                сложные веб-страницы внутри изолированного iframe. Платформа предоставляет готовый
-                способ двухсторонней коммуникации между оверлеем и дапплетом (DappletBridge),
-                который включает в себя: проброс функций, общее состояние (shared state) и
-                связывание (binding) состояния виджетов на базе RxJS.
+                Use overlaid sidebar for displaying complex web pages when the site context is not
+                enough, which includes: function forwarding, shared state, and RxJS-based widget
+                state binding.
               </p>
             </li>
             <li class="features-item">
-              <p class="features-item__title">Dapplet Actions</p>
+              <p class="features-item__title">Virtual adapters</p>
 
               <p class="features-item__text">
-                Внутри оверлея у каждого дапплета имеется специально отведённая область для
-                внедрения кнопок быстрых действий. В некоторых случаях удобно иметь кнопки, не
-                привязанные к какому-либо контексту.
-              </p>
-            </li>
-            <li class="features-item">
-              <p class="features-item__title">Виртуальные адаптеры</p>
-
-              <p class="features-item__text">
-                Дапплет, разработанный для одного сайта, можно запустить на другом сайте, реализовав
-                адаптер с таким же интерфейсом. Для этого дапплет должен зависеть не от конкретной
-                реализации адаптера, а от его абстракции - виртуального адаптера (интерфейса),
-                соблюдая принцип инверсии зависимостей.
-              </p>
-            </li>
-            <li class="features-item">
-              <p class="features-item__title">Восстановление контекстов</p>
-
-              <p class="features-item__text">
-                Некоторые веб-сайты используют т.н. “ленивую” отрисовку, чтобы работать быстрее.
-                Например, во время скроллинга очень длинной страницы, просмотренные элементы могут
-                удаляться из дерева DOM. Вместе с удалённым элементом удалятся и встроенные в него
-                виджеты. Благодаря восстановлению контекстов, виджеты и их состояния автоматически
-                восстановятся, если пользователь решит вернуться к просмотренному контенту.
+                Inverse your dependencies with virtual adapters and allow other developers to extend
+                the application to run on other sites.
               </p>
             </li>
           </ul>
           <ul class="features-list">
             <li class="features-item">
-              <p class="features-item__title">Динамические контексты</p>
+              <p class="features-item__title">Custom dapplet settings</p>
 
               <p class="features-item__text">
-                Контекстом, в котором запускается дапплет, может быть не только целый веб-сайт, но и
-                его часть. Например, появление в зоне видимости определенной публикации, либо типа
-                контента (видео, изображение и т.д.) может быть триггером для запуска дапплета.
-                Платформа автоматически обновит список дапплетов для найденного контекста, загрузит
-                их код и выгрузит в случае исчезновения контекста.
+                Utilize the built-in dapplets setting system to parameterize your dapp values to
+                give your users the ability to tweak it.
               </p>
             </li>
             <li class="features-item">
-              <p class="features-item__title">Пользовательские настройки дапплетов</p>
+              <p class="features-item__title">Registry of modules on smart contracts</p>
 
               <p class="features-item__text">
-                Платформа автоматически генерирует интерфейс редактирования настроек дапплета для
-                конечных пользователей. Для этого разработчику достаточно объявить их параметры в
-                формате JSON Schema. Также настройки доступны для чтения и записи через Core API.
-                Хранилище их значений изолировано для разного окружения (development, testing,
-                production), что позволяет параметризировать, например, адреса веб-сервисов и
-                смарт-контрактов.
+                Get your application and adapters will all metadata needed from a decentralized
+                false-proof registry built on the Ethereum blockchain.
               </p>
             </li>
             <li class="features-item">
-              <p class="features-item__title">Парсинг веб-страниц</p>
+              <p class="features-item__title">Decentralized storages</p>
 
               <p class="features-item__text">
-                Платформа предоставляет механизм парсинга веб-страниц при помощи конфигурационных
-                JSON-файлов с CSS и XPath запросами, которые создаются сообществом разработчиков
-                адаптеров для разных веб-сайтов. Разработчики дапплетов могут сразу работать с
-                полезными данными, не беспокоясь о внутреннем устройстве веб-страниц.
+                Publish your executable code in decentralized storages: Ethereum Swarm and IPFS.
               </p>
             </li>
             <li class="features-item">
-              <p class="features-item__title">Децентрализованные хранилища</p>
+              <p class="features-item__title">NFT-based Ownership</p>
 
               <p class="features-item__text">
-                Копии исполняемого кода адаптеров и дапплетов и их оверлеев хранятся в разных
-                децентрализованных хранилищах: Ethereum Swarm и IPFS.
+                Get NFT (EIP-712) every time you deploy the module to the registry. It proves
+                ownership and gives the ability to use it as any other NFT on the market.
               </p>
             </li>
             <li class="features-item">
-              <p class="features-item__title">NFT</p>
+              <p class="features-item__title">Crypto-wallets and smart contracts</p>
 
               <p class="features-item__text">
-                Разработчик модуля получает NFT-токен, определяющий его право на владение модулем, в
-                момент публикации в реестр. Токен реализован в соответствии со стандартом EIP-712,
-                что позволяет использовать его на торговых площадках (например, OpenSea), в
-                криптокошельках. Это открывает возможности по купле/продаже дапплетов и адаптеров.
+                Apply user interfaces for connecting NEAR and Ethereum wallets and creating sessions
+                that are already implemented at the extension level.
               </p>
             </li>
             <li class="features-item">
-              <p class="features-item__title">Кошельки и смарт-контракты</p>
+              <p class="features-item__title">Notification system</p>
 
               <p class="features-item__text">
-                Встроенная интеграция с NEAR и Ethereum кошельками. Пользовательские интерфейсы для
-                подключения кошельков и создания сессий уже реализованы на уровне расширения.
-                Пользователю достаточно подключить кошелек один раз, и разные дапплеты смогут
-                переиспользовать это подключение без усложнения UX.
-              </p>
-            </li>
-            <li class="features-item">
-              <p class="features-item__title">Система уведомлений</p>
-
-              <p class="features-item__text">
-                Дапплеты могут отправлять уведомления пользователям, которые сначала отображаются
-                поверх контекстной страницы, затем исчезают и попадают в отдельную вкладку оверлея с
-                историей. Уведомления могут содержать кнопки с быстрыми действиями. Их жизненный
-                цикл не зависит от цикла жизни дапплета. А также есть возможность отображать
-                модальные окна, которые не исчезнут, пока пользователь не провзаимодействует с ними
-                (альтернатива функциям alert и confirm).
-              </p>
-            </li>
-            <li class="features-item">
-              <p class="features-item__title">Создание ссылок для обмена</p>
-
-              <p class="features-item__text">
-                Дапплет может генерировать ссылки для обмена между пользователями. Они содержат
-                метаданные о загружаемом дапплете и полезную нагрузку, предоставленную разработчиком
-                дапплета. Таким образом, можно поделиться ссылкой на определенное место на сайте, в
-                котором автоматически включится дапплет в предустановленном состоянии.
+                Use a built-in extended notification system to update your users on changing states
+                in your dapp.
               </p>
             </li>
             <li class="features-item">
               <p class="features-item__title">Connected Accounts</p>
 
               <p class="features-item__text">
-                Платформа имеет встроенный сервис связывания аккаунтов между Web2 и Web3-мирами. На
-                данный момент реализованы следующие провайдеры: Ethereum, NEAR Protocol, Twitter,
-                GitHub. Связи хранятся в смарт-контракте на блокчейне NEAR Protocol. Это позволяет
-                строить децентрализованные приложения с onchain-проверкой аккаунтов. В будущем
-                планируется перевести контракты на Ethereum.
+                Make the process of using a Web2 account in your dapp easier by using a built-in
+                cryptographically proven linking service for Ethereum, NEAR Protocol, Twitter, and
+                GitHub.
               </p>
             </li>
           </ul>
